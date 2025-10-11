@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crazy Cattle 3D</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body, html {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            background: #000;
+        }
+        
+        #game-frame {
+            width: 100%;
+            height: 100%;
+            border: none;
+            display: block;
+        }
+        
+        .loading {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #fff;
+            font-family: Arial, sans-serif;
+            font-size: 24px;
+            text-align: center;
+        }
+        
+        .spinner {
+            border: 4px solid rgba(255, 255, 255, 0.3);
+            border-top: 4px solid #fff;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            animation: spin 1s linear infinite;
+            margin: 20px auto;
+        }
+        
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+    <div class="loading" id="loading">
+        <div class="spinner"></div>
+        <p>Loading Crazy Cattle 3D...</p>
+    </div>
+    
+    <iframe 
+        id="game-frame"
+        src="https://crazycattle3d.io/crazy-cattle-3d"
+        allowfullscreen
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        sandbox="allow-forms allow-modals allow-same-origin allow-scripts allow-pointer-lock allow-orientation-lock allow-presentation allow-downloads"
+        style="display: none;"
+    ></iframe>
+    
+    <script>
+        const iframe = document.getElementById('game-frame');
+        const loading = document.getElementById('loading');
+        
+        iframe.onload = function() {
+            loading.style.display = 'none';
+            iframe.style.display = 'block';
+        };
+        
+        // Fallback: show iframe after 3 seconds even if onload doesn't fire
+        setTimeout(function() {
+            loading.style.display = 'none';
+            iframe.style.display = 'block';
+        }, 3000);
+    </script>
+</body>
+</html>
+
