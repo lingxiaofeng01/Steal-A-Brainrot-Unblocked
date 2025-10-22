@@ -3,16 +3,6 @@
   "devCommand": "npm run dev",
   "installCommand": "npm install",
   "framework": "nextjs",
-  "env": [
-    {
-      "key": "NEXT_PUBLIC_SUPABASE_URL",
-      "description": "Supabase project URL"
-    },
-    {
-      "key": "NEXT_PUBLIC_SUPABASE_ANON_KEY",
-      "description": "Supabase anonymous key"
-    }
-  ],
   "headers": [
     {
       "source": "/api/(.*)",
