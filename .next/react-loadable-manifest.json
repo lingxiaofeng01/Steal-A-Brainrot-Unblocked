@@ -1,0 +1,209 @@
+{
+  "..\\node_modules\\@supabase\\auth-js\\dist\\module\\lib\\helpers.js -> @supabase/node-fetch": {
+    "id": 90785,
+    "files": []
+  },
+  "..\\node_modules\\@supabase\\functions-js\\dist\\module\\helper.js -> @supabase/node-fetch": {
+    "id": 90785,
+    "files": []
+  },
+  "..\\node_modules\\@supabase\\realtime-js\\dist\\module\\RealtimeClient.js -> @supabase/node-fetch": {
+    "id": 90785,
+    "files": []
+  },
+  "..\\node_modules\\@supabase\\storage-js\\dist\\module\\lib\\helpers.js -> @supabase/node-fetch": {
+    "id": 90785,
+    "files": []
+  },
+  "..\\node_modules\\@supabase\\storage-js\\dist\\module\\lib\\vectors\\helpers.js -> @supabase/node-fetch": {
+    "id": 90785,
+    "files": []
+  },
+  "..\\node_modules\\next\\dist\\client\\index.js -> ../pages/_app": {
+    "id": 45139,
+    "files": [
+      "static/chunks/5139.e4ff9cc3669129ed.js"
+    ]
+  },
+  "..\\node_modules\\next\\dist\\client\\index.js -> ../pages/_error": {
+    "id": 31646,
+    "files": [
+      "static/chunks/1646.a93085a0445ba909.js"
+    ]
+  },
+  "pages\\GameDetailPage.tsx -> ./1v1LolPage": {
+    "id": 76494,
+    "files": [
+      "static/chunks/9391.e3508a7357e1c9a9.js",
+      "static/chunks/6494.0571376fce9fefb7.js"
+    ]
+  },
+  "pages\\GameDetailPage.tsx -> ./BlockyRushPage": {
+    "id": 59115,
+    "files": [
+      "static/chunks/910.13ed0601dd868ea5.js",
+      "static/chunks/9115.27884d76d7a72977.js"
+    ]
+  },
+  "pages\\GameDetailPage.tsx -> ./BrainrotClickerPage": {
+    "id": 73133,
+    "files": [
+      "static/chunks/4174.d2749ccaf95124e2.js",
+      "static/chunks/3133.5029f3ebbd0c25ab.js"
+    ]
+  },
+  "pages\\GameDetailPage.tsx -> ./BrainrotHookSwingPage": {
+    "id": 6913,
+    "files": [
+      "static/chunks/8158.4424bcb1ecda79d5.js",
+      "static/chunks/6913.8cf91ee1f33c7eec.js"
+    ]
+  },
+  "pages\\GameDetailPage.tsx -> ./CheeseChompers3DPage": {
+    "id": 7066,
+    "files": [
+      "static/chunks/7971.b132845417d03efa.js",
+      "static/chunks/4685.24bff4b5d08b6340.js"
+    ]
+  },
+  "pages\\GameDetailPage.tsx -> ./CrazyCattle3DPage": {
+    "id": 47758,
+    "files": [
+      "static/chunks/9441.42f612c1321364ce.js",
+      "static/chunks/7758.061ca2ae68d75f35.js"
+    ]
+  },
+  "pages\\GameDetailPage.tsx -> ./CrazyCattle3DUnblockedPage": {
+    "id": 38907,
+    "files": [
+      "static/chunks/5454.70c71ab5e2410d26.js",
+      "static/chunks/8907.8ce0e1c21ca52e6a.js"
+    ]
+  },
+  "pages\\GameDetailPage.tsx -> ./CrazySheep3DPage": {
+    "id": 64088,
+    "files": [
+      "static/chunks/689.784cf47d5cf0edbe.js",
+      "static/chunks/4088.02851b07fd67e473.js"
+    ]
+  },
+  "pages\\GameDetailPage.tsx -> ./CrazySprunki3DPage": {
+    "id": 68421,
+    "files": [
+      "static/chunks/4712.e87fc55636769204.js",
+      "static/chunks/8421.dfce32607300f363.js"
+    ]
+  },
+  "pages\\GameDetailPage.tsx -> ./FixDaBrainrotPage": {
+    "id": 87534,
+    "files": [
+      "static/chunks/453.ff95e3206ff84459.js",
+      "static/chunks/7534.f469bba6881048d1.js"
+    ]
+  },
+  "pages\\GameDetailPage.tsx -> ./GoodgameEmpirePage": {
+    "id": 5648,
+    "files": [
+      "static/chunks/2665.c232e5fdf25dbbe0.js",
+      "static/chunks/5648.1047fe3ee2dfc46a.js"
+    ]
+  },
+  "pages\\GameDetailPage.tsx -> ./ItalianBrainrotBabyClickerPage": {
+    "id": 9257,
+    "files": [
+      "static/chunks/1752.6d6960cfa9be85fb.js",
+      "static/chunks/9257.900ff37314a9cc92.js"
+    ]
+  },
+  "pages\\GameDetailPage.tsx -> ./ItalianBrainrotClicker2Page": {
+    "id": 82095,
+    "files": [
+      "static/chunks/4212.8e16723b226e241d.js",
+      "static/chunks/2095.83e67e3882f4691b.js"
+    ]
+  },
+  "pages\\GameDetailPage.tsx -> ./ItalianNeuroAnimalsPage": {
+    "id": 58797,
+    "files": [
+      "static/chunks/3558.fc5b17433e323b77.js",
+      "static/chunks/8797.0dd0399401ff30ee.js"
+    ]
+  },
+  "pages\\GameDetailPage.tsx -> ./KartBrosPage": {
+    "id": 63889,
+    "files": [
+      "static/chunks/7040.880cd99bfaa918a4.js",
+      "static/chunks/3889.3ee76678201f574d.js"
+    ]
+  },
+  "pages\\GameDetailPage.tsx -> ./LasSisStealBrainrotPage": {
+    "id": 47966,
+    "files": [
+      "static/chunks/4597.0444632ed583d392.js",
+      "static/chunks/7966.f9032cbb74ad0f7f.js"
+    ]
+  },
+  "pages\\GameDetailPage.tsx -> ./LittleBigSnakePage": {
+    "id": 9519,
+    "files": [
+      "static/chunks/6802.9366807ed8aac896.js",
+      "static/chunks/9519.896b347cf3da5582.js"
+    ]
+  },
+  "pages\\GameDetailPage.tsx -> ./MemoryBrainrotPage": {
+    "id": 64615,
+    "files": [
+      "static/chunks/1026.a6d41d94d5214b5c.js",
+      "static/chunks/4615.342d7f6d4d4a39bf.js"
+    ]
+  },
+  "pages\\GameDetailPage.tsx -> ./ObbyMySingingBrainrotPage": {
+    "id": 58935,
+    "files": [
+      "static/chunks/444.810e533ff1a1c89b.js",
+      "static/chunks/8935.31ad8595f7bcf19b.js"
+    ]
+  },
+  "pages\\GameDetailPage.tsx -> ./PerfectOrbitPage": {
+    "id": 35368,
+    "files": [
+      "static/chunks/3813.ef987b5380bbfc97.js",
+      "static/chunks/5368.404f681bf0613f11.js"
+    ]
+  },
+  "pages\\GameDetailPage.tsx -> ./PlantsVsBrainrotsPage": {
+    "id": 8546,
+    "files": [
+      "static/chunks/5449.1cb8029715732bd2.js",
+      "static/chunks/8546.b43eb2e19110d3cb.js"
+    ]
+  },
+  "pages\\GameDetailPage.tsx -> ./RocketFortressPage": {
+    "id": 28131,
+    "files": [
+      "static/chunks/3114.8e1a2e0287fb1e8b.js",
+      "static/chunks/8131.19e82fd457e81ed4.js"
+    ]
+  },
+  "pages\\GameDetailPage.tsx -> ./SmashKartsPage": {
+    "id": 42992,
+    "files": [
+      "static/chunks/5765.537a48b2b77081da.js",
+      "static/chunks/2992.df537b174a9e3fa4.js"
+    ]
+  },
+  "pages\\GameDetailPage.tsx -> ./StealBrainrotNewAnimalsPage": {
+    "id": 94310,
+    "files": [
+      "static/chunks/8569.fb443054e2a4d6fc.js",
+      "static/chunks/1929.cf8a5d29d68977a2.js"
+    ]
+  },
+  "pages\\GameDetailPage.tsx -> ./StealTheItalianBrainrotPage": {
+    "id": 22532,
+    "files": [
+      "static/chunks/3443.4856830fe5c4a058.js",
+      "static/chunks/2532.b14b54f3a6285560.js"
+    ]
+  }
+}

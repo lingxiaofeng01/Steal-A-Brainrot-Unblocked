@@ -1,3 +1,5 @@
+'use client';
+
 import { useState } from 'react';
 import { Menu, X, Home, Gamepad2, Star, Brain, Smile, Laugh } from 'lucide-react';
 import { Link } from './Link';
@@ -77,12 +79,6 @@ export default function Sidebar() {
               </Link>
             ))}
           </nav>
-
-          {/* Footer */}
-          <div className="px-4 text-center border-t border-rose-600 pt-4 mt-4">
-            <p className="text-white text-xs opacity-90 font-medium">© 2025</p>
-            <p className="text-white text-xs opacity-75 mt-1">All Rights Reserved</p>
-          </div>
         </div>
       </aside>
     </>

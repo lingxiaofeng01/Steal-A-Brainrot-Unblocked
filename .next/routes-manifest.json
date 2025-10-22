@@ -1,0 +1,496 @@
+{
+  "version": 3,
+  "pages404": true,
+  "caseSensitive": false,
+  "basePath": "",
+  "redirects": [
+    {
+      "source": "/:path+/",
+      "destination": "/:path+",
+      "internal": true,
+      "statusCode": 308,
+      "regex": "^(?:/((?:[^/]+?)(?:/(?:[^/]+?))*))/$"
+    }
+  ],
+  "headers": [],
+  "rewrites": {
+    "beforeFiles": [],
+    "afterFiles": [],
+    "fallback": []
+  },
+  "dynamicRoutes": [
+    {
+      "page": "/tag/[tag]",
+      "regex": "^/tag/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPtag": "nxtPtag"
+      },
+      "namedRegex": "^/tag/(?<nxtPtag>[^/]+?)(?:/)?$"
+    },
+    {
+      "page": "/[slug]",
+      "regex": "^/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPslug": "nxtPslug"
+      },
+      "namedRegex": "^/(?<nxtPslug>[^/]+?)(?:/)?$"
+    }
+  ],
+  "staticRoutes": [
+    {
+      "page": "/",
+      "regex": "^/(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/(?:/)?$"
+    },
+    {
+      "page": "/_not-found",
+      "regex": "^/_not\\-found(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/_not\\-found(?:/)?$"
+    },
+    {
+      "page": "/1v1LolPage",
+      "regex": "^/1v1LolPage(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/1v1LolPage(?:/)?$"
+    },
+    {
+      "page": "/3d",
+      "regex": "^/3d(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/3d(?:/)?$"
+    },
+    {
+      "page": "/about",
+      "regex": "^/about(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/about(?:/)?$"
+    },
+    {
+      "page": "/AboutUsPage",
+      "regex": "^/AboutUsPage(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/AboutUsPage(?:/)?$"
+    },
+    {
+      "page": "/action",
+      "regex": "^/action(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/action(?:/)?$"
+    },
+    {
+      "page": "/ActionTagPage",
+      "regex": "^/ActionTagPage(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/ActionTagPage(?:/)?$"
+    },
+    {
+      "page": "/AdventureTagPage",
+      "regex": "^/AdventureTagPage(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/AdventureTagPage(?:/)?$"
+    },
+    {
+      "page": "/all",
+      "regex": "^/all(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/all(?:/)?$"
+    },
+    {
+      "page": "/ArcadeTagPage",
+      "regex": "^/ArcadeTagPage(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/ArcadeTagPage(?:/)?$"
+    },
+    {
+      "page": "/BattleTagPage",
+      "regex": "^/BattleTagPage(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/BattleTagPage(?:/)?$"
+    },
+    {
+      "page": "/BlockyRushPage",
+      "regex": "^/BlockyRushPage(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/BlockyRushPage(?:/)?$"
+    },
+    {
+      "page": "/BrainrotClickerPage",
+      "regex": "^/BrainrotClickerPage(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/BrainrotClickerPage(?:/)?$"
+    },
+    {
+      "page": "/BrainrotHookSwingPage",
+      "regex": "^/BrainrotHookSwingPage(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/BrainrotHookSwingPage(?:/)?$"
+    },
+    {
+      "page": "/BrainrotTagPage",
+      "regex": "^/BrainrotTagPage(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/BrainrotTagPage(?:/)?$"
+    },
+    {
+      "page": "/BrainTagPage",
+      "regex": "^/BrainTagPage(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/BrainTagPage(?:/)?$"
+    },
+    {
+      "page": "/BroRoyalePage",
+      "regex": "^/BroRoyalePage(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/BroRoyalePage(?:/)?$"
+    },
+    {
+      "page": "/BuildingTagPage",
+      "regex": "^/BuildingTagPage(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/BuildingTagPage(?:/)?$"
+    },
+    {
+      "page": "/CasualTagPage",
+      "regex": "^/CasualTagPage(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/CasualTagPage(?:/)?$"
+    },
+    {
+      "page": "/CategoryPage",
+      "regex": "^/CategoryPage(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/CategoryPage(?:/)?$"
+    },
+    {
+      "page": "/CheeseChompers3DPage",
+      "regex": "^/CheeseChompers3DPage(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/CheeseChompers3DPage(?:/)?$"
+    },
+    {
+      "page": "/ClickerTagPage",
+      "regex": "^/ClickerTagPage(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/ClickerTagPage(?:/)?$"
+    },
+    {
+      "page": "/contact",
+      "regex": "^/contact(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/contact(?:/)?$"
+    },
+    {
+      "page": "/ContactUsPage",
+      "regex": "^/ContactUsPage(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/ContactUsPage(?:/)?$"
+    },
+    {
+      "page": "/copyright",
+      "regex": "^/copyright(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/copyright(?:/)?$"
+    },
+    {
+      "page": "/CopyrightPage",
+      "regex": "^/CopyrightPage(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/CopyrightPage(?:/)?$"
+    },
+    {
+      "page": "/CrazyCattle3DPage",
+      "regex": "^/CrazyCattle3DPage(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/CrazyCattle3DPage(?:/)?$"
+    },
+    {
+      "page": "/CrazyCattle3DUnblockedPage",
+      "regex": "^/CrazyCattle3DUnblockedPage(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/CrazyCattle3DUnblockedPage(?:/)?$"
+    },
+    {
+      "page": "/CrazySheep3DPage",
+      "regex": "^/CrazySheep3DPage(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/CrazySheep3DPage(?:/)?$"
+    },
+    {
+      "page": "/CrazySprunki3DPage",
+      "regex": "^/CrazySprunki3DPage(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/CrazySprunki3DPage(?:/)?$"
+    },
+    {
+      "page": "/FixDaBrainrotPage",
+      "regex": "^/FixDaBrainrotPage(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/FixDaBrainrotPage(?:/)?$"
+    },
+    {
+      "page": "/FixDaBrainrotPageNew",
+      "regex": "^/FixDaBrainrotPageNew(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/FixDaBrainrotPageNew(?:/)?$"
+    },
+    {
+      "page": "/FunnyTagPage",
+      "regex": "^/FunnyTagPage(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/FunnyTagPage(?:/)?$"
+    },
+    {
+      "page": "/GameDetailPage",
+      "regex": "^/GameDetailPage(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/GameDetailPage(?:/)?$"
+    },
+    {
+      "page": "/GoodgameEmpirePage",
+      "regex": "^/GoodgameEmpirePage(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/GoodgameEmpirePage(?:/)?$"
+    },
+    {
+      "page": "/HomePage",
+      "regex": "^/HomePage(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/HomePage(?:/)?$"
+    },
+    {
+      "page": "/HomePage.simple",
+      "regex": "^/HomePage\\.simple(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/HomePage\\.simple(?:/)?$"
+    },
+    {
+      "page": "/hot",
+      "regex": "^/hot(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/hot(?:/)?$"
+    },
+    {
+      "page": "/IdleTagPage",
+      "regex": "^/IdleTagPage(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/IdleTagPage(?:/)?$"
+    },
+    {
+      "page": "/IOTagPage",
+      "regex": "^/IOTagPage(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/IOTagPage(?:/)?$"
+    },
+    {
+      "page": "/ItalianBrainrotBabyClickerPage",
+      "regex": "^/ItalianBrainrotBabyClickerPage(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/ItalianBrainrotBabyClickerPage(?:/)?$"
+    },
+    {
+      "page": "/ItalianBrainrotClicker2Page",
+      "regex": "^/ItalianBrainrotClicker2Page(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/ItalianBrainrotClicker2Page(?:/)?$"
+    },
+    {
+      "page": "/ItalianNeuroAnimalsPage",
+      "regex": "^/ItalianNeuroAnimalsPage(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/ItalianNeuroAnimalsPage(?:/)?$"
+    },
+    {
+      "page": "/KartBrosPage",
+      "regex": "^/KartBrosPage(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/KartBrosPage(?:/)?$"
+    },
+    {
+      "page": "/LasSisStealBrainrotPage",
+      "regex": "^/LasSisStealBrainrotPage(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/LasSisStealBrainrotPage(?:/)?$"
+    },
+    {
+      "page": "/LittleBigSnakePage",
+      "regex": "^/LittleBigSnakePage(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/LittleBigSnakePage(?:/)?$"
+    },
+    {
+      "page": "/MemeTagPage",
+      "regex": "^/MemeTagPage(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/MemeTagPage(?:/)?$"
+    },
+    {
+      "page": "/MemoryBrainrotPage",
+      "regex": "^/MemoryBrainrotPage(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/MemoryBrainrotPage(?:/)?$"
+    },
+    {
+      "page": "/MultiplayerTagPage",
+      "regex": "^/MultiplayerTagPage(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/MultiplayerTagPage(?:/)?$"
+    },
+    {
+      "page": "/ObbyMySingingBrainrotPage",
+      "regex": "^/ObbyMySingingBrainrotPage(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/ObbyMySingingBrainrotPage(?:/)?$"
+    },
+    {
+      "page": "/OneLOLPage",
+      "regex": "^/OneLOLPage(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/OneLOLPage(?:/)?$"
+    },
+    {
+      "page": "/PerfectOrbitPage",
+      "regex": "^/PerfectOrbitPage(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/PerfectOrbitPage(?:/)?$"
+    },
+    {
+      "page": "/PlantsVsBrainrotsPage",
+      "regex": "^/PlantsVsBrainrotsPage(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/PlantsVsBrainrotsPage(?:/)?$"
+    },
+    {
+      "page": "/privacy",
+      "regex": "^/privacy(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/privacy(?:/)?$"
+    },
+    {
+      "page": "/PrivacyPolicyPage",
+      "regex": "^/PrivacyPolicyPage(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/PrivacyPolicyPage(?:/)?$"
+    },
+    {
+      "page": "/puzzle",
+      "regex": "^/puzzle(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/puzzle(?:/)?$"
+    },
+    {
+      "page": "/PuzzleTagPage",
+      "regex": "^/PuzzleTagPage(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/PuzzleTagPage(?:/)?$"
+    },
+    {
+      "page": "/RacingTagPage",
+      "regex": "^/RacingTagPage(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/RacingTagPage(?:/)?$"
+    },
+    {
+      "page": "/RobloxTagPage",
+      "regex": "^/RobloxTagPage(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/RobloxTagPage(?:/)?$"
+    },
+    {
+      "page": "/RocketFortressPage",
+      "regex": "^/RocketFortressPage(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/RocketFortressPage(?:/)?$"
+    },
+    {
+      "page": "/search",
+      "regex": "^/search(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/search(?:/)?$"
+    },
+    {
+      "page": "/SearchPage",
+      "regex": "^/SearchPage(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/SearchPage(?:/)?$"
+    },
+    {
+      "page": "/ShooterTagPage",
+      "regex": "^/ShooterTagPage(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/ShooterTagPage(?:/)?$"
+    },
+    {
+      "page": "/SmashKartsPage",
+      "regex": "^/SmashKartsPage(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/SmashKartsPage(?:/)?$"
+    },
+    {
+      "page": "/StealBrainrotNewAnimalsPage",
+      "regex": "^/StealBrainrotNewAnimalsPage(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/StealBrainrotNewAnimalsPage(?:/)?$"
+    },
+    {
+      "page": "/StealBrainrotOnlinePage",
+      "regex": "^/StealBrainrotOnlinePage(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/StealBrainrotOnlinePage(?:/)?$"
+    },
+    {
+      "page": "/StealTheItalianBrainrotPage",
+      "regex": "^/StealTheItalianBrainrotPage(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/StealTheItalianBrainrotPage(?:/)?$"
+    },
+    {
+      "page": "/StrategyTagPage",
+      "regex": "^/StrategyTagPage(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/StrategyTagPage(?:/)?$"
+    },
+    {
+      "page": "/TagPage",
+      "regex": "^/TagPage(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/TagPage(?:/)?$"
+    },
+    {
+      "page": "/terms",
+      "regex": "^/terms(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/terms(?:/)?$"
+    },
+    {
+      "page": "/TermsOfUsePage",
+      "regex": "^/TermsOfUsePage(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/TermsOfUsePage(?:/)?$"
+    },
+    {
+      "page": "/ThreeDTagPage",
+      "regex": "^/ThreeDTagPage(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/ThreeDTagPage(?:/)?$"
+    }
+  ],
+  "dataRoutes": [],
+  "rsc": {
+    "header": "rsc",
+    "varyHeader": "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch",
+    "prefetchHeader": "next-router-prefetch",
+    "didPostponeHeader": "x-nextjs-postponed",
+    "contentTypeHeader": "text/x-component",
+    "suffix": ".rsc",
+    "prefetchSuffix": ".prefetch.rsc",
+    "prefetchSegmentHeader": "next-router-segment-prefetch",
+    "prefetchSegmentSuffix": ".segment.rsc",
+    "prefetchSegmentDirSuffix": ".segments"
+  },
+  "rewriteHeaders": {
+    "pathHeader": "x-nextjs-rewritten-path",
+    "queryHeader": "x-nextjs-rewritten-query"
+  }
+}

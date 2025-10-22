@@ -96,26 +96,70 @@ export async function getGamesByCategory(categorySlug: string): Promise<Game[]> 
 }
 
 export async function searchGames(query: string): Promise<Game[]> {
-  const searchQuery = query.trim().toLowerCase();
+  const searchQuery = query.trim();
 
-  const { data: games, error } = await supabase
-    .from('games')
-    .select('*')
-    .eq('is_active', true)
-    .or(`title.ilike.%${searchQuery}%,description.ilike.%${searchQuery}%`)
-    .order('play_count', { ascending: false })
-    .limit(20);
-
-  if (error) {
-    console.error('Error searching games:', error);
+  if (!searchQuery) {
     return [];
   }
 
-  const gamesWithRelations = await Promise.all(
-    (games || []).map(game => enrichGameData(game))
-  );
+  try {
+    // 首先尝试按标题搜索
+    const { data: games, error } = await supabase
+      .from('games')
+      .select('*')
+      .eq('is_active', true)
+      .ilike('title', `%${searchQuery}%`)
+      .order('play_count', { ascending: false })
+      .limit(20);
 
-  return gamesWithRelations;
+    if (error) {
+      console.error('Error searching games by title:', {
+        message: error.message,
+        code: error.code,
+        details: error.details,
+        hint: error.hint,
+        query: searchQuery
+      });
+
+      // 如果标题搜索失败，尝试按描述搜索
+      const { data: descGames, error: descError } = await supabase
+        .from('games')
+        .select('*')
+        .eq('is_active', true)
+        .ilike('description', `%${searchQuery}%`)
+        .order('play_count', { ascending: false })
+        .limit(20);
+
+      if (descError) {
+        console.error('Error searching by description:', {
+          message: descError.message,
+          code: descError.code,
+          details: descError.details,
+          hint: descError.hint,
+          query: searchQuery
+        });
+        return [];
+      }
+
+      const gamesWithRelations = await Promise.all(
+        (descGames || []).map(game => enrichGameData(game))
+      );
+      return gamesWithRelations;
+    }
+
+    const gamesWithRelations = await Promise.all(
+      (games || []).map(game => enrichGameData(game))
+    );
+
+    return gamesWithRelations;
+  } catch (error) {
+    console.error('Search error:', {
+      error,
+      message: error instanceof Error ? error.message : String(error),
+      query
+    });
+    return [];
+  }
 }
 
 export async function getAllCategories() {

@@ -1,0 +1,197 @@
+/* Font 优化 CSS */
+
+/* 1. 系统字体栈 - 快速加载 */
+:root {
+  --font-system: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  
+  /* Google Fonts 备用 */
+  --font-inter: 'Inter', var(--font-system);
+}
+
+/* 2. 字体显示优化 - 防止 CLS */
+body {
+  font-family: var(--font-inter);
+  font-display: swap; /* 关键！防止字体加载阻塞 */
+  
+  /* 性能优化 */
+  font-feature-settings: 'kern' 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  
+  /* 防止字体闪烁 */
+  text-rendering: optimizeLegibility;
+}
+
+/* 3. 标题字体优化 */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-inter);
+  font-weight: 700;
+  font-display: swap;
+  
+  /* 防止 CLS */
+  line-height: 1.2;
+}
+
+/* 4. 按钮和交互元素 */
+button, a, input, select, textarea {
+  font-family: var(--font-inter);
+  font-display: swap;
+}
+
+/* 5. 代码字体 */
+code, pre, kbd, samp {
+  font-family: 'Menlo', 'Monaco', 'Courier New', monospace;
+  font-display: swap;
+}
+
+/* 6. 字体加载状态 */
+.font-loading {
+  /* 使用系统字体 */
+  font-family: var(--font-system);
+}
+
+.font-loaded {
+  /* 使用 Google Fonts */
+  font-family: var(--font-inter);
+  animation: fontFadeIn 0.3s ease-in-out;
+}
+
+@keyframes fontFadeIn {
+  from {
+    opacity: 0.95;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* 7. 响应式字体大小 */
+@media (max-width: 640px) {
+  body {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  
+  h1 {
+    font-size: 24px;
+  }
+  
+  h2 {
+    font-size: 20px;
+  }
+  
+  h3 {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 641px) and (max-width: 1024px) {
+  body {
+    font-size: 15px;
+    line-height: 1.6;
+  }
+  
+  h1 {
+    font-size: 32px;
+  }
+  
+  h2 {
+    font-size: 24px;
+  }
+  
+  h3 {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 1025px) {
+  body {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  
+  h1 {
+    font-size: 40px;
+  }
+  
+  h2 {
+    font-size: 28px;
+  }
+  
+  h3 {
+    font-size: 22px;
+  }
+}
+
+/* 8. 减少动画偏好 */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* 9. 深色模式字体优化 */
+@media (prefers-color-scheme: dark) {
+  body {
+    /* 深色模式下增加字体权重以提高可读性 */
+    font-weight: 400;
+    letter-spacing: 0.3px;
+  }
+}
+
+/* 10. 高对比度模式 */
+@media (prefers-contrast: more) {
+  body {
+    /* 高对比度模式下增加字体权重 */
+    font-weight: 500;
+    letter-spacing: 0.5px;
+  }
+}
+
+/* 11. 打印样式 */
+@media print {
+  body {
+    font-family: 'Georgia', 'Times New Roman', serif;
+    font-size: 12pt;
+    line-height: 1.5;
+  }
+}
+
+/* 12. 字体加载性能 */
+@supports (font-display: swap) {
+  @font-face {
+    font-family: 'Inter';
+    font-display: swap;
+  }
+}
+
+/* 13. 防止字体闪烁 - FOUT 优化 */
+.text-loading {
+  font-family: var(--font-system);
+  opacity: 0.95;
+}
+
+.text-loaded {
+  font-family: var(--font-inter);
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+}
+
+/* 14. 字体变体优化 */
+body {
+  font-variant-ligatures: common-ligatures;
+  font-variant-numeric: proportional-nums;
+}
+
+/* 15. 低带宽模式 */
+@media (prefers-reduced-data: reduce) {
+  @font-face {
+    font-family: 'Inter';
+    font-display: fallback;
+  }
+}
+

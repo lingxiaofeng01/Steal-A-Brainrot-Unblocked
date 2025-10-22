@@ -1,8 +1,10 @@
-import { useState } from 'react';
+'use client';
+
+import { useState, useEffect } from 'react';
 import Layout from '../components/Layout';
 import { isRealGame } from '../data/games';
 import NewBadge from '../components/NewBadge';
-import { getAllGames, getHotGames } from '../utils/gameUtils';
+import { getNewGames, getHotGames } from '../utils/gameUtils';
 
 interface CategoryPageProps {
   slug: string;
@@ -10,6 +12,25 @@ interface CategoryPageProps {
 
 export default function CategoryPage({ slug }: CategoryPageProps) {
   const [currentPage, setCurrentPage] = useState(1);
+
+  // 从 URL 查询参数读取页码
+  useEffect(() => {
+    const params = new URLSearchParams(window.location.search);
+    const page = parseInt(params.get('page') || '1', 10);
+    setCurrentPage(Math.max(1, page));
+  }, []);
+
+  // 当页码改变时更新 URL
+  const handlePageChange = (page: number) => {
+    setCurrentPage(page);
+    const url = new URL(window.location.href);
+    if (page === 1) {
+      url.searchParams.delete('page');
+    } else {
+      url.searchParams.set('page', page.toString());
+    }
+    window.history.replaceState({}, '', url.toString());
+  };
 
   // 分类信息配置
   const categoryConfig: Record<string, { name: string; emoji: string; description: string }> = {
@@ -53,16 +74,19 @@ export default function CategoryPage({ slug }: CategoryPageProps) {
   const category = categoryConfig[slug] || categoryConfig.all;
 
   // 根据分类获取游戏数据
-  const placeholderGames = slug === 'hot' ? getHotGames() : getAllGames();
+  // - Hot Games: 按播放量降序，显示所有游戏
+  // - New Games (all): 按发布日期降序，显示所有游戏
+  const allGames = slug === 'hot' ? getHotGames(100) : getNewGames(undefined, 100);
+
+  // 分页逻辑：每页显示18个游戏
+  const gamesPerPage = 18;
+  const totalPages = Math.ceil(allGames.length / gamesPerPage);
+  const startIndex = (currentPage - 1) * gamesPerPage;
+  const placeholderGames = allGames.slice(startIndex, startIndex + gamesPerPage);
 
   return (
-    <Layout>
+    <>
       <div className="min-h-screen bg-pink-50">
-        {/* 顶部广告位 */}
-        <div className="bg-gradient-to-r from-cyan-400 to-blue-500 py-2 text-center">
-          <p className="text-white text-sm font-semibold">Advert | Game#8</p>
-        </div>
-
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
           {/* 分类标题 */}
           <div className="bg-gradient-to-r from-orange-200 to-amber-200 rounded-xl p-4 mb-6 border-2 border-orange-300">
@@ -106,33 +130,37 @@ export default function CategoryPage({ slug }: CategoryPageProps) {
             </div>
 
             {/* 分页 */}
-            <div className="flex justify-center items-center gap-2 mb-8">
-                <button
-                  onClick={() => setCurrentPage(Math.max(1, currentPage - 1))}
-                  className="w-10 h-10 rounded-full bg-orange-200 hover:bg-orange-300 flex items-center justify-center font-bold text-gray-700 transition-colors"
-                >
-                  ‹
-                </button>
-                {[1, 2, 3, 4, 5].map((page) => (
+            {totalPages > 1 && (
+              <div className="flex justify-center items-center gap-2 mb-8">
                   <button
-                    key={page}
-                    onClick={() => setCurrentPage(page)}
-                    className={`w-10 h-10 rounded-full flex items-center justify-center font-bold transition-colors ${
-                      currentPage === page
-                        ? 'bg-orange-400 text-white'
-                        : 'bg-orange-200 hover:bg-orange-300 text-gray-700'
-                    }`}
+                    onClick={() => handlePageChange(Math.max(1, currentPage - 1))}
+                    disabled={currentPage === 1}
+                    className="w-10 h-10 rounded-full bg-orange-200 hover:bg-orange-300 disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center font-bold text-gray-700 transition-colors"
                   >
-                    {page}
+                    ‹
                   </button>
-                ))}
-                <button
-                  onClick={() => setCurrentPage(Math.min(5, currentPage + 1))}
-                  className="w-10 h-10 rounded-full bg-orange-200 hover:bg-orange-300 flex items-center justify-center font-bold text-gray-700 transition-colors"
-                >
-                  ›
-                </button>
-            </div>
+                  {Array.from({ length: totalPages }, (_, i) => i + 1).map((page) => (
+                    <button
+                      key={page}
+                      onClick={() => handlePageChange(page)}
+                      className={`w-10 h-10 rounded-full flex items-center justify-center font-bold transition-colors ${
+                        currentPage === page
+                          ? 'bg-orange-400 text-white'
+                          : 'bg-orange-200 hover:bg-orange-300 text-gray-700'
+                      }`}
+                    >
+                      {page}
+                    </button>
+                  ))}
+                  <button
+                    onClick={() => handlePageChange(Math.min(totalPages, currentPage + 1))}
+                    disabled={currentPage === totalPages}
+                    className="w-10 h-10 rounded-full bg-orange-200 hover:bg-orange-300 disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center font-bold text-gray-700 transition-colors"
+                  >
+                    ›
+                  </button>
+              </div>
+            )}
 
             {/* 文字介绍板块 */}
             <div className="bg-white rounded-xl p-6 shadow-lg border-2 border-gray-200">
@@ -185,12 +213,7 @@ export default function CategoryPage({ slug }: CategoryPageProps) {
             </div>
           </div>
         </div>
-
-        {/* 底部广告位 */}
-        <div className="bg-gradient-to-r from-cyan-400 to-blue-500 py-2 text-center mt-8">
-          <p className="text-white text-sm font-semibold">Advert | Game#8</p>
-        </div>
       </div>
-    </Layout>
+    </>
   );
 }

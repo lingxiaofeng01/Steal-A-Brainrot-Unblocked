@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { MessageCircle, Send, User, Mail, AlertCircle } from 'lucide-react';
+import { MessageCircle, Send, User, Mail, AlertCircle, Star } from 'lucide-react';
 import { supabase } from '../lib/supabase';
 
 interface Comment {
@@ -8,6 +8,7 @@ interface Comment {
   comment_text: string;
   created_at: string;
   status?: string;
+  rating?: number;
 }
 
 interface CommentsProps {
@@ -19,6 +20,7 @@ export default function Comments({ gameSlug }: CommentsProps) {
   const [userName, setUserName] = useState('');
   const [userEmail, setUserEmail] = useState('');
   const [commentText, setCommentText] = useState('');
+  const [rating, setRating] = useState<number>(5);
   const [agreedTerms, setAgreedTerms] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [showCommentForm, setShowCommentForm] = useState(false);
@@ -89,6 +91,7 @@ export default function Comments({ gameSlug }: CommentsProps) {
           user_name: userName.trim(),
           user_email: userEmail.trim(),
           comment_text: commentText.trim(),
+          rating: rating,
           agreed_terms: agreedTerms,
           status: 'pending' // 默认为待审核状态
         });
@@ -99,6 +102,7 @@ export default function Comments({ gameSlug }: CommentsProps) {
       setUserName('');
       setUserEmail('');
       setCommentText('');
+      setRating(5);
       setAgreedTerms(false);
       setShowCommentForm(false);
       setLastSubmitTime(now);
@@ -236,6 +240,32 @@ export default function Comments({ gameSlug }: CommentsProps) {
               </div>
             </div>
 
+            {/* 评分 */}
+            <div>
+              <label className="block text-sm font-semibold text-gray-700 mb-2">
+                Your Rating <span className="text-red-500">*</span>
+              </label>
+              <div className="flex items-center gap-2">
+                {[1, 2, 3, 4, 5].map((star) => (
+                  <button
+                    key={star}
+                    type="button"
+                    onClick={() => setRating(star)}
+                    className="transition-transform hover:scale-110"
+                  >
+                    <Star
+                      className={`w-6 h-6 ${
+                        star <= rating
+                          ? 'text-yellow-400 fill-yellow-400'
+                          : 'text-gray-300 fill-gray-300'
+                      }`}
+                    />
+                  </button>
+                ))}
+                <span className="text-sm text-gray-600 ml-2">{rating}/5</span>
+              </div>
+            </div>
+
             {/* 同意条款复选框 */}
             <div className="flex items-start gap-3 p-4 bg-blue-50 border-2 border-blue-200 rounded-lg">
               <input
@@ -323,6 +353,24 @@ export default function Comments({ gameSlug }: CommentsProps) {
                       {formatDate(comment.created_at)}
                     </span>
                   </div>
+
+                  {/* 评分显示 */}
+                  {comment.rating && (
+                    <div className="flex items-center gap-1 mb-2">
+                      {[...Array(5)].map((_, i) => (
+                        <Star
+                          key={i}
+                          className={`w-4 h-4 ${
+                            i < comment.rating!
+                              ? 'text-yellow-400 fill-yellow-400'
+                              : 'text-gray-300 fill-gray-300'
+                          }`}
+                        />
+                      ))}
+                      <span className="text-xs text-gray-600 ml-1">{comment.rating}/5</span>
+                    </div>
+                  )}
+
                   <p className="text-gray-700 leading-relaxed">
                     {comment.comment_text}
                   </p>

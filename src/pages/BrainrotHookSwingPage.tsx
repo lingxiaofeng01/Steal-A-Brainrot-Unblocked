@@ -1,269 +1,201 @@
-import { useState } from 'react';
-import { Play, Maximize, ExternalLink, Star, MessageCircle } from 'lucide-react';
-import Layout from '../components/Layout';
-import { hasTagPage, getTagSlug } from '../utils/tagUtils';
-import GamePreview from '../components/GamePreview';
-import StarRating from '../components/StarRating';
-import Comments from '../components/Comments';
-import NewBadge from '../components/NewBadge';
-import { allGames, isRealGame } from '../data/games';
+'use client';
+
+import GameDetailTemplate from '../components/GameDetailTemplate';
 
 export default function BrainrotHookSwingPage() {
-  const [showGame, setShowGame] = useState(false);
-  const [isFullscreen, setIsFullscreen] = useState(false);
-
-  // Brainrot Hook Swing game data
   const game = {
-    title: 'Brainrot Hook Swing',
     slug: 'brainrot-hook-swing',
+    title: 'Brainrot Hook Swing',
     subtitle: 'Swing Through the Chaos!',
     description: 'Master the art of hook swinging in this fast-paced action game! Swing from platform to platform, avoid obstacles, and reach new heights in this addictive brainrot adventure!',
-    playUrl: 'https://html5.gamedistribution.com/rvvASMiM/54a667dc8d03480d9191137150cf1f88/index.html?gd_zone_config=eyJwYXJlbnRVUkwiOiJodHRwczovL3N0ZWFsLWJyYWlucm90LmlvLyIsInBhcmVudERvbWFpbiI6InN0ZWFsLWJyYWlucm90LmlvIiwidG9wRG9tYWluIjoic3RlYWwtYnJhaW5yb3QuaW8iLCJoYXNJbXByZXNzaW9uIjpmYWxzZSwibG9hZGVyRW5hYmxlZCI6dHJ1ZSwiaG9zdCI6Imh0bWw1LmdhbWVkaXN0cmlidXRpb24uY29tIiwidmVyc2lvbiI6IjEuNS4xOCJ9',
+    playUrl: '//html5.gamedistribution.com/rvvASMiM/54a667dc8d03480d9191137150cf1f88/index.html?gd_sdk_referrer_url=https%3A%2F%2Fgamedistribution.com%2Fgames%2Fbrainrot-hook-swing%2F&gd_zone_config=eyJwYXJlbnRVUkwiOiJodHRwczovL2dhbWVkaXN0cmlidXRpb24uY29tL2dhbWVzL2JyYWlucm90LWhvb2stc3dpbmcvIiwicGFyZW50RG9tYWluIjoiZ2FtZWRpc3RyaWJ1dGlvbi5jb20iLCJ0b3BEb21haW4iOiJnYW1lZGlzdHJpYnV0aW9uLmNvbSIsImhhc0ltcHJlc3Npb24iOmZhbHNlLCJsb2FkZXJFbmFibGVkIjp0cnVlLCJob3N0IjoiaHRtbDUuZ2FtZWRpc3RyaWJ1dGlvbi5jb20iLCJ2ZXJzaW9uIjoiMS41LjE4In0%253D',
     thumbnail: '/images/thumbnails/brainrot-hook-swing.jpg',
     rating: 4.7,
     playCount: 18234,
     tags: ['Brainrot', 'Action', 'Skill', 'Arcade', 'Physics'],
-    backgroundColor: 'from-orange-500 via-red-500 to-purple-500'
+    backgroundColor: 'from-orange-500 via-red-500 to-purple-500',
   };
 
-  const handlePlayClick = () => {
-    setShowGame(true);
-  };
+  const aboutContent = (
+    <div className="space-y-6">
+      <div className="bg-gradient-to-r from-orange-50 to-orange-100 border-l-4 border-orange-500 p-6 rounded-lg">
+        <p className="text-lg leading-relaxed text-gray-700">
+          <strong>Brainrot Hook Swing</strong> is a fast-paced action game that challenges you to master the art of hook swinging! You swing from platform to platform in this addictive brainrot adventure, avoid obstacles, and reach new heights. This unblocked game combines the best elements of physics-based games with engaging gameplay mechanics. Every swing requires precision and timing to succeed, making it an exciting experience for players of all skill levels. The core mechanic revolves around mastering the grappling hook to navigate through increasingly complex levels.
+        </p>
+      </div>
 
-  const handleFullscreen = () => {
-    const container = document.getElementById('game-container');
-    if (!document.fullscreenElement && container) {
-      container.requestFullscreen();
-      setIsFullscreen(true);
-    } else if (document.exitFullscreen) {
-      document.exitFullscreen();
-      setIsFullscreen(false);
-    }
-  };
+      <div className="bg-gradient-to-r from-red-50 to-red-100 border-l-4 border-red-500 p-6 rounded-lg">
+        <p className="text-lg leading-relaxed text-gray-700">
+          You'll navigate through challenging levels filled with obstacles and hazards that test your reflexes. Master the art of hook swinging by timing your swings perfectly and avoiding dangerous obstacles. The physics engine creates realistic and satisfying swinging mechanics that make every movement feel responsive and rewarding. Unlock new levels and discover increasingly challenging courses as you progress through the game. The gameplay loop keeps players engaged with constant new challenges and obstacles to overcome.
+        </p>
+      </div>
+
+      <div className="bg-gradient-to-r from-yellow-50 to-yellow-100 border-l-4 border-yellow-500 p-6 rounded-lg">
+        <p className="text-lg leading-relaxed text-gray-700">
+          The difficulty curve is well-balanced, providing constant challenges without becoming frustrating. Each level introduces new mechanics and obstacles that test your skills in different ways. The grappling hook mechanics are intuitive yet challenging to master, offering depth for competitive players. With a 4.7 rating and thousands of players, this game has proven itself as one of the best action games available online. The strategic elements reward players who learn to optimize their swinging patterns and techniques.
+        </p>
+      </div>
+
+      <div className="bg-gradient-to-r from-green-50 to-green-100 border-l-4 border-green-500 p-6 rounded-lg">
+        <p className="text-lg leading-relaxed text-gray-700">
+          The community is passionate and welcoming, creating an exciting environment for players of all skill levels. Whether you're a casual player seeking fun or a competitive gamer chasing high scores, this game delivers an unforgettable experience. The charm and humor make it a standout title in the gaming landscape. Players consistently praise the smooth controls and addictive gameplay that keeps them coming back for more. The social features allow players to compete and share their achievements with friends.
+        </p>
+      </div>
+
+      <div className="bg-gradient-to-r from-blue-50 to-blue-100 border-l-4 border-blue-500 p-6 rounded-lg">
+        <p className="text-lg leading-relaxed text-gray-700">
+          The visual design is colorful and charming, with vibrant animations that bring the game world to life. Each platform and obstacle is carefully designed to create a visually appealing experience. The sound effects and music complement the gameplay perfectly, enhancing the overall immersion. The game runs smoothly on various devices, making it accessible to everyone who wants to play. The optimization ensures consistent performance across different platforms and browsers worldwide.
+        </p>
+      </div>
+
+      <div className="bg-gradient-to-r from-purple-50 to-purple-100 border-l-4 border-purple-500 p-6 rounded-lg">
+        <p className="text-lg leading-relaxed text-gray-700">
+          Progression feels rewarding, with clear goals and achievements to unlock. The scoring system encourages players to improve their skills and compete with friends. Leaderboards showcase the best players, creating a competitive atmosphere. Regular updates keep the game fresh with new content and features that enhance the gameplay experience. The replay value is exceptional, with players constantly discovering new strategies and techniques to master.
+        </p>
+      </div>
+
+      <div className="bg-gradient-to-r from-pink-50 to-pink-100 border-l-4 border-pink-500 p-6 rounded-lg">
+        <p className="text-lg leading-relaxed text-gray-700">
+          Overall, <strong>Brainrot Hook Swing</strong> is a must-play game for action enthusiasts and casual gamers alike. The combination of skill-based gameplay, physics mechanics, and engaging level design creates a dynamic gaming environment. Whether you're looking for a quick gaming session or extended playtime, this game offers endless entertainment. Join thousands of players worldwide and experience the thrill of hook swinging today! The legacy continues to grow as more players discover this exceptional unblocked game.
+        </p>
+      </div>
+
+      <div className="bg-gradient-to-r from-cyan-50 to-cyan-100 border-l-4 border-cyan-500 p-6 rounded-lg">
+        <p className="text-lg leading-relaxed text-gray-700">
+          The success of this action game lies in its perfect balance between accessibility and challenge. New players can quickly grasp the basic mechanics, while experienced gamers find depth in mastering advanced techniques. The game's design encourages experimentation and rewards skillful play with satisfying progression. Community events and seasonal challenges keep the experience fresh and engaging. Whether you're seeking a casual gaming experience or a competitive challenge, this unblocked game delivers on all fronts with its polished mechanics and engaging content.
+        </p>
+      </div>
+
+      <div className="bg-gradient-to-r from-indigo-50 to-indigo-100 border-l-4 border-indigo-500 p-6 rounded-lg">
+        <p className="text-lg leading-relaxed text-gray-700">
+          <strong>Brainrot Hook Swing</strong> stands out in the crowded gaming market with its unique blend of mechanics and charm. The game's appeal extends across age groups and skill levels, making it a truly inclusive gaming experience. Players appreciate how <strong>Brainrot Hook Swing</strong> respects their time while offering meaningful progression. The unblocked nature of <strong>Brainrot Hook Swing</strong> means you can play anywhere, anytime without restrictions. Whether you're at school, work, or home, <strong>Brainrot Hook Swing</strong> provides instant entertainment. The game's performance optimization ensures smooth gameplay even on older devices. <strong>Brainrot Hook Swing</strong> continues to receive updates and improvements based on community feedback.
+        </p>
+      </div>
+    </div>
+  );
+
+  const howToPlayContent = (
+    <ul className="space-y-4">
+      <li className="flex gap-4">
+        <span className="text-2xl">🪝</span>
+        <div>
+          <strong className="text-lg">Master the Grappling Hook:</strong>
+          <p className="text-gray-700 mt-2">Click or tap to launch your grappling hook and attach to platforms. In this game, timing is crucial - aim for the center of each platform to ensure a secure grip and smooth swing. The hook mechanics are physics-based, so understanding momentum is key to success.</p>
+        </div>
+      </li>
+      <li className="flex gap-4">
+        <span className="text-2xl">⚡</span>
+        <div>
+          <strong className="text-lg">Build Momentum:</strong>
+          <p className="text-gray-700 mt-2">Swing back and forth to build momentum and increase your distance. The more you swing, the further you can travel. Learn to control your swinging motion for maximum distance and accuracy. Mastering momentum is essential for progressing through the levels.</p>
+        </div>
+      </li>
+      <li className="flex gap-4">
+        <span className="text-2xl">🎯</span>
+        <div>
+          <strong className="text-lg">Perfect Your Release Timing:</strong>
+          <p className="text-gray-700 mt-2">Release at the right moment to launch forward toward the next platform. Timing your release is essential for reaching distant platforms and avoiding obstacles. Practice your release timing to become a master of this challenging game.</p>
+        </div>
+      </li>
+      <li className="flex gap-4">
+        <span className="text-2xl">🚫</span>
+        <div>
+          <strong className="text-lg">Avoid Obstacles:</strong>
+          <p className="text-gray-700 mt-2">Navigate around obstacles and hazards carefully. Don't hit spikes, moving platforms, or fall off the screen. Each level introduces new challenges to overcome and obstacles to navigate strategically.</p>
+        </div>
+      </li>
+      <li className="flex gap-4">
+        <span className="text-2xl">🏆</span>
+        <div>
+          <strong className="text-lg">Reach the Goal:</strong>
+          <p className="text-gray-700 mt-2">Complete each level by reaching the goal platform. Unlock new levels and progress through increasingly difficult challenges. Compete for high scores and personal records on the leaderboards.</p>
+        </div>
+      </li>
+      <li className="flex gap-4">
+        <span className="text-2xl">📈</span>
+        <div>
+          <strong className="text-lg">Improve Your Skills:</strong>
+          <p className="text-gray-700 mt-2">Practice regularly to improve your timing and precision. Master different swinging techniques to handle various level layouts and obstacles. Becoming skilled takes dedication and consistent practice.</p>
+        </div>
+      </li>
+    </ul>
+  );
+
+  const featuresContent = (
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div className="bg-gradient-to-br from-orange-100 to-orange-50 p-6 rounded-lg border-l-4 border-orange-500">
+        <div className="flex items-center gap-3 mb-3">
+          <span className="text-3xl">🪝</span>
+          <h4 className="text-lg font-bold text-gray-800">Physics-Based Hook Mechanics</h4>
+        </div>
+        <p className="text-gray-700">Realistic grappling hook physics create satisfying and responsive swinging mechanics that feel natural and rewarding</p>
+      </div>
+
+      <div className="bg-gradient-to-br from-red-100 to-red-50 p-6 rounded-lg border-l-4 border-red-500">
+        <div className="flex items-center gap-3 mb-3">
+          <span className="text-3xl">⚡</span>
+          <h4 className="text-lg font-bold text-gray-800">Precision Timing Challenges</h4>
+        </div>
+        <p className="text-gray-700">Master the art of perfect timing to swing across platforms and reach distant goals with accuracy</p>
+      </div>
+
+      <div className="bg-gradient-to-br from-yellow-100 to-yellow-50 p-6 rounded-lg border-l-4 border-yellow-500">
+        <div className="flex items-center gap-3 mb-3">
+          <span className="text-3xl">🎯</span>
+          <h4 className="text-lg font-bold text-gray-800">Progressive Difficulty Levels</h4>
+        </div>
+        <p className="text-gray-700">Well-balanced difficulty curve with increasingly challenging levels and obstacles for all skill levels</p>
+      </div>
+
+      <div className="bg-gradient-to-br from-green-100 to-green-50 p-6 rounded-lg border-l-4 border-green-500">
+        <div className="flex items-center gap-3 mb-3">
+          <span className="text-3xl">🏆</span>
+          <h4 className="text-lg font-bold text-gray-800">High Score Competition</h4>
+        </div>
+        <p className="text-gray-700">Compete for the best distance records and personal achievements on leaderboards worldwide</p>
+      </div>
+
+      <div className="bg-gradient-to-br from-blue-100 to-blue-50 p-6 rounded-lg border-l-4 border-blue-500">
+        <div className="flex items-center gap-3 mb-3">
+          <span className="text-3xl">🎨</span>
+          <h4 className="text-lg font-bold text-gray-800">Colorful Graphics & Animation</h4>
+        </div>
+        <p className="text-gray-700">Vibrant visuals and smooth animations create an engaging and immersive gaming experience</p>
+      </div>
+
+      <div className="bg-gradient-to-br from-purple-100 to-purple-50 p-6 rounded-lg border-l-4 border-purple-500">
+        <div className="flex items-center gap-3 mb-3">
+          <span className="text-3xl">🎮</span>
+          <h4 className="text-lg font-bold text-gray-800">Smooth Controls & Responsiveness</h4>
+        </div>
+        <p className="text-gray-700">Intuitive controls that are easy to learn but challenging to master for competitive play</p>
+      </div>
+
+      <div className="bg-gradient-to-br from-pink-100 to-pink-50 p-6 rounded-lg border-l-4 border-pink-500">
+        <div className="flex items-center gap-3 mb-3">
+          <span className="text-3xl">📱</span>
+          <h4 className="text-lg font-bold text-gray-800">Cross-Platform Compatibility</h4>
+        </div>
+        <p className="text-gray-700">Play on desktop, tablet, or mobile devices with consistent performance and quality</p>
+      </div>
+
+      <div className="bg-gradient-to-br from-indigo-100 to-indigo-50 p-6 rounded-lg border-l-4 border-indigo-500">
+        <div className="flex items-center gap-3 mb-3">
+          <span className="text-3xl">🌟</span>
+          <h4 className="text-lg font-bold text-gray-800">Addictive Gameplay Loop</h4>
+        </div>
+        <p className="text-gray-700">Engaging mechanics keep players coming back for more challenges and achievements</p>
+      </div>
+    </div>
+  );
 
   return (
-    <Layout>
-      <div className="min-h-screen bg-gradient-to-br from-gray-900 via-gray-800 to-black">
-        {/* 游戏展示区 */}
-        <div className="min-h-screen flex items-center justify-center p-4 md:p-6 lg:p-8 relative">
-          {/* 背景图 */}
-          <div
-            className="absolute inset-0 bg-cover bg-center opacity-30"
-            style={{
-              backgroundImage: 'url(https://images.unsplash.com/photo-1511512578047-dfb367046420?w=1920&h=1080&fit=crop)',
-              filter: 'blur(12px)',
-            }}
-          />
-
-          {/* 渐变遮罩 */}
-          <div className="absolute inset-0 bg-gradient-to-br from-orange-600/20 via-red-600/20 to-purple-600/20" />
-
-          {/* 游戏卡片 */}
-          <div className="relative z-10 w-full max-w-6xl">
-            {!showGame ? (
-              /* 游戏预览卡片 */
-              <GamePreview
-                title={game.title}
-                description={game.description}
-                thumbnail={game.thumbnail}
-                onPlayClick={handlePlayClick}
-                backgroundColor={game.backgroundColor}
-              />
-            ) : (
-              /* 游戏播放中 */
-              <div id="game-container" className="relative bg-black rounded-3xl overflow-hidden border-4 border-cyan-400 shadow-2xl">
-                <div className="aspect-video relative">
-                  <iframe
-                    id="game"
-                    frameBorder="0"
-                    allow="autoplay"
-                    allowFullScreen
-                    seamless
-                    scrolling="no"
-                    src={game.playUrl}
-                    className="absolute inset-0 w-full h-full border-0"
-                  />
-                </div>
-                <div className="absolute top-4 right-4 flex gap-2 z-10">
-                  <button
-                    onClick={handleFullscreen}
-                    className="p-3 bg-gray-900/80 hover:bg-gray-800 rounded-lg transition-colors shadow-lg"
-                    title="Fullscreen"
-                  >
-                    <Maximize className="w-5 h-5 text-white" />
-                  </button>
-                  <a
-                    href={game.playUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="p-3 bg-gray-900/80 hover:bg-gray-800 rounded-lg transition-colors shadow-lg"
-                    title="Open in new tab"
-                  >
-                    <ExternalLink className="w-5 h-5 text-white" />
-                  </a>
-                </div>
-              </div>
-            )}
-          </div>
-        </div>
-
-        {/* 游戏介绍区 - 白色背景 */}
-        <div className="bg-white">
-          {/* 游戏标题和标签 */}
-          <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 border-t-4 border-cyan-400">
-            <div className="bg-gradient-to-r from-orange-200 to-amber-200 rounded-2xl p-6 border-4 border-cyan-400 shadow-xl">
-              <div className="flex items-start gap-6">
-                <div className="flex-shrink-0">
-                  <div className="w-20 h-20 rounded-xl overflow-hidden shadow-lg border-2 border-white">
-                    <img
-                      src={game.thumbnail}
-                      alt={game.title}
-                      className="w-full h-full object-cover"
-                    />
-                  </div>
-                </div>
-                <div className="flex-1">
-                  <h2 className="text-3xl font-bold text-gray-800 mb-2">{game.title}</h2>
-
-                  {/* Star Rating */}
-                  <div className="mb-4">
-                    <StarRating gameSlug={game.slug} />
-                  </div>
-
-                  <p className="text-gray-700 text-lg mb-4">{game.description}</p>
-                  <div className="flex flex-wrap gap-2">
-                    {game.tags.map((tag, i) => {
-                      const isClickable = hasTagPage(tag);
-                      const TagElement = isClickable ? 'a' : 'span';
-                      return (
-                        <TagElement
-                          key={i}
-                          {...(isClickable ? { href: `/tag/${getTagSlug(tag)}` } : {})}
-                          className={`px-4 py-2 bg-gray-800 text-white font-semibold rounded-full shadow-md hover:bg-gray-700 ${
-                            isClickable
-                              ? 'hover:bg-gray-700 transition-colors cursor-pointer'
-                              : 'opacity-75 cursor-default'
-                          }`}
-                        >
-                          {tag}
-                        </TagElement>
-                      );
-                    })}
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-
-          {/* 相关游戏区 */}
-          <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 border-t-4 border-cyan-400">
-            <div className="bg-gradient-to-r from-orange-200 to-amber-200 rounded-xl p-4 mb-6 border-2 border-orange-300">
-              <h2 className="text-2xl font-bold text-gray-800 flex items-center gap-2">
-                <span className="text-3xl">🎯</span>
-                More Action Games
-              </h2>
-            </div>
-            
-            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3">
-              {allGames.slice(0, 12).map((game, i) => (
-                <a
-                  key={i}
-                  href={isRealGame(game) ? `/${game.slug}` : '#'}
-                  className="group cursor-pointer block"
-                  onClick={(e) => !isRealGame(game) && e.preventDefault()}
-                >
-                  <div className={`relative aspect-square rounded-xl overflow-hidden border-3 border-gray-300 hover:border-cyan-400 transition-all duration-300 hover:scale-105 shadow-md hover:shadow-xl ${isRealGame(game) ? 'bg-white' : `bg-gradient-to-br ${game.color}`}`}>
-                    {isRealGame(game) ? (
-                      <>
-                        {game.releaseDate && <NewBadge releaseDate={game.releaseDate} />}
-                        <img
-                          src={game.image}
-                          alt={game.name}
-                          className="w-full h-full object-cover"
-                        />
-                      </>
-                    ) : (
-                      <div className="w-full h-full flex items-center justify-center text-4xl md:text-5xl">
-                        {game.emoji}
-                      </div>
-                    )}
-                  </div>
-                  <p className="text-center text-sm font-semibold text-gray-700 mt-2 truncate">{game.name}</p>
-                </a>
-              ))}
-            </div>
-          </section>
-
-          {/* 游戏详情介绍 */}
-          <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 border-t-4 border-cyan-400">
-            <div className="bg-gradient-to-br from-pink-100 via-blue-100 to-cyan-100 rounded-2xl p-8 border-4 border-cyan-400 shadow-xl">
-              <h2 className="text-3xl font-bold text-gray-800 mb-6 flex items-center gap-3">
-                <span className="text-4xl">📖</span>
-                About {game.title}
-              </h2>
-
-              <div className="space-y-6 text-gray-700">
-                <p className="text-lg leading-relaxed">
-                  Brainrot Hook Swing is an exhilarating action game that tests your reflexes and timing!
-                  Use your grappling hook to swing from platform to platform, navigate through challenging
-                  obstacles, and reach incredible heights. Perfect your swinging technique and become the
-                  ultimate hook master!
-                </p>
-
-                <div>
-                  <h3 className="text-2xl font-bold text-gray-800 mb-3">🎮 How to Play</h3>
-                  <ul className="space-y-2 ml-6">
-                    <li className="flex items-start gap-2">
-                      <span className="text-cyan-500 font-bold">•</span>
-                      <span><strong>Click/Tap:</strong> Launch your grappling hook to attach to platforms</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <span className="text-cyan-500 font-bold">•</span>
-                      <span><strong>Swing:</strong> Build momentum by swinging back and forth</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <span className="text-cyan-500 font-bold">•</span>
-                      <span><strong>Release:</strong> Let go at the right moment to launch forward</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <span className="text-cyan-500 font-bold">•</span>
-                      <span><strong>Avoid:</strong> Don't hit obstacles or fall off the screen!</span>
-                    </li>
-                  </ul>
-                </div>
-
-                <div>
-                  <h3 className="text-2xl font-bold text-gray-800 mb-3">⭐ Game Features</h3>
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                    {[
-                      { icon: '🪝', title: 'Grappling Hook', desc: 'Master the physics-based hook mechanics' },
-                      { icon: '🎯', title: 'Precision Timing', desc: 'Perfect your timing for maximum distance' },
-                      { icon: '🏆', title: 'High Scores', desc: 'Compete for the best distance records' },
-                      { icon: '🎨', title: 'Colorful Graphics', desc: 'Enjoy vibrant and smooth animations' },
-                    ].map((feature, i) => (
-                      <div key={i} className="bg-white rounded-xl p-4 shadow-md border-2 border-cyan-200">
-                        <div className="flex items-center gap-3">
-                          <span className="text-3xl">{feature.icon}</span>
-                          <div>
-                            <h4 className="font-bold text-gray-800">{feature.title}</h4>
-                            <p className="text-sm text-gray-600">{feature.desc}</p>
-                          </div>
-                        </div>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-
-          {/* Comments Section */}
-          <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 border-t-4 border-cyan-400">
-            <Comments gameSlug={game.slug} />
-          </section>
-        </div>
-      </div>
-    </Layout>
+    <GameDetailTemplate
+      game={game}
+      aboutContent={aboutContent}
+      howToPlayContent={howToPlayContent}
+      featuresContent={featuresContent}
+    />
   );
 }
 

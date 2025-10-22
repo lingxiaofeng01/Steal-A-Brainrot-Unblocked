@@ -1,18 +1,6 @@
 import { useState, useEffect } from 'react';
 import HomePage from './pages/HomePage';
 import GameDetailPage from './pages/GameDetailPage';
-import BrainrotClickerPage from './pages/BrainrotClickerPage';
-import BrainrotHookSwingPage from './pages/BrainrotHookSwingPage';
-import ItalianBrainrotBabyClickerPage from './pages/ItalianBrainrotBabyClickerPage';
-import StealTheItalianBrainrotPage from './pages/StealTheItalianBrainrotPage';
-import ObbyMySingingBrainrotPage from './pages/ObbyMySingingBrainrotPage';
-import StealBrainrotOnlinePage from './pages/StealBrainrotOnlinePage';
-import StealBrainrotNewAnimalsPage from './pages/StealBrainrotNewAnimalsPage';
-import FixDaBrainrotPage from './pages/FixDaBrainrotPage';
-import MemoryBrainrotPage from './pages/MemoryBrainrotPage';
-import ItalianBrainrotClicker2Page from './pages/ItalianBrainrotClicker2Page';
-import PlantsVsBrainrotsPage from './pages/PlantsVsBrainrotsPage';
-import CrazyCattle3DPage from './pages/CrazyCattle3DPage';
 import BrainrotTagPage from './pages/BrainrotTagPage';
 import CasualTagPage from './pages/CasualTagPage';
 import MemeTagPage from './pages/MemeTagPage';
@@ -25,6 +13,14 @@ import StrategyTagPage from './pages/StrategyTagPage';
 import AdventureTagPage from './pages/AdventureTagPage';
 import BrainTagPage from './pages/BrainTagPage';
 import ArcadeTagPage from './pages/ArcadeTagPage';
+import ActionTagPage from './pages/ActionTagPage';
+import MultiplayerTagPage from './pages/MultiplayerTagPage';
+import BattleTagPage from './pages/BattleTagPage';
+import RacingTagPage from './pages/RacingTagPage';
+import IOTagPage from './pages/IOTagPage';
+import ShooterTagPage from './pages/ShooterTagPage';
+import BuildingTagPage from './pages/BuildingTagPage';
+import ThreeDTagPage from './pages/ThreeDTagPage';
 import CategoryPage from './pages/CategoryPage';
 import SearchPage from './pages/SearchPage';
 import AboutUsPage from './pages/AboutUsPage';
@@ -92,6 +88,38 @@ const routes: Route[] = [
     component: () => <ArcadeTagPage />,
   },
   {
+    path: /^\/tag\/action$/,
+    component: () => <ActionTagPage />,
+  },
+  {
+    path: /^\/tag\/multiplayer$/,
+    component: () => <MultiplayerTagPage />,
+  },
+  {
+    path: /^\/tag\/battle$/,
+    component: () => <BattleTagPage />,
+  },
+  {
+    path: /^\/tag\/racing$/,
+    component: () => <RacingTagPage />,
+  },
+  {
+    path: /^\/tag\/io$/,
+    component: () => <IOTagPage />,
+  },
+  {
+    path: /^\/tag\/shooter$/,
+    component: () => <ShooterTagPage />,
+  },
+  {
+    path: /^\/tag\/building$/,
+    component: () => <BuildingTagPage />,
+  },
+  {
+    path: /^\/tag\/3d$/,
+    component: () => <ThreeDTagPage />,
+  },
+  {
     path: /^\/all$/,
     component: () => <CategoryPage slug="all" />,
   },
@@ -122,55 +150,6 @@ const routes: Route[] = [
   {
     path: /^\/copyright$/,
     component: () => <CopyrightPage />,
-  },
-  // 具体游戏路由（必须在通配符之前）
-  {
-    path: /^\/brainrot-clicker$/,
-    component: () => <BrainrotClickerPage />,
-  },
-  {
-    path: /^\/brainrot-hook-swing$/,
-    component: () => <BrainrotHookSwingPage />,
-  },
-  {
-    path: /^\/italian-brainrot-baby-clicker$/,
-    component: () => <ItalianBrainrotBabyClickerPage />,
-  },
-  {
-    path: /^\/steal-the-italian-brainrot$/,
-    component: () => <StealTheItalianBrainrotPage />,
-  },
-  {
-    path: /^\/obby-my-singing-brainrot$/,
-    component: () => <ObbyMySingingBrainrotPage />,
-  },
-  {
-    path: /^\/steal-brainrot-online$/,
-    component: () => <StealBrainrotOnlinePage />,
-  },
-  {
-    path: /^\/steal-brainrot-new-animals$/,
-    component: () => <StealBrainrotNewAnimalsPage />,
-  },
-  {
-    path: /^\/fix-da-brainrot$/,
-    component: () => <FixDaBrainrotPage />,
-  },
-  {
-    path: /^\/memory-brainrot$/,
-    component: () => <MemoryBrainrotPage />,
-  },
-  {
-    path: /^\/italian-brainrot-clicker-2$/,
-    component: () => <ItalianBrainrotClicker2Page />,
-  },
-  {
-    path: /^\/plants-vs-brainrots$/,
-    component: () => <PlantsVsBrainrotsPage />,
-  },
-  {
-    path: /^\/crazy-cattle-3d$/,
-    component: () => <CrazyCattle3DPage />,
   },
   // 通用游戏详情页路由（必须放在最后）
   {

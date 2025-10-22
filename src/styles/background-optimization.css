@@ -1,0 +1,151 @@
+/* 背景图片优化 CSS */
+
+/* 1. 背景图片预加载和性能优化 */
+.hero-background {
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  
+  /* 性能优化 */
+  content-visibility: auto;
+  will-change: transform;
+  
+  /* 防止闪烁 */
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  
+  /* GPU 加速 */
+  transform: translateZ(0);
+  -webkit-transform: translateZ(0);
+}
+
+/* 2. 响应式背景图片 */
+@media (max-width: 768px) {
+  .hero-background {
+    /* 移动设备禁用视差效果以提高性能 */
+    background-attachment: scroll;
+  }
+}
+
+/* 3. 减少动画偏好 */
+@media (prefers-reduced-motion: reduce) {
+  .hero-background {
+    /* 禁用视差效果 */
+    background-attachment: scroll;
+    
+    /* 禁用模糊效果 */
+    filter: none !important;
+  }
+}
+
+/* 4. 深色模式优化 */
+@media (prefers-color-scheme: dark) {
+  .hero-background {
+    /* 深色模式下增加对比度 */
+    opacity: 0.2;
+  }
+}
+
+/* 5. 高对比度模式 */
+@media (prefers-contrast: more) {
+  .hero-background {
+    /* 高对比度模式下增加不透明度 */
+    opacity: 0.5;
+  }
+}
+
+/* 6. 背景图片容器 */
+.background-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.background-container::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  z-index: -1;
+  
+  /* 性能优化 */
+  content-visibility: auto;
+  will-change: transform;
+}
+
+/* 7. 渐变遮罩优化 */
+.gradient-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  
+  /* 防止重排 */
+  contain: layout style paint;
+}
+
+/* 8. 模糊效果优化 */
+.blur-background {
+  filter: blur(12px);
+  
+  /* 性能优化 */
+  will-change: filter;
+  
+  /* 防止模糊边界问题 */
+  transform: scale(1.05);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .blur-background {
+    filter: none;
+  }
+}
+
+/* 9. 背景图片加载状态 */
+.background-loading {
+  background-color: #1f2937; /* 灰色占位符 */
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+/* 10. 背景图片加载完成 */
+.background-loaded {
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* 11. 打印样式 */
+@media print {
+  .hero-background,
+  .background-container::before {
+    display: none;
+  }
+}
+
+/* 12. 低带宽模式 */
+@media (prefers-reduced-data: reduce) {
+  .hero-background {
+    /* 禁用背景图片 */
+    background-image: none !important;
+    background-color: #1f2937;
+  }
+}
+

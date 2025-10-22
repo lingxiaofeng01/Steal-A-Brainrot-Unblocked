@@ -1,0 +1,17 @@
+{
+  "/_not-found/page": "app/_not-found/page.js",
+  "/action/page": "app/action/page.js",
+  "/3d/page": "app/3d/page.js",
+  "/about/page": "app/about/page.js",
+  "/contact/page": "app/contact/page.js",
+  "/copyright/page": "app/copyright/page.js",
+  "/all/page": "app/all/page.js",
+  "/page": "app/page.js",
+  "/hot/page": "app/hot/page.js",
+  "/privacy/page": "app/privacy/page.js",
+  "/search/page": "app/search/page.js",
+  "/puzzle/page": "app/puzzle/page.js",
+  "/[slug]/page": "app/[slug]/page.js",
+  "/tag/[tag]/page": "app/tag/[tag]/page.js",
+  "/terms/page": "app/terms/page.js"
+}

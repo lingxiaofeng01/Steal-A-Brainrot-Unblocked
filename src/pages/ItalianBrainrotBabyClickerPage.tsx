@@ -1,169 +1,194 @@
-import { useState } from 'react';
-import { Play, Maximize, ExternalLink, Star, MessageCircle } from 'lucide-react';
-import Layout from '../components/Layout';
-import { hasTagPage, getTagSlug } from '../utils/tagUtils';
-import GamePreview from '../components/GamePreview';
-import StarRating from '../components/StarRating';
-import Comments from '../components/Comments';
-import NewBadge from '../components/NewBadge';
-import { allGames, isRealGame } from '../data/games';
+'use client';
+
+import GameDetailTemplate from '../components/GameDetailTemplate';
 
 export default function ItalianBrainrotBabyClickerPage() {
-  const [showGame, setShowGame] = useState(false);
-  const [isFullscreen, setIsFullscreen] = useState(false);
-
-  // Italian Brainrot Baby Clicker game data
   const game = {
-    title: 'Italian Brainrot Baby Clicker',
     slug: 'italian-brainrot-baby-clicker',
-    subtitle: 'The Cutest Clicker Game Ever!',
-    description: 'Click on adorable Italian babies and watch your score skyrocket! Unlock upgrades, collect power-ups, and become the ultimate baby clicker champion in this hilarious and addictive game!',
-    playUrl: 'https://html5.gamedistribution.com/rvvASMiM/fe3c5c9d90f24f10a9e01cca22f5243f/index.html?gd_zone_config=eyJwYXJlbnRVUkwiOiJodHRwczovL3N0ZWFsLWJyYWlucm90LmlvLyIsInBhcmVudERvbWFpbiI6InN0ZWFsLWJyYWlucm90LmlvIiwidG9wRG9tYWluIjoic3RlYWwtYnJhaW5yb3QuaW8iLCJoYXNJbXByZXNzaW9uIjpmYWxzZSwibG9hZGVyRW5hYmxlZCI6dHJ1ZSwiaG9zdCI6Imh0bWw1LmdhbWVkaXN0cmlidXRpb24uY29tIiwidmVyc2lvbiI6IjEuNS4xOCJ9',
+    title: 'Italian Brainrot Baby Clicker',
+    subtitle: 'The Cutest Brainrot Adventure!',
+    description: 'Experience the adorable baby-themed sequel to the viral Brainrot Clicker! Tap your way through cute baby characters, collect upgrades, and enjoy colorful visuals with playful music in this unblocked baby clicker game.',
+    playUrl: 'https://files.twoplayergames.org/files/games/g1/italian-brainrot-baby-clicker/index.html',
     thumbnail: '/images/thumbnails/italian-brainrot-baby-clicker.jpg',
-    rating: 4.8,
-    playCount: 32145,
-    tags: ['Brainrot', 'Clicker', 'Funny', 'Meme', 'Casual'],
-    backgroundColor: 'from-pink-400 via-rose-400 to-red-300'
+    rating: 4.1,
+    playCount: 156234,
+    tags: ['Brainrot', 'Baby', 'Clicker', 'Idle', 'Cute'],
+    backgroundColor: 'from-pink-400 via-purple-400 to-indigo-400',
   };
 
-  const handlePlayClick = () => {
-    setShowGame(true);
-  };
+  const aboutContent = (
+    <div className="space-y-6">
+      <div className="bg-gradient-to-r from-pink-50 to-pink-100 border-l-4 border-pink-500 p-6 rounded-lg">
+        <p className="text-lg leading-relaxed text-gray-700">
+          <strong>Italian Brainrot Baby Clicker</strong> is the cutest twist on the viral Brainrot universe! This baby-themed sequel to the hit Brainrot Clicker brings adorable charm to the addictive clicking gameplay. In <strong>Italian Brainrot Baby Clicker</strong>, you'll tap your way through the baby versions of your favorite characters, collecting upgrades and enjoying a whole new atmosphere with colorful visuals, cheerful music, and fresh sound effects designed to fit the playful baby theme. The game is available exclusively on TwoPlayerGames and offers an unblocked gaming experience perfect for players of all ages. Every tap in <strong>Italian Brainrot Baby Clicker</strong> brings you closer to unlocking adorable baby characters and expanding your cute brainrot collection.
+        </p>
+      </div>
 
-  const handleFullscreen = () => {
-    const container = document.getElementById('game-container');
-    if (!document.fullscreenElement && container) {
-      container.requestFullscreen();
-      setIsFullscreen(true);
-    } else if (document.exitFullscreen) {
-      document.exitFullscreen();
-      setIsFullscreen(false);
-    }
-  };
+      <div className="bg-gradient-to-r from-purple-50 to-purple-100 border-l-4 border-purple-500 p-6 rounded-lg">
+        <p className="text-lg leading-relaxed text-gray-700">
+          The core gameplay of <strong>Italian Brainrot Baby Clicker</strong> remains true to the original Brainrot Clicker mechanics while introducing a softer, more approachable vibe. Click or tap to earn Brainrot Points in <strong>Italian Brainrot Baby Clicker</strong>, then invest those points in strategic upgrades to multiply your clicking power. <strong>Italian Brainrot Baby Clicker</strong> features an impressive upgrade system that allows you to progress through the game at your own pace. The game also includes a 2x mode for extra power, giving players the ability to boost their earnings significantly. Whether you prefer active clicking or passive progression, <strong>Italian Brainrot Baby Clicker</strong> accommodates both playstyles perfectly with its flexible gameplay mechanics.
+        </p>
+      </div>
+
+      <div className="bg-gradient-to-r from-indigo-50 to-indigo-100 border-l-4 border-indigo-500 p-6 rounded-lg">
+        <p className="text-lg leading-relaxed text-gray-700">
+          One of the most exciting features of <strong>Italian Brainrot Baby Clicker</strong> is the collection of adorable baby characters. The game features eight unique baby-themed characters including Los Tralaleritos, Los Crocodrilitos, Los Tung Tung Tungsitos, Los Chimpanzinitos, Los Liriliritos, Los Capuchinas, Los Capuchinitos, and Los Brr Brr Patapim. Each character in <strong>Italian Brainrot Baby Clicker</strong> has been redesigned with a cute, baby aesthetic that perfectly matches the game's playful theme. Unlocking characters in <strong>Italian Brainrot Baby Clicker</strong> provides both visual rewards and a sense of progression that keeps players motivated. The baby-inspired character designs in <strong>Italian Brainrot Baby Clicker</strong> feature softer shapes, pastel colors, and charming animations that make the game appealing to a wide audience.
+        </p>
+      </div>
+
+      <div className="bg-gradient-to-r from-rose-50 to-rose-100 border-l-4 border-rose-500 p-6 rounded-lg">
+        <p className="text-lg leading-relaxed text-gray-700">
+          <strong>Italian Brainrot Baby Clicker</strong> features a unique visual style that sets it apart from the original Brainrot Clicker. The game uses a softer, pastel color palette that creates a warm and inviting atmosphere perfect for the baby theme. The visuals in <strong>Italian Brainrot Baby Clicker</strong> are complemented by soothing, playful music and sound effects that enhance the overall gaming experience. Every element of <strong>Italian Brainrot Baby Clicker</strong>, from the character designs to the background music, has been carefully crafted to create a cohesive baby-themed aesthetic. The colorful visuals in <strong>Italian Brainrot Baby Clicker</strong> make the game visually appealing and engaging for players of all ages, whether you're a casual gamer or a dedicated clicker enthusiast.
+        </p>
+      </div>
+
+      <div className="bg-gradient-to-r from-amber-50 to-amber-100 border-l-4 border-amber-500 p-6 rounded-lg">
+        <p className="text-lg leading-relaxed text-gray-700">
+          <strong>Italian Brainrot Baby Clicker</strong> is optimized for both desktop and mobile browsers, ensuring a smooth experience across all devices. The game is completely free to play online with no downloads required, making it accessible to everyone. The unblocked nature of <strong>Italian Brainrot Baby Clicker</strong> means you can play it anywhere without restrictions, whether at school, work, or home. The mobile optimization in <strong>Italian Brainrot Baby Clicker</strong> allows you to enjoy the same engaging gameplay on your smartphone or tablet as you would on a desktop computer. This cross-platform compatibility makes <strong>Italian Brainrot Baby Clicker</strong> the perfect game for playing during breaks or whenever you have a few minutes to spare.
+        </p>
+      </div>
+
+      <div className="bg-gradient-to-r from-cyan-50 to-cyan-100 border-l-4 border-cyan-500 p-6 rounded-lg">
+        <p className="text-lg leading-relaxed text-gray-700">
+          <strong>Italian Brainrot Baby Clicker</strong> includes a unique 2-player mode that adds a competitive twist to the gameplay. In 2-player mode, Player 1 taps with "W" and Player 2 with the "Up Arrow" to compete for the highest score. This multiplayer feature in <strong>Italian Brainrot Baby Clicker</strong> allows you to challenge friends and see who can tap faster and earn more points. The competitive aspect of <strong>Italian Brainrot Baby Clicker</strong> adds motivation to keep playing and improving your tapping skills. Whether you're playing solo or competing with a friend, <strong>Italian Brainrot Baby Clicker</strong> provides an engaging and entertaining experience that keeps you coming back for more.
+        </p>
+      </div>
+
+      <div className="bg-gradient-to-r from-lime-50 to-lime-100 border-l-4 border-lime-500 p-6 rounded-lg">
+        <p className="text-lg leading-relaxed text-gray-700">
+          <strong>Italian Brainrot Baby Clicker</strong> is designed as a follow-up to the original Brainrot Clicker, continuing the viral fun in a new baby-themed style. The game maintains the addictive core mechanics that made Brainrot Clicker so popular while introducing fresh content and a completely new aesthetic. <strong>Italian Brainrot Baby Clicker</strong> is exclusive to TwoPlayerGames.org, offering a unique experience for fans of the platform. The game's popularity demonstrates that <strong>Italian Brainrot Baby Clicker</strong> has successfully captured the essence of what makes idle clicker games so addictive while appealing to players who prefer a cuter, more approachable gaming experience.
+        </p>
+      </div>
+
+      <div className="bg-gradient-to-r from-orange-50 to-orange-100 border-l-4 border-orange-500 p-6 rounded-lg">
+        <p className="text-lg leading-relaxed text-gray-700">
+          Whether you're a casual player seeking a fun way to pass the time or a dedicated gamer chasing high scores, <strong>Italian Brainrot Baby Clicker</strong> offers an experience that's both accessible and deeply engaging. The game's endless progression system means there's always something new to unlock and achieve in <strong>Italian Brainrot Baby Clicker</strong>. Start playing <strong>Italian Brainrot Baby Clicker</strong> today and join thousands of players worldwide who are tapping their way to adorable brainrot glory! The addictive gameplay loop of <strong>Italian Brainrot Baby Clicker</strong> will keep you entertained for hours, whether you're actively tapping or letting the game run passively. Experience the cutest idle clicker game with <strong>Italian Brainrot Baby Clicker</strong> and discover why this baby-themed adventure has become a favorite among clicker enthusiasts everywhere.
+        </p>
+      </div>
+    </div>
+  );
+  const howToPlayContent = (
+    <ul className="space-y-4">
+      <li className="flex gap-4">
+        <span className="text-2xl">👶</span>
+        <div>
+          <strong className="text-lg">Click or Tap to Earn Points:</strong>
+          <p className="text-gray-700 mt-2">Start by clicking or tapping the screen to earn your first Brainrot Points in Italian Brainrot Baby Clicker. Each tap generates points that you can use to purchase upgrades. The faster you tap, the quicker you'll accumulate points and progress through Italian Brainrot Baby Clicker.</p>
+        </div>
+      </li>
+      <li className="flex gap-4">
+        <span className="text-2xl">⬆️</span>
+        <div>
+          <strong className="text-lg">Spend Points on Upgrades:</strong>
+          <p className="text-gray-700 mt-2">As your Brainrot Points accumulate, invest them wisely in upgrades to boost your clicking power in Italian Brainrot Baby Clicker. Strategic upgrade selection in Italian Brainrot Baby Clicker is key to maximizing your progression speed and unlocking new content.</p>
+        </div>
+      </li>
+      <li className="flex gap-4">
+        <span className="text-2xl">🎀</span>
+        <div>
+          <strong className="text-lg">Unlock Adorable Baby Characters:</strong>
+          <p className="text-gray-700 mt-2">Reach specific score milestones in Italian Brainrot Baby Clicker to unlock new baby characters. Each character in Italian Brainrot Baby Clicker comes with unique visual effects that add personality to your game. Collecting all eight baby characters in Italian Brainrot Baby Clicker becomes a rewarding long-term goal.</p>
+        </div>
+      </li>
+      <li className="flex gap-4">
+        <span className="text-2xl">⚡</span>
+        <div>
+          <strong className="text-lg">Activate 2x Mode for Extra Power:</strong>
+          <p className="text-gray-700 mt-2">Use the 2x mode feature in Italian Brainrot Baby Clicker to double your earning potential temporarily. This power-up in Italian Brainrot Baby Clicker gives you a significant boost to help you progress faster through the game.</p>
+        </div>
+      </li>
+      <li className="flex gap-4">
+        <span className="text-2xl">👥</span>
+        <div>
+          <strong className="text-lg">Challenge Friends in 2-Player Mode:</strong>
+          <p className="text-gray-700 mt-2">Compete with a friend in 2-player mode in Italian Brainrot Baby Clicker. Player 1 uses "W" and Player 2 uses the "Up Arrow" to tap and compete for the highest score. The competitive aspect of Italian Brainrot Baby Clicker adds fun and motivation to keep playing.</p>
+        </div>
+      </li>
+      <li className="flex gap-4">
+        <span className="text-2xl">🏆</span>
+        <div>
+          <strong className="text-lg">Compete for High Scores:</strong>
+          <p className="text-gray-700 mt-2">Compete with players worldwide in Italian Brainrot Baby Clicker for the highest scores and bragging rights. Track your progress and compare your achievements with friends. The competitive aspect of Italian Brainrot Baby Clicker adds motivation to keep playing and improving.</p>
+        </div>
+      </li>
+    </ul>
+  );
+
+  const featuresContent = (
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div className="bg-gradient-to-br from-pink-100 to-pink-50 p-6 rounded-lg border-l-4 border-pink-500">
+        <div className="flex items-center gap-3 mb-3">
+          <span className="text-3xl">👶</span>
+          <h4 className="text-lg font-bold text-gray-800">Adorable Baby Characters</h4>
+        </div>
+        <p className="text-gray-700">Meet eight cute baby-themed characters including Los Tralaleritos and Los Crocodrilitos</p>
+      </div>
+
+      <div className="bg-gradient-to-br from-purple-100 to-purple-50 p-6 rounded-lg border-l-4 border-purple-500">
+        <div className="flex items-center gap-3 mb-3">
+          <span className="text-3xl">🎨</span>
+          <h4 className="text-lg font-bold text-gray-800">Pastel Visual Style</h4>
+        </div>
+        <p className="text-gray-700">Enjoy a softer, pastel color palette with charming animations and cute designs</p>
+      </div>
+
+      <div className="bg-gradient-to-br from-indigo-100 to-indigo-50 p-6 rounded-lg border-l-4 border-indigo-500">
+        <div className="flex items-center gap-3 mb-3">
+          <span className="text-3xl">🎵</span>
+          <h4 className="text-lg font-bold text-gray-800">Playful Music & Sounds</h4>
+        </div>
+        <p className="text-gray-700">Soothing, cheerful music and fresh sound effects perfectly match the baby theme</p>
+      </div>
+
+      <div className="bg-gradient-to-br from-rose-100 to-rose-50 p-6 rounded-lg border-l-4 border-rose-500">
+        <div className="flex items-center gap-3 mb-3">
+          <span className="text-3xl">⚡</span>
+          <h4 className="text-lg font-bold text-gray-800">2x Power Mode</h4>
+        </div>
+        <p className="text-gray-700">Activate 2x mode to double your earning potential and progress faster</p>
+      </div>
+
+      <div className="bg-gradient-to-br from-amber-100 to-amber-50 p-6 rounded-lg border-l-4 border-amber-500">
+        <div className="flex items-center gap-3 mb-3">
+          <span className="text-3xl">👥</span>
+          <h4 className="text-lg font-bold text-gray-800">2-Player Mode</h4>
+        </div>
+        <p className="text-gray-700">Challenge friends in competitive 2-player mode with unique controls</p>
+      </div>
+
+      <div className="bg-gradient-to-br from-cyan-100 to-cyan-50 p-6 rounded-lg border-l-4 border-cyan-500">
+        <div className="flex items-center gap-3 mb-3">
+          <span className="text-3xl">📱</span>
+          <h4 className="text-lg font-bold text-gray-800">Mobile Optimized</h4>
+        </div>
+        <p className="text-gray-700">Play on desktop or mobile browsers with smooth performance everywhere</p>
+      </div>
+
+      <div className="bg-gradient-to-br from-lime-100 to-lime-50 p-6 rounded-lg border-l-4 border-lime-500">
+        <div className="flex items-center gap-3 mb-3">
+          <span className="text-3xl">🎮</span>
+          <h4 className="text-lg font-bold text-gray-800">Unblocked Access</h4>
+        </div>
+        <p className="text-gray-700">Play anywhere without restrictions - perfect for school or work</p>
+      </div>
+
+      <div className="bg-gradient-to-br from-orange-100 to-orange-50 p-6 rounded-lg border-l-4 border-orange-500">
+        <div className="flex items-center gap-3 mb-3">
+          <span className="text-3xl">🆓</span>
+          <h4 className="text-lg font-bold text-gray-800">Completely Free</h4>
+        </div>
+        <p className="text-gray-700">No downloads required - play instantly online with no cost</p>
+      </div>
+    </div>
+  );
 
   return (
-    <Layout>
-      <div className="min-h-screen bg-gradient-to-br from-gray-900 via-gray-800 to-black">
-        {/* Game Display Area */}
-        <div className="min-h-screen flex items-center justify-center p-4 md:p-6 lg:p-8 relative">
-          {/* 背景图 */}
-          <div
-            className="absolute inset-0 bg-cover bg-center opacity-30"
-            style={{
-              backgroundImage: 'url(https://images.unsplash.com/photo-1515488042361-ee00e0ddd4e4?w=1920&h=1080&fit=crop)',
-              filter: 'blur(12px)',
-            }}
-          />
-
-          {/* 渐变遮罩 */}
-          <div className="absolute inset-0 bg-gradient-to-br from-pink-600/20 via-rose-600/20 to-red-600/20" />
-
-          {/* 游戏卡片 */}
-          <div className="relative z-10 w-full max-w-6xl">
-            {!showGame ? (
-              /* 游戏预览卡片 */
-              <GamePreview
-                title={game.title}
-                description={game.description}
-                thumbnail={game.thumbnail}
-                onPlayClick={handlePlayClick}
-                backgroundColor={game.backgroundColor}
-              />
-            ) : (
-              /* 游戏播放中 */
-              <div id="game-container" className="relative bg-black rounded-3xl overflow-hidden border-4 border-cyan-400 shadow-2xl">
-                <div className="aspect-video relative">
-                  <iframe
-                    id="game"
-                    frameBorder="0"
-                    allow="autoplay"
-                    allowFullScreen
-                    seamless
-                    scrolling="no"
-                    src={game.playUrl}
-                    className="absolute inset-0 w-full h-full border-0"
-                  />
-                </div>
-                <div className="absolute top-4 right-4 flex gap-2 z-10">
-                  <button
-                    onClick={handleFullscreen}
-                    className="p-3 bg-gray-900/80 hover:bg-gray-800 rounded-lg transition-colors shadow-lg"
-                    title="Fullscreen"
-                  >
-                    <Maximize className="w-5 h-5 text-white" />
-                  </button>
-                  <a
-                    href={game.playUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="p-3 bg-gray-900/80 hover:bg-gray-800 rounded-lg transition-colors shadow-lg"
-                    title="Open in new tab"
-                  >
-                    <ExternalLink className="w-5 h-5 text-white" />
-                  </a>
-                </div>
-              </div>
-            )}
-          </div>
-        </div>
-
-        {/* Game Info Section - White Background */}
-        <div className="bg-white">
-          {/* Game Title, Rating and Tags */}
-          <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 border-t-4 border-cyan-400">
-            <div className="bg-gradient-to-r from-pink-200 to-rose-200 rounded-2xl p-6 border-4 border-cyan-400 shadow-xl">
-              <div className="flex items-start gap-6">
-                <div className="flex-shrink-0">
-                  <div className="w-20 h-20 rounded-xl overflow-hidden shadow-lg border-2 border-white">
-                    <img
-                      src={game.thumbnail}
-                      alt={game.title}
-                      className="w-full h-full object-cover"
-                    />
-                  </div>
-                </div>
-                <div className="flex-1">
-                  <h2 className="text-3xl font-bold text-gray-800 mb-3">{game.title}</h2>
-
-                  {/* Star Rating */}
-                  <div className="mb-4">
-                    <StarRating gameSlug={game.slug} />
-                  </div>
-
-                  <p className="text-gray-700 text-lg mb-4">{game.description}</p>
-
-                  {/* Tags */}
-                  <div className="flex flex-wrap gap-2">
-                    {game.tags.map((tag, i) => {
-                      const isClickable = hasTagPage(tag);
-                      const TagElement = isClickable ? 'a' : 'span';
-                      return (
-                        <TagElement
-                          key={i}
-                          {...(isClickable ? { href: `/tag/${getTagSlug(tag)}` } : {})}
-                          className={`px-4 py-2 bg-gray-900 text-white font-semibold rounded-full shadow-md ${
-                            isClickable
-                              ? 'hover:bg-gray-800 transition-colors cursor-pointer'
-                              : 'opacity-75 cursor-default'
-                          }`}
-                        >
-                          {tag}
-                        </TagElement>
-                      );
-                    })}
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-
-          {/* Comments Section */}
-          <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 border-t-4 border-cyan-400">
-            <Comments gameSlug={game.slug} />
-          </section>
-        </div>
-      </div>
-    </Layout>
+    <GameDetailTemplate
+      game={game}
+      aboutContent={aboutContent}
+      howToPlayContent={howToPlayContent}
+      featuresContent={featuresContent}
+    />
   );
 }
 

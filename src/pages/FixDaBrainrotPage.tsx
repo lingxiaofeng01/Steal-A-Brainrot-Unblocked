@@ -1,305 +1,171 @@
-import { useState } from 'react';
-import { Play, Maximize, ExternalLink, Star, MessageCircle } from 'lucide-react';
-import Layout from '../components/Layout';
-import { hasTagPage, getTagSlug } from '../utils/tagUtils';
-import GamePreview from '../components/GamePreview';
-import StarRating from '../components/StarRating';
-import Comments from '../components/Comments';
-import NewBadge from '../components/NewBadge';
-import { allGames, isRealGame } from '../data/games';
+'use client';
+
+import GameDetailTemplate from '../components/GameDetailTemplate';
 
 export default function FixDaBrainrotPage() {
-  const [showGame, setShowGame] = useState(false);
-  const [isFullscreen, setIsFullscreen] = useState(false);
-
-  // Fix Da Brainrot game data
   const game = {
-    title: 'Fix Da Brainrot',
     slug: 'fix-da-brainrot',
-    subtitle: 'Jigsaw Puzzle Adventure!',
-    description: 'A jigsaw puzzle game with a unique twist! Assemble torn paper pieces to reveal delightful images. Choose 16 pieces for quick fun or 32 pieces for a brain-teasing challenge!',
-    playUrl: 'https://html5.gamedistribution.com/rvvASMiM/22cf952a825b4ee6a39d603588c6d674/index.html?gd_zone_config=eyJwYXJlbnRVUkwiOiJodHRwczovL3N0ZWFsLWJyYWlucm90LmlvLyIsInBhcmVudERvbWFpbiI6InN0ZWFsLWJyYWlucm90LmlvIiwidG9wRG9tYWluIjoic3RlYWwtYnJhaW5yb3QuaW8iLCJoYXNJbXByZXNzaW9uIjpmYWxzZSwibG9hZGVyRW5hYmxlZCI6dHJ1ZSwiaG9zdCI6Imh0bWw1LmdhbWVkaXN0cmlidXRpb24uY29tIiwidmVyc2lvbiI6IjEuNS4xOCJ9',
+    title: 'Fix Da Brainrot',
+    subtitle: 'Captivating Jigsaw Puzzle Game with Unique Torn-Paper Aesthetic!',
+    description: 'Fix Da Brainrot is a captivating jigsaw puzzle game that transforms conventional gameplay with its unique torn-paper puzzle pieces. Choose between 16 or 32 pieces, arrange and connect them to reveal beautiful images, and enjoy a delightful puzzle-solving experience that helps overcome mental clutter!',
+    playUrl: 'https://storage.y8.com/y8-studio/html5/jdchanda/fix_da_brainrot/?key=y8&value=default',
     thumbnail: '/images/thumbnails/fix-da-brainrot.jpg',
-    rating: 5.0,
-    playCount: 124,
-    tags: ['Brainrot', 'Puzzle', 'Casual', 'Brain', 'Relaxing', 'Creative'],
-    backgroundColor: 'from-yellow-400 via-orange-400 to-red-400'
+    rating: 4.6,
+    playCount: 1200000,
+    tags: ['Puzzle', 'Jigsaw', 'Brain Game', 'Casual', 'HTML5'],
+    backgroundColor: 'from-blue-400 via-purple-400 to-pink-400',
   };
 
-  const handlePlayClick = () => {
-    setShowGame(true);
-  };
+  const aboutContent = (
+    <div className="space-y-6">
+      <div className="bg-gradient-to-r from-purple-50 to-purple-100 border-l-4 border-purple-500 p-6 rounded-lg">
+        <h3 className="text-2xl font-bold text-purple-900 mb-3">🧩 What is Fix Da Brainrot?</h3>
+        <p className="text-lg text-gray-700 leading-relaxed">
+          Fix Da Brainrot is a one-of-a-kind jigsaw puzzle game that invites you to piece together visually appealing images crafted with charming torn-paper styles. This unique puzzle game offers a playful twist on classic puzzling, encouraging both casual players and puzzle enthusiasts to engage their minds and enjoy delightful puzzle-solving experiences. With its inviting graphics and easy-to-use controls, Fix Da Brainrot is designed for everyone to enjoy while sharpening their problem-solving skills and overcoming mental clutter!
+        </p>
+      </div>
 
-  const handleFullscreen = () => {
-    const container = document.getElementById('game-container');
-    if (!document.fullscreenElement && container) {
-      container.requestFullscreen();
-      setIsFullscreen(true);
-    } else if (document.exitFullscreen) {
-      document.exitFullscreen();
-      setIsFullscreen(false);
-    }
-  };
+      <div className="bg-gradient-to-r from-blue-50 to-blue-100 border-l-4 border-blue-500 p-6 rounded-lg">
+        <h3 className="text-2xl font-bold text-blue-900 mb-3">🎮 Gameplay Mechanics</h3>
+        <p className="text-lg text-gray-700 leading-relaxed">
+          Fix Da Brainrot features intuitive drag-and-drop mechanics that make puzzle assembling easy and enjoyable. Simply drag the torn-paper puzzle pieces from the side of the game board and drop them into the corresponding spots. The game's responsive controls ensure smooth gameplay, allowing you to focus on solving the puzzle rather than struggling with complicated mechanics. Each piece fits perfectly when placed correctly, providing satisfying feedback as you progress!
+        </p>
+      </div>
+
+      <div className="bg-gradient-to-r from-pink-50 to-pink-100 border-l-4 border-pink-500 p-6 rounded-lg">
+        <h3 className="text-2xl font-bold text-pink-900 mb-3">🎨 Unique Torn-Paper Aesthetic</h3>
+        <p className="text-lg text-gray-700 leading-relaxed">
+          What sets Fix Da Brainrot apart from traditional jigsaw puzzles is its distinctive torn-paper visual style. The puzzle pieces feature charming torn-paper designs that add a unique and artistic element to the gameplay. This aesthetic creates a more engaging and visually appealing experience compared to standard puzzle games. The beautiful images gradually take shape as you connect the pieces, creating a rewarding sense of accomplishment with every completed puzzle!
+        </p>
+      </div>
+
+      <div className="bg-gradient-to-r from-green-50 to-green-100 border-l-4 border-green-500 p-6 rounded-lg">
+        <h3 className="text-2xl font-bold text-green-900 mb-3">⚙️ Difficulty Levels</h3>
+        <p className="text-lg text-gray-700 leading-relaxed">
+          Fix Da Brainrot offers two difficulty levels to suit different skill levels and preferences. Choose the 16-piece puzzle for a quick and satisfying fix that's perfect for casual players and those looking for a relaxing gaming session. Alternatively, select the 32-piece challenge for a thrilling brain workout that will truly test your problem-solving abilities and puzzle-solving skills. Both difficulty levels provide engaging gameplay that keeps you entertained!
+        </p>
+      </div>
+
+      <div className="bg-gradient-to-r from-yellow-50 to-yellow-100 border-l-4 border-yellow-500 p-6 rounded-lg">
+        <h3 className="text-2xl font-bold text-yellow-900 mb-3">🧠 Mental Benefits</h3>
+        <p className="text-lg text-gray-700 leading-relaxed">
+          Playing Fix Da Brainrot offers numerous cognitive benefits beyond entertainment. The game helps improve problem-solving skills, spatial reasoning, and pattern recognition abilities. By engaging in regular puzzle-solving activities, you can enhance your mental agility and concentration. Fix Da Brainrot is designed to help overcome mental clutter and provide a therapeutic gaming experience that's both fun and beneficial for your brain health!
+        </p>
+      </div>
+
+      <div className="bg-gradient-to-r from-indigo-50 to-indigo-100 border-l-4 border-indigo-500 p-6 rounded-lg">
+        <h3 className="text-2xl font-bold text-indigo-900 mb-3">📱 Cross-Platform Compatibility</h3>
+        <p className="text-lg text-gray-700 leading-relaxed">
+          Fix Da Brainrot is optimized for both desktop and mobile devices, making it easy to play anytime, anywhere. Whether you're using a smartphone, tablet, or computer, the game adapts seamlessly to your screen size. The responsive design ensures that the puzzle pieces are easy to manipulate on any device, providing a consistent and enjoyable gaming experience across all platforms. Play Fix Da Brainrot on your preferred device without any compromises!
+        </p>
+      </div>
+
+      <div className="bg-gradient-to-r from-cyan-50 to-cyan-100 border-l-4 border-cyan-500 p-6 rounded-lg">
+        <h3 className="text-2xl font-bold text-cyan-900 mb-3">⭐ Why You'll Love Fix Da Brainrot</h3>
+        <p className="text-lg text-gray-700 leading-relaxed">
+          Fix Da Brainrot combines engaging gameplay with beautiful visuals and satisfying puzzle-solving mechanics. The game's unique torn-paper aesthetic sets it apart from other puzzle games, while the intuitive controls make it accessible to players of all ages. Whether you're looking for a quick mental break or an extended gaming session, Fix Da Brainrot delivers hours of entertainment. Start playing today and discover why puzzle enthusiasts worldwide are enjoying this captivating jigsaw puzzle game!
+        </p>
+      </div>
+    </div>
+  );
+
+  const howToPlayContent = (
+    <div className="space-y-6">
+      <div className="bg-gradient-to-r from-orange-50 to-orange-100 border-l-4 border-orange-500 p-6 rounded-lg">
+        <h3 className="text-2xl font-bold text-orange-900 mb-3">🎮 Step 1: Select Your Difficulty Level</h3>
+        <p className="text-lg text-gray-700 leading-relaxed">
+          When you start Fix Da Brainrot, you'll be presented with two difficulty options. Choose between the 16-piece puzzle for a quick and casual experience or the 32-piece puzzle for a more challenging brain workout. Your selection will determine the complexity of the puzzle and the time required to complete it. Select the difficulty level that matches your current mood and available time!
+        </p>
+      </div>
+
+      <div className="bg-gradient-to-r from-red-50 to-red-100 border-l-4 border-red-500 p-6 rounded-lg">
+        <h3 className="text-2xl font-bold text-red-900 mb-3">🧩 Step 2: Understand the Puzzle Board</h3>
+        <p className="text-lg text-gray-700 leading-relaxed">
+          The game board displays the puzzle area in the center with all the torn-paper puzzle pieces arranged on the sides. The puzzle area shows where you need to place the pieces to complete the image. Take a moment to observe the overall layout and get familiar with the game interface. Understanding the board layout will help you solve the puzzle more efficiently and enjoy the gameplay experience!
+        </p>
+      </div>
+
+      <div className="bg-gradient-to-r from-green-50 to-green-100 border-l-4 border-green-500 p-6 rounded-lg">
+        <h3 className="text-2xl font-bold text-green-900 mb-3">🎯 Step 3: Drag and Drop Puzzle Pieces</h3>
+        <p className="text-lg text-gray-700 leading-relaxed">
+          To place a puzzle piece, simply click and drag it from the side panel to the puzzle board. Position the piece where you think it belongs based on the image preview and the shape of the piece. The intuitive drag-and-drop mechanics make it easy to move pieces around. When a piece is placed correctly, it will snap into position, providing satisfying feedback that confirms your progress!
+        </p>
+      </div>
+
+      <div className="bg-gradient-to-r from-blue-50 to-blue-100 border-l-4 border-blue-500 p-6 rounded-lg">
+        <h3 className="text-2xl font-bold text-blue-900 mb-3">🔍 Step 4: Use Visual Clues</h3>
+        <p className="text-lg text-gray-700 leading-relaxed">
+          Pay attention to the colors, patterns, and shapes of the puzzle pieces to determine where they belong. The torn-paper aesthetic provides visual clues that help you match pieces together. Look for pieces with similar colors or patterns that should connect. The image gradually takes shape as you place more pieces, giving you additional context for placing remaining pieces correctly!
+        </p>
+      </div>
+
+      <div className="bg-gradient-to-r from-purple-50 to-purple-100 border-l-4 border-purple-500 p-6 rounded-lg">
+        <h3 className="text-2xl font-bold text-purple-900 mb-3">⚡ Step 5: Complete the Puzzle</h3>
+        <p className="text-lg text-gray-700 leading-relaxed">
+          Continue placing pieces until the entire puzzle is complete. As you place the final pieces, the complete image will be revealed, providing a satisfying sense of accomplishment. The game will confirm when you've successfully completed the puzzle. Celebrate your achievement and consider trying the other difficulty level for a new challenge!
+        </p>
+      </div>
+
+      <div className="bg-gradient-to-r from-pink-50 to-pink-100 border-l-4 border-pink-500 p-6 rounded-lg">
+        <h3 className="text-2xl font-bold text-pink-900 mb-3">🏆 Step 6: Enjoy Multiple Puzzles</h3>
+        <p className="text-lg text-gray-700 leading-relaxed">
+          After completing a puzzle, you can play again with different images and difficulty levels. Fix Da Brainrot offers multiple puzzles to keep you entertained for hours. Each puzzle provides a fresh challenge and an opportunity to improve your puzzle-solving skills. Replay your favorite puzzles or discover new ones to enjoy endless entertainment and mental stimulation!
+        </p>
+      </div>
+    </div>
+  );
+
+  const featuresContent = (
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div className="bg-gradient-to-br from-purple-100 to-purple-50 p-6 rounded-lg border-2 border-purple-300">
+        <h4 className="text-xl font-bold text-purple-900 mb-2">🧩 Torn-Paper Aesthetic</h4>
+        <p className="text-gray-700">Unique visual style with charming torn-paper puzzle pieces that add artistic appeal to the gameplay experience.</p>
+      </div>
+
+      <div className="bg-gradient-to-br from-blue-100 to-blue-50 p-6 rounded-lg border-2 border-blue-300">
+        <h4 className="text-xl font-bold text-blue-900 mb-2">⚙️ Two Difficulty Levels</h4>
+        <p className="text-gray-700">Choose between 16-piece and 32-piece puzzles to match your skill level and available time for gameplay.</p>
+      </div>
+
+      <div className="bg-gradient-to-br from-green-100 to-green-50 p-6 rounded-lg border-2 border-green-300">
+        <h4 className="text-xl font-bold text-green-900 mb-2">🎮 Intuitive Controls</h4>
+        <p className="text-gray-700">Easy-to-use drag-and-drop mechanics that make puzzle assembling accessible to players of all ages.</p>
+      </div>
+
+      <div className="bg-gradient-to-br from-yellow-100 to-yellow-50 p-6 rounded-lg border-2 border-yellow-300">
+        <h4 className="text-xl font-bold text-yellow-900 mb-2">📱 Mobile Optimized</h4>
+        <p className="text-gray-700">Fully responsive design that works seamlessly on smartphones, tablets, and desktop computers.</p>
+      </div>
+
+      <div className="bg-gradient-to-br from-pink-100 to-pink-50 p-6 rounded-lg border-2 border-pink-300">
+        <h4 className="text-xl font-bold text-pink-900 mb-2">🎨 Beautiful Images</h4>
+        <p className="text-gray-700">Visually appealing images that gradually reveal as you complete the puzzle for satisfying gameplay.</p>
+      </div>
+
+      <div className="bg-gradient-to-br from-indigo-100 to-indigo-50 p-6 rounded-lg border-2 border-indigo-300">
+        <h4 className="text-xl font-bold text-indigo-900 mb-2">🧠 Brain Training</h4>
+        <p className="text-gray-700">Improves problem-solving skills, spatial reasoning, and mental agility through engaging puzzle gameplay.</p>
+      </div>
+
+      <div className="bg-gradient-to-br from-cyan-100 to-cyan-50 p-6 rounded-lg border-2 border-cyan-300">
+        <h4 className="text-xl font-bold text-cyan-900 mb-2">🎯 Multiple Puzzles</h4>
+        <p className="text-gray-700">Enjoy multiple different puzzles with various images to keep you entertained for hours.</p>
+      </div>
+
+      <div className="bg-gradient-to-br from-orange-100 to-orange-50 p-6 rounded-lg border-2 border-orange-300">
+        <h4 className="text-xl font-bold text-orange-900 mb-2">✨ Free to Play</h4>
+        <p className="text-gray-700">Completely free puzzle game with no downloads, registrations, or hidden costs required.</p>
+      </div>
+    </div>
+  );
 
   return (
-    <Layout>
-      <div className="min-h-screen bg-gradient-to-br from-purple-900 via-pink-800 to-rose-900">
-        {/* Game Display Area */}
-        <div className="min-h-screen flex items-center justify-center p-4 md:p-6 lg:p-8 relative">
-          {/* 背景图 */}
-          <div
-            className="absolute inset-0 bg-cover bg-center opacity-20"
-            style={{
-              backgroundImage: 'url(https://images.unsplash.com/photo-1515488042361-ee00e0ddd4e4?w=1920&h=1080&fit=crop)',
-              filter: 'blur(12px)',
-            }}
-          />
-
-          {/* 渐变遮罩 */}
-          <div className="absolute inset-0 bg-gradient-to-br from-purple-600/20 via-pink-600/20 to-rose-600/20" />
-
-          {/* 游戏卡片 */}
-          <div className="relative z-10 w-full max-w-6xl">
-            {!showGame ? (
-              /* 游戏预览卡片 */
-              <GamePreview
-                title={game.title}
-                description={game.description}
-                thumbnail={game.thumbnail}
-                onPlayClick={handlePlayClick}
-                backgroundColor={game.backgroundColor}
-              />
-            ) : (
-              /* 游戏播放中 */
-              <div id="game-container" className="relative bg-black rounded-3xl overflow-hidden border-4 border-cyan-400 shadow-2xl">
-                <div className="aspect-video relative">
-                  <iframe
-                    id="game"
-                    frameBorder="0"
-                    allow="autoplay"
-                    allowFullScreen
-                    seamless
-                    scrolling="no"
-                    className="absolute inset-0 w-full h-full border-0"
-                    src={game.playUrl}
-                  />
-                </div>
-                <div className="absolute top-4 right-4 flex gap-2 z-10">
-                  <button
-                    onClick={handleFullscreen}
-                    className="p-3 bg-gray-900/80 hover:bg-gray-800 rounded-lg transition-colors shadow-lg"
-                    title="Fullscreen"
-                  >
-                    <Maximize className="w-5 h-5 text-white" />
-                  </button>
-                  <a
-                    href={game.playUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="p-3 bg-gray-900/80 hover:bg-gray-800 rounded-lg transition-colors shadow-lg"
-                    title="Open in new tab"
-                  >
-                    <ExternalLink className="w-5 h-5 text-white" />
-                  </a>
-                </div>
-              </div>
-            )}
-          </div>
-        </div>
-
-        {/* Game Info Section - 白色背景 */}
-        <div className="bg-white">
-          {/* 游戏标题和标签 */}
-          <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 border-t-4 border-cyan-400">
-            <div className="bg-gradient-to-r from-orange-200 to-amber-200 rounded-2xl p-6 border-4 border-cyan-400 shadow-xl">
-              <div className="flex items-start gap-6">
-                <div className="flex-shrink-0">
-                  <div className="w-20 h-20 rounded-xl overflow-hidden shadow-lg border-2 border-white">
-                    <img
-                      src={game.thumbnail}
-                      alt={game.title}
-                      className="w-full h-full object-cover"
-                    />
-                  </div>
-                </div>
-                <div className="flex-1">
-                  <h2 className="text-3xl font-bold text-gray-800 mb-2">{game.title}</h2>
-                  
-                  {/* Star Rating */}
-                  <div className="mb-4">
-                    <StarRating gameSlug={game.slug} />
-                  </div>
-                  <p className="text-gray-700 text-lg mb-4">{game.description}</p>
-                  <div className="flex flex-wrap gap-2">
-                    {game.tags.map((tag, i) => {
-                      const isClickable = hasTagPage(tag);
-                      const TagElement = isClickable ? 'a' : 'span';
-                      return (
-                        <TagElement
-                          key={i}
-                          {...(isClickable ? { href: `/tag/${getTagSlug(tag)}` } : {})}
-                          className={`px-4 py-2 bg-gray-800 text-white font-semibold rounded-full shadow-md hover:bg-gray-700 ${
-                            isClickable
-                              ? 'hover:bg-cyan-50 hover:border-cyan-500 transition-colors cursor-pointer'
-                              : 'opacity-75 cursor-default'
-                          }`}
-                        >
-                          {tag}
-                        </TagElement>
-                      );
-                    })}
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-
-          {/* Related Games */}
-          <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 border-t-4 border-cyan-400">
-            <div className="bg-gradient-to-r from-orange-200 to-amber-200 rounded-xl p-4 mb-6 border-2 border-orange-300">
-              <h2 className="text-2xl font-bold text-gray-800 flex items-center gap-2">
-                <span className="text-3xl">🎯</span>
-                More Brainrot Games
-              </h2>
-            </div>
-            
-            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3">
-              {allGames.slice(0, 12).map((game, i) => (
-                <a
-                  key={i}
-                  href={isRealGame(game) ? `/${game.slug}` : '#'}
-                  className="group cursor-pointer block"
-                  onClick={(e) => !isRealGame(game) && e.preventDefault()}
-                >
-                  <div className={`relative aspect-square rounded-xl overflow-hidden border-3 border-gray-300 hover:border-cyan-400 transition-all duration-300 hover:scale-105 shadow-md hover:shadow-xl ${isRealGame(game) ? 'bg-white' : `bg-gradient-to-br ${game.color}`}`}>
-                    {isRealGame(game) ? (
-                      <>
-                        {game.releaseDate && <NewBadge releaseDate={game.releaseDate} />}
-                        <img
-                          src={game.image}
-                          alt={game.name}
-                          className="w-full h-full object-cover"
-                        />
-                      </>
-                    ) : (
-                      <div className="w-full h-full flex items-center justify-center text-4xl md:text-5xl">
-                        {game.emoji}
-                      </div>
-                    )}
-                  </div>
-                  <p className="text-center text-sm font-semibold text-gray-700 mt-2 truncate">{game.name}</p>
-                </a>
-              ))}
-            </div>
-          </section>
-
-          {/* 游戏详细介绍 */}
-          <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 border-t-4 border-cyan-400">
-            <div className="bg-gradient-to-r from-orange-200 to-amber-200 rounded-xl p-4 mb-6 border-2 border-orange-300">
-              <h2 className="text-2xl font-bold text-gray-800 flex items-center gap-2">
-                <span className="text-3xl">📖</span>
-                About Fix Da Brainrot
-              </h2>
-            </div>
-
-            <div className="prose max-w-none">
-              <div className="bg-gray-50 rounded-xl p-6 mb-6 border-2 border-gray-200">
-                <h3 className="text-xl font-bold text-gray-800 mb-4">🧩 Game Overview</h3>
-                <p className="text-gray-700 leading-relaxed">
-                  Fix Da Brainrot is a jigsaw puzzle game that offers a unique twist on the traditional puzzle experience. With its charmingly designed pieces that resemble torn paper, players are invited to embark on a creative journey of assembling delightful images. You can choose your challenge level: opt for 16 pieces for a quick and easy fix, or tackle 32 pieces for a more complex and engaging brain teaser. As you drag, drop, and fit the pieces together, you'll watch the picture slowly come alive, transforming your puzzle-solving efforts into a satisfying experience.
-                </p>
-              </div>
-
-              <div className="bg-gray-50 rounded-xl p-6 mb-6 border-2 border-gray-200">
-                <h3 className="text-xl font-bold text-gray-800 mb-4">🎮 How to Play</h3>
-                <div className="space-y-4">
-                  <div className="flex gap-3">
-                    <span className="text-2xl flex-shrink-0">🎯</span>
-                    <div>
-                      <h4 className="font-bold text-gray-800">Mission</h4>
-                      <p className="text-gray-700">Your mission in Fix Da Brainrot is to assemble the torn pieces into a complete picture. Each completed puzzle reveals a fun and quirky image that adds to the joy of the game.</p>
-                    </div>
-                  </div>
-                  <div className="flex gap-3">
-                    <span className="text-2xl flex-shrink-0">🖱️</span>
-                    <div>
-                      <h4 className="font-bold text-gray-800">Controls</h4>
-                      <p className="text-gray-700">Use your mouse or touchpad to drag and drop the pieces. Move the torn pieces around the puzzle area until they snap into their correct positions.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div className="bg-gray-50 rounded-xl p-6 mb-6 border-2 border-gray-200">
-                <h3 className="text-xl font-bold text-gray-800 mb-4">💡 Pro Tips</h3>
-                <div className="space-y-3">
-                  <div className="bg-white p-4 rounded-lg border-2 border-pink-200">
-                    <div className="flex items-start gap-3">
-                      <span className="text-2xl">1️⃣</span>
-                      <div>
-                        <h4 className="font-bold text-gray-800">Start with the Edges</h4>
-                        <p className="text-gray-700 text-sm">Begin by locating the edge pieces and assembling the border of the puzzle. This gives you a framework to work within.</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="bg-white p-4 rounded-lg border-2 border-pink-200">
-                    <div className="flex items-start gap-3">
-                      <span className="text-2xl">2️⃣</span>
-                      <div>
-                        <h4 className="font-bold text-gray-800">Group by Color and Pattern</h4>
-                        <p className="text-gray-700 text-sm">Group pieces by color and pattern to make it easier to find the right pieces as you progress through the puzzle.</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="bg-white p-4 rounded-lg border-2 border-pink-200">
-                    <div className="flex items-start gap-3">
-                      <span className="text-2xl">3️⃣</span>
-                      <div>
-                        <h4 className="font-bold text-gray-800">Focus on One Section</h4>
-                        <p className="text-gray-700 text-sm">Focus on one section of the puzzle at a time. Completing small areas can help you visualize the overall picture better.</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="bg-white p-4 rounded-lg border-2 border-pink-200">
-                    <div className="flex items-start gap-3">
-                      <span className="text-2xl">4️⃣</span>
-                      <div>
-                        <h4 className="font-bold text-gray-800">Rotate if Needed</h4>
-                        <p className="text-gray-700 text-sm">Don't forget to rotate pieces if they don't seem to fit. Some pieces may need to be turned to match the surrounding ones.</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="bg-white p-4 rounded-lg border-2 border-pink-200">
-                    <div className="flex items-start gap-3">
-                      <span className="text-2xl">5️⃣</span>
-                      <div>
-                        <h4 className="font-bold text-gray-800">Take Breaks</h4>
-                        <p className="text-gray-700 text-sm">If you get stuck, take a break and come back with fresh eyes. Sometimes, stepping away can help you see the solution more clearly.</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div className="bg-gradient-to-r from-purple-50 to-pink-50 rounded-xl p-6 border-2 border-purple-300">
-                <h3 className="text-xl font-bold text-gray-800 mb-4">🌟 Why Play Fix Da Brainrot?</h3>
-                <p className="text-gray-700 leading-relaxed mb-4">
-                  Fix Da Brainrot is not just another puzzle game - it's an engaging experience that combines creativity with cognitive challenge. The quirky art style and the satisfying process of putting together torn paper pieces make it a delightful way to unwind.
-                </p>
-                <p className="text-gray-700 leading-relaxed">
-                  Whether you're a puzzle enthusiast or just looking for a fun way to pass the time, this game offers a perfect balance of challenge and enjoyment. Plus, the satisfaction of completing each puzzle and revealing a charming image keeps players coming back for more. Join the vibrant community of Fix Da Brainrot enthusiasts and immerse yourself in a world of creativity and fun!
-                </p>
-              </div>
-            </div>
-          </section>
-
-          {/* Comments Section */}
-          <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 border-t-4 border-cyan-400">
-            <Comments gameSlug={game.slug} />
-          </section>
-        </div>
-      </div>
-    </Layout>
+    <GameDetailTemplate
+      game={game}
+      aboutContent={aboutContent}
+      howToPlayContent={howToPlayContent}
+      featuresContent={featuresContent}
+    />
   );
 }
 

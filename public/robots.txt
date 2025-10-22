@@ -1,4 +1,92 @@
+# Robots.txt for Steal a Brainrot Unblocked
+# Last Updated: 2025-10-22
+# Purpose: Guide search engines and bots on site crawling
+
+# Default rules for all bots
 User-agent: *
 Allow: /
+Disallow: /api/
+Disallow: /.next/
+Disallow: /node_modules/
+Disallow: /search?
+Disallow: /search*
+Disallow: /_next/
+Disallow: /admin/
+Disallow: /private/
+Disallow: /*.json$
+Disallow: /*.xml$
+Disallow: /*?*sort=
+Disallow: /*?*filter=
+Disallow: /*?*page=
+Crawl-delay: 1
+Request-rate: 30/60
 
-Sitemap: https://yourdomain.com/sitemap.xml
+# Googlebot - Highest priority, no delay
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0
+Request-rate: 100/60
+
+# Google-Image-Proxy - Allow image crawling
+User-agent: Google-Image-Proxy
+Allow: /
+
+# Bingbot - Standard crawl delay
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+Request-rate: 30/60
+
+# Yahoo Slurp
+User-agent: Slurp
+Allow: /
+Crawl-delay: 1
+Request-rate: 30/60
+
+# Yandex Bot
+User-agent: YandexBot
+Allow: /
+Crawl-delay: 1
+Request-rate: 30/60
+
+# DuckDuckGo Bot
+User-agent: DuckDuckBot
+Allow: /
+Crawl-delay: 1
+
+# Block aggressive/bad bots
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: AhrefsBot-Site
+Disallow: /
+
+User-agent: SemrushBot-BA
+Disallow: /
+
+User-agent: SemrushBot-SiteAudit
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: BLEXBot
+Disallow: /
+
+User-agent: PetalBot
+Disallow: /
+
+# Sitemap locations
+Sitemap: https://www.stealabrainrotunblocked.com/sitemap.xml
+Sitemap: https://www.stealabrainrotunblocked.com/sitemap-games.xml
+Sitemap: https://www.stealabrainrotunblocked.com/sitemap-tags.xml
+Sitemap: https://www.stealabrainrotunblocked.com/sitemap-images.xml

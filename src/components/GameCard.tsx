@@ -1,4 +1,5 @@
 import { Star, Play, Clock } from 'lucide-react';
+import Image from 'next/image';
 import { Link } from './Link';
 import type { Game } from '../lib/types';
 
@@ -11,11 +12,15 @@ export default function GameCard({ game }: GameCardProps) {
     <Link href={`/${game.slug}`}>
       <div className="group relative bg-white rounded-xl overflow-hidden border-2 border-gray-200 hover:border-cyan-400 transition-all duration-300 hover:scale-[1.02] hover:shadow-xl shadow-md">
         <div className="relative aspect-[16/10] overflow-hidden">
-          <img
+          <Image
             src={game.cover}
-            alt={game.title}
+            alt={`${game.title} - Free Online Game | Play Unblocked`}
+            width={400}
+            height={250}
             className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
             loading="lazy"
+            quality={75}
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
 

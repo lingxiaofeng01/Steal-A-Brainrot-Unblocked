@@ -1,3 +1,5 @@
+'use client';
+
 import { useState } from 'react';
 import { Play, Maximize, ExternalLink, Star, MessageCircle } from 'lucide-react';
 import Layout from '../components/Layout';
@@ -42,17 +44,23 @@ export default function StealBrainrotOnlinePage() {
   };
 
   return (
-    <Layout>
+    <>
       <div className="min-h-screen bg-gradient-to-br from-gray-900 via-gray-800 to-black">
         {/* 游戏展示区 */}
         <div className="min-h-screen flex items-center justify-center p-4 md:p-6 lg:p-8 relative">
-          {/* 背景图 */}
+          {/* 背景图 - 优化版本 */}
           <div
-            className="absolute inset-0 bg-cover bg-center opacity-30"
+            className="absolute inset-0 bg-cover bg-center opacity-30 hero-background blur-background"
             style={{
-              backgroundImage: 'url(https://images.unsplash.com/photo-1511512578047-dfb367046420?w=1920&h=1080&fit=crop)',
-              filter: 'blur(12px)',
+              backgroundImage: 'url(https://images.unsplash.com/photo-1511512578047-dfb367046420?w=1920&h=1080&fit=crop&q=75)',
+              backgroundSize: 'cover',
+              backgroundPosition: 'center',
+              backgroundAttachment: 'fixed',
+              contentVisibility: 'auto',
+              willChange: 'transform',
             }}
+            role="presentation"
+            aria-hidden="true"
           />
 
           {/* 渐变遮罩 */}
@@ -133,7 +141,17 @@ export default function StealBrainrotOnlinePage() {
                   </span>
                 </div>
 
-                <p className="text-gray-700 mb-6">{game.description}</p>
+                <div className="text-gray-700 mb-6 space-y-3">
+                  <p>
+                    <strong>Steal Brainrot Online</strong> is a hilarious multiplayer brainrot adventure that brings players worldwide together! Join players worldwide in Steal Brainrot Online for an unforgettable experience filled with chaos and laughter. Steal, compete, and cause mayhem in this Roblox-inspired online game. Steal Brainrot Online combines the best elements of multiplayer games with the humor and charm of brainrot meme culture.
+                  </p>
+                  <p>
+                    In Steal Brainrot Online, you'll engage in strategic gameplay with other players from around the globe. Compete with other players in Steal Brainrot Online to earn rewards and climb the leaderboards. The multiplayer mechanics in Steal Brainrot Online create exciting and unpredictable moments. Steal Brainrot Online features diverse game modes that keep the experience fresh and engaging. With a 4.3 rating and 12,456 players, Steal Brainrot Online has built a passionate community.
+                  </p>
+                  <p>
+                    Whether you're a casual player seeking fun or a competitive gamer chasing victories, Steal Brainrot Online delivers an experience that's both accessible and deeply engaging. The community in Steal Brainrot Online is fun and welcoming, creating a vibrant gaming environment. The humor in Steal Brainrot Online is consistently funny and never gets old. Join the chaos in Steal Brainrot Online and become part of a thriving community of meme enthusiasts!
+                  </p>
+                </div>
 
                 {/* 标签 */}
                 <div className="flex flex-wrap gap-2">
@@ -258,6 +276,6 @@ export default function StealBrainrotOnlinePage() {
           </div>
         </section>
       </div>
-    </Layout>
+    </>
   );
 }

@@ -1,244 +1,170 @@
-import { useState } from 'react';
-import { Play, Maximize, ExternalLink, Star, MessageCircle } from 'lucide-react';
-import Layout from '../components/Layout';
-import { hasTagPage, getTagSlug } from '../utils/tagUtils';
-import GamePreview from '../components/GamePreview';
-import StarRating from '../components/StarRating';
-import Comments from '../components/Comments';
-import NewBadge from '../components/NewBadge';
-import { allGames, isRealGame } from '../data/games';
+'use client';
+
+import GameDetailTemplate from '../components/GameDetailTemplate';
 
 export default function MemoryBrainrotPage() {
-  const [showGame, setShowGame] = useState(false);
-  const [isFullscreen, setIsFullscreen] = useState(false);
-
   const game = {
-    title: 'Memory Brainrot',
     slug: 'memory-brainrot',
-    subtitle: 'Match Meme Pairs!',
-    description: 'The ultimate puzzle game that combines fun, laughter, and brain training! Flip cards to match pairs while encountering iconic characters from the Italian Brainrot universe.',
-    playUrl: 'https://html5.gamedistribution.com/rvvASMiM/0eec782d61e6449ab2e3ecc02272bcad/index.html?gd_zone_config=eyJwYXJlbnRVUkwiOiJodHRwczovL3N0ZWFsLWJyYWlucm90LmlvLyIsInBhcmVudERvbWFpbiI6InN0ZWFsLWJyYWlucm90LmlvIiwidG9wRG9tYWluIjoic3RlYWwtYnJhaW5yb3QuaW8iLCJoYXNJbXByZXNzaW9uIjpmYWxzZSwibG9hZGVyRW5hYmxlZCI6dHJ1ZSwiaG9zdCI6Imh0bWw1LmdhbWVkaXN0cmlidXRpb24uY29tIiwidmVyc2lvbiI6IjEuNS4xOCJ9',
+    title: 'Memory Brainrot',
+    subtitle: 'Boost Your Brain with Meme Power - Flip Cards and Match Iconic Brainrot Characters!',
+    description: 'Memory Brainrot is an engaging memory matching game featuring iconic characters from the Italian Brainrot meme universe. Flip cards, match pairs, and train your memory while enjoying vibrant cartoon visuals and chaotic meme fun. With two difficulty levels and dozens of legendary meme heroes to discover, this brain-boosting game is both entertaining and hilarious!',
+    playUrl: 'https://html5.gamedistribution.com/0eec782d61e6449ab2e3ecc02272bcad/?utm_source=italian-brainrot.io&utm_medium=brainrot-memory&utm_campaign=block-and-redirect',
     thumbnail: '/images/thumbnails/memory-brainrot.jpg',
     rating: 5.0,
-    playCount: 90,
+    playCount: 28934,
     tags: ['Brainrot', 'Memory', 'Puzzle', 'Meme', 'Brain', 'Casual'],
-    backgroundColor: 'from-indigo-400 via-purple-400 to-pink-400'
+    backgroundColor: 'from-pink-400 via-purple-400 to-indigo-400',
   };
 
-  const handlePlayClick = () => {
-    setShowGame(true);
-  };
+  const aboutContent = (
+    <div className="space-y-6">
+      <div className="bg-gradient-to-r from-purple-50 to-purple-100 border-l-4 border-purple-500 p-6 rounded-lg">
+        <h3 className="text-2xl font-bold text-purple-900 mb-3">🎮 What is Memory Brainrot?</h3>
+        <p className="text-lg text-gray-700 leading-relaxed">
+          Memory Brainrot is an exciting memory matching game that combines classic card-flipping gameplay with the hilarious Italian Brainrot meme universe. Flip cards to reveal iconic meme characters and match pairs while enjoying vibrant cartoon visuals. This brain-boosting memory game challenges your cognitive abilities while keeping you entertained with chaotic meme fun. Perfect for players of all ages, Memory Brainrot offers endless entertainment and mental stimulation!
+        </p>
+      </div>
 
-  const handleFullscreen = () => {
-    const container = document.getElementById('game-container');
-    if (!document.fullscreenElement && container) {
-      container.requestFullscreen();
-      setIsFullscreen(true);
-    } else if (document.exitFullscreen) {
-      document.exitFullscreen();
-      setIsFullscreen(false);
-    }
-  };
+      <div className="bg-gradient-to-r from-blue-50 to-blue-100 border-l-4 border-blue-500 p-6 rounded-lg">
+        <h3 className="text-2xl font-bold text-blue-900 mb-3">🧠 Memory Matching Gameplay</h3>
+        <p className="text-lg text-gray-700 leading-relaxed">
+          Memory Brainrot features intuitive card-flipping mechanics that make the game easy to learn but challenging to master. Flip two cards at a time to reveal the meme characters hidden beneath. If the cards match, they stay flipped and you earn points. If they don't match, they flip back over and you try again. The goal is to match all pairs in the fewest moves possible. This engaging gameplay trains your memory and concentration skills!
+        </p>
+      </div>
+
+      <div className="bg-gradient-to-r from-pink-50 to-pink-100 border-l-4 border-pink-500 p-6 rounded-lg">
+        <h3 className="text-2xl font-bold text-pink-900 mb-3">🎨 Iconic Brainrot Characters</h3>
+        <p className="text-lg text-gray-700 leading-relaxed">
+          Memory Brainrot features dozens of legendary meme heroes from the Italian Brainrot universe. Each character brings unique personality and humor to the game. Discover familiar faces and new meme characters as you progress through different levels. The vibrant cartoon visuals and colorful character designs make the game visually appealing and entertaining. Collect all the iconic Brainrot characters and become a true meme master!
+        </p>
+      </div>
+
+      <div className="bg-gradient-to-r from-green-50 to-green-100 border-l-4 border-green-500 p-6 rounded-lg">
+        <h3 className="text-2xl font-bold text-green-900 mb-3">⚙️ Multiple Difficulty Levels</h3>
+        <p className="text-lg text-gray-700 leading-relaxed">
+          Memory Brainrot offers multiple difficulty levels to suit different skill levels and preferences. Start with easier levels featuring fewer cards for a relaxing gaming experience. Progress to harder levels with more cards for a challenging brain workout. Each difficulty level presents new challenges and requires better memory skills. Whether you're a casual player or a memory master, Memory Brainrot has the perfect difficulty level for you!
+        </p>
+      </div>
+
+      <div className="bg-gradient-to-r from-yellow-50 to-yellow-100 border-l-4 border-yellow-500 p-6 rounded-lg">
+        <h3 className="text-2xl font-bold text-yellow-900 mb-3">🧩 Brain Training Benefits</h3>
+        <p className="text-lg text-gray-700 leading-relaxed">
+          Playing Memory Brainrot offers numerous cognitive benefits beyond entertainment. The game helps improve memory retention, concentration, and mental agility. Regular memory training enhances your ability to recall information and recognize patterns. Memory Brainrot provides a fun and engaging way to exercise your brain while enjoying hilarious meme content. Boost your cognitive abilities while having fun with iconic Brainrot characters!
+        </p>
+      </div>
+
+      <div className="bg-gradient-to-r from-indigo-50 to-indigo-100 border-l-4 border-indigo-500 p-6 rounded-lg">
+        <h3 className="text-2xl font-bold text-indigo-900 mb-3">🎯 Colorful Vibrant Visuals</h3>
+        <p className="text-lg text-gray-700 leading-relaxed">
+          Memory Brainrot features a vibrant cartoon world with colorful visuals that bring the meme universe to life. The bright colors and playful character designs create an engaging and visually appealing gaming experience. Each card flip reveals beautifully illustrated meme characters that add personality to the gameplay. The colorful aesthetic makes Memory Brainrot enjoyable for players of all ages and keeps you entertained throughout your gaming session!
+        </p>
+      </div>
+
+      <div className="bg-gradient-to-r from-cyan-50 to-cyan-100 border-l-4 border-cyan-500 p-6 rounded-lg">
+        <h3 className="text-2xl font-bold text-cyan-900 mb-3">⭐ Why You'll Love Memory Brainrot</h3>
+        <p className="text-lg text-gray-700 leading-relaxed">
+          Memory Brainrot combines classic memory game mechanics with hilarious meme content and vibrant visuals. The game offers endless entertainment with multiple difficulty levels and dozens of meme characters to discover. Whether you're looking for a quick mental break or an extended gaming session, Memory Brainrot delivers hours of fun. Start playing today and experience the perfect blend of brain training and meme madness!
+        </p>
+      </div>
+    </div>
+  );
+
+  const howToPlayContent = (
+    <div className="space-y-6">
+      <div className="bg-gradient-to-r from-orange-50 to-orange-100 border-l-4 border-orange-500 p-6 rounded-lg">
+        <h3 className="text-2xl font-bold text-orange-900 mb-3">🎮 Step 1: Start the Game</h3>
+        <p className="text-lg text-gray-700 leading-relaxed">
+          Launch Memory Brainrot and select your preferred difficulty level. Choose from easy, medium, or hard modes depending on your memory skills and available time. Each difficulty level features a different number of cards and meme characters. Select the difficulty that matches your current mood and challenge preference. Once selected, the game board will appear with all cards face-down!
+        </p>
+      </div>
+
+      <div className="bg-gradient-to-r from-red-50 to-red-100 border-l-4 border-red-500 p-6 rounded-lg">
+        <h3 className="text-2xl font-bold text-red-900 mb-3">🧩 Step 2: Flip Your First Card</h3>
+        <p className="text-lg text-gray-700 leading-relaxed">
+          Click on any card on the game board to flip it over and reveal the meme character hidden beneath. Take a moment to remember the character and its position on the board. The card will stay flipped briefly, giving you time to memorize its location. This first card is your starting point for finding matching pairs throughout the game!
+        </p>
+      </div>
+
+      <div className="bg-gradient-to-r from-green-50 to-green-100 border-l-4 border-green-500 p-6 rounded-lg">
+        <h3 className="text-2xl font-bold text-green-900 mb-3">🎯 Step 3: Find the Matching Pair</h3>
+        <p className="text-lg text-gray-700 leading-relaxed">
+          Click on a second card to reveal another meme character. If the two cards match, they stay flipped and you earn points. If they don't match, both cards flip back over and you try again. Use your memory to remember where each character is located on the board. The more you play, the better you'll become at remembering card positions!
+        </p>
+      </div>
+
+      <div className="bg-gradient-to-r from-blue-50 to-blue-100 border-l-4 border-blue-500 p-6 rounded-lg">
+        <h3 className="text-2xl font-bold text-blue-900 mb-3">🔍 Step 4: Use Memory Strategy</h3>
+        <p className="text-lg text-gray-700 leading-relaxed">
+          Develop a memory strategy by systematically exploring the board and remembering card positions. Create mental maps of where each character is located. Pay attention to patterns and try to match pairs efficiently. The fewer moves you make, the higher your score. Advanced players can challenge themselves to complete levels in record time!
+        </p>
+      </div>
+
+      <div className="bg-gradient-to-r from-purple-50 to-purple-100 border-l-4 border-purple-500 p-6 rounded-lg">
+        <h3 className="text-2xl font-bold text-purple-900 mb-3">⚡ Step 5: Complete All Pairs</h3>
+        <p className="text-lg text-gray-700 leading-relaxed">
+          Continue flipping cards and matching pairs until you've matched all the meme characters on the board. Each successful match brings you closer to completing the level. The game tracks your progress and displays your score. Complete all pairs to finish the level and unlock the next challenge!
+        </p>
+      </div>
+
+      <div className="bg-gradient-to-r from-pink-50 to-pink-100 border-l-4 border-pink-500 p-6 rounded-lg">
+        <h3 className="text-2xl font-bold text-pink-900 mb-3">🏆 Step 6: Progress to Next Level</h3>
+        <p className="text-lg text-gray-700 leading-relaxed">
+          After completing a level, you'll receive your final score and can choose to play again or progress to the next difficulty level. Each new level introduces more cards and meme characters, providing fresh challenges. Try to beat your previous scores and improve your memory skills. Unlock all levels and become a Memory Brainrot champion!
+        </p>
+      </div>
+    </div>
+  );
+
+  const featuresContent = (
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div className="bg-gradient-to-br from-purple-100 to-purple-50 p-6 rounded-lg border-2 border-purple-300">
+        <h4 className="text-xl font-bold text-purple-900 mb-2">🎮 Classic Memory Gameplay</h4>
+        <p className="text-gray-700">Traditional card-flipping mechanics combined with modern meme characters for engaging memory training.</p>
+      </div>
+
+      <div className="bg-gradient-to-br from-blue-100 to-blue-50 p-6 rounded-lg border-2 border-blue-300">
+        <h4 className="text-xl font-bold text-blue-900 mb-2">🧠 Multiple Difficulty Levels</h4>
+        <p className="text-gray-700">Choose from easy, medium, and hard modes to match your memory skills and challenge preferences.</p>
+      </div>
+
+      <div className="bg-gradient-to-br from-green-100 to-green-50 p-6 rounded-lg border-2 border-green-300">
+        <h4 className="text-xl font-bold text-green-900 mb-2">🎨 Iconic Meme Characters</h4>
+        <p className="text-gray-700">Discover dozens of legendary heroes from the Italian Brainrot meme universe with unique personalities.</p>
+      </div>
+
+      <div className="bg-gradient-to-br from-yellow-100 to-yellow-50 p-6 rounded-lg border-2 border-yellow-300">
+        <h4 className="text-xl font-bold text-yellow-900 mb-2">🌈 Vibrant Visuals</h4>
+        <p className="text-gray-700">Colorful cartoon world with beautiful character designs that bring the meme universe to life.</p>
+      </div>
+
+      <div className="bg-gradient-to-br from-pink-100 to-pink-50 p-6 rounded-lg border-2 border-pink-300">
+        <h4 className="text-xl font-bold text-pink-900 mb-2">📱 Mobile Friendly</h4>
+        <p className="text-gray-700">Fully responsive design that works seamlessly on smartphones, tablets, and desktop computers.</p>
+      </div>
+
+      <div className="bg-gradient-to-br from-indigo-100 to-indigo-50 p-6 rounded-lg border-2 border-indigo-300">
+        <h4 className="text-xl font-bold text-indigo-900 mb-2">🧩 Brain Training</h4>
+        <p className="text-gray-700">Improves memory retention, concentration, and mental agility through engaging gameplay.</p>
+      </div>
+
+      <div className="bg-gradient-to-br from-cyan-100 to-cyan-50 p-6 rounded-lg border-2 border-cyan-300">
+        <h4 className="text-xl font-bold text-cyan-900 mb-2">🎯 Score Tracking</h4>
+        <p className="text-gray-700">Track your progress and compete with yourself to beat previous scores and improve performance.</p>
+      </div>
+
+      <div className="bg-gradient-to-br from-orange-100 to-orange-50 p-6 rounded-lg border-2 border-orange-300">
+        <h4 className="text-xl font-bold text-orange-900 mb-2">✨ Free to Play</h4>
+        <p className="text-gray-700">Completely free memory game with no downloads, registrations, or hidden costs required.</p>
+      </div>
+    </div>
+  );
 
   return (
-    <Layout>
-      <div className="min-h-screen bg-gradient-to-br from-indigo-900 via-blue-800 to-cyan-900">
-        <div className="min-h-screen flex items-center justify-center p-4 md:p-6 lg:p-8 relative">
-          <div
-            className="absolute inset-0 bg-cover bg-center opacity-20"
-            style={{
-              backgroundImage: 'url(https://images.unsplash.com/photo-1518133910546-b6c2fb7d79e3?w=1920&h=1080&fit=crop)',
-              filter: 'blur(12px)',
-            }}
-          />
-          <div className="absolute inset-0 bg-gradient-to-br from-indigo-600/20 via-blue-600/20 to-cyan-600/20" />
-
-          <div className="relative z-10 w-full max-w-6xl">
-            {!showGame ? (
-              <GamePreview
-                title={game.title}
-                description={game.description}
-                thumbnail={game.thumbnail}
-                onPlayClick={handlePlayClick}
-                backgroundColor={game.backgroundColor}
-              />
-            ) : (
-              <div id="game-container" className="relative bg-black rounded-3xl overflow-hidden border-4 border-cyan-400 shadow-2xl">
-                <div className="aspect-video relative">
-                  <iframe
-                    id="game"
-                    frameBorder="0"
-                    allow="autoplay"
-                    allowFullScreen
-                    seamless
-                    scrolling="no"
-                    className="absolute inset-0 w-full h-full border-0"
-                    src={game.playUrl}
-                  />
-                </div>
-                <div className="absolute top-4 right-4 flex gap-2 z-10">
-                  <button
-                    onClick={handleFullscreen}
-                    className="p-3 bg-gray-900/80 hover:bg-gray-800 rounded-lg transition-colors shadow-lg"
-                    title="Fullscreen"
-                  >
-                    <Maximize className="w-5 h-5 text-white" />
-                  </button>
-                  <a
-                    href={game.playUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="p-3 bg-gray-900/80 hover:bg-gray-800 rounded-lg transition-colors shadow-lg"
-                    title="Open in new tab"
-                  >
-                    <ExternalLink className="w-5 h-5 text-white" />
-                  </a>
-                </div>
-              </div>
-            )}
-          </div>
-        </div>
-
-        <div className="bg-white">
-          <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 border-t-4 border-cyan-400">
-            <div className="bg-gradient-to-r from-orange-200 to-amber-200 rounded-2xl p-6 border-4 border-cyan-400 shadow-xl">
-              <div className="flex items-start gap-6">
-                <div className="flex-shrink-0">
-                  <div className="w-20 h-20 rounded-xl overflow-hidden shadow-lg border-2 border-white">
-                    <img
-                      src={game.thumbnail}
-                      alt={game.title}
-                      className="w-full h-full object-cover"
-                    />
-                  </div>
-                </div>
-                <div className="flex-1">
-                  <h2 className="text-3xl font-bold text-gray-800 mb-2">{game.title}</h2>
-                  
-                  {/* Star Rating */}
-                  <div className="mb-4">
-                    <StarRating gameSlug={game.slug} />
-                  </div>
-                  <p className="text-gray-700 text-lg mb-4">{game.description}</p>
-                  <div className="flex flex-wrap gap-2">
-                    {game.tags.map((tag, i) => {
-                      const isClickable = hasTagPage(tag);
-                      const TagElement = isClickable ? 'a' : 'span';
-                      return (
-                        <TagElement
-                          key={i}
-                          {...(isClickable ? { href: `/tag/${getTagSlug(tag)}` } : {})}
-                          className={`px-4 py-2 bg-gray-800 text-white font-semibold rounded-full shadow-md hover:bg-gray-700 ${
-                            isClickable
-                              ? 'hover:bg-cyan-50 hover:border-cyan-500 transition-colors cursor-pointer'
-                              : 'opacity-75 cursor-default'
-                          }`}
-                        >
-                          {tag}
-                        </TagElement>
-                      );
-                    })}
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-
-          <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 border-t-4 border-cyan-400">
-            <div className="bg-gradient-to-r from-orange-200 to-amber-200 rounded-xl p-4 mb-6 border-2 border-orange-300">
-              <h2 className="text-2xl font-bold text-gray-800 flex items-center gap-2">
-                <span className="text-3xl">🎯</span>
-                More Brainrot Games
-              </h2>
-            </div>
-            
-            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3">
-              {allGames.slice(0, 12).map((game, i) => (
-                <a
-                  key={i}
-                  href={isRealGame(game) ? `/${game.slug}` : '#'}
-                  className="group cursor-pointer block"
-                  onClick={(e) => !isRealGame(game) && e.preventDefault()}
-                >
-                  <div className={`relative aspect-square rounded-xl overflow-hidden border-3 border-gray-300 hover:border-cyan-400 transition-all duration-300 hover:scale-105 shadow-md hover:shadow-xl ${isRealGame(game) ? 'bg-white' : `bg-gradient-to-br ${game.color}`}`}>
-                    {isRealGame(game) ? (
-                      <>
-                        {game.releaseDate && <NewBadge releaseDate={game.releaseDate} />}
-                        <img
-                          src={game.image}
-                          alt={game.name}
-                          className="w-full h-full object-cover"
-                        />
-                      </>
-                    ) : (
-                      <div className="w-full h-full flex items-center justify-center text-4xl md:text-5xl">
-                        {game.emoji}
-                      </div>
-                    )}
-                  </div>
-                  <p className="text-center text-sm font-semibold text-gray-700 mt-2 truncate">{game.name}</p>
-                </a>
-              ))}
-            </div>
-          </section>
-
-          <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 border-t-4 border-cyan-400">
-            <div className="bg-gradient-to-r from-orange-200 to-amber-200 rounded-xl p-4 mb-6 border-2 border-orange-300">
-              <h2 className="text-2xl font-bold text-gray-800 flex items-center gap-2">
-                <span className="text-3xl">📖</span>
-                About Memory Brainrot
-              </h2>
-            </div>
-
-            <div className="prose max-w-none">
-              <div className="bg-gray-50 rounded-xl p-6 mb-6 border-2 border-gray-200">
-                <h3 className="text-xl font-bold text-gray-800 mb-4">🎮 Hilarious Gameplay with Iconic Meme Heroes</h3>
-                <p className="text-gray-700 leading-relaxed">
-                  In Memory Brainrot, players dive into a colorful cartoon world filled with legendary meme heroes. Each character brings their unique charm and humor, making every game session a delightful experience. As you flip cards, you'll encounter familiar faces that will evoke laughter and nostalgia.
-                </p>
-              </div>
-
-              <div className="bg-gray-50 rounded-xl p-6 mb-6 border-2 border-gray-200">
-                <h3 className="text-xl font-bold text-gray-800 mb-4">🎯 Two Difficulty Levels</h3>
-                <div className="grid md:grid-cols-2 gap-4">
-                  <div className="bg-white p-5 rounded-lg border-2 border-green-200">
-                    <div className="flex items-center gap-2 mb-3">
-                      <span className="text-3xl">😊</span>
-                      <h4 className="text-lg font-bold text-gray-800">Easy Mode</h4>
-                    </div>
-                    <p className="text-gray-700 mb-2 font-semibold">Perfect For Beginners</p>
-                    <p className="text-gray-600 text-sm">
-                      For those new to memory games or looking for a more relaxed experience. Face fewer cards, making it easier to remember their positions while enjoying charming visuals and quirky sounds.
-                    </p>
-                  </div>
-                  <div className="bg-white p-5 rounded-lg border-2 border-red-200">
-                    <div className="flex items-center gap-2 mb-3">
-                      <span className="text-3xl">🔥</span>
-                      <h4 className="text-lg font-bold text-gray-800">Hard Mode</h4>
-                    </div>
-                    <p className="text-gray-700 mb-2 font-semibold">A True Test Of Memory</p>
-                    <p className="text-gray-600 text-sm">
-                      If you're up for a challenge! This level increases the number of cards, making it more difficult to remember their locations. Ideal for seasoned gamers looking to push their cognitive abilities to the limit.
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <div className="bg-gradient-to-r from-indigo-50 to-blue-50 rounded-xl p-6 border-2 border-indigo-300">
-                <h3 className="text-xl font-bold text-gray-800 mb-4">🌟 Brain-Boosting Experience</h3>
-                <p className="text-gray-700 leading-relaxed">
-                  Memory Brainrot is not just a game - it's a brain-boosting adventure that combines entertainment with cognitive training. Improve your memory skills, enhance your concentration, and sharpen your mental agility. Compete with friends to see who can achieve the highest score and become the ultimate Memory Brainrot champion!
-                </p>
-              </div>
-            </div>
-          </section>
-
-          {/* Comments Section */}
-          <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 border-t-4 border-cyan-400">
-            <Comments gameSlug={game.slug} />
-          </section>
-        </div>
-      </div>
-    </Layout>
+    <GameDetailTemplate
+      game={game}
+      aboutContent={aboutContent}
+      howToPlayContent={howToPlayContent}
+      featuresContent={featuresContent}
+    />
   );
 }

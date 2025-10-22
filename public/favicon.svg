@@ -1,0 +1,46 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 180">
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f97316;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#fb923c;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#fdba74;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="brainGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f3f4f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <rect width="180" height="180" fill="url(#bgGradient)" rx="45"/>
+  <circle cx="30" cy="30" r="25" fill="#ffffff" opacity="0.1"/>
+  <circle cx="150" cy="150" r="30" fill="#ffffff" opacity="0.08"/>
+  <g transform="translate(45, 40)" filter="url(#shadow)">
+    <path d="M 45 5 Q 65 5 70 20 Q 75 35 65 50 Q 45 60 25 50 Q 15 35 20 20 Q 25 5 45 5 Z" fill="url(#brainGradient)" stroke="#ffffff" stroke-width="1.5" opacity="0.95"/>
+    <ellipse cx="32" cy="28" rx="14" ry="16" fill="#ffffff" opacity="0.85"/>
+    <path d="M 32 15 Q 28 20 32 28 Q 36 35 32 40" stroke="#fb923c" stroke-width="1.2" fill="none" opacity="0.6"/>
+    <ellipse cx="58" cy="28" rx="14" ry="16" fill="#ffffff" opacity="0.85"/>
+    <path d="M 58 15 Q 54 20 58 28 Q 62 35 58 40" stroke="#fb923c" stroke-width="1.2" fill="none" opacity="0.6"/>
+    <path d="M 45 12 Q 45 28 45 45" stroke="#fb923c" stroke-width="1.5" fill="none" opacity="0.5"/>
+    <path d="M 28 22 Q 25 25 28 30" stroke="#fdba74" stroke-width="1" fill="none" opacity="0.7"/>
+    <path d="M 32 20 Q 30 24 32 32" stroke="#fdba74" stroke-width="1" fill="none" opacity="0.7"/>
+    <path d="M 36 19 Q 35 25 36 33" stroke="#fdba74" stroke-width="1" fill="none" opacity="0.7"/>
+    <path d="M 62 22 Q 65 25 62 30" stroke="#fdba74" stroke-width="1" fill="none" opacity="0.7"/>
+    <path d="M 58 20 Q 60 24 58 32" stroke="#fdba74" stroke-width="1" fill="none" opacity="0.7"/>
+    <path d="M 54 19 Q 55 25 54 33" stroke="#fdba74" stroke-width="1" fill="none" opacity="0.7"/>
+    <ellipse cx="30" cy="20" rx="6" ry="5" fill="#ffffff" opacity="0.4"/>
+    <ellipse cx="60" cy="20" rx="6" ry="5" fill="#ffffff" opacity="0.4"/>
+  </g>
+  <circle cx="135" cy="45" r="12" fill="#06b6d4" opacity="0.9" filter="url(#glow)"/>
+  <circle cx="135" cy="45" r="8" fill="#22d3ee" opacity="0.6"/>
+  <circle cx="25" cy="140" r="4" fill="#06b6d4" opacity="0.5"/>
+  <circle cx="155" cy="160" r="3" fill="#06b6d4" opacity="0.4"/>
+</svg>

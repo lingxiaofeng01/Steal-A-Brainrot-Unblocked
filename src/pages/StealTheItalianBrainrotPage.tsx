@@ -1,263 +1,188 @@
-import { useState } from 'react';
-import { Play, Maximize, ExternalLink, Star, MessageCircle } from 'lucide-react';
-import Layout from '../components/Layout';
-import { hasTagPage, getTagSlug } from '../utils/tagUtils';
-import GamePreview from '../components/GamePreview';
-import StarRating from '../components/StarRating';
-import Comments from '../components/Comments';
-import NewBadge from '../components/NewBadge';
-import { allGames, isRealGame } from '../data/games';
+'use client';
+
+import GameDetailTemplate from '../components/GameDetailTemplate';
 
 export default function StealTheItalianBrainrotPage() {
-  const [showGame, setShowGame] = useState(false);
-  const [isFullscreen, setIsFullscreen] = useState(false);
-
-  // Steal The Italian Brainrot game data
   const game = {
-    title: 'Steal The Italian Brainrot',
     slug: 'steal-the-italian-brainrot',
-    subtitle: '3D Adventure Puzzle Game!',
-    description: 'Embark on an epic 3D adventure to steal the legendary Italian Brainrot! Solve puzzles, navigate obstacles, and outsmart your opponents in this strategic adventure game!',
-    playUrl: 'https://now.gg/apps/roblox-corporation/5349/roblox.html',
-    thumbnail: '/images/thumbnails/steal-the-italian-brainrot.png',
-    rating: 4.9,
-    playCount: 18923,
-    tags: ['Brainrot', 'Adventure', 'Strategy', '3D', 'Puzzle'],
-    backgroundColor: 'from-red-500 via-orange-500 to-yellow-500'
+    title: 'Steal The Italian Brainrot',
+    subtitle: 'The Ultimate Unblocked Game',
+    description: 'Steal The Italian Brainrot is an exhilarating meme game where you collect rare Italian brainrot animals, compete with bots, and execute strategic heists to build your fortune.',
+    playUrl: 'https://st.8games.net/7/8g/igra-ukradi-italyanskij-brejnrot/',
+    thumbnail: 'https://steal-brainrot.io/data/image/game/Steal-The-Italian-Brainrot.png',
+    rating: 3.5,
+    playCount: 881,
+    tags: ['Meme Games', 'Brainrot Games', 'Roblox Games', 'Strategy', 'Multiplayer'],
+    backgroundColor: 'from-purple-400 via-pink-400 to-red-400',
   };
 
-  const handlePlayClick = () => {
-    setShowGame(true);
-  };
+  const aboutContent = (
+    <div className="space-y-6">
+      <div className="bg-gradient-to-r from-purple-50 to-purple-100 border-l-4 border-purple-500 p-6 rounded-lg">
+        <p className="text-lg leading-relaxed text-gray-700">
+          <strong>Steal The Italian Brainrot</strong> is an exhilarating meme game that combines humor, strategy, and competitive gameplay in a vibrant world of Italian brainrot animals. Diving into this game is like stepping into a vibrant world where meme culture meets whimsical animal characters. From the moment you enter, you're greeted by a colorful array of Italian brainrot animals, including the quirky Brr Patapim and the hilarious La Vaca Saturnu Saturnita. The competition is fierce, with five bots running alongside you, each behaving like real players, adding a thrilling edge to the gameplay. The primary objective is simple yet captivating: collect the rarest meme animals while accumulating a fortune.
+        </p>
+      </div>
 
-  const handleFullscreen = () => {
-    const container = document.getElementById('game-container');
-    if (!document.fullscreenElement && container) {
-      container.requestFullscreen();
-      setIsFullscreen(true);
-    } else if (document.exitFullscreen) {
-      document.exitFullscreen();
-      setIsFullscreen(false);
-    }
-  };
+      <div className="bg-gradient-to-r from-pink-50 to-pink-100 border-l-4 border-pink-500 p-6 rounded-lg">
+        <p className="text-lg leading-relaxed text-gray-700">
+          Playing this meme game is an exhilarating experience filled with laughter and strategic challenges. The game begins with a straightforward premise: earn money by purchasing increasingly rare meme animals from the feed. As you buy your first few neuro animals, you quickly realize that the rarer the creature, the greater the profit it generates. The excitement builds as you rush to bring your newly acquired memes back to your base, knowing that other players could snatch them away at any moment. This game features dynamic gameplay where every decision matters and every second counts.
+        </p>
+      </div>
+
+      <div className="bg-gradient-to-r from-red-50 to-red-100 border-l-4 border-red-500 p-6 rounded-lg">
+        <p className="text-lg leading-relaxed text-gray-700">
+          One of the most exhilarating aspects is hacking into other players' bases to steal their collections. The adrenaline rush from successfully executing a heist is unforgettable. Boosters are game-changers, allowing you to speed up your movements, snatch memes directly from opponents, and even increase your luck in finding rare animals. Using rebirths opens the door to mythical beasts, adding a layer of excitement and new challenges to the game. Setting traps and blockades is crucial to safeguarding your collection from rival players.
+        </p>
+      </div>
+
+      <div className="bg-gradient-to-r from-orange-50 to-orange-100 border-l-4 border-orange-500 p-6 rounded-lg">
+        <p className="text-lg leading-relaxed text-gray-700">
+          The strategic depth is remarkable. You must balance offense and defense, deciding when to invest in rare animals and when to protect your base. This game rewards players who think ahead and adapt to changing circumstances. The competitive nature means you're constantly challenged by intelligent bots and other players. Learning the patterns and strategies is key to success. Every playthrough offers new opportunities and challenges that keep the experience fresh and engaging.
+        </p>
+      </div>
+
+      <div className="bg-gradient-to-r from-yellow-50 to-yellow-100 border-l-4 border-yellow-500 p-6 rounded-lg">
+        <p className="text-lg leading-relaxed text-gray-700">
+          The game features a diverse roster of Italian brainrot animals, each with unique characteristics and value. Collecting all the animals is a challenging goal that keeps players engaged for hours. The visual design is colorful and charming, with each animal character bringing personality to the experience. The meme culture references add humor and relatability to the gameplay. Whether you're a casual player or a competitive gamer, this unblocked game offers something for everyone who enjoys strategic meme-based entertainment.
+        </p>
+      </div>
+
+      <div className="bg-gradient-to-r from-green-50 to-green-100 border-l-4 border-green-500 p-6 rounded-lg">
+        <p className="text-lg leading-relaxed text-gray-700">
+          The economy system is well-balanced and rewarding. Earning money feels satisfying, and spending it on rare animals creates a sense of progression. The trading mechanics add depth to the gameplay. You can negotiate with other players, form temporary alliances, or go solo. The flexibility allows different playstyles to succeed, whether you prefer aggressive heisting or defensive base-building strategies.
+        </p>
+      </div>
+
+      <div className="bg-gradient-to-r from-blue-50 to-blue-100 border-l-4 border-blue-500 p-6 rounded-lg">
+        <p className="text-lg leading-relaxed text-gray-700">
+          Overall, this is a must-play game for meme lovers and strategy enthusiasts. The combination of humor, strategy, and competition creates a dynamic gaming environment that keeps players engaged. Whether you're a fan of memes or just looking for a fun way to challenge yourself, this unblocked game offers endless entertainment. The community is vibrant and welcoming, making it easy to find friends and rivals. Gather your wits, prepare your strategies, and dive into the world of Italian brainrot animals - you won't regret it!
+        </p>
+      </div>
+    </div>
+  );
+
+  const howToPlayContent = (
+    <ul className="space-y-4">
+      <li className="flex gap-4">
+        <span className="text-2xl">🎮</span>
+        <div>
+          <strong className="text-lg">Start Your Journey:</strong>
+          <p className="text-gray-700 mt-2">Begin by entering the vibrant world with your initial capital. Your goal is to purchase rare Italian brainrot animals and build your fortune. Every decision counts as you navigate the competitive landscape.</p>
+        </div>
+      </li>
+      <li className="flex gap-4">
+        <span className="text-2xl">💰</span>
+        <div>
+          <strong className="text-lg">Collect Rare Meme Animals:</strong>
+          <p className="text-gray-700 mt-2">Purchase increasingly rare animals from the feed. The rarer the creature, the greater the profit it generates. Timing is crucial - buy low and sell high to maximize your earnings and build your wealth.</p>
+        </div>
+      </li>
+      <li className="flex gap-4">
+        <span className="text-2xl">🏃</span>
+        <div>
+          <strong className="text-lg">Rush Back to Your Base:</strong>
+          <p className="text-gray-700 mt-2">Once you've purchased animals, quickly return them to your base. Other players can intercept you, so speed is essential. Keep your eyes open for threats while navigating the game world.</p>
+        </div>
+      </li>
+      <li className="flex gap-4">
+        <span className="text-2xl">🔓</span>
+        <div>
+          <strong className="text-lg">Execute Strategic Heists:</strong>
+          <p className="text-gray-700 mt-2">Hack into other players' bases to steal their collections. The adrenaline rush from successfully executing a heist is unforgettable. Plan your attacks carefully and choose your targets wisely.</p>
+        </div>
+      </li>
+      <li className="flex gap-4">
+        <span className="text-2xl">⚡</span>
+        <div>
+          <strong className="text-lg">Use Boosters and Power-ups:</strong>
+          <p className="text-gray-700 mt-2">Boosters are game-changers that allow you to speed up movements, snatch memes directly from opponents, and increase your luck. Strategic use of these power-ups can turn the tide of battle in your favor.</p>
+        </div>
+      </li>
+      <li className="flex gap-4">
+        <span className="text-2xl">🛡️</span>
+        <div>
+          <strong className="text-lg">Defend Your Base:</strong>
+          <p className="text-gray-700 mt-2">Set traps and blockades to protect your collection. A well-protected base can make all the difference in keeping your hard-earned memes safe from rival players.</p>
+        </div>
+      </li>
+    </ul>
+  );
+
+  const featuresContent = (
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div className="bg-gradient-to-br from-purple-100 to-purple-50 p-6 rounded-lg border-l-4 border-purple-500">
+        <div className="flex items-center gap-3 mb-3">
+          <span className="text-3xl">🎭</span>
+          <h4 className="text-lg font-bold text-gray-800">Italian Brainrot Animals</h4>
+        </div>
+        <p className="text-gray-700">Collect unique Italian brainrot animals including Brr Patapim and La Vaca Saturnu Saturnita with distinct personalities</p>
+      </div>
+
+      <div className="bg-gradient-to-br from-pink-100 to-pink-50 p-6 rounded-lg border-l-4 border-pink-500">
+        <div className="flex items-center gap-3 mb-3">
+          <span className="text-3xl">🤖</span>
+          <h4 className="text-lg font-bold text-gray-800">Intelligent Bot Opponents</h4>
+        </div>
+        <p className="text-gray-700">Face five competitive bots that behave like real players, providing challenging and unpredictable gameplay</p>
+      </div>
+
+      <div className="bg-gradient-to-br from-red-100 to-red-50 p-6 rounded-lg border-l-4 border-red-500">
+        <div className="flex items-center gap-3 mb-3">
+          <span className="text-3xl">💎</span>
+          <h4 className="text-lg font-bold text-gray-800">Rare Animal Collection</h4>
+        </div>
+        <p className="text-gray-700">Hunt for rare meme animals to maximize profits and build your fortune in this unblocked game</p>
+      </div>
+
+      <div className="bg-gradient-to-br from-orange-100 to-orange-50 p-6 rounded-lg border-l-4 border-orange-500">
+        <div className="flex items-center gap-3 mb-3">
+          <span className="text-3xl">🔓</span>
+          <h4 className="text-lg font-bold text-gray-800">Heist Mechanics</h4>
+        </div>
+        <p className="text-gray-700">Hack into other players' bases and steal their collections for thrilling and rewarding gameplay moments</p>
+      </div>
+
+      <div className="bg-gradient-to-br from-yellow-100 to-yellow-50 p-6 rounded-lg border-l-4 border-yellow-500">
+        <div className="flex items-center gap-3 mb-3">
+          <span className="text-3xl">⚡</span>
+          <h4 className="text-lg font-bold text-gray-800">Boosters & Power-ups</h4>
+        </div>
+        <p className="text-gray-700">Use boosters to speed up movements and increase your chances of success in competitive situations</p>
+      </div>
+
+      <div className="bg-gradient-to-br from-green-100 to-green-50 p-6 rounded-lg border-l-4 border-green-500">
+        <div className="flex items-center gap-3 mb-3">
+          <span className="text-3xl">🔄</span>
+          <h4 className="text-lg font-bold text-gray-800">Rebirth System</h4>
+        </div>
+        <p className="text-gray-700">Unlock mythical beasts through rebirths for new challenges and exciting rewards</p>
+      </div>
+
+      <div className="bg-gradient-to-br from-blue-100 to-blue-50 p-6 rounded-lg border-l-4 border-blue-500">
+        <div className="flex items-center gap-3 mb-3">
+          <span className="text-3xl">🛡️</span>
+          <h4 className="text-lg font-bold text-gray-800">Base Defense</h4>
+        </div>
+        <p className="text-gray-700">Set traps and blockades to protect your collection from rival players and thieves</p>
+      </div>
+
+      <div className="bg-gradient-to-br from-indigo-100 to-indigo-50 p-6 rounded-lg border-l-4 border-indigo-500">
+        <div className="flex items-center gap-3 mb-3">
+          <span className="text-3xl">🎮</span>
+          <h4 className="text-lg font-bold text-gray-800">Multiplayer Competition</h4>
+        </div>
+        <p className="text-gray-700">Compete with other players in a dynamic, ever-changing gaming environment full of surprises</p>
+      </div>
+    </div>
+  );
 
   return (
-    <Layout>
-      <div className="min-h-screen bg-gradient-to-br from-gray-900 via-gray-800 to-black">
-        {/* 游戏展示区 */}
-        <div className="min-h-screen flex items-center justify-center p-4 md:p-6 lg:p-8 relative">
-          {/* 背景图 */}
-          <div
-            className="absolute inset-0 bg-cover bg-center opacity-30"
-            style={{
-              backgroundImage: 'url(https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?w=1920&h=1080&fit=crop)',
-              filter: 'blur(12px)',
-            }}
-          />
-
-          {/* 渐变遮罩 */}
-          <div className="absolute inset-0 bg-gradient-to-br from-red-600/20 via-orange-600/20 to-yellow-600/20" />
-
-          {/* 游戏卡片 */}
-          <div className="relative z-10 w-full max-w-6xl">
-            {!showGame ? (
-              /* 游戏预览卡片 */
-              <GamePreview
-                title={game.title}
-                description={game.description}
-                thumbnail={game.thumbnail}
-                onPlayClick={handlePlayClick}
-                backgroundColor={game.backgroundColor}
-              />
-            ) : (
-              /* 游戏播放中 */
-              <div id="game-container" className="relative bg-black rounded-3xl overflow-hidden border-4 border-cyan-400 shadow-2xl">
-                <div className="aspect-video relative">
-                  <iframe
-                    id="game"
-                    frameBorder="0"
-                    allow="autoplay"
-                    allowFullScreen
-                    seamless
-                    scrolling="no"
-                    src={game.playUrl}
-                    className="absolute inset-0 w-full h-full border-0"
-                  />
-                </div>
-                <div className="absolute top-4 right-4 flex gap-2 z-10">
-                  <button
-                    onClick={handleFullscreen}
-                    className="p-3 bg-gray-900/80 hover:bg-gray-800 rounded-lg transition-colors shadow-lg"
-                    title="Fullscreen"
-                  >
-                    <Maximize className="w-5 h-5 text-white" />
-                  </button>
-                  <a
-                    href={game.playUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="p-3 bg-gray-900/80 hover:bg-gray-800 rounded-lg transition-colors shadow-lg"
-                    title="Open in new tab"
-                  >
-                    <ExternalLink className="w-5 h-5 text-white" />
-                  </a>
-                </div>
-              </div>
-            )}
-          </div>
-        </div>
-
-        {/* 游戏信息区 */}
-        <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 border-t-4 border-cyan-400">
-          <div className="bg-gradient-to-r from-red-100 via-orange-100 to-yellow-100 rounded-2xl p-8 shadow-xl">
-            <div className="flex flex-col md:flex-row gap-8">
-              {/* 游戏缩略图 */}
-              <div className="md:w-1/3">
-                <img
-                  src={game.thumbnail}
-                  alt={game.title}
-                  className="w-full rounded-xl shadow-lg border-4 border-white"
-                />
-              </div>
-
-              {/* 游戏详情 */}
-              <div className="md:w-2/3">
-                <h1 className="text-4xl font-bold text-gray-800 mb-2">{game.title}</h1>
-                <p className="text-xl text-gray-600 mb-4">{game.subtitle}</p>
-
-                <div className="flex items-center gap-4 mb-4">
-                  <StarRating rating={game.rating} />
-                  <span className="text-gray-600">
-                    <Play className="w-4 h-4 inline mr-1" />
-                    {game.playCount.toLocaleString()} plays
-                  </span>
-                </div>
-
-                <p className="text-gray-700 mb-6">{game.description}</p>
-
-                {/* 标签 */}
-                <div className="flex flex-wrap gap-2">
-                  {game.tags.map((tag, i) => (
-                    <a
-                      key={i}
-                      href={hasTagPage(tag) ? `/tag/${getTagSlug(tag)}` : '#'}
-                      className={`px-4 py-2 rounded-full text-sm font-semibold transition-all ${
-                        hasTagPage(tag)
-                          ? 'bg-gray-800 text-white hover:bg-gray-700 cursor-pointer'
-                          : 'bg-gray-300 text-gray-600 cursor-default'
-                      }`}
-                      onClick={(e) => !hasTagPage(tag) && e.preventDefault()}
-                    >
-                      {tag}
-                    </a>
-                  ))}
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* 游戏介绍 */}
-        <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 border-t-4 border-cyan-400">
-          <div className="bg-white rounded-2xl p-8 shadow-xl">
-            <h2 className="text-3xl font-bold text-gray-800 mb-6">About the Game</h2>
-            <div className="prose max-w-none">
-              <p className="text-gray-700 text-lg leading-relaxed mb-4">
-                Steal The Italian Brainrot is an epic 3D adventure game that combines puzzle-solving, strategy, and action! Navigate through beautifully crafted Italian-themed environments as you attempt to steal the legendary brainrot.
-              </p>
-              <p className="text-gray-700 text-lg leading-relaxed">
-                With challenging puzzles, strategic gameplay, and stunning 3D graphics, this game offers hours of entertainment. Can you outsmart the guards and claim the ultimate prize?
-              </p>
-            </div>
-
-            <h3 className="text-2xl font-bold text-gray-800 mt-8 mb-4">How to Play</h3>
-            <ul className="space-y-2 text-gray-700">
-              <li className="flex items-start gap-2">
-                <span className="text-cyan-500 font-bold">•</span>
-                <span><strong>Move:</strong> Use WASD or arrow keys to navigate the 3D world</span>
-              </li>
-              <li className="flex items-start gap-2">
-                <span className="text-cyan-500 font-bold">•</span>
-                <span><strong>Interact:</strong> Click on objects to interact and solve puzzles</span>
-              </li>
-              <li className="flex items-start gap-2">
-                <span className="text-cyan-500 font-bold">•</span>
-                <span><strong>Stealth:</strong> Avoid guards and security systems</span>
-              </li>
-              <li className="flex items-start gap-2">
-                <span className="text-cyan-500 font-bold">•</span>
-                <span><strong>Strategy:</strong> Plan your route and timing carefully</span>
-              </li>
-            </ul>
-
-            <h3 className="text-2xl font-bold text-gray-800 mt-8 mb-4">Game Features</h3>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              {[
-                { icon: '🎮', title: '3D Graphics', desc: 'Stunning 3D environments' },
-                { icon: '🧩', title: 'Puzzle Solving', desc: 'Challenging brain teasers' },
-                { icon: '🎯', title: 'Strategic Gameplay', desc: 'Plan your every move' },
-                { icon: '🏆', title: 'Epic Adventure', desc: 'Immersive storyline' },
-              ].map((feature, i) => (
-                <div key={i} className="bg-gradient-to-r from-red-50 to-orange-50 rounded-xl p-4 border-2 border-red-200">
-                  <div className="flex items-center gap-3">
-                    <span className="text-3xl">{feature.icon}</span>
-                    <div>
-                      <h4 className="font-bold text-gray-800">{feature.title}</h4>
-                      <p className="text-sm text-gray-600">{feature.desc}</p>
-                    </div>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        {/* 评论区 */}
-        <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 border-t-4 border-cyan-400">
-          <Comments gameSlug={game.slug} />
-        </section>
-
-        {/* More Games */}
-        <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 border-t-4 border-cyan-400">
-          <div className="mb-6">
-            <h2 className="text-3xl font-bold text-white flex items-center gap-2">
-              <span className="text-4xl">🎮</span>
-              More Games
-            </h2>
-          </div>
-
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3">
-            {allGames.slice(0, 12).map((g, i) => (
-              <a
-                key={i}
-                href={isRealGame(g) ? `/${g.slug}` : '#'}
-                className="group cursor-pointer block"
-                onClick={(e) => !isRealGame(g) && e.preventDefault()}
-              >
-                <div className={`relative aspect-square rounded-xl overflow-hidden border-3 border-gray-300 hover:border-cyan-400 transition-all duration-300 hover:scale-105 shadow-md hover:shadow-xl ${isRealGame(g) ? 'bg-white' : `bg-gradient-to-br ${g.color}`}`}>
-                  {isRealGame(g) ? (
-                    <>
-                      {g.releaseDate && <NewBadge releaseDate={g.releaseDate} />}
-                      <img
-                        src={g.image}
-                        alt={g.name}
-                        className="w-full h-full object-cover"
-                      />
-                    </>
-                  ) : (
-                    <div className="w-full h-full flex items-center justify-center text-3xl md:text-4xl">
-                      {g.emoji}
-                    </div>
-                  )}
-                </div>
-                <div className="mt-2 text-center">
-                  <p className="text-sm font-semibold text-white truncate">{g.name}</p>
-                </div>
-              </a>
-            ))}
-          </div>
-        </section>
-      </div>
-    </Layout>
+    <GameDetailTemplate
+      game={game}
+      aboutContent={aboutContent}
+      howToPlayContent={howToPlayContent}
+      featuresContent={featuresContent}
+    />
   );
 }

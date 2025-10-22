@@ -1,8 +1,12 @@
+'use client';
+
 import { useEffect } from 'react';
+import Image from 'next/image';
 import { Star } from 'lucide-react';
 import Layout from '../components/Layout';
 import { getGamesByTag } from '../utils/gameUtils';
 import { isRealGame } from '../data/games';
+import { TAG_DESCRIPTIONS } from '../config/tagDescriptions';
 
 interface TagPageProps {
   tag: string;
@@ -13,6 +17,11 @@ interface TagPageProps {
 }
 
 export default function TagPage({ tag, title, description, emoji, gradient }: TagPageProps) {
+  // 防御性检查
+  if (!tag || !title || !description || !emoji || !gradient) {
+    return <div>Loading...</div>;
+  }
+
   // 使用工具函数筛选包含该标签的游戏
   const filteredGames = getGamesByTag(tag);
 
@@ -21,7 +30,7 @@ export default function TagPage({ tag, title, description, emoji, gradient }: Ta
   }, [title]);
 
   return (
-    <Layout>
+    <>
       <div className="min-h-screen bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900">
         {/* Hero Section */}
         <section className={`bg-gradient-to-r ${gradient} py-16 border-b-4 border-cyan-400`}>
@@ -63,10 +72,14 @@ export default function TagPage({ tag, title, description, emoji, gradient }: Ta
                     className="group cursor-pointer block"
                   >
                     <div className="aspect-square rounded-xl overflow-hidden border-3 border-gray-300 hover:border-cyan-400 transition-all duration-300 hover:scale-105 shadow-md hover:shadow-xl bg-white">
-                      <img
+                      <Image
                         src={game.image}
-                        alt={game.name}
+                        alt={`${game.name} - ${title} Game | Play Free Online`}
+                        width={150}
+                        height={150}
                         className="w-full h-full object-cover"
+                        loading="lazy"
+                        quality={70}
                       />
                     </div>
                     <div className="mt-2">
@@ -95,31 +108,45 @@ export default function TagPage({ tag, title, description, emoji, gradient }: Ta
 
         {/* Tag Info Section */}
         <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 border-t-4 border-cyan-400">
-          <div className="bg-white rounded-2xl p-8 shadow-xl">
-            <h2 className="text-3xl font-bold text-gray-800 mb-6 flex items-center gap-3">
-              <span className="text-4xl">{emoji}</span>
+          <div className="bg-white rounded-xl p-6 shadow-lg border-2 border-gray-200">
+            <h2 className="text-2xl font-bold text-gray-800 mb-4 flex items-center gap-2">
+              <span className="text-3xl">{emoji}</span>
               About {title} Games
             </h2>
-            <div className="prose max-w-none">
-              <p className="text-gray-700 text-lg leading-relaxed mb-4">
+
+            <div className="prose prose-lg max-w-none text-gray-700">
+              <p className="mb-4 leading-relaxed">
                 {description}
               </p>
-              <div className="grid md:grid-cols-2 gap-6 mt-6">
-                <div className="bg-gradient-to-br from-cyan-50 to-blue-50 p-6 rounded-xl border-2 border-cyan-200">
-                  <h3 className="text-xl font-bold text-gray-800 mb-3">🎮 Total Games</h3>
-                  <p className="text-3xl font-bold text-cyan-600">{filteredGames.length}</p>
-                  <p className="text-sm text-gray-600 mt-2">Available to play now</p>
-                </div>
-                <div className="bg-gradient-to-br from-yellow-50 to-orange-50 p-6 rounded-xl border-2 border-yellow-200">
-                  <h3 className="text-xl font-bold text-gray-800 mb-3">⭐ Average Rating</h3>
-                  <p className="text-3xl font-bold text-orange-600">
-                    {filteredGames.length > 0 
-                      ? (filteredGames.reduce((sum, g) => sum + g.rating, 0) / filteredGames.length).toFixed(1)
-                      : '0.0'
-                    }
-                  </p>
-                  <p className="text-sm text-gray-600 mt-2">Based on player reviews</p>
-                </div>
+
+              <h3 className="text-xl font-bold text-gray-800 mt-6 mb-3">
+                Why Play {title} Games?
+              </h3>
+              <ul className="list-disc list-inside space-y-2 mb-4">
+                {TAG_DESCRIPTIONS[tag.toLowerCase()]?.whyPlay.map((reason, i) => (
+                  <li key={i}>{reason}</li>
+                ))}
+              </ul>
+
+              <h3 className="text-xl font-bold text-gray-800 mt-6 mb-3">
+                How to Play
+              </h3>
+              <p className="mb-4 leading-relaxed">
+                {TAG_DESCRIPTIONS[tag.toLowerCase()]?.howToPlay}
+              </p>
+
+              <h3 className="text-xl font-bold text-gray-800 mt-6 mb-3">
+                Popular {title} Games
+              </h3>
+              <p className="mb-4 leading-relaxed">
+                {TAG_DESCRIPTIONS[tag.toLowerCase()]?.popular}
+              </p>
+
+              <div className="bg-gradient-to-r from-cyan-50 to-blue-50 rounded-lg p-4 mt-6 border-l-4 border-cyan-400">
+                <p className="text-sm text-gray-700">
+                  <strong>💡 Pro Tip:</strong> Bookmark this page to quickly access your favorite {title.toLowerCase()} games.
+                  We update our collection regularly with the latest and greatest games!
+                </p>
               </div>
             </div>
           </div>
@@ -157,7 +184,7 @@ export default function TagPage({ tag, title, description, emoji, gradient }: Ta
           </div>
         </section>
       </div>
-    </Layout>
+    </>
   );
 }
 

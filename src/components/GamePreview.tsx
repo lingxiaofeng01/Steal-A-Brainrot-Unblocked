@@ -1,4 +1,5 @@
 import { Play } from 'lucide-react';
+import Image from 'next/image';
 
 interface GamePreviewProps {
   title: string;
@@ -25,9 +26,9 @@ export default function GamePreview({
       <div className="hidden md:flex md:items-center md:justify-between md:min-h-[500px] lg:min-h-[600px] xl:min-h-[650px] md:px-12 lg:px-16 xl:px-20 md:py-12 lg:py-16">
         {/* 左侧内容 */}
         <div className="flex-1 max-w-xl lg:max-w-2xl pr-8 lg:pr-12">
-          <h1 className="text-4xl lg:text-5xl xl:text-6xl font-black text-gray-900 mb-6 lg:mb-8 leading-tight">
+          <h2 className="text-4xl lg:text-5xl xl:text-6xl font-black text-gray-900 mb-6 lg:mb-8 leading-tight">
             {title}
-          </h1>
+          </h2>
 
           <p className="text-base lg:text-lg xl:text-xl text-gray-800 mb-8 lg:mb-10 leading-relaxed">
             {description}
@@ -45,10 +46,15 @@ export default function GamePreview({
         {/* 右侧圆形图片 */}
         <div className="flex-shrink-0">
           <div className="w-64 h-64 lg:w-80 lg:h-80 xl:w-96 xl:h-96 rounded-full overflow-hidden shadow-2xl ring-8 ring-white/20">
-            <img
+            <Image
               src={thumbnail}
-              alt={title}
+              alt={`${title} - Play Now | Free Unblocked Game`}
+              width={384}
+              height={384}
               className="w-full h-full object-cover"
+              loading="eager"
+              quality={80}
+              priority
             />
           </div>
         </div>
@@ -59,19 +65,24 @@ export default function GamePreview({
         {/* 上方圆形图片 */}
         <div className="mb-8">
           <div className="w-48 h-48 sm:w-56 sm:h-56 rounded-full overflow-hidden shadow-2xl ring-6 ring-white/20">
-            <img
+            <Image
               src={thumbnail}
-              alt={title}
+              alt={`${title} - Play Now | Free Unblocked Game`}
+              width={224}
+              height={224}
               className="w-full h-full object-cover"
+              loading="eager"
+              quality={80}
+              priority
             />
           </div>
         </div>
 
         {/* 下方内容 */}
         <div className="flex-1 flex flex-col justify-center">
-          <h1 className="text-3xl sm:text-4xl font-black text-gray-900 mb-4 sm:mb-6 leading-tight">
+          <h2 className="text-3xl sm:text-4xl font-black text-gray-900 mb-4 sm:mb-6 leading-tight">
             {title}
-          </h1>
+          </h2>
 
           <p className="text-sm sm:text-base text-gray-800 mb-6 sm:mb-8 leading-relaxed max-w-md mx-auto">
             {description}

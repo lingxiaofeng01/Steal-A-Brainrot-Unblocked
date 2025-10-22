@@ -1,249 +1,188 @@
-import { useState } from 'react';
-import { Play, Maximize, ExternalLink, Star, MessageCircle } from 'lucide-react';
-import Layout from '../components/Layout';
-import { hasTagPage, getTagSlug } from '../utils/tagUtils';
-import GamePreview from '../components/GamePreview';
-import StarRating from '../components/StarRating';
-import Comments from '../components/Comments';
-import NewBadge from '../components/NewBadge';
-import { allGames, isRealGame } from '../data/games';
+'use client';
+
+import GameDetailTemplate from '../components/GameDetailTemplate';
 
 export default function ItalianBrainrotClicker2Page() {
-  const [showGame, setShowGame] = useState(false);
-  const [isFullscreen, setIsFullscreen] = useState(false);
-
   const game = {
-    title: 'Italian Brainrot Clicker 2',
     slug: 'italian-brainrot-clicker-2',
-    subtitle: 'The Meme Madness Continues!',
-    description: 'The sequel to the hilarious clicker game! Meet quirky characters like Tralalero Tralala, Bombardino Crocodilo, and Tung Tung Tung Sahur in this chaotic meme-ized world.',
+    title: 'Italian Brainrot Clicker 2',
+    subtitle: 'The Ultimate Sequel to the Viral Meme Game!',
+    description: 'Experience the hilarious sequel to the viral Italian Brainrot Clicker! Meet bizarre Italian characters like Tralalero Tralala and Tung Tung Tung Sahur. Click fast, unlock upgrades, and collect all 12 absurd Italian Brainrot monsters in this addictive clicker game.',
     playUrl: 'https://game.azgame.io/italian-brainrot-clicker-2/',
     thumbnail: '/images/thumbnails/italian-brainrot-clicker-2.png',
     rating: 4.0,
-    playCount: 2,
-    tags: ['Brainrot', 'Clicker', 'Meme', 'Idle', 'Funny', 'Casual'],
-    backgroundColor: 'from-red-400 via-pink-400 to-rose-400'
+    playCount: 5180,
+    tags: ['Brainrot', 'Clicker', 'Idle', 'Meme', 'Funny'],
+    backgroundColor: 'from-red-400 via-orange-400 to-yellow-400',
   };
 
-  const handlePlayClick = () => {
-    setShowGame(true);
-  };
+  const aboutContent = (
+    <div className="space-y-6">
+      <div className="bg-gradient-to-r from-red-50 to-red-100 border-l-4 border-red-500 p-6 rounded-lg">
+        <p className="text-lg leading-relaxed text-gray-700">
+          <strong>Italian Brainrot Clicker 2</strong> is the hilarious sequel to the viral Italian Brainrot Clicker that takes the absurdity to the next level! Inspired by the viral TikTok "Italian Brainrot" meme trend, <strong>Italian Brainrot Clicker 2</strong> offers an unforgettable clicker game experience where you'll encounter the most bizarre-looking Italian characters imaginable. Meet Tralalero Tralala, Tung Tung Tung Sahur, Bombardino Crocodilo, and many other outrageous Italian Brainrot monsters. In <strong>Italian Brainrot Clicker 2</strong>, you'll jump in, click or tap fast, and combine speed with smart upgrade strategy to unlock every absurd Italian character. The game delivers non-stop entertainment with its hilarious character designs and authentic Italian voice acting that makes <strong>Italian Brainrot Clicker 2</strong> an unforgettable gaming experience.
+        </p>
+      </div>
 
-  const handleFullscreen = () => {
-    const container = document.getElementById('game-container');
-    if (!document.fullscreenElement && container) {
-      container.requestFullscreen();
-      setIsFullscreen(true);
-    } else if (document.exitFullscreen) {
-      document.exitFullscreen();
-      setIsFullscreen(false);
-    }
-  };
+      <div className="bg-gradient-to-r from-orange-50 to-orange-100 border-l-4 border-orange-500 p-6 rounded-lg">
+        <p className="text-lg leading-relaxed text-gray-700">
+          The core gameplay of <strong>Italian Brainrot Clicker 2</strong> is simple yet deeply engaging: tap or click on the character to earn Brainrot points, then spend them on powerful upgrades. <strong>Italian Brainrot Clicker 2</strong> features 18 unlockable upgrade options categorized into two major types. Some upgrades in <strong>Italian Brainrot Clicker 2</strong> boost the points you earn per click or tap, while others trigger passive scores that let you gain points automatically over time without any tapping required. The upgrade system in <strong>Italian Brainrot Clicker 2</strong> is the key to boosting your clicking power exponentially. You can purchase any upgrades repeatedly with no limit in <strong>Italian Brainrot Clicker 2</strong>, as long as you have enough points to afford them. Invest in upgrades wisely and experience the power of strategic progression in <strong>Italian Brainrot Clicker 2</strong>.
+        </p>
+      </div>
+
+      <div className="bg-gradient-to-r from-yellow-50 to-yellow-100 border-l-4 border-yellow-500 p-6 rounded-lg">
+        <p className="text-lg leading-relaxed text-gray-700">
+          One of the most exciting features of <strong>Italian Brainrot Clicker 2</strong> is the collection of 12 unique Italian Brainrot characters. The game features iconic characters including Tralalero Tralala (the Nike-wearing legend), Bombardino Crocodilo, Tung Tung Tung Sahur, Lirili Larila, Chimpanzini Bananini, Zibra Zubra Zibralini, Burbaloni Luliloli, and more bizarre Italian Brainrot monsters. Each character in <strong>Italian Brainrot Clicker 2</strong> has been designed with authentic Italian flair and hilarious aesthetics. Unlock characters in <strong>Italian Brainrot Clicker 2</strong> by reaching specific score milestones such as 50,000, 1,000,000, and higher Brainrot points. Hearing their authentic Italian voices in <strong>Italian Brainrot Clicker 2</strong> is definitely the greatest part of this game, making character collection a rewarding long-term goal.
+        </p>
+      </div>
+
+      <div className="bg-gradient-to-r from-amber-50 to-amber-100 border-l-4 border-amber-500 p-6 rounded-lg">
+        <p className="text-lg leading-relaxed text-gray-700">
+          <strong>Italian Brainrot Clicker 2</strong> features an impressive upgrade system with multiple strategic options. The game includes upgrades like Cursor (+1 Brainrot per click for 50 points), Auto Click (+1 Brainrot per second for 125 points), Mr Clicker (+5 Brainrot per click for 500 points), and Trallerro Trallala Farm (+6 Brainrot per second for 1,100 points). The upgrade progression in <strong>Italian Brainrot Clicker 2</strong> allows you to customize your playstyle and maximize your earning potential. Whether you prefer active clicking or passive income generation, <strong>Italian Brainrot Clicker 2</strong> accommodates both playstyles perfectly. The strategic depth of <strong>Italian Brainrot Clicker 2</strong> ensures that every upgrade decision matters and contributes to your overall progression.
+        </p>
+      </div>
+
+      <div className="bg-gradient-to-r from-rose-50 to-rose-100 border-l-4 border-rose-500 p-6 rounded-lg">
+        <p className="text-lg leading-relaxed text-gray-700">
+          <strong>Italian Brainrot Clicker 2</strong> combines clicking speed with powerful upgrade options to create an addictive gameplay loop. The game rewards both fast clickers and strategic planners, making <strong>Italian Brainrot Clicker 2</strong> accessible to players of all skill levels. Don't just click or tap wildly to earn points in <strong>Italian Brainrot Clicker 2</strong>; instead, combine your clicking speed with powerful upgrade options to maximize points earned. The balance between active and passive gameplay in <strong>Italian Brainrot Clicker 2</strong> keeps players engaged for hours. The addictive nature of <strong>Italian Brainrot Clicker 2</strong> comes from the perfect combination of immediate gratification from clicking and long-term progression through upgrades.
+        </p>
+      </div>
+
+      <div className="bg-gradient-to-r from-pink-50 to-pink-100 border-l-4 border-pink-500 p-6 rounded-lg">
+        <p className="text-lg leading-relaxed text-gray-700">
+          <strong>Italian Brainrot Clicker 2</strong> is optimized for both desktop and mobile browsers, ensuring a smooth experience across all devices. The game is completely free to play online with no downloads required, making it accessible to everyone. The unblocked nature of <strong>Italian Brainrot Clicker 2</strong> means you can play it anywhere without restrictions, whether at school, work, or home. The mobile optimization in <strong>Italian Brainrot Clicker 2</strong> allows you to enjoy the same engaging gameplay on your smartphone or tablet as you would on a desktop computer. This cross-platform compatibility makes <strong>Italian Brainrot Clicker 2</strong> the perfect game for playing during breaks or whenever you have a few minutes to spare.
+        </p>
+      </div>
+
+      <div className="bg-gradient-to-r from-purple-50 to-purple-100 border-l-4 border-purple-500 p-6 rounded-lg">
+        <p className="text-lg leading-relaxed text-gray-700">
+          The most hilarious and absurd clicker game is here, and <strong>Italian Brainrot Clicker 2</strong> is ready for you! Get ready to jump in and unlock all the bizarre-looking Italian Brainrot characters with their authentic Italian voices. <strong>Italian Brainrot Clicker 2</strong> delivers non-stop entertainment through its unique character designs and hilarious gameplay. The game has achieved a 4.0 rating with over 1,430 votes, proving that <strong>Italian Brainrot Clicker 2</strong> has successfully captured the hearts of players worldwide. Whether you're a casual player seeking a fun way to pass the time or a dedicated gamer chasing high scores, <strong>Italian Brainrot Clicker 2</strong> offers an experience that's both accessible and deeply engaging. Enjoy <strong>Italian Brainrot Clicker 2</strong> on Azgames.io now and discover why this hilarious clicker game has become a favorite among meme enthusiasts everywhere!
+        </p>
+      </div>
+    </div>
+  );
+
+  const howToPlayContent = (
+    <ul className="space-y-4">
+      <li className="flex gap-4">
+        <span className="text-2xl">🖱️</span>
+        <div>
+          <strong className="text-lg">Click or Tap to Earn Points:</strong>
+          <p className="text-gray-700 mt-2">Start by clicking or tapping on the character to earn your first Brainrot Points in Italian Brainrot Clicker 2. Each tap generates points that you can use to purchase upgrades. The faster you tap, the quicker you'll accumulate points and progress through Italian Brainrot Clicker 2.</p>
+        </div>
+      </li>
+      <li className="flex gap-4">
+        <span className="text-2xl">⬆️</span>
+        <div>
+          <strong className="text-lg">Invest in Strategic Upgrades:</strong>
+          <p className="text-gray-700 mt-2">As your Brainrot Points accumulate, invest them wisely in upgrades to boost your clicking power in Italian Brainrot Clicker 2. Choose between active upgrades (more points per click) and passive upgrades (automatic income). Strategic upgrade selection in Italian Brainrot Clicker 2 is key to maximizing your progression speed.</p>
+        </div>
+      </li>
+      <li className="flex gap-4">
+        <span className="text-2xl">🎭</span>
+        <div>
+          <strong className="text-lg">Unlock Italian Brainrot Characters:</strong>
+          <p className="text-gray-700 mt-2">Reach specific score milestones in Italian Brainrot Clicker 2 to unlock new bizarre Italian characters. Each character in Italian Brainrot Clicker 2 comes with authentic Italian voice acting that adds personality and humor to your game. Collecting all 12 characters in Italian Brainrot Clicker 2 becomes a rewarding long-term goal.</p>
+        </div>
+      </li>
+      <li className="flex gap-4">
+        <span className="text-2xl">💰</span>
+        <div>
+          <strong className="text-lg">Maximize Your Earning Potential:</strong>
+          <p className="text-gray-700 mt-2">Combine your clicking speed with powerful upgrade options to maximize points earned in Italian Brainrot Clicker 2. Balance active clicking with passive income generation to create an efficient earning strategy. The progression system in Italian Brainrot Clicker 2 rewards both playstyles equally.</p>
+        </div>
+      </li>
+      <li className="flex gap-4">
+        <span className="text-2xl">🏆</span>
+        <div>
+          <strong className="text-lg">Compete for High Scores:</strong>
+          <p className="text-gray-700 mt-2">Track your progress and compete with players worldwide in Italian Brainrot Clicker 2 for the highest scores and bragging rights. The competitive aspect of Italian Brainrot Clicker 2 adds motivation to keep playing and improving your clicking skills.</p>
+        </div>
+      </li>
+      <li className="flex gap-4">
+        <span className="text-2xl">🎯</span>
+        <div>
+          <strong className="text-lg">Master the Game:</strong>
+          <p className="text-gray-700 mt-2">Become a master of Italian Brainrot Clicker 2 by unlocking all characters, purchasing all upgrades, and achieving the highest possible score. The endless progression system in Italian Brainrot Clicker 2 ensures there's always something new to achieve and unlock.</p>
+        </div>
+      </li>
+    </ul>
+  );
+
+  const featuresContent = (
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div className="bg-gradient-to-br from-red-100 to-red-50 p-6 rounded-lg border-l-4 border-red-500">
+        <div className="flex items-center gap-3 mb-3">
+          <span className="text-3xl">🎭</span>
+          <h4 className="text-lg font-bold text-gray-800">12 Unique Characters</h4>
+        </div>
+        <p className="text-gray-700">Meet 12 bizarre Italian Brainrot characters with authentic Italian voice acting</p>
+      </div>
+
+      <div className="bg-gradient-to-br from-orange-100 to-orange-50 p-6 rounded-lg border-l-4 border-orange-500">
+        <div className="flex items-center gap-3 mb-3">
+          <span className="text-3xl">⬆️</span>
+          <h4 className="text-lg font-bold text-gray-800">18 Powerful Upgrades</h4>
+        </div>
+        <p className="text-gray-700">Choose from 18 unlockable upgrades to boost your clicking power and passive income</p>
+      </div>
+
+      <div className="bg-gradient-to-br from-yellow-100 to-yellow-50 p-6 rounded-lg border-l-4 border-yellow-500">
+        <div className="flex items-center gap-3 mb-3">
+          <span className="text-3xl">🖱️</span>
+          <h4 className="text-lg font-bold text-gray-800">Active & Passive Gameplay</h4>
+        </div>
+        <p className="text-gray-700">Balance between fast clicking and automatic income generation for flexible playstyle</p>
+      </div>
+
+      <div className="bg-gradient-to-br from-amber-100 to-amber-50 p-6 rounded-lg border-l-4 border-amber-500">
+        <div className="flex items-center gap-3 mb-3">
+          <span className="text-3xl">😂</span>
+          <h4 className="text-lg font-bold text-gray-800">Hilarious Meme Content</h4>
+        </div>
+        <p className="text-gray-700">Enjoy authentic Italian Brainrot meme culture with absurd character designs</p>
+      </div>
+
+      <div className="bg-gradient-to-br from-rose-100 to-rose-50 p-6 rounded-lg border-l-4 border-rose-500">
+        <div className="flex items-center gap-3 mb-3">
+          <span className="text-3xl">📱</span>
+          <h4 className="text-lg font-bold text-gray-800">Mobile Optimized</h4>
+        </div>
+        <p className="text-gray-700">Play on desktop or mobile browsers with smooth performance everywhere</p>
+      </div>
+
+      <div className="bg-gradient-to-br from-pink-100 to-pink-50 p-6 rounded-lg border-l-4 border-pink-500">
+        <div className="flex items-center gap-3 mb-3">
+          <span className="text-3xl">🎮</span>
+          <h4 className="text-lg font-bold text-gray-800">Unblocked Access</h4>
+        </div>
+        <p className="text-gray-700">Play anywhere without restrictions - perfect for school or work breaks</p>
+      </div>
+
+      <div className="bg-gradient-to-br from-purple-100 to-purple-50 p-6 rounded-lg border-l-4 border-purple-500">
+        <div className="flex items-center gap-3 mb-3">
+          <span className="text-3xl">🆓</span>
+          <h4 className="text-lg font-bold text-gray-800">Completely Free</h4>
+        </div>
+        <p className="text-gray-700">No downloads required - play instantly online with no cost whatsoever</p>
+      </div>
+
+      <div className="bg-gradient-to-br from-indigo-100 to-indigo-50 p-6 rounded-lg border-l-4 border-indigo-500">
+        <div className="flex items-center gap-3 mb-3">
+          <span className="text-3xl">🏆</span>
+          <h4 className="text-lg font-bold text-gray-800">Competitive Leaderboards</h4>
+        </div>
+        <p className="text-gray-700">Compete with players worldwide for the highest scores and achievements</p>
+      </div>
+    </div>
+  );
 
   return (
-    <Layout>
-      <div className="min-h-screen bg-gradient-to-br from-rose-900 via-pink-800 to-red-900">
-        <div className="min-h-screen flex items-center justify-center p-4 md:p-6 lg:p-8 relative">
-          <div
-            className="absolute inset-0 bg-cover bg-center opacity-20"
-            style={{
-              backgroundImage: 'url(https://images.unsplash.com/photo-1579546929518-9e396f3cc809?w=1920&h=1080&fit=crop)',
-              filter: 'blur(12px)',
-            }}
-          />
-          <div className="absolute inset-0 bg-gradient-to-br from-rose-600/20 via-pink-600/20 to-red-600/20" />
-
-          <div className="relative z-10 w-full max-w-6xl">
-            {!showGame ? (
-              <GamePreview
-                title={game.title}
-                description={game.description}
-                thumbnail={game.thumbnail}
-                onPlayClick={handlePlayClick}
-                backgroundColor={game.backgroundColor}
-              />
-            ) : (
-              <div id="game-container" className="relative bg-black rounded-3xl overflow-hidden border-4 border-cyan-400 shadow-2xl">
-                <div className="aspect-video relative">
-                  <iframe
-                    id="iframehtml5"
-                    width="100%"
-                    height="100%"
-                    frameBorder="0"
-                    scrolling="auto"
-                    allowFullScreen
-                    className="absolute inset-0 w-full h-full border-0"
-                    src={game.playUrl}
-                  />
-                </div>
-                <div className="absolute top-4 right-4 flex gap-2 z-10">
-                  <button
-                    onClick={handleFullscreen}
-                    className="p-3 bg-gray-900/80 hover:bg-gray-800 rounded-lg transition-colors shadow-lg"
-                    title="Fullscreen"
-                  >
-                    <Maximize className="w-5 h-5 text-white" />
-                  </button>
-                  <a
-                    href={game.playUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="p-3 bg-gray-900/80 hover:bg-gray-800 rounded-lg transition-colors shadow-lg"
-                    title="Open in new tab"
-                  >
-                    <ExternalLink className="w-5 h-5 text-white" />
-                  </a>
-                </div>
-              </div>
-            )}
-          </div>
-        </div>
-
-        <div className="bg-white">
-          <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 border-t-4 border-cyan-400">
-            <div className="bg-gradient-to-r from-orange-200 to-amber-200 rounded-2xl p-6 border-4 border-cyan-400 shadow-xl">
-              <div className="flex items-start gap-6">
-                <div className="flex-shrink-0">
-                  <div className="w-20 h-20 rounded-xl overflow-hidden shadow-lg border-2 border-white">
-                    <img
-                      src={game.thumbnail}
-                      alt={game.title}
-                      className="w-full h-full object-cover"
-                    />
-                  </div>
-                </div>
-                <div className="flex-1">
-                  <h2 className="text-3xl font-bold text-gray-800 mb-2">{game.title}</h2>
-                  
-                  {/* Star Rating */}
-                  <div className="mb-4">
-                    <StarRating gameSlug={game.slug} />
-                  </div>
-                  <p className="text-gray-700 text-lg mb-4">{game.description}</p>
-                  <div className="flex flex-wrap gap-2">
-                    {game.tags.map((tag, i) => {
-                      const isClickable = hasTagPage(tag);
-                      const TagElement = isClickable ? 'a' : 'span';
-                      return (
-                        <TagElement
-                          key={i}
-                          {...(isClickable ? { href: `/tag/${getTagSlug(tag)}` } : {})}
-                          className={`px-4 py-2 bg-gray-800 text-white font-semibold rounded-full shadow-md hover:bg-gray-700 ${
-                            isClickable
-                              ? 'hover:bg-cyan-50 hover:border-cyan-500 transition-colors cursor-pointer'
-                              : 'opacity-75 cursor-default'
-                          }`}
-                        >
-                          {tag}
-                        </TagElement>
-                      );
-                    })}
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-
-          <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 border-t-4 border-cyan-400">
-            <div className="bg-gradient-to-r from-orange-200 to-amber-200 rounded-xl p-4 mb-6 border-2 border-orange-300">
-              <h2 className="text-2xl font-bold text-gray-800 flex items-center gap-2">
-                <span className="text-3xl">🎯</span>
-                More Brainrot Games
-              </h2>
-            </div>
-            
-            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3">
-              {allGames.slice(0, 12).map((game, i) => (
-                <a
-                  key={i}
-                  href={isRealGame(game) ? `/${game.slug}` : '#'}
-                  className="group cursor-pointer block"
-                  onClick={(e) => !isRealGame(game) && e.preventDefault()}
-                >
-                  <div className={`relative aspect-square rounded-xl overflow-hidden border-3 border-gray-300 hover:border-cyan-400 transition-all duration-300 hover:scale-105 shadow-md hover:shadow-xl ${isRealGame(game) ? 'bg-white' : `bg-gradient-to-br ${game.color}`}`}>
-                    {isRealGame(game) ? (
-                      <>
-                        {game.releaseDate && <NewBadge releaseDate={game.releaseDate} />}
-                        <img
-                          src={game.image}
-                          alt={game.name}
-                          className="w-full h-full object-cover"
-                        />
-                      </>
-                    ) : (
-                      <div className="w-full h-full flex items-center justify-center text-4xl md:text-5xl">
-                        {game.emoji}
-                      </div>
-                    )}
-                  </div>
-                  <p className="text-center text-sm font-semibold text-gray-700 mt-2 truncate">{game.name}</p>
-                </a>
-              ))}
-            </div>
-          </section>
-
-          <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 border-t-4 border-cyan-400">
-            <div className="bg-gradient-to-r from-orange-200 to-amber-200 rounded-xl p-4 mb-6 border-2 border-orange-300">
-              <h2 className="text-2xl font-bold text-gray-800 flex items-center gap-2">
-                <span className="text-3xl">📖</span>
-                About Italian Brainrot Clicker 2
-              </h2>
-            </div>
-
-            <div className="prose max-w-none">
-              <div className="bg-gray-50 rounded-xl p-6 mb-6 border-2 border-gray-200">
-                <h3 className="text-xl font-bold text-gray-800 mb-4">🎮 The Appeal</h3>
-                <p className="text-gray-700 leading-relaxed">
-                  Italian Brainrot Clicker 2 offers a light, humorous, yet extremely addictive entertainment experience. Each click generates Brainrot points to unlock meme characters and upgrade powers. From the <strong>tralalero tralala</strong> rhythm to the <strong>Tung Tung Tung Sahur</strong> chants!
-                </p>
-              </div>
-
-              <div className="bg-gray-50 rounded-xl p-6 mb-6 border-2 border-gray-200">
-                <h3 className="text-xl font-bold text-gray-800 mb-4">🎯 How to Play</h3>
-                <div className="space-y-4">
-                  <div>
-                    <h4 className="font-bold text-gray-800 mb-2">👆 Starting from the First Click</h4>
-                    <p className="text-gray-700">Just click or tap on the character to earn points. The faster you click, the more Brainrot points you gain!</p>
-                  </div>
-                  <div>
-                    <h4 className="font-bold text-gray-800 mb-2">⬆️ Upgrade System</h4>
-                    <ul className="list-disc list-inside space-y-1 text-gray-700 ml-4">
-                      <li><strong>Manual upgrade:</strong> +points per click</li>
-                      <li><strong>Auto upgrade:</strong> Generate points passively</li>
-                    </ul>
-                  </div>
-                  <div className="bg-white p-4 rounded-lg border-2 border-pink-200">
-                    <p className="font-bold text-gray-800 mb-2">💰 Examples:</p>
-                    <p className="text-sm text-gray-700">• Cursor: +1/click (50 pts) • Auto Click: +1/sec (125 pts) • Trallerro Farm: +6/sec (1,100 pts)</p>
-                  </div>
-                </div>
-              </div>
-
-              <div className="bg-gradient-to-r from-pink-50 to-red-50 rounded-xl p-6 mb-6 border-2 border-pink-300">
-                <h3 className="text-xl font-bold text-gray-800 mb-4">🎭 12 Unlockable Characters</h3>
-                <p className="text-gray-700 leading-relaxed">
-                  From Nike-wearing Trallerro Trallala to Chimpanzini Bananini, each character has unique sound effects. Unlock them at milestones like <strong>50,000–1,000,000 Brainrots</strong>!
-                </p>
-              </div>
-
-              <div className="bg-gradient-to-r from-rose-50 to-pink-50 rounded-xl p-6 border-2 border-rose-300">
-                <h3 className="text-xl font-bold text-gray-800 mb-4">⭐ Why Play?</h3>
-                <ul className="space-y-2 text-gray-700">
-                  <li>✨ Brilliant graphics with hilarious meme sounds</li>
-                  <li>🎮 Simple yet deep clicker mechanics</li>
-                  <li>⚡ Fast and satisfying leveling up</li>
-                  <li>🇮🇹 Experience unique Italian meme culture</li>
-                </ul>
-              </div>
-            </div>
-          </section>
-
-          {/* Comments Section */}
-          <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 border-t-4 border-cyan-400">
-            <Comments gameSlug={game.slug} />
-          </section>
-        </div>
-      </div>
-    </Layout>
+    <GameDetailTemplate
+      game={game}
+      aboutContent={aboutContent}
+      howToPlayContent={howToPlayContent}
+      featuresContent={featuresContent}
+    />
   );
 }

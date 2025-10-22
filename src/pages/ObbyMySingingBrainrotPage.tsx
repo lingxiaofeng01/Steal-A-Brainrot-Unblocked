@@ -1,263 +1,170 @@
-import { useState } from 'react';
-import { Play, Maximize, ExternalLink, Star, MessageCircle } from 'lucide-react';
-import Layout from '../components/Layout';
-import { hasTagPage, getTagSlug } from '../utils/tagUtils';
-import GamePreview from '../components/GamePreview';
-import StarRating from '../components/StarRating';
-import Comments from '../components/Comments';
-import NewBadge from '../components/NewBadge';
-import { allGames, isRealGame } from '../data/games';
+'use client';
+
+import GameDetailTemplate from '../components/GameDetailTemplate';
 
 export default function ObbyMySingingBrainrotPage() {
-  const [showGame, setShowGame] = useState(false);
-  const [isFullscreen, setIsFullscreen] = useState(false);
-
-  // Obby: My Singing Brainrot game data
   const game = {
-    title: 'Obby: My Singing Brainrot',
     slug: 'obby-my-singing-brainrot',
-    subtitle: 'Musical Parkour Adventure!',
-    description: 'Jump, climb, and sing your way through challenging obstacle courses! A unique blend of Roblox-style obby gameplay with musical elements and brainrot humor!',
-    playUrl: 'https://now.gg/apps/roblox-corporation/5349/roblox.html',
+    title: 'Obby: My Singing Brainrot',
+    subtitle: 'Musical Parkour Adventure with Meme Animals and Brainrot Humor!',
+    description: 'Obby: My Singing Brainrot is an exhilarating Roblox game where meme animals come to life as musicians. Dive into a vibrant world filled with wild adventures and quirky Italian neuro-animal memes. As a Roblox adventurer, you will explore various locations, collect resources, and put on your own musical shows. Each character has a unique sound that contributes to a mesmerizing Brainrot symphony, creating an energetic and exciting atmosphere.',
+    playUrl: 'https://st.8games.net/7/8g/igra-obbi-moj-poyushchij-brejnrot-1-3d/',
     thumbnail: '/images/thumbnails/obby-my-singing-brainrot.jpg',
     rating: 5.0,
-    playCount: 15678,
-    tags: ['Brainrot', 'Roblox', 'Music', 'Meme', 'Adventure', 'Parkour'],
-    backgroundColor: 'from-pink-500 via-purple-500 to-indigo-500'
+    playCount: 612,
+    tags: ['Roblox', 'Music', 'Meme', 'Adventure', 'Parkour', 'Brainrot'],
+    backgroundColor: 'from-pink-400 via-purple-400 to-indigo-400',
   };
 
-  const handlePlayClick = () => {
-    setShowGame(true);
-  };
+  const aboutContent = (
+    <div className="space-y-6">
+      <div className="bg-gradient-to-r from-purple-50 to-purple-100 border-l-4 border-purple-500 p-6 rounded-lg">
+        <h3 className="text-2xl font-bold text-purple-900 mb-3">🎮 What is Obby: My Singing Brainrot?</h3>
+        <p className="text-lg text-gray-700 leading-relaxed">
+          Obby: My Singing Brainrot is an exhilarating Roblox game where meme animals come to life as musicians. Dive into a vibrant world filled with wild adventures and quirky Italian neuro-animal memes. As a Roblox adventurer, you will explore various locations, collect resources, and put on your own musical shows. Each character has a unique sound that contributes to a mesmerizing Brainrot symphony, creating an energetic and exciting atmosphere. Gather heroes to enhance your stage performance and earn crystals faster in Obby: My Singing Brainrot!
+        </p>
+      </div>
 
-  const handleFullscreen = () => {
-    const container = document.getElementById('game-container');
-    if (!document.fullscreenElement && container) {
-      container.requestFullscreen();
-      setIsFullscreen(true);
-    } else if (document.exitFullscreen) {
-      document.exitFullscreen();
-      setIsFullscreen(false);
-    }
-  };
+      <div className="bg-gradient-to-r from-blue-50 to-blue-100 border-l-4 border-blue-500 p-6 rounded-lg">
+        <h3 className="text-2xl font-bold text-blue-900 mb-3">🎵 Musical Gameplay Experience</h3>
+        <p className="text-lg text-gray-700 leading-relaxed">
+          Obby: My Singing Brainrot combines parkour challenges with musical elements to create a unique gaming experience. The fusion of music, memes, and adventure creates an unforgettable journey through Obby: My Singing Brainrot. Players are not only challenged with parkour and resource collection but also immersed in a lively musical atmosphere. With each character contributing to the Brainrot symphony, you'll find yourself enjoying the whimsical journey as you strive to become the ultimate music master in Obby: My Singing Brainrot!
+        </p>
+      </div>
+
+      <div className="bg-gradient-to-r from-pink-50 to-pink-100 border-l-4 border-pink-500 p-6 rounded-lg">
+        <h3 className="text-2xl font-bold text-pink-900 mb-3">🏗️ Create Your Character</h3>
+        <p className="text-lg text-gray-700 leading-relaxed">
+          Begin your adventure in Obby: My Singing Brainrot by choosing your favorite meme animal character. Customize your character with various skins and accessories to make it uniquely yours. Navigate through different environments in Obby: My Singing Brainrot, each filled with unique challenges and resources. Keep an eye out for hidden areas that contain valuable items and collectibles. Your character choice will influence your gameplay style and musical contributions to the Brainrot symphony!
+        </p>
+      </div>
+
+      <div className="bg-gradient-to-r from-green-50 to-green-100 border-l-4 border-green-500 p-6 rounded-lg">
+        <h3 className="text-2xl font-bold text-green-900 mb-3">💎 Collecting Resources & Crystals</h3>
+        <p className="text-lg text-gray-700 leading-relaxed">
+          As you explore Obby: My Singing Brainrot, collect crystals scattered throughout the map. These are essential for upgrading your characters and unlocking new abilities in Obby: My Singing Brainrot. Look for collectible items and resources that can help you progress faster. Some may require completing tasks or overcoming obstacles. Discover secret locations that contain extra crystals and resources to accelerate your progress in Obby: My Singing Brainrot!
+        </p>
+      </div>
+
+      <div className="bg-gradient-to-r from-yellow-50 to-yellow-100 border-l-4 border-yellow-500 p-6 rounded-lg">
+        <h3 className="text-2xl font-bold text-yellow-900 mb-3">⚡ Thrilling Parkour Challenges</h3>
+        <p className="text-lg text-gray-700 leading-relaxed">
+          Engage in thrilling parkour challenges in Obby: My Singing Brainrot where you'll jump across platforms, avoid traps, and test your skills. Completing these courses rewards you with valuable items and crystals. Beware of the Brainrot Guards in Obby: My Singing Brainrot! If they catch you, you'll be sent back to the lobby. Use stealth and agility to evade them and progress through the challenging obstacle courses in Obby: My Singing Brainrot!
+        </p>
+      </div>
+
+      <div className="bg-gradient-to-r from-indigo-50 to-indigo-100 border-l-4 border-indigo-500 p-6 rounded-lg">
+        <h3 className="text-2xl font-bold text-indigo-900 mb-3">🎤 Hosting Concerts & Performances</h3>
+        <p className="text-lg text-gray-700 leading-relaxed">
+          Collect various meme characters to form a band in Obby: My Singing Brainrot. The more diverse your team, the better your concert will sound. Once your band is ready, take them to the stage and start your concert in Obby: My Singing Brainrot. Sing along to the music and show off your skills to earn rewards. Each character's unique sound contributes to the mesmerizing Brainrot symphony that defines Obby: My Singing Brainrot!
+        </p>
+      </div>
+
+      <div className="bg-gradient-to-r from-cyan-50 to-cyan-100 border-l-4 border-cyan-500 p-6 rounded-lg">
+        <h3 className="text-2xl font-bold text-cyan-900 mb-3">⭐ Why You'll Love Obby: My Singing Brainrot</h3>
+        <p className="text-lg text-gray-700 leading-relaxed">
+          Obby: My Singing Brainrot offers an unforgettable gaming experience combining music, memes, and adventure. The unique blend of parkour gameplay with musical elements makes Obby: My Singing Brainrot stand out from other Roblox games. Whether you're a fan of obbies, music games, or brainrot humor, Obby: My Singing Brainrot delivers hours of entertainment. Join the fun and let your creativity shine on stage in Obby: My Singing Brainrot. The charm, humor, and engaging gameplay make it a must-play title!
+        </p>
+      </div>
+    </div>
+  );
+
+  const howToPlayContent = (
+    <div className="space-y-6">
+      <div className="bg-gradient-to-r from-orange-50 to-orange-100 border-l-4 border-orange-500 p-6 rounded-lg">
+        <h3 className="text-2xl font-bold text-orange-900 mb-3">🎮 Step 1: Create Your Character</h3>
+        <p className="text-lg text-gray-700 leading-relaxed">
+          Start your Obby: My Singing Brainrot adventure by choosing your favorite meme animal character. Customize your character with various skins and accessories to make it uniquely yours. Your character selection will determine your appearance and musical contribution to the Brainrot symphony. Take time to explore the customization options available in Obby: My Singing Brainrot to create the perfect character for your adventure!
+        </p>
+      </div>
+
+      <div className="bg-gradient-to-r from-red-50 to-red-100 border-l-4 border-red-500 p-6 rounded-lg">
+        <h3 className="text-2xl font-bold text-red-900 mb-3">🏗️ Step 2: Navigate Through Environments</h3>
+        <p className="text-lg text-gray-700 leading-relaxed">
+          Navigate through different environments in Obby: My Singing Brainrot, each filled with unique challenges and resources. Explore various locations to discover hidden areas and collectibles. Pay attention to the layout of each environment in Obby: My Singing Brainrot to find the best routes for collecting resources. Understanding the map layout will help you progress more efficiently through Obby: My Singing Brainrot!
+        </p>
+      </div>
+
+      <div className="bg-gradient-to-r from-green-50 to-green-100 border-l-4 border-green-500 p-6 rounded-lg">
+        <h3 className="text-2xl font-bold text-green-900 mb-3">💎 Step 3: Collect Resources & Crystals</h3>
+        <p className="text-lg text-gray-700 leading-relaxed">
+          As you explore, collect crystals scattered throughout the map in Obby: My Singing Brainrot. These are essential for upgrading your characters and unlocking new abilities. Look for collectible items and resources that can help you progress. Some may require completing tasks or overcoming obstacles. Gather as many resources as possible to enhance your performance in Obby: My Singing Brainrot!
+        </p>
+      </div>
+
+      <div className="bg-gradient-to-r from-blue-50 to-blue-100 border-l-4 border-blue-500 p-6 rounded-lg">
+        <h3 className="text-2xl font-bold text-blue-900 mb-3">⚡ Step 4: Complete Parkour Challenges</h3>
+        <p className="text-lg text-gray-700 leading-relaxed">
+          Engage in thrilling parkour challenges in Obby: My Singing Brainrot where you'll jump across platforms, avoid traps, and test your skills. Completing these courses rewards you with valuable items and crystals. Beware of the Brainrot Guards in Obby: My Singing Brainrot! Use stealth and agility to evade them and progress through the challenging obstacle courses. Master the parkour mechanics to unlock new areas in Obby: My Singing Brainrot!
+        </p>
+      </div>
+
+      <div className="bg-gradient-to-r from-purple-50 to-purple-100 border-l-4 border-purple-500 p-6 rounded-lg">
+        <h3 className="text-2xl font-bold text-purple-900 mb-3">🎤 Step 5: Form Your Band & Host Concerts</h3>
+        <p className="text-lg text-gray-700 leading-relaxed">
+          Collect various meme characters to form a band in Obby: My Singing Brainrot. The more diverse your team, the better your concert will sound. Once your band is ready, take them to the stage and start your concert in Obby: My Singing Brainrot. Sing along to the music and show off your skills to earn rewards. Each character's unique sound contributes to the mesmerizing Brainrot symphony!
+        </p>
+      </div>
+
+      <div className="bg-gradient-to-r from-pink-50 to-pink-100 border-l-4 border-pink-500 p-6 rounded-lg">
+        <h3 className="text-2xl font-bold text-pink-900 mb-3">🏆 Step 6: Earn Crystals Faster & Progress</h3>
+        <p className="text-lg text-gray-700 leading-relaxed">
+          Reset your progress for bonus multipliers, allowing you to earn crystals more quickly in Obby: My Singing Brainrot. Participate in daily tasks that provide crystal rewards upon completion. Join special in-game events that offer exclusive rewards and increased crystal drops. Discover secret locations that contain extra crystals and resources. Exchange collected items with other players for additional crystals and upgrades in Obby: My Singing Brainrot!
+        </p>
+      </div>
+    </div>
+  );
+
+  const featuresContent = (
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div className="bg-gradient-to-br from-purple-100 to-purple-50 p-6 rounded-lg border-2 border-purple-300">
+        <h4 className="text-xl font-bold text-purple-900 mb-2">🎮 Meme Animal Characters</h4>
+        <p className="text-gray-700">Choose from quirky Italian neuro-animal memes and customize your character with various skins and accessories.</p>
+      </div>
+
+      <div className="bg-gradient-to-br from-blue-100 to-blue-50 p-6 rounded-lg border-2 border-blue-300">
+        <h4 className="text-xl font-bold text-blue-900 mb-2">🎵 Musical Gameplay</h4>
+        <p className="text-gray-700">Enjoy catchy tunes and unique sounds from each character that contribute to the mesmerizing Brainrot symphony.</p>
+      </div>
+
+      <div className="bg-gradient-to-br from-green-100 to-green-50 p-6 rounded-lg border-2 border-green-300">
+        <h4 className="text-xl font-bold text-green-900 mb-2">🏃 Parkour Challenges</h4>
+        <p className="text-gray-700">Navigate through thrilling obstacle courses, jump across platforms, and avoid traps to earn rewards.</p>
+      </div>
+
+      <div className="bg-gradient-to-br from-yellow-100 to-yellow-50 p-6 rounded-lg border-2 border-yellow-300">
+        <h4 className="text-xl font-bold text-yellow-900 mb-2">💎 Crystal Collection</h4>
+        <p className="text-gray-700">Collect crystals throughout the map to upgrade characters and unlock new abilities in the game.</p>
+      </div>
+
+      <div className="bg-gradient-to-br from-pink-100 to-pink-50 p-6 rounded-lg border-2 border-pink-300">
+        <h4 className="text-xl font-bold text-pink-900 mb-2">🎤 Concert Hosting</h4>
+        <p className="text-gray-700">Form a band with diverse meme characters and host concerts to earn rewards and showcase your skills.</p>
+      </div>
+
+      <div className="bg-gradient-to-br from-indigo-100 to-indigo-50 p-6 rounded-lg border-2 border-indigo-300">
+        <h4 className="text-xl font-bold text-indigo-900 mb-2">🌍 Multiple Environments</h4>
+        <p className="text-gray-700">Explore various locations filled with unique challenges, resources, and hidden areas to discover.</p>
+      </div>
+
+      <div className="bg-gradient-to-br from-cyan-100 to-cyan-50 p-6 rounded-lg border-2 border-cyan-300">
+        <h4 className="text-xl font-bold text-cyan-900 mb-2">😂 Brainrot Humor</h4>
+        <p className="text-gray-700">Experience hilarious meme references and quirky humor throughout your Obby: My Singing Brainrot adventure.</p>
+      </div>
+
+      <div className="bg-gradient-to-br from-orange-100 to-orange-50 p-6 rounded-lg border-2 border-orange-300">
+        <h4 className="text-xl font-bold text-orange-900 mb-2">🎯 Daily Tasks & Events</h4>
+        <p className="text-gray-700">Complete daily tasks and join special in-game events for exclusive rewards and increased crystal drops.</p>
+      </div>
+    </div>
+  );
 
   return (
-    <Layout>
-      <div className="min-h-screen bg-gradient-to-br from-gray-900 via-gray-800 to-black">
-        {/* 游戏展示区 */}
-        <div className="min-h-screen flex items-center justify-center p-4 md:p-6 lg:p-8 relative">
-          {/* 背景图 */}
-          <div
-            className="absolute inset-0 bg-cover bg-center opacity-30"
-            style={{
-              backgroundImage: 'url(https://images.unsplash.com/photo-1514320291840-2e0a9bf2a9ae?w=1920&h=1080&fit=crop)',
-              filter: 'blur(12px)',
-            }}
-          />
-
-          {/* 渐变遮罩 */}
-          <div className="absolute inset-0 bg-gradient-to-br from-pink-600/20 via-purple-600/20 to-indigo-600/20" />
-
-          {/* 游戏卡片 */}
-          <div className="relative z-10 w-full max-w-6xl">
-            {!showGame ? (
-              /* 游戏预览卡片 */
-              <GamePreview
-                title={game.title}
-                description={game.description}
-                thumbnail={game.thumbnail}
-                onPlayClick={handlePlayClick}
-                backgroundColor={game.backgroundColor}
-              />
-            ) : (
-              /* 游戏播放中 */
-              <div id="game-container" className="relative bg-black rounded-3xl overflow-hidden border-4 border-cyan-400 shadow-2xl">
-                <div className="aspect-video relative">
-                  <iframe
-                    id="game"
-                    frameBorder="0"
-                    allow="autoplay"
-                    allowFullScreen
-                    seamless
-                    scrolling="no"
-                    src={game.playUrl}
-                    className="absolute inset-0 w-full h-full border-0"
-                  />
-                </div>
-                <div className="absolute top-4 right-4 flex gap-2 z-10">
-                  <button
-                    onClick={handleFullscreen}
-                    className="p-3 bg-gray-900/80 hover:bg-gray-800 rounded-lg transition-colors shadow-lg"
-                    title="Fullscreen"
-                  >
-                    <Maximize className="w-5 h-5 text-white" />
-                  </button>
-                  <a
-                    href={game.playUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="p-3 bg-gray-900/80 hover:bg-gray-800 rounded-lg transition-colors shadow-lg"
-                    title="Open in new tab"
-                  >
-                    <ExternalLink className="w-5 h-5 text-white" />
-                  </a>
-                </div>
-              </div>
-            )}
-          </div>
-        </div>
-
-        {/* 游戏信息区 */}
-        <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 border-t-4 border-cyan-400">
-          <div className="bg-gradient-to-r from-pink-100 via-purple-100 to-indigo-100 rounded-2xl p-8 shadow-xl">
-            <div className="flex flex-col md:flex-row gap-8">
-              {/* 游戏缩略图 */}
-              <div className="md:w-1/3">
-                <img
-                  src={game.thumbnail}
-                  alt={game.title}
-                  className="w-full rounded-xl shadow-lg border-4 border-white"
-                />
-              </div>
-
-              {/* 游戏详情 */}
-              <div className="md:w-2/3">
-                <h1 className="text-4xl font-bold text-gray-800 mb-2">{game.title}</h1>
-                <p className="text-xl text-gray-600 mb-4">{game.subtitle}</p>
-
-                <div className="flex items-center gap-4 mb-4">
-                  <StarRating rating={game.rating} />
-                  <span className="text-gray-600">
-                    <Play className="w-4 h-4 inline mr-1" />
-                    {game.playCount.toLocaleString()} plays
-                  </span>
-                </div>
-
-                <p className="text-gray-700 mb-6">{game.description}</p>
-
-                {/* 标签 */}
-                <div className="flex flex-wrap gap-2">
-                  {game.tags.map((tag, i) => (
-                    <a
-                      key={i}
-                      href={hasTagPage(tag) ? `/tag/${getTagSlug(tag)}` : '#'}
-                      className={`px-4 py-2 rounded-full text-sm font-semibold transition-all ${
-                        hasTagPage(tag)
-                          ? 'bg-gray-800 text-white hover:bg-gray-700 cursor-pointer'
-                          : 'bg-gray-300 text-gray-600 cursor-default'
-                      }`}
-                      onClick={(e) => !hasTagPage(tag) && e.preventDefault()}
-                    >
-                      {tag}
-                    </a>
-                  ))}
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* 游戏介绍 */}
-        <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 border-t-4 border-cyan-400">
-          <div className="bg-white rounded-2xl p-8 shadow-xl">
-            <h2 className="text-3xl font-bold text-gray-800 mb-6">About the Game</h2>
-            <div className="prose max-w-none">
-              <p className="text-gray-700 text-lg leading-relaxed mb-4">
-                Obby: My Singing Brainrot combines the best of Roblox-style obstacle courses with musical gameplay and hilarious brainrot memes! Navigate through challenging parkour sections while enjoying catchy tunes and unexpected surprises.
-              </p>
-              <p className="text-gray-700 text-lg leading-relaxed">
-                Perfect for fans of Roblox obbies and musical games, this unique experience will test your platforming skills while keeping you entertained with its quirky humor and engaging soundtrack!
-              </p>
-            </div>
-
-            <h3 className="text-2xl font-bold text-gray-800 mt-8 mb-4">How to Play</h3>
-            <ul className="space-y-2 text-gray-700">
-              <li className="flex items-start gap-2">
-                <span className="text-cyan-500 font-bold">•</span>
-                <span><strong>Jump:</strong> Use spacebar or tap to jump over obstacles</span>
-              </li>
-              <li className="flex items-start gap-2">
-                <span className="text-cyan-500 font-bold">•</span>
-                <span><strong>Move:</strong> Use WASD or arrow keys to navigate</span>
-              </li>
-              <li className="flex items-start gap-2">
-                <span className="text-cyan-500 font-bold">•</span>
-                <span><strong>Sing:</strong> Collect musical notes to unlock special abilities</span>
-              </li>
-              <li className="flex items-start gap-2">
-                <span className="text-cyan-500 font-bold">•</span>
-                <span><strong>Complete:</strong> Reach the end of each level to progress</span>
-              </li>
-            </ul>
-
-            <h3 className="text-2xl font-bold text-gray-800 mt-8 mb-4">Game Features</h3>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              {[
-                { icon: '🎵', title: 'Musical Gameplay', desc: 'Enjoy catchy tunes while you play' },
-                { icon: '🏃', title: 'Challenging Parkour', desc: 'Test your platforming skills' },
-                { icon: '😂', title: 'Brainrot Humor', desc: 'Hilarious memes and surprises' },
-                { icon: '🎮', title: 'Roblox Style', desc: 'Classic obby gameplay mechanics' },
-              ].map((feature, i) => (
-                <div key={i} className="bg-gradient-to-r from-pink-50 to-purple-50 rounded-xl p-4 border-2 border-pink-200">
-                  <div className="flex items-center gap-3">
-                    <span className="text-3xl">{feature.icon}</span>
-                    <div>
-                      <h4 className="font-bold text-gray-800">{feature.title}</h4>
-                      <p className="text-sm text-gray-600">{feature.desc}</p>
-                    </div>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        {/* 评论区 */}
-        <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 border-t-4 border-cyan-400">
-          <Comments gameSlug={game.slug} />
-        </section>
-
-        {/* More Games */}
-        <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 border-t-4 border-cyan-400">
-          <div className="mb-6">
-            <h2 className="text-3xl font-bold text-white flex items-center gap-2">
-              <span className="text-4xl">🎮</span>
-              More Games
-            </h2>
-          </div>
-
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3">
-            {allGames.slice(0, 12).map((g, i) => (
-              <a
-                key={i}
-                href={isRealGame(g) ? `/${g.slug}` : '#'}
-                className="group cursor-pointer block"
-                onClick={(e) => !isRealGame(g) && e.preventDefault()}
-              >
-                <div className={`relative aspect-square rounded-xl overflow-hidden border-3 border-gray-300 hover:border-cyan-400 transition-all duration-300 hover:scale-105 shadow-md hover:shadow-xl ${isRealGame(g) ? 'bg-white' : `bg-gradient-to-br ${g.color}`}`}>
-                  {isRealGame(g) ? (
-                    <>
-                      {g.releaseDate && <NewBadge releaseDate={g.releaseDate} />}
-                      <img
-                        src={g.image}
-                        alt={g.name}
-                        className="w-full h-full object-cover"
-                      />
-                    </>
-                  ) : (
-                    <div className="w-full h-full flex items-center justify-center text-3xl md:text-4xl">
-                      {g.emoji}
-                    </div>
-                  )}
-                </div>
-                <div className="mt-2 text-center">
-                  <p className="text-sm font-semibold text-white truncate">{g.name}</p>
-                </div>
-              </a>
-            ))}
-          </div>
-        </section>
-      </div>
-    </Layout>
+    <GameDetailTemplate
+      game={game}
+      aboutContent={aboutContent}
+      howToPlayContent={howToPlayContent}
+      featuresContent={featuresContent}
+    />
   );
 }

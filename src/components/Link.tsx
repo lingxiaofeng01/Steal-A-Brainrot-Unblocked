@@ -1,4 +1,7 @@
-import { ReactNode, MouseEvent } from 'react';
+'use client';
+
+import { ReactNode } from 'react';
+import NextLink from 'next/link';
 
 interface LinkProps {
   href: string;
@@ -8,16 +11,9 @@ interface LinkProps {
 }
 
 export function Link({ href, children, className = '', onClick }: LinkProps) {
-  const handleClick = (e: MouseEvent<HTMLAnchorElement>) => {
-    e.preventDefault();
-    if (onClick) onClick();
-    window.history.pushState({}, '', href);
-    window.dispatchEvent(new PopStateEvent('popstate'));
-  };
-
   return (
-    <a href={href} onClick={handleClick} className={className}>
+    <NextLink href={href} className={className} onClick={onClick}>
       {children}
-    </a>
+    </NextLink>
   );
 }

@@ -1,260 +1,170 @@
-import { useState } from 'react';
-import { Play, Maximize, ExternalLink, Star, MessageCircle } from 'lucide-react';
-import Layout from '../components/Layout';
-import { hasTagPage, getTagSlug } from '../utils/tagUtils';
-import GamePreview from '../components/GamePreview';
-import StarRating from '../components/StarRating';
-import Comments from '../components/Comments';
-import NewBadge from '../components/NewBadge';
-import { allGames, isRealGame } from '../data/games';
+'use client';
+
+import GameDetailTemplate from '../components/GameDetailTemplate';
 
 export default function PlantsVsBrainrotsPage() {
-  const [showGame, setShowGame] = useState(false);
-  const [isFullscreen, setIsFullscreen] = useState(false);
-
   const game = {
-    title: 'Plants vs Brainrots',
     slug: 'plants-vs-brainrots',
-    subtitle: 'Tower Defense Meme Battle!',
-    description: 'A unique version of the brainrot world! Control plants and face Brainrots with a mutation system that changes both strength and appearance.',
-    playUrl: 'https://st.8games.net/7/8g/igra-ukradi-brejnrot-100-original/',
+    title: 'Plants vs Brainrots',
+    subtitle: 'Tower Defense Strategy Game - Grow Plants to Defend Against Brainrot Waves!',
+    description: 'Plants vs Brainrots is a creative tower defense and gardening simulation game where you plant seeds, nurture plants, and strategically position them to prevent Brainrots from attacking your base. With unique plant mutations, passive income systems, and strategic gameplay, become a gardening master!',
+    playUrl: 'https://st.8games.net/7/8g/igra-brejnroty-protiv-rastenij/',
     thumbnail: '/images/thumbnails/plants-vs-brainrots.jpg',
     rating: 4.1,
-    playCount: 40,
+    playCount: 21567,
     tags: ['Brainrot', 'Strategy', 'Tower Defense', 'Meme', 'Casual', 'Funny'],
-    backgroundColor: 'from-green-400 via-emerald-400 to-teal-400'
+    backgroundColor: 'from-green-400 via-emerald-400 to-teal-400',
   };
 
-  const handlePlayClick = () => {
-    setShowGame(true);
-  };
+  const aboutContent = (
+    <div className="space-y-6">
+      <div className="bg-gradient-to-r from-purple-50 to-purple-100 border-l-4 border-purple-500 p-6 rounded-lg">
+        <h3 className="text-2xl font-bold text-purple-900 mb-3">🎮 What is Plants vs Brainrots?</h3>
+        <p className="text-lg text-gray-700 leading-relaxed">
+          Plants vs Brainrots is a highly creative tower defense game that combines strategic gardening simulation with hilarious Brainrot meme characters. Your mission is to grow plants, nurture them to full potential, and strategically position them to fend off waves of attacking Brainrots. Each plant has unique stats for damage, seed cost, and growth time. The rarer the plant, the stronger it is, but it takes longer to mature. Plants vs Brainrots offers an engaging blend of strategy and humor!
+        </p>
+      </div>
 
-  const handleFullscreen = () => {
-    const container = document.getElementById('game-container');
-    if (!document.fullscreenElement && container) {
-      container.requestFullscreen();
-      setIsFullscreen(true);
-    } else if (document.exitFullscreen) {
-      document.exitFullscreen();
-      setIsFullscreen(false);
-    }
-  };
+      <div className="bg-gradient-to-r from-blue-50 to-blue-100 border-l-4 border-blue-500 p-6 rounded-lg">
+        <h3 className="text-2xl font-bold text-blue-900 mb-3">🌱 Strategic Plant Placement</h3>
+        <p className="text-lg text-gray-700 leading-relaxed">
+          In Plants vs Brainrots, strategic plant placement is crucial to your success. Position plants near the Brainrots' path to maximize damage output. Different plants have varying damage ranges and attack speeds. Cactus deals 10 damage, Strawberry deals 25 damage, while legendary plants like Watermelon deal 750 damage! Plan your garden layout carefully to create an impenetrable defense. Master the art of plant positioning in Plants vs Brainrots to defeat every wave!
+        </p>
+      </div>
+
+      <div className="bg-gradient-to-r from-pink-50 to-pink-100 border-l-4 border-pink-500 p-6 rounded-lg">
+        <h3 className="text-2xl font-bold text-pink-900 mb-3">✨ Powerful Mutation System</h3>
+        <p className="text-lg text-gray-700 leading-relaxed">
+          Plants vs Brainrots features an exciting mutation system that significantly boosts plant and Brainrot abilities. Plants and Brainrots have chances to gain mutations like Gold (2x), Diamond (3x), Neon (4.5x), or Frozen (4x with slowing effects). A Neon-mutated Watermelon can deal up to 3,375 damage, becoming a devastating weapon! Frozen mutations slow Brainrots, giving other plants more time to attack. Leverage mutations in Plants vs Brainrots to dominate!
+        </p>
+      </div>
+
+      <div className="bg-gradient-to-r from-green-50 to-green-100 border-l-4 border-green-500 p-6 rounded-lg">
+        <h3 className="text-2xl font-bold text-green-900 mb-3">💰 Passive Income & Resource Management</h3>
+        <p className="text-lg text-gray-700 leading-relaxed">
+          After defeating Brainrots in Plants vs Brainrots, you can sell them for cash or place them in your base to generate passive income. High-income Brainrots like Fluri Flura generate $6/sec, while epic Brainrots like Brr Brr Patapim generate $12/sec! Manage your resources effectively by balancing investments in new plants and saving cash for tougher waves. Neon-mutated Brainrots boost income by 4.5 times, helping you accumulate wealth quickly in Plants vs Brainrots!
+        </p>
+      </div>
+
+      <div className="bg-gradient-to-r from-yellow-50 to-yellow-100 border-l-4 border-yellow-500 p-6 rounded-lg">
+        <h3 className="text-2xl font-bold text-yellow-900 mb-3">🌊 Wave-Based Gameplay</h3>
+        <p className="text-lg text-gray-700 leading-relaxed">
+          Plants vs Brainrots features wave-based gameplay where Brainrots attack your base in increasingly challenging waves. Each wave brings different rarities and values of Brainrots. Early waves feature common Brainrots, while later waves introduce rare and epic variants. Prepare your defenses between waves by upgrading plants and collecting high-income Brainrots. The difficulty curve in Plants vs Brainrots is well-balanced, providing constant challenges and excitement!
+        </p>
+      </div>
+
+      <div className="bg-gradient-to-r from-indigo-50 to-indigo-100 border-l-4 border-indigo-500 p-6 rounded-lg">
+        <h3 className="text-2xl font-bold text-indigo-900 mb-3">🎯 Diverse Plant Arsenal</h3>
+        <p className="text-lg text-gray-700 leading-relaxed">
+          Plants vs Brainrots offers a diverse arsenal of plants with varying rarity levels and abilities. Start with affordable plants like Cactus ($200) or Strawberry ($1,250) for beginners. Progress to epic plants like Pumpkin ($5,000) and legendary plants like Dragon Fruit ($100,000). Ultimate plants like Mr. Carrot ($50,000,000) deal massive 3,500 damage! Each plant in Plants vs Brainrots has unique characteristics, encouraging strategic experimentation and collection!
+        </p>
+      </div>
+
+      <div className="bg-gradient-to-r from-cyan-50 to-cyan-100 border-l-4 border-cyan-500 p-6 rounded-lg">
+        <h3 className="text-2xl font-bold text-cyan-900 mb-3">⭐ Why You'll Love Plants vs Brainrots</h3>
+        <p className="text-lg text-gray-700 leading-relaxed">
+          Plants vs Brainrots combines classic tower defense mechanics with hilarious Brainrot meme characters and engaging gardening simulation. The game offers endless entertainment with diverse plants, strategic mutations, and passive income systems. Whether you're a casual player seeking relaxation or a competitive gamer chasing high scores, Plants vs Brainrots delivers an experience that's both accessible and deeply engaging. Start playing today and become a gardening master!
+        </p>
+      </div>
+    </div>
+  );
+
+  const howToPlayContent = (
+    <div className="space-y-6">
+      <div className="bg-gradient-to-r from-orange-50 to-orange-100 border-l-4 border-orange-500 p-6 rounded-lg">
+        <h3 className="text-2xl font-bold text-orange-900 mb-3">🎮 Step 1: Start Your Garden</h3>
+        <p className="text-lg text-gray-700 leading-relaxed">
+          Launch Plants vs Brainrots and begin your gardening adventure. You start with initial currency to purchase seeds from the in-game shop. Choose your first plants wisely - affordable options like Cactus ($200) are perfect for beginners. Plan your garden layout and decide where to place your initial defenses. The first wave will arrive soon, so prepare your plants strategically!
+        </p>
+      </div>
+
+      <div className="bg-gradient-to-r from-red-50 to-red-100 border-l-4 border-red-500 p-6 rounded-lg">
+        <h3 className="text-2xl font-bold text-red-900 mb-3">🌱 Step 2: Plant Seeds & Nurture Growth</h3>
+        <p className="text-lg text-gray-700 leading-relaxed">
+          Purchase seeds and plant them in your garden. Each plant in Plants vs Brainrots has a growth time before it becomes active. Rarer plants take longer to mature but deal significantly more damage. Monitor your plants' growth and watch for mutations that occur during the growing process. Mutations like Gold, Diamond, Neon, or Frozen dramatically boost your plants' effectiveness!
+        </p>
+      </div>
+
+      <div className="bg-gradient-to-r from-green-50 to-green-100 border-l-4 border-green-500 p-6 rounded-lg">
+        <h3 className="text-2xl font-bold text-green-900 mb-3">🛡️ Step 3: Defend Against Brainrot Waves</h3>
+        <p className="text-lg text-gray-700 leading-relaxed">
+          Brainrots attack in waves, and your plants must defend your base. Position plants strategically along the Brainrots' path to maximize damage. Watch your plants attack and defeat incoming Brainrots. Each defeated Brainrot goes to your inventory. The more waves you survive, the stronger the attacks become. Stay alert and adjust your strategy as needed in Plants vs Brainrots!
+        </p>
+      </div>
+
+      <div className="bg-gradient-to-r from-blue-50 to-blue-100 border-l-4 border-blue-500 p-6 rounded-lg">
+        <h3 className="text-2xl font-bold text-blue-900 mb-3">💰 Step 4: Collect & Manage Resources</h3>
+        <p className="text-lg text-gray-700 leading-relaxed">
+          After defeating Brainrots in Plants vs Brainrots, collect them and decide whether to sell for immediate cash or place them in your base for passive income. High-income Brainrots generate continuous revenue. Manage your currency carefully - balance spending on new plants with saving for emergencies. Use your accumulated wealth to upgrade your garden and purchase stronger plants!
+        </p>
+      </div>
+
+      <div className="bg-gradient-to-r from-purple-50 to-purple-100 border-l-4 border-purple-500 p-6 rounded-lg">
+        <h3 className="text-2xl font-bold text-purple-900 mb-3">✨ Step 5: Leverage Mutations & Upgrades</h3>
+        <p className="text-lg text-gray-700 leading-relaxed">
+          Prioritize using mutated plants in key positions. Neon-mutated plants deal 4.5x damage, while Frozen mutations slow Brainrots. Check your inventory regularly for mutations and strategically deploy them. Upgrade your garden with better plants and more efficient layouts. The mutation system in Plants vs Brainrots is key to dominating challenging waves!
+        </p>
+      </div>
+
+      <div className="bg-gradient-to-r from-pink-50 to-pink-100 border-l-4 border-pink-500 p-6 rounded-lg">
+        <h3 className="text-2xl font-bold text-pink-900 mb-3">🏆 Step 6: Become a Gardening Master</h3>
+        <p className="text-lg text-gray-700 leading-relaxed">
+          Continue progressing through waves, collecting rare plants, and optimizing your garden layout. Unlock legendary and mythic plants as you accumulate wealth. Master the mutation system and passive income generation. Compete with friends to see who can survive the most waves. Become the ultimate gardening master in Plants vs Brainrots!
+        </p>
+      </div>
+    </div>
+  );
+
+  const featuresContent = (
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div className="bg-gradient-to-br from-purple-100 to-purple-50 p-6 rounded-lg border-2 border-purple-300">
+        <h4 className="text-xl font-bold text-purple-900 mb-2">🎮 Tower Defense Strategy</h4>
+        <p className="text-gray-700">Classic tower defense mechanics combined with gardening simulation for unique strategic gameplay.</p>
+      </div>
+
+      <div className="bg-gradient-to-br from-blue-100 to-blue-50 p-6 rounded-lg border-2 border-blue-300">
+        <h4 className="text-xl font-bold text-blue-900 mb-2">🌱 Diverse Plant Arsenal</h4>
+        <p className="text-gray-700">Collect plants from Rare to Secret rarity, each with unique damage stats and growth times.</p>
+      </div>
+
+      <div className="bg-gradient-to-br from-green-100 to-green-50 p-6 rounded-lg border-2 border-green-300">
+        <h4 className="text-xl font-bold text-green-900 mb-2">✨ Mutation System</h4>
+        <p className="text-gray-700">Plants and Brainrots gain mutations like Gold, Diamond, Neon, and Frozen for massive power boosts.</p>
+      </div>
+
+      <div className="bg-gradient-to-br from-yellow-100 to-yellow-50 p-6 rounded-lg border-2 border-yellow-300">
+        <h4 className="text-xl font-bold text-yellow-900 mb-2">💰 Passive Income</h4>
+        <p className="text-gray-700">Place defeated Brainrots in your base to generate continuous passive income streams.</p>
+      </div>
+
+      <div className="bg-gradient-to-br from-pink-100 to-pink-50 p-6 rounded-lg border-2 border-pink-300">
+        <h4 className="text-xl font-bold text-pink-900 mb-2">🌊 Wave-Based Challenges</h4>
+        <p className="text-gray-700">Face increasingly difficult waves of Brainrots with escalating difficulty and rewards.</p>
+      </div>
+
+      <div className="bg-gradient-to-br from-indigo-100 to-indigo-50 p-6 rounded-lg border-2 border-indigo-300">
+        <h4 className="text-xl font-bold text-indigo-900 mb-2">🎯 Strategic Placement</h4>
+        <p className="text-gray-700">Position plants strategically along Brainrot paths to maximize damage and defense efficiency.</p>
+      </div>
+
+      <div className="bg-gradient-to-br from-cyan-100 to-cyan-50 p-6 rounded-lg border-2 border-cyan-300">
+        <h4 className="text-xl font-bold text-cyan-900 mb-2">🏆 Progression System</h4>
+        <p className="text-gray-700">Unlock legendary and mythic plants as you progress and accumulate wealth in the game.</p>
+      </div>
+
+      <div className="bg-gradient-to-br from-orange-100 to-orange-50 p-6 rounded-lg border-2 border-orange-300">
+        <h4 className="text-xl font-bold text-orange-900 mb-2">😂 Hilarious Brainrot Characters</h4>
+        <p className="text-gray-700">Encounter iconic and funny Brainrot meme characters throughout your gardening adventure.</p>
+      </div>
+    </div>
+  );
 
   return (
-    <Layout>
-      <div className="min-h-screen bg-gradient-to-br from-green-900 via-emerald-800 to-teal-900">
-        <div className="min-h-screen flex items-center justify-center p-4 md:p-6 lg:p-8 relative">
-          <div
-            className="absolute inset-0 bg-cover bg-center opacity-20"
-            style={{
-              backgroundImage: 'url(https://images.unsplash.com/photo-1466692476868-aef1dfb1e735?w=1920&h=1080&fit=crop)',
-              filter: 'blur(12px)',
-            }}
-          />
-          <div className="absolute inset-0 bg-gradient-to-br from-green-600/20 via-emerald-600/20 to-teal-600/20" />
-
-          <div className="relative z-10 w-full max-w-6xl">
-            {!showGame ? (
-              <GamePreview
-                title={game.title}
-                description={game.description}
-                thumbnail={game.thumbnail}
-                onPlayClick={handlePlayClick}
-                backgroundColor={game.backgroundColor}
-              />
-            ) : (
-              <div id="game-container" className="relative bg-black rounded-3xl overflow-hidden border-4 border-cyan-400 shadow-2xl">
-                <div className="aspect-video relative">
-                  <iframe
-                    id="iframehtml5"
-                    width="100%"
-                    height="100%"
-                    frameBorder="0"
-                    scrolling="auto"
-                    allowFullScreen
-                    className="absolute inset-0 w-full h-full border-0"
-                    src={game.playUrl}
-                  />
-                </div>
-                <div className="absolute top-4 right-4 flex gap-2 z-10">
-                  <button
-                    onClick={handleFullscreen}
-                    className="p-3 bg-gray-900/80 hover:bg-gray-800 rounded-lg transition-colors shadow-lg"
-                    title="Fullscreen"
-                  >
-                    <Maximize className="w-5 h-5 text-white" />
-                  </button>
-                  <a
-                    href={game.playUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="p-3 bg-gray-900/80 hover:bg-gray-800 rounded-lg transition-colors shadow-lg"
-                    title="Open in new tab"
-                  >
-                    <ExternalLink className="w-5 h-5 text-white" />
-                  </a>
-                </div>
-              </div>
-            )}
-          </div>
-        </div>
-
-        <div className="bg-white">
-          <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 border-t-4 border-cyan-400">
-            <div className="bg-gradient-to-r from-orange-200 to-amber-200 rounded-2xl p-6 border-4 border-cyan-400 shadow-xl">
-              <div className="flex items-start gap-6">
-                <div className="flex-shrink-0">
-                  <div className="w-20 h-20 rounded-xl overflow-hidden shadow-lg border-2 border-white">
-                    <img
-                      src={game.thumbnail}
-                      alt={game.title}
-                      className="w-full h-full object-cover"
-                    />
-                  </div>
-                </div>
-                <div className="flex-1">
-                  <h2 className="text-3xl font-bold text-gray-800 mb-2">{game.title}</h2>
-                  
-                  {/* Star Rating */}
-                  <div className="mb-4">
-                    <StarRating gameSlug={game.slug} />
-                  </div>
-                  <p className="text-gray-700 text-lg mb-4">{game.description}</p>
-                  <div className="flex flex-wrap gap-2">
-                    {game.tags.map((tag, i) => {
-                      const isClickable = hasTagPage(tag);
-                      const TagElement = isClickable ? 'a' : 'span';
-                      return (
-                        <TagElement
-                          key={i}
-                          {...(isClickable ? { href: `/tag/${getTagSlug(tag)}` } : {})}
-                          className={`px-4 py-2 bg-gray-800 text-white font-semibold rounded-full shadow-md hover:bg-gray-700 ${
-                            isClickable
-                              ? 'hover:bg-cyan-50 hover:border-cyan-500 transition-colors cursor-pointer'
-                              : 'opacity-75 cursor-default'
-                          }`}
-                        >
-                          {tag}
-                        </TagElement>
-                      );
-                    })}
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-
-          <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 border-t-4 border-cyan-400">
-            <div className="bg-gradient-to-r from-orange-200 to-amber-200 rounded-xl p-4 mb-6 border-2 border-orange-300">
-              <h2 className="text-2xl font-bold text-gray-800 flex items-center gap-2">
-                <span className="text-3xl">🎯</span>
-                More Brainrot Games
-              </h2>
-            </div>
-            
-            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3">
-              {allGames.slice(0, 12).map((game, i) => (
-                <a
-                  key={i}
-                  href={isRealGame(game) ? `/${game.slug}` : '#'}
-                  className="group cursor-pointer block"
-                  onClick={(e) => !isRealGame(game) && e.preventDefault()}
-                >
-                  <div className={`relative aspect-square rounded-xl overflow-hidden border-3 border-gray-300 hover:border-cyan-400 transition-all duration-300 hover:scale-105 shadow-md hover:shadow-xl ${isRealGame(game) ? 'bg-white' : `bg-gradient-to-br ${game.color}`}`}>
-                    {isRealGame(game) ? (
-                      <>
-                        {game.releaseDate && <NewBadge releaseDate={game.releaseDate} />}
-                        <img
-                          src={game.image}
-                          alt={game.name}
-                          className="w-full h-full object-cover"
-                        />
-                      </>
-                    ) : (
-                      <div className="w-full h-full flex items-center justify-center text-4xl md:text-5xl">
-                        {game.emoji}
-                      </div>
-                    )}
-                  </div>
-                  <p className="text-center text-sm font-semibold text-gray-700 mt-2 truncate">{game.name}</p>
-                </a>
-              ))}
-            </div>
-          </section>
-
-          <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 border-t-4 border-cyan-400">
-            <div className="bg-gradient-to-r from-orange-200 to-amber-200 rounded-xl p-4 mb-6 border-2 border-orange-300">
-              <h2 className="text-2xl font-bold text-gray-800 flex items-center gap-2">
-                <span className="text-3xl">📖</span>
-                About Plants vs Brainrots
-              </h2>
-            </div>
-
-            <div className="prose max-w-none">
-              <div className="bg-gray-50 rounded-xl p-6 mb-6 border-2 border-gray-200">
-                <h3 className="text-xl font-bold text-gray-800 mb-4">🧬 Mutations System</h3>
-                <p className="text-gray-700 leading-relaxed mb-4">
-                  Each mutation has a different multiplier affecting strength or money earned. Some appear randomly, others activate in rare weather events.
-                </p>
-                <div className="grid md:grid-cols-2 gap-4">
-                  <div className="bg-green-50 p-4 rounded-lg border-2 border-green-200">
-                    <h4 className="font-bold text-gray-800 mb-2">🌱 Plants</h4>
-                    <p className="text-sm text-gray-700">Increase damage with special effects like freezing</p>
-                  </div>
-                  <div className="bg-red-50 p-4 rounded-lg border-2 border-red-200">
-                    <h4 className="font-bold text-gray-800 mb-2">🧟 Brainrots</h4>
-                    <p className="text-sm text-gray-700">Earn money faster, increasing difficulty</p>
-                  </div>
-                </div>
-              </div>
-
-              <div className="bg-gray-50 rounded-xl p-6 mb-6 border-2 border-gray-200">
-                <h3 className="text-xl font-bold text-gray-800 mb-4">🎮 How to Play</h3>
-                <div className="space-y-2 text-gray-700">
-                  <p>1️⃣ <strong>Choose and Plant</strong> - Select plants strategically</p>
-                  <p>2️⃣ <strong>Face Brainrots</strong> - Defend against waves of enemies</p>
-                  <p>3️⃣ <strong>Manage Mutations</strong> - Watch for weather events</p>
-                  <p>4️⃣ <strong>Collect & Upgrade</strong> - Gather coins and upgrade</p>
-                  <p>5️⃣ <strong>Survive</strong> - Last as long as possible!</p>
-                </div>
-              </div>
-
-              <div className="grid md:grid-cols-2 gap-4 mb-6">
-                <div className="bg-gradient-to-r from-green-50 to-emerald-50 rounded-xl p-4 border-2 border-green-300">
-                  <h3 className="text-lg font-bold text-gray-800 mb-3">🌿 Top Plants</h3>
-                  <div className="space-y-1 text-sm text-gray-700">
-                    <p>• Cactus (Rare) - $200 / 10 dmg</p>
-                    <p>• Pumpkin (Epic) - $5k / 55 dmg</p>
-                    <p>• Dragon Fruit (Legendary) - $100k / 250 dmg</p>
-                    <p>• Mr. Carrot (Secret) - $50m / 3.5k dmg</p>
-                  </div>
-                </div>
-                <div className="bg-gradient-to-r from-red-50 to-orange-50 rounded-xl p-4 border-2 border-red-300">
-                  <h3 className="text-lg font-bold text-gray-800 mb-3">🧟 Top Brainrots</h3>
-                  <div className="space-y-1 text-sm text-gray-700">
-                    <p>• Noobini Bananini (Rare) - $2/s</p>
-                    <p>• Trippi Troppi (Epic) - $15/s</p>
-                    <p>• Gangster Footera (Legendary) - $36/s</p>
-                    <p>• Matteo (Divine) - $600/s</p>
-                  </div>
-                </div>
-              </div>
-
-              <div className="bg-gradient-to-r from-teal-50 to-cyan-50 rounded-xl p-6 border-2 border-teal-300">
-                <h3 className="text-xl font-bold text-gray-800 mb-4">⭐ Why Play?</h3>
-                <p className="text-gray-700 leading-relaxed">
-                  <strong>Unpredictability</strong> makes it exciting - you never know which mutation appears next! A Frozen plant can save the game, while a Galaxy Brainrot can turn it into a nightmare. The game combines <strong>tactical and luck elements</strong>, making each play unique. Follow weather events for the rarest mutations!
-                </p>
-              </div>
-            </div>
-          </section>
-
-          {/* Comments Section */}
-          <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 border-t-4 border-cyan-400">
-            <Comments gameSlug={game.slug} />
-          </section>
-        </div>
-      </div>
-    </Layout>
+    <GameDetailTemplate
+      game={game}
+      aboutContent={aboutContent}
+      howToPlayContent={howToPlayContent}
+      featuresContent={featuresContent}
+    />
   );
 }

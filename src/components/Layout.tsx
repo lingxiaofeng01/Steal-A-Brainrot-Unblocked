@@ -2,6 +2,7 @@ import { ReactNode } from 'react';
 import Sidebar from './Sidebar';
 import TopBar from './TopBar';
 import Footer from './Footer';
+import ScrollToTop from './ScrollToTop';
 
 interface LayoutProps {
   children: ReactNode;
@@ -16,6 +17,7 @@ export default function Layout({ children, fullscreen = false }: LayoutProps) {
         <main className="min-h-screen">
           {children}
         </main>
+        <ScrollToTop />
       </div>
     );
   }
@@ -31,6 +33,7 @@ export default function Layout({ children, fullscreen = false }: LayoutProps) {
         </main>
         <Footer />
       </div>
+      <ScrollToTop />
     </div>
   );
 }

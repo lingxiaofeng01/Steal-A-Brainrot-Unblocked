@@ -41,6 +41,7 @@ export interface Database {
           user_name: string;
           user_email: string;
           comment_text: string;
+          rating?: number;
           status: string;
           agreed_terms: boolean;
           created_at: string;

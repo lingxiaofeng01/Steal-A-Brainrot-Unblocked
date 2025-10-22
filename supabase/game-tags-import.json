@@ -1,0 +1,554 @@
+[
+  {
+    "gameSlug": "goodgame-empire",
+    "tagSlug": "strategy"
+  },
+  {
+    "gameSlug": "goodgame-empire",
+    "tagSlug": "battle"
+  },
+  {
+    "gameSlug": "goodgame-empire",
+    "tagSlug": "multiplayer"
+  },
+  {
+    "gameSlug": "goodgame-empire",
+    "tagSlug": "building"
+  },
+  {
+    "gameSlug": "goodgame-empire",
+    "tagSlug": "action"
+  },
+  {
+    "gameSlug": "perfect-orbit",
+    "tagSlug": "sports"
+  },
+  {
+    "gameSlug": "perfect-orbit",
+    "tagSlug": "arcade"
+  },
+  {
+    "gameSlug": "perfect-orbit",
+    "tagSlug": "casual"
+  },
+  {
+    "gameSlug": "perfect-orbit",
+    "tagSlug": "simulation"
+  },
+  {
+    "gameSlug": "perfect-orbit",
+    "tagSlug": "skill"
+  },
+  {
+    "gameSlug": "perfect-orbit",
+    "tagSlug": "one-touch"
+  },
+  {
+    "gameSlug": "italian-neuro-animals",
+    "tagSlug": "brainrot"
+  },
+  {
+    "gameSlug": "italian-neuro-animals",
+    "tagSlug": "clicker"
+  },
+  {
+    "gameSlug": "italian-neuro-animals",
+    "tagSlug": "funny"
+  },
+  {
+    "gameSlug": "italian-neuro-animals",
+    "tagSlug": "meme"
+  },
+  {
+    "gameSlug": "italian-neuro-animals",
+    "tagSlug": "casual"
+  },
+  {
+    "gameSlug": "italian-neuro-animals",
+    "tagSlug": "idle"
+  },
+  {
+    "gameSlug": "crazy-sprunki-3d",
+    "tagSlug": "3d"
+  },
+  {
+    "gameSlug": "crazy-sprunki-3d",
+    "tagSlug": "battle"
+  },
+  {
+    "gameSlug": "crazy-sprunki-3d",
+    "tagSlug": "multiplayer"
+  },
+  {
+    "gameSlug": "crazy-sprunki-3d",
+    "tagSlug": "action"
+  },
+  {
+    "gameSlug": "crazy-sprunki-3d",
+    "tagSlug": "funny"
+  },
+  {
+    "gameSlug": "crazy-sprunki-3d",
+    "tagSlug": "casual"
+  },
+  {
+    "gameSlug": "kart-bros",
+    "tagSlug": "racing"
+  },
+  {
+    "gameSlug": "kart-bros",
+    "tagSlug": "multiplayer"
+  },
+  {
+    "gameSlug": "kart-bros",
+    "tagSlug": "io"
+  },
+  {
+    "gameSlug": "kart-bros",
+    "tagSlug": "action"
+  },
+  {
+    "gameSlug": "kart-bros",
+    "tagSlug": "battle"
+  },
+  {
+    "gameSlug": "smash-karts",
+    "tagSlug": "battle"
+  },
+  {
+    "gameSlug": "smash-karts",
+    "tagSlug": "multiplayer"
+  },
+  {
+    "gameSlug": "smash-karts",
+    "tagSlug": "racing"
+  },
+  {
+    "gameSlug": "smash-karts",
+    "tagSlug": "action"
+  },
+  {
+    "gameSlug": "smash-karts",
+    "tagSlug": "io"
+  },
+  {
+    "gameSlug": "1v1-lol",
+    "tagSlug": "battle"
+  },
+  {
+    "gameSlug": "1v1-lol",
+    "tagSlug": "multiplayer"
+  },
+  {
+    "gameSlug": "1v1-lol",
+    "tagSlug": "shooter"
+  },
+  {
+    "gameSlug": "1v1-lol",
+    "tagSlug": "building"
+  },
+  {
+    "gameSlug": "1v1-lol",
+    "tagSlug": "action"
+  },
+  {
+    "gameSlug": "bro-royale",
+    "tagSlug": "battle"
+  },
+  {
+    "gameSlug": "bro-royale",
+    "tagSlug": "shooter"
+  },
+  {
+    "gameSlug": "bro-royale",
+    "tagSlug": "multiplayer"
+  },
+  {
+    "gameSlug": "bro-royale",
+    "tagSlug": "action"
+  },
+  {
+    "gameSlug": "bro-royale",
+    "tagSlug": "io"
+  },
+  {
+    "gameSlug": "brainrot-clicker",
+    "tagSlug": "brainrot"
+  },
+  {
+    "gameSlug": "brainrot-clicker",
+    "tagSlug": "clicker"
+  },
+  {
+    "gameSlug": "brainrot-clicker",
+    "tagSlug": "idle"
+  },
+  {
+    "gameSlug": "brainrot-clicker",
+    "tagSlug": "incremental"
+  },
+  {
+    "gameSlug": "brainrot-clicker",
+    "tagSlug": "casual"
+  },
+  {
+    "gameSlug": "brainrot-hook-swing",
+    "tagSlug": "brainrot"
+  },
+  {
+    "gameSlug": "brainrot-hook-swing",
+    "tagSlug": "action"
+  },
+  {
+    "gameSlug": "brainrot-hook-swing",
+    "tagSlug": "skill"
+  },
+  {
+    "gameSlug": "brainrot-hook-swing",
+    "tagSlug": "arcade"
+  },
+  {
+    "gameSlug": "brainrot-hook-swing",
+    "tagSlug": "physics"
+  },
+  {
+    "gameSlug": "italian-brainrot-baby-clicker",
+    "tagSlug": "brainrot"
+  },
+  {
+    "gameSlug": "italian-brainrot-baby-clicker",
+    "tagSlug": "clicker"
+  },
+  {
+    "gameSlug": "italian-brainrot-baby-clicker",
+    "tagSlug": "funny"
+  },
+  {
+    "gameSlug": "italian-brainrot-baby-clicker",
+    "tagSlug": "meme"
+  },
+  {
+    "gameSlug": "italian-brainrot-baby-clicker",
+    "tagSlug": "casual"
+  },
+  {
+    "gameSlug": "steal-the-italian-brainrot",
+    "tagSlug": "brainrot"
+  },
+  {
+    "gameSlug": "steal-the-italian-brainrot",
+    "tagSlug": "adventure"
+  },
+  {
+    "gameSlug": "steal-the-italian-brainrot",
+    "tagSlug": "strategy"
+  },
+  {
+    "gameSlug": "steal-the-italian-brainrot",
+    "tagSlug": "3d"
+  },
+  {
+    "gameSlug": "steal-the-italian-brainrot",
+    "tagSlug": "puzzle"
+  },
+  {
+    "gameSlug": "obby-my-singing-brainrot",
+    "tagSlug": "brainrot"
+  },
+  {
+    "gameSlug": "obby-my-singing-brainrot",
+    "tagSlug": "roblox"
+  },
+  {
+    "gameSlug": "obby-my-singing-brainrot",
+    "tagSlug": "music"
+  },
+  {
+    "gameSlug": "obby-my-singing-brainrot",
+    "tagSlug": "meme"
+  },
+  {
+    "gameSlug": "obby-my-singing-brainrot",
+    "tagSlug": "adventure"
+  },
+  {
+    "gameSlug": "obby-my-singing-brainrot",
+    "tagSlug": "parkour"
+  },
+  {
+    "gameSlug": "steal-brainrot-online",
+    "tagSlug": "brainrot"
+  },
+  {
+    "gameSlug": "steal-brainrot-online",
+    "tagSlug": "multiplayer"
+  },
+  {
+    "gameSlug": "steal-brainrot-online",
+    "tagSlug": "roblox"
+  },
+  {
+    "gameSlug": "steal-brainrot-online",
+    "tagSlug": "meme"
+  },
+  {
+    "gameSlug": "steal-brainrot-online",
+    "tagSlug": "strategy"
+  },
+  {
+    "gameSlug": "steal-brainrot-online",
+    "tagSlug": "casual"
+  },
+  {
+    "gameSlug": "steal-brainrot-new-animals",
+    "tagSlug": "brainrot"
+  },
+  {
+    "gameSlug": "steal-brainrot-new-animals",
+    "tagSlug": "roblox"
+  },
+  {
+    "gameSlug": "steal-brainrot-new-animals",
+    "tagSlug": "meme"
+  },
+  {
+    "gameSlug": "steal-brainrot-new-animals",
+    "tagSlug": "collection"
+  },
+  {
+    "gameSlug": "steal-brainrot-new-animals",
+    "tagSlug": "arcade"
+  },
+  {
+    "gameSlug": "steal-brainrot-new-animals",
+    "tagSlug": "casual"
+  },
+  {
+    "gameSlug": "fix-da-brainrot",
+    "tagSlug": "brainrot"
+  },
+  {
+    "gameSlug": "fix-da-brainrot",
+    "tagSlug": "puzzle"
+  },
+  {
+    "gameSlug": "fix-da-brainrot",
+    "tagSlug": "casual"
+  },
+  {
+    "gameSlug": "fix-da-brainrot",
+    "tagSlug": "brain"
+  },
+  {
+    "gameSlug": "fix-da-brainrot",
+    "tagSlug": "relaxing"
+  },
+  {
+    "gameSlug": "fix-da-brainrot",
+    "tagSlug": "creative"
+  },
+  {
+    "gameSlug": "memory-brainrot",
+    "tagSlug": "brainrot"
+  },
+  {
+    "gameSlug": "memory-brainrot",
+    "tagSlug": "memory"
+  },
+  {
+    "gameSlug": "memory-brainrot",
+    "tagSlug": "puzzle"
+  },
+  {
+    "gameSlug": "memory-brainrot",
+    "tagSlug": "meme"
+  },
+  {
+    "gameSlug": "memory-brainrot",
+    "tagSlug": "brain"
+  },
+  {
+    "gameSlug": "memory-brainrot",
+    "tagSlug": "casual"
+  },
+  {
+    "gameSlug": "italian-brainrot-clicker-2",
+    "tagSlug": "brainrot"
+  },
+  {
+    "gameSlug": "italian-brainrot-clicker-2",
+    "tagSlug": "clicker"
+  },
+  {
+    "gameSlug": "italian-brainrot-clicker-2",
+    "tagSlug": "meme"
+  },
+  {
+    "gameSlug": "italian-brainrot-clicker-2",
+    "tagSlug": "idle"
+  },
+  {
+    "gameSlug": "italian-brainrot-clicker-2",
+    "tagSlug": "funny"
+  },
+  {
+    "gameSlug": "italian-brainrot-clicker-2",
+    "tagSlug": "casual"
+  },
+  {
+    "gameSlug": "plants-vs-brainrots",
+    "tagSlug": "brainrot"
+  },
+  {
+    "gameSlug": "plants-vs-brainrots",
+    "tagSlug": "strategy"
+  },
+  {
+    "gameSlug": "plants-vs-brainrots",
+    "tagSlug": "tower-defense"
+  },
+  {
+    "gameSlug": "plants-vs-brainrots",
+    "tagSlug": "meme"
+  },
+  {
+    "gameSlug": "plants-vs-brainrots",
+    "tagSlug": "casual"
+  },
+  {
+    "gameSlug": "plants-vs-brainrots",
+    "tagSlug": "funny"
+  },
+  {
+    "gameSlug": "crazy-cattle-3d",
+    "tagSlug": "battle"
+  },
+  {
+    "gameSlug": "crazy-cattle-3d",
+    "tagSlug": "multiplayer"
+  },
+  {
+    "gameSlug": "crazy-cattle-3d",
+    "tagSlug": "strategy"
+  },
+  {
+    "gameSlug": "crazy-cattle-3d",
+    "tagSlug": "casual"
+  },
+  {
+    "gameSlug": "crazy-cattle-3d",
+    "tagSlug": "funny"
+  },
+  {
+    "gameSlug": "crazy-cattle-3d",
+    "tagSlug": "3d"
+  },
+  {
+    "gameSlug": "crazy-cattle-3d",
+    "tagSlug": "animal"
+  },
+  {
+    "gameSlug": "las-sis-steal-brainrot",
+    "tagSlug": "roblox"
+  },
+  {
+    "gameSlug": "las-sis-steal-brainrot",
+    "tagSlug": "meme"
+  },
+  {
+    "gameSlug": "las-sis-steal-brainrot",
+    "tagSlug": "brainrot"
+  },
+  {
+    "gameSlug": "las-sis-steal-brainrot",
+    "tagSlug": "casual"
+  },
+  {
+    "gameSlug": "little-big-snake",
+    "tagSlug": "io"
+  },
+  {
+    "gameSlug": "little-big-snake",
+    "tagSlug": "multiplayer"
+  },
+  {
+    "gameSlug": "little-big-snake",
+    "tagSlug": "snake"
+  },
+  {
+    "gameSlug": "little-big-snake",
+    "tagSlug": "grow"
+  },
+  {
+    "gameSlug": "little-big-snake",
+    "tagSlug": "collect"
+  },
+  {
+    "gameSlug": "little-big-snake",
+    "tagSlug": "animal"
+  },
+  {
+    "gameSlug": "cheese-chompers-3d",
+    "tagSlug": "battle"
+  },
+  {
+    "gameSlug": "cheese-chompers-3d",
+    "tagSlug": "multiplayer"
+  },
+  {
+    "gameSlug": "cheese-chompers-3d",
+    "tagSlug": "casual"
+  },
+  {
+    "gameSlug": "cheese-chompers-3d",
+    "tagSlug": "funny"
+  },
+  {
+    "gameSlug": "cheese-chompers-3d",
+    "tagSlug": "3d"
+  },
+  {
+    "gameSlug": "cheese-chompers-3d",
+    "tagSlug": "animal"
+  },
+  {
+    "gameSlug": "crazy-sheep-3d",
+    "tagSlug": "3d"
+  },
+  {
+    "gameSlug": "crazy-sheep-3d",
+    "tagSlug": "action"
+  },
+  {
+    "gameSlug": "crazy-sheep-3d",
+    "tagSlug": "adventure"
+  },
+  {
+    "gameSlug": "crazy-sheep-3d",
+    "tagSlug": "casual"
+  },
+  {
+    "gameSlug": "crazy-sheep-3d",
+    "tagSlug": "animal"
+  },
+  {
+    "gameSlug": "rocket-fortress",
+    "tagSlug": "rpg"
+  },
+  {
+    "gameSlug": "rocket-fortress",
+    "tagSlug": "clicker"
+  },
+  {
+    "gameSlug": "rocket-fortress",
+    "tagSlug": "strategy"
+  },
+  {
+    "gameSlug": "rocket-fortress",
+    "tagSlug": "action"
+  },
+  {
+    "gameSlug": "rocket-fortress",
+    "tagSlug": "incremental"
+  }
+]

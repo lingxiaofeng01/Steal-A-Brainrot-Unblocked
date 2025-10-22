@@ -1,0 +1,663 @@
+{
+  "polyfillFiles": [
+    "static/chunks/polyfills-42372ed130431b0a.js"
+  ],
+  "devFiles": [],
+  "ampDevFiles": [],
+  "lowPriorityFiles": [
+    "static/EFEd6nEuFV5m_MUXr51W0/_buildManifest.js",
+    "static/EFEd6nEuFV5m_MUXr51W0/_ssgManifest.js"
+  ],
+  "rootMainFiles": [
+    "static/chunks/webpack-767f485c955def32.js",
+    "static/chunks/4bd1b696-100b9d70ed4e49c1.js",
+    "static/chunks/1255-26f05d8bf86e016d.js",
+    "static/chunks/main-app-1eedeae19ca0395a.js"
+  ],
+  "rootMainFilesTree": {},
+  "pages": {
+    "/1v1LolPage": [
+      "static/chunks/webpack-767f485c955def32.js",
+      "static/chunks/framework-bd61ec64032c2de7.js",
+      "static/chunks/main-47517dca10c4a749.js",
+      "static/chunks/4256-f48487df214c9194.js",
+      "static/chunks/6158-06a80c589455b866.js",
+      "static/chunks/6660-cd8f85cb90593d89.js",
+      "static/chunks/9111-669d92284c19c5b2.js",
+      "static/chunks/4739-c51fb7fe3e3766c6.js",
+      "static/chunks/9866-c8c9b1861d482fa5.js",
+      "static/chunks/pages/1v1LolPage-a0d50defef309154.js"
+    ],
+    "/AboutUsPage": [
+      "static/chunks/webpack-767f485c955def32.js",
+      "static/chunks/framework-bd61ec64032c2de7.js",
+      "static/chunks/main-47517dca10c4a749.js",
+      "static/chunks/pages/AboutUsPage-ce2cad39e57b749a.js"
+    ],
+    "/ActionTagPage": [
+      "static/chunks/webpack-767f485c955def32.js",
+      "static/chunks/framework-bd61ec64032c2de7.js",
+      "static/chunks/main-47517dca10c4a749.js",
+      "static/chunks/4256-f48487df214c9194.js",
+      "static/chunks/6158-06a80c589455b866.js",
+      "static/chunks/6660-cd8f85cb90593d89.js",
+      "static/chunks/7804-1e84dd5a0e3de016.js",
+      "static/chunks/pages/ActionTagPage-7ec132eb4566a46f.js"
+    ],
+    "/AdventureTagPage": [
+      "static/chunks/webpack-767f485c955def32.js",
+      "static/chunks/framework-bd61ec64032c2de7.js",
+      "static/chunks/main-47517dca10c4a749.js",
+      "static/chunks/4256-f48487df214c9194.js",
+      "static/chunks/6158-06a80c589455b866.js",
+      "static/chunks/6660-cd8f85cb90593d89.js",
+      "static/chunks/7804-1e84dd5a0e3de016.js",
+      "static/chunks/pages/AdventureTagPage-6f39d9243ae80b6c.js"
+    ],
+    "/ArcadeTagPage": [
+      "static/chunks/webpack-767f485c955def32.js",
+      "static/chunks/framework-bd61ec64032c2de7.js",
+      "static/chunks/main-47517dca10c4a749.js",
+      "static/chunks/4256-f48487df214c9194.js",
+      "static/chunks/6158-06a80c589455b866.js",
+      "static/chunks/6660-cd8f85cb90593d89.js",
+      "static/chunks/7804-1e84dd5a0e3de016.js",
+      "static/chunks/pages/ArcadeTagPage-491e7144ca6a5c78.js"
+    ],
+    "/BattleTagPage": [
+      "static/chunks/webpack-767f485c955def32.js",
+      "static/chunks/framework-bd61ec64032c2de7.js",
+      "static/chunks/main-47517dca10c4a749.js",
+      "static/chunks/4256-f48487df214c9194.js",
+      "static/chunks/6158-06a80c589455b866.js",
+      "static/chunks/6660-cd8f85cb90593d89.js",
+      "static/chunks/7804-1e84dd5a0e3de016.js",
+      "static/chunks/pages/BattleTagPage-4eada9239de7ad03.js"
+    ],
+    "/BlockyRushPage": [
+      "static/chunks/webpack-767f485c955def32.js",
+      "static/chunks/framework-bd61ec64032c2de7.js",
+      "static/chunks/main-47517dca10c4a749.js",
+      "static/chunks/4256-f48487df214c9194.js",
+      "static/chunks/6158-06a80c589455b866.js",
+      "static/chunks/6660-cd8f85cb90593d89.js",
+      "static/chunks/9111-669d92284c19c5b2.js",
+      "static/chunks/4739-c51fb7fe3e3766c6.js",
+      "static/chunks/9866-c8c9b1861d482fa5.js",
+      "static/chunks/pages/BlockyRushPage-5114afcc317a5711.js"
+    ],
+    "/BrainTagPage": [
+      "static/chunks/webpack-767f485c955def32.js",
+      "static/chunks/framework-bd61ec64032c2de7.js",
+      "static/chunks/main-47517dca10c4a749.js",
+      "static/chunks/4256-f48487df214c9194.js",
+      "static/chunks/6158-06a80c589455b866.js",
+      "static/chunks/6660-cd8f85cb90593d89.js",
+      "static/chunks/7804-1e84dd5a0e3de016.js",
+      "static/chunks/pages/BrainTagPage-0be5b7be5c466520.js"
+    ],
+    "/BrainrotClickerPage": [
+      "static/chunks/webpack-767f485c955def32.js",
+      "static/chunks/framework-bd61ec64032c2de7.js",
+      "static/chunks/main-47517dca10c4a749.js",
+      "static/chunks/4256-f48487df214c9194.js",
+      "static/chunks/6158-06a80c589455b866.js",
+      "static/chunks/6660-cd8f85cb90593d89.js",
+      "static/chunks/9111-669d92284c19c5b2.js",
+      "static/chunks/4739-c51fb7fe3e3766c6.js",
+      "static/chunks/9866-c8c9b1861d482fa5.js",
+      "static/chunks/pages/BrainrotClickerPage-befdc64a77e92d0e.js"
+    ],
+    "/BrainrotHookSwingPage": [
+      "static/chunks/webpack-767f485c955def32.js",
+      "static/chunks/framework-bd61ec64032c2de7.js",
+      "static/chunks/main-47517dca10c4a749.js",
+      "static/chunks/4256-f48487df214c9194.js",
+      "static/chunks/6158-06a80c589455b866.js",
+      "static/chunks/6660-cd8f85cb90593d89.js",
+      "static/chunks/9111-669d92284c19c5b2.js",
+      "static/chunks/4739-c51fb7fe3e3766c6.js",
+      "static/chunks/9866-c8c9b1861d482fa5.js",
+      "static/chunks/pages/BrainrotHookSwingPage-b2eefa1ff08b29a3.js"
+    ],
+    "/BrainrotTagPage": [
+      "static/chunks/webpack-767f485c955def32.js",
+      "static/chunks/framework-bd61ec64032c2de7.js",
+      "static/chunks/main-47517dca10c4a749.js",
+      "static/chunks/4256-f48487df214c9194.js",
+      "static/chunks/6158-06a80c589455b866.js",
+      "static/chunks/6660-cd8f85cb90593d89.js",
+      "static/chunks/7804-1e84dd5a0e3de016.js",
+      "static/chunks/pages/BrainrotTagPage-32b3ff8995d34db0.js"
+    ],
+    "/BroRoyalePage": [
+      "static/chunks/webpack-767f485c955def32.js",
+      "static/chunks/framework-bd61ec64032c2de7.js",
+      "static/chunks/main-47517dca10c4a749.js",
+      "static/chunks/4256-f48487df214c9194.js",
+      "static/chunks/6158-06a80c589455b866.js",
+      "static/chunks/6660-cd8f85cb90593d89.js",
+      "static/chunks/9111-669d92284c19c5b2.js",
+      "static/chunks/4739-c51fb7fe3e3766c6.js",
+      "static/chunks/9866-c8c9b1861d482fa5.js",
+      "static/chunks/pages/BroRoyalePage-b8dc36b759b1908a.js"
+    ],
+    "/BuildingTagPage": [
+      "static/chunks/webpack-767f485c955def32.js",
+      "static/chunks/framework-bd61ec64032c2de7.js",
+      "static/chunks/main-47517dca10c4a749.js",
+      "static/chunks/4256-f48487df214c9194.js",
+      "static/chunks/6158-06a80c589455b866.js",
+      "static/chunks/6660-cd8f85cb90593d89.js",
+      "static/chunks/7804-1e84dd5a0e3de016.js",
+      "static/chunks/pages/BuildingTagPage-1ec80b8f83b139e8.js"
+    ],
+    "/CasualTagPage": [
+      "static/chunks/webpack-767f485c955def32.js",
+      "static/chunks/framework-bd61ec64032c2de7.js",
+      "static/chunks/main-47517dca10c4a749.js",
+      "static/chunks/4256-f48487df214c9194.js",
+      "static/chunks/6158-06a80c589455b866.js",
+      "static/chunks/6660-cd8f85cb90593d89.js",
+      "static/chunks/7804-1e84dd5a0e3de016.js",
+      "static/chunks/pages/CasualTagPage-5121e579d705132a.js"
+    ],
+    "/CategoryPage": [
+      "static/chunks/webpack-767f485c955def32.js",
+      "static/chunks/framework-bd61ec64032c2de7.js",
+      "static/chunks/main-47517dca10c4a749.js",
+      "static/chunks/4256-f48487df214c9194.js",
+      "static/chunks/6660-cd8f85cb90593d89.js",
+      "static/chunks/pages/CategoryPage-64d9f576a3c4024b.js"
+    ],
+    "/CheeseChompers3DPage": [
+      "static/chunks/webpack-767f485c955def32.js",
+      "static/chunks/framework-bd61ec64032c2de7.js",
+      "static/chunks/main-47517dca10c4a749.js",
+      "static/chunks/4256-f48487df214c9194.js",
+      "static/chunks/6158-06a80c589455b866.js",
+      "static/chunks/6660-cd8f85cb90593d89.js",
+      "static/chunks/9111-669d92284c19c5b2.js",
+      "static/chunks/4739-c51fb7fe3e3766c6.js",
+      "static/chunks/9866-c8c9b1861d482fa5.js",
+      "static/chunks/pages/CheeseChompers3DPage-831b4b48629b0137.js"
+    ],
+    "/ClickerTagPage": [
+      "static/chunks/webpack-767f485c955def32.js",
+      "static/chunks/framework-bd61ec64032c2de7.js",
+      "static/chunks/main-47517dca10c4a749.js",
+      "static/chunks/4256-f48487df214c9194.js",
+      "static/chunks/6158-06a80c589455b866.js",
+      "static/chunks/6660-cd8f85cb90593d89.js",
+      "static/chunks/7804-1e84dd5a0e3de016.js",
+      "static/chunks/pages/ClickerTagPage-6e3e3a5605284910.js"
+    ],
+    "/ContactUsPage": [
+      "static/chunks/webpack-767f485c955def32.js",
+      "static/chunks/framework-bd61ec64032c2de7.js",
+      "static/chunks/main-47517dca10c4a749.js",
+      "static/chunks/pages/ContactUsPage-c63bd604ae5d9b89.js"
+    ],
+    "/CopyrightPage": [
+      "static/chunks/webpack-767f485c955def32.js",
+      "static/chunks/framework-bd61ec64032c2de7.js",
+      "static/chunks/main-47517dca10c4a749.js",
+      "static/chunks/pages/CopyrightPage-6a60fe7780970b0d.js"
+    ],
+    "/CrazyCattle3DPage": [
+      "static/chunks/webpack-767f485c955def32.js",
+      "static/chunks/framework-bd61ec64032c2de7.js",
+      "static/chunks/main-47517dca10c4a749.js",
+      "static/chunks/4256-f48487df214c9194.js",
+      "static/chunks/6158-06a80c589455b866.js",
+      "static/chunks/6660-cd8f85cb90593d89.js",
+      "static/chunks/9111-669d92284c19c5b2.js",
+      "static/chunks/4739-c51fb7fe3e3766c6.js",
+      "static/chunks/9866-c8c9b1861d482fa5.js",
+      "static/chunks/pages/CrazyCattle3DPage-51580a56ad940fb5.js"
+    ],
+    "/CrazyCattle3DUnblockedPage": [
+      "static/chunks/webpack-767f485c955def32.js",
+      "static/chunks/framework-bd61ec64032c2de7.js",
+      "static/chunks/main-47517dca10c4a749.js",
+      "static/chunks/4256-f48487df214c9194.js",
+      "static/chunks/6158-06a80c589455b866.js",
+      "static/chunks/6660-cd8f85cb90593d89.js",
+      "static/chunks/9111-669d92284c19c5b2.js",
+      "static/chunks/4739-c51fb7fe3e3766c6.js",
+      "static/chunks/9866-c8c9b1861d482fa5.js",
+      "static/chunks/pages/CrazyCattle3DUnblockedPage-549c69c2ee7b23e7.js"
+    ],
+    "/CrazySheep3DPage": [
+      "static/chunks/webpack-767f485c955def32.js",
+      "static/chunks/framework-bd61ec64032c2de7.js",
+      "static/chunks/main-47517dca10c4a749.js",
+      "static/chunks/4256-f48487df214c9194.js",
+      "static/chunks/6158-06a80c589455b866.js",
+      "static/chunks/6660-cd8f85cb90593d89.js",
+      "static/chunks/9111-669d92284c19c5b2.js",
+      "static/chunks/4739-c51fb7fe3e3766c6.js",
+      "static/chunks/9866-c8c9b1861d482fa5.js",
+      "static/chunks/pages/CrazySheep3DPage-9278eedb772264ef.js"
+    ],
+    "/CrazySprunki3DPage": [
+      "static/chunks/webpack-767f485c955def32.js",
+      "static/chunks/framework-bd61ec64032c2de7.js",
+      "static/chunks/main-47517dca10c4a749.js",
+      "static/chunks/4256-f48487df214c9194.js",
+      "static/chunks/6158-06a80c589455b866.js",
+      "static/chunks/6660-cd8f85cb90593d89.js",
+      "static/chunks/9111-669d92284c19c5b2.js",
+      "static/chunks/4739-c51fb7fe3e3766c6.js",
+      "static/chunks/9866-c8c9b1861d482fa5.js",
+      "static/chunks/pages/CrazySprunki3DPage-2ddd5df76f4ab244.js"
+    ],
+    "/FixDaBrainrotPage": [
+      "static/chunks/webpack-767f485c955def32.js",
+      "static/chunks/framework-bd61ec64032c2de7.js",
+      "static/chunks/main-47517dca10c4a749.js",
+      "static/chunks/4256-f48487df214c9194.js",
+      "static/chunks/6158-06a80c589455b866.js",
+      "static/chunks/6660-cd8f85cb90593d89.js",
+      "static/chunks/9111-669d92284c19c5b2.js",
+      "static/chunks/4739-c51fb7fe3e3766c6.js",
+      "static/chunks/9866-c8c9b1861d482fa5.js",
+      "static/chunks/pages/FixDaBrainrotPage-daec5b22caafd54e.js"
+    ],
+    "/FixDaBrainrotPageNew": [
+      "static/chunks/webpack-767f485c955def32.js",
+      "static/chunks/framework-bd61ec64032c2de7.js",
+      "static/chunks/main-47517dca10c4a749.js",
+      "static/chunks/4256-f48487df214c9194.js",
+      "static/chunks/6158-06a80c589455b866.js",
+      "static/chunks/6660-cd8f85cb90593d89.js",
+      "static/chunks/9111-669d92284c19c5b2.js",
+      "static/chunks/4739-c51fb7fe3e3766c6.js",
+      "static/chunks/9866-c8c9b1861d482fa5.js",
+      "static/chunks/pages/FixDaBrainrotPageNew-bc2ed27eedeeeb2c.js"
+    ],
+    "/FunnyTagPage": [
+      "static/chunks/webpack-767f485c955def32.js",
+      "static/chunks/framework-bd61ec64032c2de7.js",
+      "static/chunks/main-47517dca10c4a749.js",
+      "static/chunks/4256-f48487df214c9194.js",
+      "static/chunks/6158-06a80c589455b866.js",
+      "static/chunks/6660-cd8f85cb90593d89.js",
+      "static/chunks/7804-1e84dd5a0e3de016.js",
+      "static/chunks/pages/FunnyTagPage-6c30a07b7d6d0f1b.js"
+    ],
+    "/GameDetailPage": [
+      "static/chunks/webpack-767f485c955def32.js",
+      "static/chunks/framework-bd61ec64032c2de7.js",
+      "static/chunks/main-47517dca10c4a749.js",
+      "static/chunks/4256-f48487df214c9194.js",
+      "static/chunks/6158-06a80c589455b866.js",
+      "static/chunks/6660-cd8f85cb90593d89.js",
+      "static/chunks/9111-669d92284c19c5b2.js",
+      "static/chunks/4739-c51fb7fe3e3766c6.js",
+      "static/chunks/9866-c8c9b1861d482fa5.js",
+      "static/chunks/pages/GameDetailPage-4ab50e0b6da8bcc7.js"
+    ],
+    "/GoodgameEmpirePage": [
+      "static/chunks/webpack-767f485c955def32.js",
+      "static/chunks/framework-bd61ec64032c2de7.js",
+      "static/chunks/main-47517dca10c4a749.js",
+      "static/chunks/4256-f48487df214c9194.js",
+      "static/chunks/6158-06a80c589455b866.js",
+      "static/chunks/6660-cd8f85cb90593d89.js",
+      "static/chunks/9111-669d92284c19c5b2.js",
+      "static/chunks/4739-c51fb7fe3e3766c6.js",
+      "static/chunks/9866-c8c9b1861d482fa5.js",
+      "static/chunks/pages/GoodgameEmpirePage-bf729062b01d3502.js"
+    ],
+    "/HomePage": [
+      "static/chunks/webpack-767f485c955def32.js",
+      "static/chunks/framework-bd61ec64032c2de7.js",
+      "static/chunks/main-47517dca10c4a749.js",
+      "static/chunks/4256-f48487df214c9194.js",
+      "static/chunks/6158-06a80c589455b866.js",
+      "static/chunks/6660-cd8f85cb90593d89.js",
+      "static/chunks/9111-669d92284c19c5b2.js",
+      "static/chunks/4739-c51fb7fe3e3766c6.js",
+      "static/chunks/pages/HomePage-bb0a4db8959c72b2.js"
+    ],
+    "/HomePage.simple": [
+      "static/chunks/webpack-767f485c955def32.js",
+      "static/chunks/framework-bd61ec64032c2de7.js",
+      "static/chunks/main-47517dca10c4a749.js",
+      "static/chunks/639-2ebdb5b18e11b8db.js",
+      "static/chunks/pages/HomePage.simple-0018d30bba2a22ff.js"
+    ],
+    "/IOTagPage": [
+      "static/chunks/webpack-767f485c955def32.js",
+      "static/chunks/framework-bd61ec64032c2de7.js",
+      "static/chunks/main-47517dca10c4a749.js",
+      "static/chunks/4256-f48487df214c9194.js",
+      "static/chunks/6158-06a80c589455b866.js",
+      "static/chunks/6660-cd8f85cb90593d89.js",
+      "static/chunks/7804-1e84dd5a0e3de016.js",
+      "static/chunks/pages/IOTagPage-6827c9fe0fee25e7.js"
+    ],
+    "/IdleTagPage": [
+      "static/chunks/webpack-767f485c955def32.js",
+      "static/chunks/framework-bd61ec64032c2de7.js",
+      "static/chunks/main-47517dca10c4a749.js",
+      "static/chunks/4256-f48487df214c9194.js",
+      "static/chunks/6158-06a80c589455b866.js",
+      "static/chunks/6660-cd8f85cb90593d89.js",
+      "static/chunks/7804-1e84dd5a0e3de016.js",
+      "static/chunks/pages/IdleTagPage-e0890f3f314ea1c3.js"
+    ],
+    "/ItalianBrainrotBabyClickerPage": [
+      "static/chunks/webpack-767f485c955def32.js",
+      "static/chunks/framework-bd61ec64032c2de7.js",
+      "static/chunks/main-47517dca10c4a749.js",
+      "static/chunks/4256-f48487df214c9194.js",
+      "static/chunks/6158-06a80c589455b866.js",
+      "static/chunks/6660-cd8f85cb90593d89.js",
+      "static/chunks/9111-669d92284c19c5b2.js",
+      "static/chunks/4739-c51fb7fe3e3766c6.js",
+      "static/chunks/9866-c8c9b1861d482fa5.js",
+      "static/chunks/pages/ItalianBrainrotBabyClickerPage-5fcad9f2a88014b8.js"
+    ],
+    "/ItalianBrainrotClicker2Page": [
+      "static/chunks/webpack-767f485c955def32.js",
+      "static/chunks/framework-bd61ec64032c2de7.js",
+      "static/chunks/main-47517dca10c4a749.js",
+      "static/chunks/4256-f48487df214c9194.js",
+      "static/chunks/6158-06a80c589455b866.js",
+      "static/chunks/6660-cd8f85cb90593d89.js",
+      "static/chunks/9111-669d92284c19c5b2.js",
+      "static/chunks/4739-c51fb7fe3e3766c6.js",
+      "static/chunks/9866-c8c9b1861d482fa5.js",
+      "static/chunks/pages/ItalianBrainrotClicker2Page-19a8c21860122218.js"
+    ],
+    "/ItalianNeuroAnimalsPage": [
+      "static/chunks/webpack-767f485c955def32.js",
+      "static/chunks/framework-bd61ec64032c2de7.js",
+      "static/chunks/main-47517dca10c4a749.js",
+      "static/chunks/4256-f48487df214c9194.js",
+      "static/chunks/6158-06a80c589455b866.js",
+      "static/chunks/6660-cd8f85cb90593d89.js",
+      "static/chunks/9111-669d92284c19c5b2.js",
+      "static/chunks/4739-c51fb7fe3e3766c6.js",
+      "static/chunks/9866-c8c9b1861d482fa5.js",
+      "static/chunks/pages/ItalianNeuroAnimalsPage-6a5782e4596b9541.js"
+    ],
+    "/KartBrosPage": [
+      "static/chunks/webpack-767f485c955def32.js",
+      "static/chunks/framework-bd61ec64032c2de7.js",
+      "static/chunks/main-47517dca10c4a749.js",
+      "static/chunks/4256-f48487df214c9194.js",
+      "static/chunks/6158-06a80c589455b866.js",
+      "static/chunks/6660-cd8f85cb90593d89.js",
+      "static/chunks/9111-669d92284c19c5b2.js",
+      "static/chunks/4739-c51fb7fe3e3766c6.js",
+      "static/chunks/9866-c8c9b1861d482fa5.js",
+      "static/chunks/pages/KartBrosPage-71719d5d68be3f83.js"
+    ],
+    "/LasSisStealBrainrotPage": [
+      "static/chunks/webpack-767f485c955def32.js",
+      "static/chunks/framework-bd61ec64032c2de7.js",
+      "static/chunks/main-47517dca10c4a749.js",
+      "static/chunks/4256-f48487df214c9194.js",
+      "static/chunks/6158-06a80c589455b866.js",
+      "static/chunks/6660-cd8f85cb90593d89.js",
+      "static/chunks/9111-669d92284c19c5b2.js",
+      "static/chunks/4739-c51fb7fe3e3766c6.js",
+      "static/chunks/9866-c8c9b1861d482fa5.js",
+      "static/chunks/pages/LasSisStealBrainrotPage-7184c784f5300b47.js"
+    ],
+    "/LittleBigSnakePage": [
+      "static/chunks/webpack-767f485c955def32.js",
+      "static/chunks/framework-bd61ec64032c2de7.js",
+      "static/chunks/main-47517dca10c4a749.js",
+      "static/chunks/4256-f48487df214c9194.js",
+      "static/chunks/6158-06a80c589455b866.js",
+      "static/chunks/6660-cd8f85cb90593d89.js",
+      "static/chunks/9111-669d92284c19c5b2.js",
+      "static/chunks/4739-c51fb7fe3e3766c6.js",
+      "static/chunks/9866-c8c9b1861d482fa5.js",
+      "static/chunks/pages/LittleBigSnakePage-1c55df680150ff35.js"
+    ],
+    "/MemeTagPage": [
+      "static/chunks/webpack-767f485c955def32.js",
+      "static/chunks/framework-bd61ec64032c2de7.js",
+      "static/chunks/main-47517dca10c4a749.js",
+      "static/chunks/4256-f48487df214c9194.js",
+      "static/chunks/6158-06a80c589455b866.js",
+      "static/chunks/6660-cd8f85cb90593d89.js",
+      "static/chunks/7804-1e84dd5a0e3de016.js",
+      "static/chunks/pages/MemeTagPage-124cbe33568a16d5.js"
+    ],
+    "/MemoryBrainrotPage": [
+      "static/chunks/webpack-767f485c955def32.js",
+      "static/chunks/framework-bd61ec64032c2de7.js",
+      "static/chunks/main-47517dca10c4a749.js",
+      "static/chunks/4256-f48487df214c9194.js",
+      "static/chunks/6158-06a80c589455b866.js",
+      "static/chunks/6660-cd8f85cb90593d89.js",
+      "static/chunks/9111-669d92284c19c5b2.js",
+      "static/chunks/4739-c51fb7fe3e3766c6.js",
+      "static/chunks/9866-c8c9b1861d482fa5.js",
+      "static/chunks/pages/MemoryBrainrotPage-01c5ce216d545a42.js"
+    ],
+    "/MultiplayerTagPage": [
+      "static/chunks/webpack-767f485c955def32.js",
+      "static/chunks/framework-bd61ec64032c2de7.js",
+      "static/chunks/main-47517dca10c4a749.js",
+      "static/chunks/4256-f48487df214c9194.js",
+      "static/chunks/6158-06a80c589455b866.js",
+      "static/chunks/6660-cd8f85cb90593d89.js",
+      "static/chunks/7804-1e84dd5a0e3de016.js",
+      "static/chunks/pages/MultiplayerTagPage-cb3a2966daec978f.js"
+    ],
+    "/ObbyMySingingBrainrotPage": [
+      "static/chunks/webpack-767f485c955def32.js",
+      "static/chunks/framework-bd61ec64032c2de7.js",
+      "static/chunks/main-47517dca10c4a749.js",
+      "static/chunks/4256-f48487df214c9194.js",
+      "static/chunks/6158-06a80c589455b866.js",
+      "static/chunks/6660-cd8f85cb90593d89.js",
+      "static/chunks/9111-669d92284c19c5b2.js",
+      "static/chunks/4739-c51fb7fe3e3766c6.js",
+      "static/chunks/9866-c8c9b1861d482fa5.js",
+      "static/chunks/pages/ObbyMySingingBrainrotPage-b94e6e6d2e5a4af2.js"
+    ],
+    "/OneLOLPage": [
+      "static/chunks/webpack-767f485c955def32.js",
+      "static/chunks/framework-bd61ec64032c2de7.js",
+      "static/chunks/main-47517dca10c4a749.js",
+      "static/chunks/4256-f48487df214c9194.js",
+      "static/chunks/6158-06a80c589455b866.js",
+      "static/chunks/6660-cd8f85cb90593d89.js",
+      "static/chunks/9111-669d92284c19c5b2.js",
+      "static/chunks/4739-c51fb7fe3e3766c6.js",
+      "static/chunks/9866-c8c9b1861d482fa5.js",
+      "static/chunks/pages/OneLOLPage-7861ab00e63ac165.js"
+    ],
+    "/PerfectOrbitPage": [
+      "static/chunks/webpack-767f485c955def32.js",
+      "static/chunks/framework-bd61ec64032c2de7.js",
+      "static/chunks/main-47517dca10c4a749.js",
+      "static/chunks/4256-f48487df214c9194.js",
+      "static/chunks/6158-06a80c589455b866.js",
+      "static/chunks/6660-cd8f85cb90593d89.js",
+      "static/chunks/9111-669d92284c19c5b2.js",
+      "static/chunks/4739-c51fb7fe3e3766c6.js",
+      "static/chunks/9866-c8c9b1861d482fa5.js",
+      "static/chunks/pages/PerfectOrbitPage-982b2d2d93ba715a.js"
+    ],
+    "/PlantsVsBrainrotsPage": [
+      "static/chunks/webpack-767f485c955def32.js",
+      "static/chunks/framework-bd61ec64032c2de7.js",
+      "static/chunks/main-47517dca10c4a749.js",
+      "static/chunks/4256-f48487df214c9194.js",
+      "static/chunks/6158-06a80c589455b866.js",
+      "static/chunks/6660-cd8f85cb90593d89.js",
+      "static/chunks/9111-669d92284c19c5b2.js",
+      "static/chunks/4739-c51fb7fe3e3766c6.js",
+      "static/chunks/9866-c8c9b1861d482fa5.js",
+      "static/chunks/pages/PlantsVsBrainrotsPage-ba4b3d2cc9365b98.js"
+    ],
+    "/PrivacyPolicyPage": [
+      "static/chunks/webpack-767f485c955def32.js",
+      "static/chunks/framework-bd61ec64032c2de7.js",
+      "static/chunks/main-47517dca10c4a749.js",
+      "static/chunks/pages/PrivacyPolicyPage-4455b0f4614b5ac6.js"
+    ],
+    "/PuzzleTagPage": [
+      "static/chunks/webpack-767f485c955def32.js",
+      "static/chunks/framework-bd61ec64032c2de7.js",
+      "static/chunks/main-47517dca10c4a749.js",
+      "static/chunks/4256-f48487df214c9194.js",
+      "static/chunks/6158-06a80c589455b866.js",
+      "static/chunks/6660-cd8f85cb90593d89.js",
+      "static/chunks/7804-1e84dd5a0e3de016.js",
+      "static/chunks/pages/PuzzleTagPage-11ada024fedb7aec.js"
+    ],
+    "/RacingTagPage": [
+      "static/chunks/webpack-767f485c955def32.js",
+      "static/chunks/framework-bd61ec64032c2de7.js",
+      "static/chunks/main-47517dca10c4a749.js",
+      "static/chunks/4256-f48487df214c9194.js",
+      "static/chunks/6158-06a80c589455b866.js",
+      "static/chunks/6660-cd8f85cb90593d89.js",
+      "static/chunks/7804-1e84dd5a0e3de016.js",
+      "static/chunks/pages/RacingTagPage-4675c8289e11196b.js"
+    ],
+    "/RobloxTagPage": [
+      "static/chunks/webpack-767f485c955def32.js",
+      "static/chunks/framework-bd61ec64032c2de7.js",
+      "static/chunks/main-47517dca10c4a749.js",
+      "static/chunks/4256-f48487df214c9194.js",
+      "static/chunks/6158-06a80c589455b866.js",
+      "static/chunks/6660-cd8f85cb90593d89.js",
+      "static/chunks/7804-1e84dd5a0e3de016.js",
+      "static/chunks/pages/RobloxTagPage-dbb53b14d4520074.js"
+    ],
+    "/RocketFortressPage": [
+      "static/chunks/webpack-767f485c955def32.js",
+      "static/chunks/framework-bd61ec64032c2de7.js",
+      "static/chunks/main-47517dca10c4a749.js",
+      "static/chunks/4256-f48487df214c9194.js",
+      "static/chunks/6158-06a80c589455b866.js",
+      "static/chunks/6660-cd8f85cb90593d89.js",
+      "static/chunks/9111-669d92284c19c5b2.js",
+      "static/chunks/4739-c51fb7fe3e3766c6.js",
+      "static/chunks/9866-c8c9b1861d482fa5.js",
+      "static/chunks/pages/RocketFortressPage-dbd9f086ef624bd9.js"
+    ],
+    "/SearchPage": [
+      "static/chunks/webpack-767f485c955def32.js",
+      "static/chunks/framework-bd61ec64032c2de7.js",
+      "static/chunks/main-47517dca10c4a749.js",
+      "static/chunks/4256-f48487df214c9194.js",
+      "static/chunks/pages/SearchPage-341ba971f17f05a5.js"
+    ],
+    "/ShooterTagPage": [
+      "static/chunks/webpack-767f485c955def32.js",
+      "static/chunks/framework-bd61ec64032c2de7.js",
+      "static/chunks/main-47517dca10c4a749.js",
+      "static/chunks/4256-f48487df214c9194.js",
+      "static/chunks/6158-06a80c589455b866.js",
+      "static/chunks/6660-cd8f85cb90593d89.js",
+      "static/chunks/7804-1e84dd5a0e3de016.js",
+      "static/chunks/pages/ShooterTagPage-ea5d77fb5a59e090.js"
+    ],
+    "/SmashKartsPage": [
+      "static/chunks/webpack-767f485c955def32.js",
+      "static/chunks/framework-bd61ec64032c2de7.js",
+      "static/chunks/main-47517dca10c4a749.js",
+      "static/chunks/4256-f48487df214c9194.js",
+      "static/chunks/6158-06a80c589455b866.js",
+      "static/chunks/6660-cd8f85cb90593d89.js",
+      "static/chunks/9111-669d92284c19c5b2.js",
+      "static/chunks/4739-c51fb7fe3e3766c6.js",
+      "static/chunks/9866-c8c9b1861d482fa5.js",
+      "static/chunks/pages/SmashKartsPage-38068eb48877237a.js"
+    ],
+    "/StealBrainrotNewAnimalsPage": [
+      "static/chunks/webpack-767f485c955def32.js",
+      "static/chunks/framework-bd61ec64032c2de7.js",
+      "static/chunks/main-47517dca10c4a749.js",
+      "static/chunks/4256-f48487df214c9194.js",
+      "static/chunks/6158-06a80c589455b866.js",
+      "static/chunks/6660-cd8f85cb90593d89.js",
+      "static/chunks/9111-669d92284c19c5b2.js",
+      "static/chunks/4739-c51fb7fe3e3766c6.js",
+      "static/chunks/9866-c8c9b1861d482fa5.js",
+      "static/chunks/pages/StealBrainrotNewAnimalsPage-5debfbc6095f6434.js"
+    ],
+    "/StealBrainrotOnlinePage": [
+      "static/chunks/webpack-767f485c955def32.js",
+      "static/chunks/framework-bd61ec64032c2de7.js",
+      "static/chunks/main-47517dca10c4a749.js",
+      "static/chunks/4256-f48487df214c9194.js",
+      "static/chunks/6158-06a80c589455b866.js",
+      "static/chunks/9111-669d92284c19c5b2.js",
+      "static/chunks/pages/StealBrainrotOnlinePage-ca25386a375706d1.js"
+    ],
+    "/StealTheItalianBrainrotPage": [
+      "static/chunks/webpack-767f485c955def32.js",
+      "static/chunks/framework-bd61ec64032c2de7.js",
+      "static/chunks/main-47517dca10c4a749.js",
+      "static/chunks/4256-f48487df214c9194.js",
+      "static/chunks/6158-06a80c589455b866.js",
+      "static/chunks/6660-cd8f85cb90593d89.js",
+      "static/chunks/9111-669d92284c19c5b2.js",
+      "static/chunks/4739-c51fb7fe3e3766c6.js",
+      "static/chunks/9866-c8c9b1861d482fa5.js",
+      "static/chunks/pages/StealTheItalianBrainrotPage-d46064cabae36160.js"
+    ],
+    "/StrategyTagPage": [
+      "static/chunks/webpack-767f485c955def32.js",
+      "static/chunks/framework-bd61ec64032c2de7.js",
+      "static/chunks/main-47517dca10c4a749.js",
+      "static/chunks/4256-f48487df214c9194.js",
+      "static/chunks/6158-06a80c589455b866.js",
+      "static/chunks/6660-cd8f85cb90593d89.js",
+      "static/chunks/7804-1e84dd5a0e3de016.js",
+      "static/chunks/pages/StrategyTagPage-e3ad40e361e22eae.js"
+    ],
+    "/TagPage": [
+      "static/chunks/webpack-767f485c955def32.js",
+      "static/chunks/framework-bd61ec64032c2de7.js",
+      "static/chunks/main-47517dca10c4a749.js",
+      "static/chunks/4256-f48487df214c9194.js",
+      "static/chunks/6158-06a80c589455b866.js",
+      "static/chunks/6660-cd8f85cb90593d89.js",
+      "static/chunks/7804-1e84dd5a0e3de016.js",
+      "static/chunks/pages/TagPage-3186926e3c50f61a.js"
+    ],
+    "/TermsOfUsePage": [
+      "static/chunks/webpack-767f485c955def32.js",
+      "static/chunks/framework-bd61ec64032c2de7.js",
+      "static/chunks/main-47517dca10c4a749.js",
+      "static/chunks/pages/TermsOfUsePage-1563c746d688fed2.js"
+    ],
+    "/ThreeDTagPage": [
+      "static/chunks/webpack-767f485c955def32.js",
+      "static/chunks/framework-bd61ec64032c2de7.js",
+      "static/chunks/main-47517dca10c4a749.js",
+      "static/chunks/4256-f48487df214c9194.js",
+      "static/chunks/6158-06a80c589455b866.js",
+      "static/chunks/6660-cd8f85cb90593d89.js",
+      "static/chunks/7804-1e84dd5a0e3de016.js",
+      "static/chunks/pages/ThreeDTagPage-713576de634c9df0.js"
+    ],
+    "/_app": [
+      "static/chunks/webpack-767f485c955def32.js",
+      "static/chunks/framework-bd61ec64032c2de7.js",
+      "static/chunks/main-47517dca10c4a749.js",
+      "static/chunks/pages/_app-e8b861c87f6f033c.js"
+    ],
+    "/_error": [
+      "static/chunks/webpack-767f485c955def32.js",
+      "static/chunks/framework-bd61ec64032c2de7.js",
+      "static/chunks/main-47517dca10c4a749.js",
+      "static/chunks/pages/_error-c8f84f7bd11d43d4.js"
+    ]
+  },
+  "ampFirstPages": []
+}
