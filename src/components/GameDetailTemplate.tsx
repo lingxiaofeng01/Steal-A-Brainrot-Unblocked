@@ -195,10 +195,10 @@ export default function GameDetailTemplate({
 
         {/* 3. 游戏简介（名称、缩略图、评分、标签） */}
         <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 border-t-4 border-cyan-400">
-          <div className="bg-gradient-to-r from-orange-200 to-amber-200 rounded-2xl p-6 border-4 border-cyan-400 shadow-xl">
-            <div className="flex items-start gap-6">
+          <div className="bg-gradient-to-r from-orange-200 to-amber-200 rounded-2xl p-4 sm:p-6 border-4 border-cyan-400 shadow-xl">
+            <div className="flex flex-col sm:flex-row items-start gap-4 sm:gap-6">
               <div className="flex-shrink-0">
-                <div className="w-20 h-20 rounded-xl overflow-hidden shadow-lg border-2 border-white">
+                <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-xl overflow-hidden shadow-lg border-2 border-white">
                   <img
                     src={game.thumbnail}
                     alt={`${game.title} - Free Online Game Thumbnail | Play Unblocked`}
@@ -206,25 +206,25 @@ export default function GameDetailTemplate({
                   />
                 </div>
               </div>
-              <div className="flex-1">
-                <h1 className="text-3xl font-bold text-gray-800 mb-3">{game.title}</h1>
-                <div className="mb-4">
+              <div className="flex-1 min-w-0">
+                <h1 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-800 mb-2 sm:mb-3 break-words">{game.title}</h1>
+                <div className="mb-3 sm:mb-4">
                   <StarRating gameSlug={game.slug} />
                 </div>
-                <p className="text-gray-700 text-lg mb-4">{game.description}</p>
-                <div className="flex flex-wrap gap-2">
+                <p className="text-gray-700 text-sm sm:text-base md:text-lg mb-3 sm:mb-4 line-clamp-2 sm:line-clamp-none">{game.description}</p>
+                <div className="flex flex-wrap gap-1 sm:gap-2">
                   {game.tags.map((tag, i) => {
                     const isClickable = hasTagPage(tag);
                     const TagElement = isClickable ? 'a' : 'span';
                     const tagProps = isClickable ? { href: `/tag/${getTagSlug(tag)}` } : {};
-                    const tagClass = isClickable 
-                      ? 'hover:bg-gray-800 transition-colors cursor-pointer' 
+                    const tagClass = isClickable
+                      ? 'hover:bg-gray-800 transition-colors cursor-pointer'
                       : 'opacity-75 cursor-default';
                     return (
                       <TagElement
                         key={i}
                         {...tagProps}
-                        className={`px-4 py-2 bg-gray-900 text-white font-semibold rounded-full shadow-md ${tagClass}`}
+                        className={`px-2 sm:px-4 py-1 sm:py-2 bg-gray-900 text-white font-semibold text-xs sm:text-sm rounded-full shadow-md whitespace-nowrap ${tagClass}`}
                       >
                         {tag}
                       </TagElement>
