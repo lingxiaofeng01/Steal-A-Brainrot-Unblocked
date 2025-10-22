@@ -88,9 +88,8 @@ export default function HomePage() {
         {/* Game Card */}
         <div className="relative z-10 w-full max-w-6xl">
           {!showGame ? (
-            /* Game Preview Card with H1 */
+            /* Game Preview Card */
             <div>
-              <h1 className="sr-only">Play Steal a Brainrot Unblocked - Free 3D Game Online</h1>
               <GamePreview
                 title={gameData.title}
                 description={gameData.description}
