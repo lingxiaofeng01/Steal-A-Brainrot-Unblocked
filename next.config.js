@@ -3,7 +3,6 @@ const nextConfig = {
   reactStrictMode: true,
   compress: true, // 启用 Gzip 压缩
   poweredByHeader: false, // 移除 X-Powered-By 头
-  swcMinify: true, // 使用 SWC 进行代码压缩
   productionBrowserSourceMaps: false, // 禁用生产环境的 source maps
   images: {
     remotePatterns: [
@@ -20,8 +19,6 @@ const nextConfig = {
     imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
     // 缓存优化
     minimumCacheTTL: 60 * 60 * 24 * 365, // 1 年缓存
-    // 启用静态导入
-    staticImportAssetBaseUrl: '/images',
   },
   typescript: {
     ignoreBuildErrors: true,
