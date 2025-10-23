@@ -462,9 +462,8 @@ export default function HomePage() {
                         width={150}
                         height={150}
                         className="w-full h-full object-contain"
-                        loading={i < 6 ? "eager" : "lazy"}
-                        quality={65}
-                        fetchPriority={i < 6 ? "high" : "low"}
+                        loading="lazy"
+                        quality={70}
                       />
                     </>
                   ) : (

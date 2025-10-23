@@ -53,9 +53,8 @@ export default function GamePreview({
               height={384}
               className="w-full h-full object-cover"
               loading="eager"
-              quality={75}
+              quality={80}
               priority
-              fetchPriority="high"
             />
           </div>
         </div>
@@ -73,9 +72,8 @@ export default function GamePreview({
               height={224}
               className="w-full h-full object-cover"
               loading="eager"
-              quality={75}
+              quality={80}
               priority
-              fetchPriority="high"
             />
           </div>
         </div>
