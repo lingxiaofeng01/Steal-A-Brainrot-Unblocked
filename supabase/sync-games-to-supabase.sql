@@ -41,7 +41,9 @@ INSERT INTO games (slug, title, cover, play_url, description, rating, play_count
   ('crazy-sheep-3d', 'Crazy Sheep 3D', '/images/thumbnails/crazy-sheep-3d.png', 'https://www.gameflare.com/embed/crazy-sheep-3d/', 'Crazy Sheep 3D - An exciting unblocked game. Play now!', 4.1, 45000, '2025-01-22', true),
   ('rocket-fortress', 'Rocket Fortress', '/images/thumbnails/rocket-fortress.png', 'https://www.gameflare.com/embed/rocket-fortress/', 'Rocket Fortress - An exciting unblocked game. Play now!', 5.0, 125000, '2025-01-22', true),
   ('fix-da-brainrot', 'Fix Da Brainrot', '/images/thumbnails/fix-da-brainrot.jpg', 'https://storage.y8.com/y8-studio/html5/jdchanda/fix_da_brainrot/?key=y8&value=default', 'Fix Da Brainrot - An exciting unblocked game. Play now!', 4.6, 1200000, '2025-01-22', true),
-  ('blocky-rush', 'Blocky Rush', '/images/thumbnails/blocky-rush.png', 'https://yoplay.io/blocky-rush.embed', 'Blocky Rush - An exciting unblocked game. Play now!', 4.2, 750000, '2024-12-15', true)
+  ('blocky-rush', 'Blocky Rush', '/images/thumbnails/blocky-rush.png', 'https://yoplay.io/blocky-rush.embed', 'Blocky Rush - An exciting unblocked game. Play now!', 4.2, 750000, '2024-12-15', true),
+  ('the-freak-circus', 'The Freak Circus', '/images/thumbnails/the-freak-circus.jpg', 'https://html-classic.itch.zone/html/14081436/index.html', 'The Freak Circus - An exciting unblocked game. Play now!', 4.9, 2514000, '2025-10-23', true),
+  ('no-im-not-a-human', 'No, I\'m not a Human', '/images/thumbnails/no-im-not-a-human.png', 'https://d.ulyagames.com/games/no-im-not-a-human/', 'No, I\'m not a Human - Psychological horror survival game. Play now!', 4.7, 850000, '2025-10-23', true)
 ON CONFLICT (slug) DO UPDATE SET
   title = EXCLUDED.title,
   cover = EXCLUDED.cover,

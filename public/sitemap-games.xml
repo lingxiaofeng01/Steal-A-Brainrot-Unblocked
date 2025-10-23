@@ -280,5 +280,27 @@
     </image:image>
   </url>
 
+  <url>
+    <loc>https://www.stealabrainrotunblocked.com/the-freak-circus</loc>
+    <lastmod>2025-10-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>/images/thumbnails/the-freak-circus.jpg</image:loc>
+      <image:title>The Freak Circus</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://www.stealabrainrotunblocked.com/no-im-not-a-human</loc>
+    <lastmod>2025-10-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>/images/thumbnails/no-im-not-a-human.png</image:loc>
+      <image:title>No, I'm not a Human</image:title>
+    </image:image>
+  </url>
+
 </urlset>
 

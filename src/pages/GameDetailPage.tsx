@@ -35,6 +35,8 @@ const gamePageComponents: Record<string, React.ComponentType<any>> = {
   'plants-vs-brainrots': lazy(() => import('./PlantsVsBrainrotsPage')),
   'crazy-cattle-3d-unblocked': lazy(() => import('./CrazyCattle3DUnblockedPage')),
   'blocky-rush': lazy(() => import('./BlockyRushPage')),
+  'the-freak-circus': lazy(() => import('./TheFreakCircusPage')),
+  'no-im-not-a-human': lazy(() => import('./NoImNotAHumanPage')),
 };
 
 export default function GameDetailPage({ slug }: GameDetailPageProps) {

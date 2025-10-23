@@ -75,15 +75,23 @@ export function getLatestGames(excludeSlug?: string, limit: number = 20): Game[]
 }
 
 /**
- * 获取所有游戏（包括占位符）
+ * 获取所有游戏（包括占位符）- 按发布日期降序排列
  * @param limit 返回的游戏数量
  * @returns 游戏列表
  */
 export function getAllGames(limit?: number): Game[] {
+  // 按发布日期降序排列（最新的在前）
+  const sortedGames = [...allGames].sort((a, b) => {
+    if (!isRealGame(a) || !isRealGame(b)) return 0;
+    const dateA = a.releaseDate ? new Date(a.releaseDate).getTime() : 0;
+    const dateB = b.releaseDate ? new Date(b.releaseDate).getTime() : 0;
+    return dateB - dateA; // 降序排列
+  });
+
   if (limit) {
-    return allGames.slice(0, limit);
+    return sortedGames.slice(0, limit);
   }
-  return allGames;
+  return sortedGames;
 }
 
 /**

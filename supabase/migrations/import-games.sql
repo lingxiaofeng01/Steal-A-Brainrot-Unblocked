@@ -37,6 +37,16 @@ INSERT INTO tags (slug, name) VALUES ('animal', 'Animal') ON CONFLICT (slug) DO 
 INSERT INTO tags (slug, name) VALUES ('snake', 'Snake') ON CONFLICT (slug) DO NOTHING;
 INSERT INTO tags (slug, name) VALUES ('grow', 'Grow') ON CONFLICT (slug) DO NOTHING;
 INSERT INTO tags (slug, name) VALUES ('collect', 'Collect') ON CONFLICT (slug) DO NOTHING;
+INSERT INTO tags (slug, name) VALUES ('visual-novel', 'Visual Novel') ON CONFLICT (slug) DO NOTHING;
+INSERT INTO tags (slug, name) VALUES ('horror', 'Horror') ON CONFLICT (slug) DO NOTHING;
+INSERT INTO tags (slug, name) VALUES ('dark', 'Dark') ON CONFLICT (slug) DO NOTHING;
+INSERT INTO tags (slug, name) VALUES ('yandere', 'Yandere') ON CONFLICT (slug) DO NOTHING;
+INSERT INTO tags (slug, name) VALUES ('dating-sim', 'Dating Sim') ON CONFLICT (slug) DO NOTHING;
+INSERT INTO tags (slug, name) VALUES ('creepy', 'Creepy') ON CONFLICT (slug) DO NOTHING;
+INSERT INTO tags (slug, name) VALUES ('survival', 'Survival') ON CONFLICT (slug) DO NOTHING;
+INSERT INTO tags (slug, name) VALUES ('psychological', 'Psychological') ON CONFLICT (slug) DO NOTHING;
+INSERT INTO tags (slug, name) VALUES ('first-person', 'First-Person') ON CONFLICT (slug) DO NOTHING;
+INSERT INTO tags (slug, name) VALUES ('point-and-click', 'Point and Click') ON CONFLICT (slug) DO NOTHING;
 
 -- Insert games
 INSERT INTO games (slug, title, cover, play_url, description, rating, play_count, released_at, is_active) VALUES ('goodgame-empire', 'Goodgame Empire', 'https://example.com/images/thumbnails/goodgame-empire.png', 'https://www.gameflare.com/embed/goodgame-empire/', 'Goodgame Empire - An exciting unblocked game. Play now!', 4.5, 2500000, '2025-01-25', true) ON CONFLICT (slug) DO NOTHING;
@@ -64,6 +74,8 @@ INSERT INTO games (slug, title, cover, play_url, description, rating, play_count
 INSERT INTO games (slug, title, cover, play_url, description, rating, play_count, released_at, is_active) VALUES ('cheese-chompers-3d', 'Cheese Chompers 3D', 'https://example.com/images/thumbnails/cheese-chompers-3d.png', 'https://www.gameflare.com/embed/cheese-chompers-3d/', 'Cheese Chompers 3D - An exciting unblocked game. Play now!', 5, 1, '2025-01-21', true) ON CONFLICT (slug) DO NOTHING;
 INSERT INTO games (slug, title, cover, play_url, description, rating, play_count, released_at, is_active) VALUES ('crazy-sheep-3d', 'Crazy Sheep 3D', 'https://example.com/images/thumbnails/crazy-sheep-3d.png', 'https://www.gameflare.com/embed/crazy-sheep-3d/', 'Crazy Sheep 3D - An exciting unblocked game. Play now!', 4.1, 45000, '2025-01-22', true) ON CONFLICT (slug) DO NOTHING;
 INSERT INTO games (slug, title, cover, play_url, description, rating, play_count, released_at, is_active) VALUES ('rocket-fortress', 'Rocket Fortress', 'https://example.com/images/thumbnails/rocket-fortress.png', 'https://www.gameflare.com/embed/rocket-fortress/', 'Rocket Fortress - An exciting unblocked game. Play now!', 5, 125000, '2025-01-22', true) ON CONFLICT (slug) DO NOTHING;
+INSERT INTO games (slug, title, cover, play_url, description, rating, play_count, released_at, is_active) VALUES ('the-freak-circus', 'The Freak Circus', 'https://example.com/images/thumbnails/the-freak-circus.jpg', 'https://html-classic.itch.zone/html/14081436/index.html', 'The Freak Circus - An exciting unblocked game. Play now!', 4.9, 2514000, '2025-10-23', true) ON CONFLICT (slug) DO NOTHING;
+INSERT INTO games (slug, title, cover, play_url, description, rating, play_count, released_at, is_active) VALUES ('no-im-not-a-human', 'No, I\'m not a Human', '/images/thumbnails/no-im-not-a-human.png', 'https://d.ulyagames.com/games/no-im-not-a-human/', 'No, I\'m not a Human - Psychological horror survival game. Play now!', 4.7, 850000, '2025-10-23', true) ON CONFLICT (slug) DO NOTHING;
 
 -- Link games to tags
 INSERT INTO game_tags (game_id, tag_id) SELECT g.id, t.id FROM games g, tags t WHERE g.slug = 'goodgame-empire' AND t.slug = 'strategy' ON CONFLICT DO NOTHING;
@@ -204,3 +216,15 @@ INSERT INTO game_tags (game_id, tag_id) SELECT g.id, t.id FROM games g, tags t W
 INSERT INTO game_tags (game_id, tag_id) SELECT g.id, t.id FROM games g, tags t WHERE g.slug = 'rocket-fortress' AND t.slug = 'strategy' ON CONFLICT DO NOTHING;
 INSERT INTO game_tags (game_id, tag_id) SELECT g.id, t.id FROM games g, tags t WHERE g.slug = 'rocket-fortress' AND t.slug = 'action' ON CONFLICT DO NOTHING;
 INSERT INTO game_tags (game_id, tag_id) SELECT g.id, t.id FROM games g, tags t WHERE g.slug = 'rocket-fortress' AND t.slug = 'incremental' ON CONFLICT DO NOTHING;
+INSERT INTO game_tags (game_id, tag_id) SELECT g.id, t.id FROM games g, tags t WHERE g.slug = 'the-freak-circus' AND t.slug = 'visual-novel' ON CONFLICT DO NOTHING;
+INSERT INTO game_tags (game_id, tag_id) SELECT g.id, t.id FROM games g, tags t WHERE g.slug = 'the-freak-circus' AND t.slug = 'horror' ON CONFLICT DO NOTHING;
+INSERT INTO game_tags (game_id, tag_id) SELECT g.id, t.id FROM games g, tags t WHERE g.slug = 'the-freak-circus' AND t.slug = 'dark' ON CONFLICT DO NOTHING;
+INSERT INTO game_tags (game_id, tag_id) SELECT g.id, t.id FROM games g, tags t WHERE g.slug = 'the-freak-circus' AND t.slug = 'yandere' ON CONFLICT DO NOTHING;
+INSERT INTO game_tags (game_id, tag_id) SELECT g.id, t.id FROM games g, tags t WHERE g.slug = 'the-freak-circus' AND t.slug = 'dating-sim' ON CONFLICT DO NOTHING;
+INSERT INTO game_tags (game_id, tag_id) SELECT g.id, t.id FROM games g, tags t WHERE g.slug = 'the-freak-circus' AND t.slug = 'creepy' ON CONFLICT DO NOTHING;
+INSERT INTO game_tags (game_id, tag_id) SELECT g.id, t.id FROM games g, tags t WHERE g.slug = 'no-im-not-a-human' AND t.slug = 'horror' ON CONFLICT DO NOTHING;
+INSERT INTO game_tags (game_id, tag_id) SELECT g.id, t.id FROM games g, tags t WHERE g.slug = 'no-im-not-a-human' AND t.slug = 'survival' ON CONFLICT DO NOTHING;
+INSERT INTO game_tags (game_id, tag_id) SELECT g.id, t.id FROM games g, tags t WHERE g.slug = 'no-im-not-a-human' AND t.slug = 'puzzle' ON CONFLICT DO NOTHING;
+INSERT INTO game_tags (game_id, tag_id) SELECT g.id, t.id FROM games g, tags t WHERE g.slug = 'no-im-not-a-human' AND t.slug = 'psychological' ON CONFLICT DO NOTHING;
+INSERT INTO game_tags (game_id, tag_id) SELECT g.id, t.id FROM games g, tags t WHERE g.slug = 'no-im-not-a-human' AND t.slug = 'first-person' ON CONFLICT DO NOTHING;
+INSERT INTO game_tags (game_id, tag_id) SELECT g.id, t.id FROM games g, tags t WHERE g.slug = 'no-im-not-a-human' AND t.slug = 'point-and-click' ON CONFLICT DO NOTHING;

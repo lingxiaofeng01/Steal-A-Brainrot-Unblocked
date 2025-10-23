@@ -322,5 +322,27 @@ export const allGames: Game[] = [
     rating: 4.2,
     playCount: 750000
   },
+  {
+    name: 'The Freak Circus',
+    image: '/images/thumbnails/the-freak-circus.jpg',
+    slug: 'the-freak-circus',
+    isReal: true,
+    url: 'https://html-classic.itch.zone/html/14081436/index.html',
+    releaseDate: '2025-10-23',
+    tags: ['Visual Novel', 'Horror', 'Dark', 'Yandere', 'Dating Sim', 'Creepy'],
+    rating: 4.9,
+    playCount: 2514000
+  },
+  {
+    name: 'No, I\'m not a Human',
+    image: '/images/thumbnails/no-im-not-a-human.png',
+    slug: 'no-im-not-a-human',
+    isReal: true,
+    url: 'https://d.ulyagames.com/games/no-im-not-a-human/',
+    releaseDate: '2025-10-23',
+    tags: ['Horror', 'Survival', 'Puzzle', 'Psychological', 'First-Person', 'Point and Click'],
+    rating: 4.7,
+    playCount: 850000
+  },
 ];
 
