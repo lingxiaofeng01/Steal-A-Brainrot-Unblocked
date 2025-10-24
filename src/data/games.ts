@@ -26,6 +26,28 @@ export function isRealGame(game: Game): game is GameData {
 // All games data with release dates, tags, and ratings
 export const allGames: Game[] = [
   {
+    name: 'Wacky Flip',
+    image: '/images/thumbnails/wacky-flip.webp',
+    slug: 'wacky-flip',
+    isReal: true,
+    url: 'https://1games.io/game/wacky-flip',
+    releaseDate: '2025-10-24',
+    tags: ['Sports', 'Action', 'Parkour', 'Stunt', 'Skill', 'Physics'],
+    rating: 4.6,
+    playCount: 16270
+  },
+  {
+    name: 'Take Care Of Shadow Milk',
+    image: '/images/thumbnails/take-care-of-shadow-milk.png',
+    slug: 'take-care-of-shadow-milk',
+    isReal: true,
+    url: 'https://scratch.mit.edu/projects/1206876997/embed',
+    releaseDate: '2025-10-24',
+    tags: ['Scratch', 'Simulation', 'Pet', 'Casual', 'Virtual Pet', 'Cookie Run'],
+    rating: 4.5,
+    playCount: 593
+  },
+  {
     name: 'Steal the cool Brainrot Sprunki',
     image: '/images/thumbnails/steal-the-cool-brainrot-sprunki.jpeg',
     slug: 'steal-the-cool-brainrot-sprunki',
