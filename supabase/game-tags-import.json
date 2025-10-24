@@ -1,5 +1,77 @@
 [
   {
+    "gameSlug": "steal-the-cool-brainrot-sprunki",
+    "tagSlug": "idle"
+  },
+  {
+    "gameSlug": "steal-the-cool-brainrot-sprunki",
+    "tagSlug": "casual"
+  },
+  {
+    "gameSlug": "steal-the-cool-brainrot-sprunki",
+    "tagSlug": "collection"
+  },
+  {
+    "gameSlug": "steal-the-cool-brainrot-sprunki",
+    "tagSlug": "tycoon"
+  },
+  {
+    "gameSlug": "steal-the-cool-brainrot-sprunki",
+    "tagSlug": "clicker"
+  },
+  {
+    "gameSlug": "steal-the-cool-brainrot-sprunki",
+    "tagSlug": "incremental"
+  },
+  {
+    "gameSlug": "obby-steal-the-fugglers",
+    "tagSlug": "idle"
+  },
+  {
+    "gameSlug": "obby-steal-the-fugglers",
+    "tagSlug": "casual"
+  },
+  {
+    "gameSlug": "obby-steal-the-fugglers",
+    "tagSlug": "collection"
+  },
+  {
+    "gameSlug": "obby-steal-the-fugglers",
+    "tagSlug": "tycoon"
+  },
+  {
+    "gameSlug": "obby-steal-the-fugglers",
+    "tagSlug": "clicker"
+  },
+  {
+    "gameSlug": "obby-steal-the-fugglers",
+    "tagSlug": "funny"
+  },
+  {
+    "gameSlug": "steal-brainrot-monsters",
+    "tagSlug": "idle"
+  },
+  {
+    "gameSlug": "steal-brainrot-monsters",
+    "tagSlug": "strategy"
+  },
+  {
+    "gameSlug": "steal-brainrot-monsters",
+    "tagSlug": "casual"
+  },
+  {
+    "gameSlug": "steal-brainrot-monsters",
+    "tagSlug": "multiplayer"
+  },
+  {
+    "gameSlug": "steal-brainrot-monsters",
+    "tagSlug": "brainrot"
+  },
+  {
+    "gameSlug": "steal-brainrot-monsters",
+    "tagSlug": "collection"
+  },
+  {
     "gameSlug": "goodgame-empire",
     "tagSlug": "strategy"
   },
@@ -37,35 +109,31 @@
   },
   {
     "gameSlug": "perfect-orbit",
-    "tagSlug": "skill"
-  },
-  {
-    "gameSlug": "perfect-orbit",
     "tagSlug": "one-touch"
   },
   {
-    "gameSlug": "italian-neuro-animals",
-    "tagSlug": "brainrot"
+    "gameSlug": "perfect-orbit",
+    "tagSlug": "skill"
   },
   {
     "gameSlug": "italian-neuro-animals",
-    "tagSlug": "clicker"
+    "tagSlug": "sandbox"
+  },
+  {
+    "gameSlug": "italian-neuro-animals",
+    "tagSlug": "physics-game"
+  },
+  {
+    "gameSlug": "italian-neuro-animals",
+    "tagSlug": "multiplayer"
+  },
+  {
+    "gameSlug": "italian-neuro-animals",
+    "tagSlug": "action"
   },
   {
     "gameSlug": "italian-neuro-animals",
     "tagSlug": "funny"
-  },
-  {
-    "gameSlug": "italian-neuro-animals",
-    "tagSlug": "meme"
-  },
-  {
-    "gameSlug": "italian-neuro-animals",
-    "tagSlug": "casual"
-  },
-  {
-    "gameSlug": "italian-neuro-animals",
-    "tagSlug": "idle"
   },
   {
     "gameSlug": "crazy-sprunki-3d",
@@ -253,10 +321,6 @@
   },
   {
     "gameSlug": "obby-my-singing-brainrot",
-    "tagSlug": "brainrot"
-  },
-  {
-    "gameSlug": "obby-my-singing-brainrot",
     "tagSlug": "roblox"
   },
   {
@@ -274,6 +338,10 @@
   {
     "gameSlug": "obby-my-singing-brainrot",
     "tagSlug": "parkour"
+  },
+  {
+    "gameSlug": "obby-my-singing-brainrot",
+    "tagSlug": "brainrot"
   },
   {
     "gameSlug": "steal-brainrot-online",
@@ -322,30 +390,6 @@
   {
     "gameSlug": "steal-brainrot-new-animals",
     "tagSlug": "casual"
-  },
-  {
-    "gameSlug": "fix-da-brainrot",
-    "tagSlug": "brainrot"
-  },
-  {
-    "gameSlug": "fix-da-brainrot",
-    "tagSlug": "puzzle"
-  },
-  {
-    "gameSlug": "fix-da-brainrot",
-    "tagSlug": "casual"
-  },
-  {
-    "gameSlug": "fix-da-brainrot",
-    "tagSlug": "brain"
-  },
-  {
-    "gameSlug": "fix-da-brainrot",
-    "tagSlug": "relaxing"
-  },
-  {
-    "gameSlug": "fix-da-brainrot",
-    "tagSlug": "creative"
   },
   {
     "gameSlug": "memory-brainrot",
@@ -446,6 +490,30 @@
   {
     "gameSlug": "crazy-cattle-3d",
     "tagSlug": "animal"
+  },
+  {
+    "gameSlug": "crazy-cattle-3d-unblocked",
+    "tagSlug": "brainrot"
+  },
+  {
+    "gameSlug": "crazy-cattle-3d-unblocked",
+    "tagSlug": "battle-royale"
+  },
+  {
+    "gameSlug": "crazy-cattle-3d-unblocked",
+    "tagSlug": "physics"
+  },
+  {
+    "gameSlug": "crazy-cattle-3d-unblocked",
+    "tagSlug": "meme"
+  },
+  {
+    "gameSlug": "crazy-cattle-3d-unblocked",
+    "tagSlug": "casual"
+  },
+  {
+    "gameSlug": "crazy-cattle-3d-unblocked",
+    "tagSlug": "funny"
   },
   {
     "gameSlug": "las-sis-steal-brainrot",
@@ -550,5 +618,97 @@
   {
     "gameSlug": "rocket-fortress",
     "tagSlug": "incremental"
+  },
+  {
+    "gameSlug": "fix-da-brainrot",
+    "tagSlug": "puzzle"
+  },
+  {
+    "gameSlug": "fix-da-brainrot",
+    "tagSlug": "jigsaw"
+  },
+  {
+    "gameSlug": "fix-da-brainrot",
+    "tagSlug": "brain-game"
+  },
+  {
+    "gameSlug": "fix-da-brainrot",
+    "tagSlug": "casual"
+  },
+  {
+    "gameSlug": "fix-da-brainrot",
+    "tagSlug": "html5"
+  },
+  {
+    "gameSlug": "blocky-rush",
+    "tagSlug": "puzzle"
+  },
+  {
+    "gameSlug": "blocky-rush",
+    "tagSlug": "block"
+  },
+  {
+    "gameSlug": "blocky-rush",
+    "tagSlug": "casual"
+  },
+  {
+    "gameSlug": "blocky-rush",
+    "tagSlug": "brain-game"
+  },
+  {
+    "gameSlug": "blocky-rush",
+    "tagSlug": "logic"
+  },
+  {
+    "gameSlug": "blocky-rush",
+    "tagSlug": "free"
+  },
+  {
+    "gameSlug": "the-freak-circus",
+    "tagSlug": "visual-novel"
+  },
+  {
+    "gameSlug": "the-freak-circus",
+    "tagSlug": "horror"
+  },
+  {
+    "gameSlug": "the-freak-circus",
+    "tagSlug": "dark"
+  },
+  {
+    "gameSlug": "the-freak-circus",
+    "tagSlug": "yandere"
+  },
+  {
+    "gameSlug": "the-freak-circus",
+    "tagSlug": "dating-sim"
+  },
+  {
+    "gameSlug": "the-freak-circus",
+    "tagSlug": "creepy"
+  },
+  {
+    "gameSlug": "steal-the-brainrot-fish",
+    "tagSlug": "brainrot"
+  },
+  {
+    "gameSlug": "steal-the-brainrot-fish",
+    "tagSlug": "casual"
+  },
+  {
+    "gameSlug": "steal-the-brainrot-fish",
+    "tagSlug": "multiplayer"
+  },
+  {
+    "gameSlug": "steal-the-brainrot-fish",
+    "tagSlug": "collection"
+  },
+  {
+    "gameSlug": "steal-the-brainrot-fish",
+    "tagSlug": "strategy"
+  },
+  {
+    "gameSlug": "steal-the-brainrot-fish",
+    "tagSlug": "funny"
   }
 ]

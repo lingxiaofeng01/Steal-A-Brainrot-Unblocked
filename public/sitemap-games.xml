@@ -1,7 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
-  
+
+  <!-- New Games (Released in 2025-10) -->
+  <url>
+    <loc>https://www.stealabrainrotunblocked.com/obby-steal-the-fugglers</loc>
+    <lastmod>2025-10-24</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://www.stealabrainrotunblocked.com/images/thumbnails/obby-steal-the-fugglers.jpeg</image:loc>
+      <image:title>Obby: Steal the Fugglers</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://www.stealabrainrotunblocked.com/steal-brainrot-monsters</loc>
+    <lastmod>2025-10-20</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.stealabrainrotunblocked.com/images/thumbnails/steal-brainrot-monsters.jpeg</image:loc>
+      <image:title>Steal Brainrot Monsters</image:title>
+    </image:image>
+  </url>
+
   <!-- High Priority Games (Play Count > 1M) -->
   <url>
     <loc>https://www.stealabrainrotunblocked.com/1v1-lol</loc>

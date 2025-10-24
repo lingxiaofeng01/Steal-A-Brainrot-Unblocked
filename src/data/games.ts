@@ -26,6 +26,39 @@ export function isRealGame(game: Game): game is GameData {
 // All games data with release dates, tags, and ratings
 export const allGames: Game[] = [
   {
+    name: 'Steal the cool Brainrot Sprunki',
+    image: '/images/thumbnails/steal-the-cool-brainrot-sprunki.jpeg',
+    slug: 'steal-the-cool-brainrot-sprunki',
+    isReal: true,
+    url: 'https://st.8games.net/7/8g/igra-ukradi-krutykh-brejnrot-sprunki/',
+    releaseDate: '2025-10-24',
+    tags: ['Idle', 'Casual', 'Collection', 'Tycoon', 'Clicker', 'Incremental'],
+    rating: 4.7,
+    playCount: 1500
+  },
+  {
+    name: 'Obby: Steal the Fugglers',
+    image: '/images/thumbnails/obby-steal-the-fugglers.jpeg',
+    slug: 'obby-steal-the-fugglers',
+    isReal: true,
+    url: 'https://st.8games.net/9/8g/igra-obbi-ukradi-fugglerov/',
+    releaseDate: '2025-10-24',
+    tags: ['Idle', 'Casual', 'Collection', 'Tycoon', 'Clicker', 'Funny'],
+    rating: 4.6,
+    playCount: 1200
+  },
+  {
+    name: 'Steal Brainrot Monsters',
+    image: '/images/thumbnails/steal-brainrot-monsters.jpeg',
+    slug: 'steal-brainrot-monsters',
+    isReal: true,
+    url: 'https://st.8games.net/7/8g/igra-ukradi-brejnrot-monstrov/',
+    releaseDate: '2025-10-20',
+    tags: ['Idle', 'Strategy', 'Casual', 'Multiplayer', 'Brainrot', 'Collection'],
+    rating: 4.5,
+    playCount: 150000
+  },
+  {
     name: 'Goodgame Empire',
     image: '/images/thumbnails/goodgame-empire.png',
     slug: 'goodgame-empire',
@@ -343,6 +376,17 @@ export const allGames: Game[] = [
     tags: ['Horror', 'Survival', 'Puzzle', 'Psychological', 'First-Person', 'Point and Click'],
     rating: 4.7,
     playCount: 850000
+  },
+  {
+    name: 'Steal the Brainrot Fish',
+    image: '/images/thumbnails/steal-the-brainrot-fish.png',
+    slug: 'steal-the-brainrot-fish',
+    isReal: true,
+    url: 'https://st.8games.net/7/8g/igra-ukradi-brejnrot-rybu/',
+    releaseDate: '2025-10-24',
+    tags: ['Brainrot', 'Casual', 'Multiplayer', 'Collection', 'Strategy', 'Funny'],
+    rating: 4.8,
+    playCount: 125000
   },
 ];
 

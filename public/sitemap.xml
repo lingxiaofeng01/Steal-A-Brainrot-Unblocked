@@ -94,5 +94,57 @@
     <priority>0.5</priority>
   </url>
 
+  <!-- Game: Steal the cool Brainrot Sprunki -->
+  <url>
+    <loc>https://www.stealabrainrotunblocked.com/steal-the-cool-brainrot-sprunki</loc>
+    <lastmod>2025-10-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://www.stealabrainrotunblocked.com/images/thumbnails/steal-the-cool-brainrot-sprunki.jpeg</image:loc>
+      <image:title>Steal the cool Brainrot Sprunki - Free Online Game</image:title>
+      <image:caption>Build your Sprunki empire and become the ultimate king</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Game: Obby: Steal the Fugglers -->
+  <url>
+    <loc>https://www.stealabrainrotunblocked.com/obby-steal-the-fugglers</loc>
+    <lastmod>2025-10-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://www.stealabrainrotunblocked.com/images/thumbnails/obby-steal-the-fugglers.jpeg</image:loc>
+      <image:title>Obby: Steal the Fugglers - Free Online Game</image:title>
+      <image:caption>Collect unique Fugglers and build your empire</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Game: Steal the Brainrot Fish -->
+  <url>
+    <loc>https://www.stealabrainrotunblocked.com/steal-the-brainrot-fish</loc>
+    <lastmod>2025-10-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://www.stealabrainrotunblocked.com/images/thumbnails/steal-the-brainrot-fish.png</image:loc>
+      <image:title>Steal the Brainrot Fish - Free Online Game</image:title>
+      <image:caption>Build your underwater empire of viral fish</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Game: Steal Brainrot Monsters -->
+  <url>
+    <loc>https://www.stealabrainrotunblocked.com/steal-brainrot-monsters</loc>
+    <lastmod>2025-01-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://www.stealabrainrotunblocked.com/images/thumbnails/steal-brainrot-monsters.jpeg</image:loc>
+      <image:title>Steal Brainrot Monsters - Free Online Game</image:title>
+      <image:caption>Build your monster empire and maximize your profits</image:caption>
+    </image:image>
+  </url>
+
 </urlset>
 

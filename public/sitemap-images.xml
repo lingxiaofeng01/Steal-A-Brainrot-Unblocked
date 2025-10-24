@@ -17,6 +17,25 @@
     </image:image>
   </url>
 
+  <!-- New Games (Released in 2025-10) -->
+  <url>
+    <loc>https://www.stealabrainrotunblocked.com/obby-steal-the-fugglers</loc>
+    <image:image>
+      <image:loc>https://www.stealabrainrotunblocked.com/images/thumbnails/obby-steal-the-fugglers.jpeg</image:loc>
+      <image:title>Obby: Steal the Fugglers - Free Online Game</image:title>
+      <image:caption>Play Obby: Steal the Fugglers - Free Online Game | Unblocked</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://www.stealabrainrotunblocked.com/steal-brainrot-monsters</loc>
+    <image:image>
+      <image:loc>https://www.stealabrainrotunblocked.com/images/thumbnails/steal-brainrot-monsters.jpeg</image:loc>
+      <image:title>Steal Brainrot Monsters - Free Online Game</image:title>
+      <image:caption>Play Steal Brainrot Monsters - Free Online Game | Unblocked</image:caption>
+    </image:image>
+  </url>
+
   <!-- Game Pages - High Priority Games -->
   <url>
     <loc>https://www.stealabrainrotunblocked.com/1v1-lol</loc>

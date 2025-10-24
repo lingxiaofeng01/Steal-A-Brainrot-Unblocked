@@ -1,5 +1,38 @@
 [
   {
+    "slug": "steal-the-cool-brainrot-sprunki",
+    "title": "Steal the cool Brainrot Sprunki",
+    "cover": "https://example.com/images/thumbnails/steal-the-cool-brainrot-sprunki.jpeg",
+    "play_url": "https://st.8games.net/7/8g/igra-ukradi-krutykh-brejnrot-sprunki/",
+    "description": "Steal the cool Brainrot Sprunki - An exciting unblocked game. Play now!",
+    "rating": 4.7,
+    "play_count": 1500,
+    "released_at": "2025-10-24",
+    "is_active": true
+  },
+  {
+    "slug": "obby-steal-the-fugglers",
+    "title": "Obby: Steal the Fugglers",
+    "cover": "https://example.com/images/thumbnails/obby-steal-the-fugglers.jpeg",
+    "play_url": "https://st.8games.net/9/8g/igra-obbi-ukradi-fugglerov/",
+    "description": "Obby: Steal the Fugglers - An exciting unblocked game. Play now!",
+    "rating": 4.6,
+    "play_count": 1200,
+    "released_at": "2025-10-24",
+    "is_active": true
+  },
+  {
+    "slug": "steal-brainrot-monsters",
+    "title": "Steal Brainrot Monsters",
+    "cover": "https://example.com/images/thumbnails/steal-brainrot-monsters.jpeg",
+    "play_url": "https://st.8games.net/7/8g/igra-ukradi-brejnrot-monstrov/",
+    "description": "Steal Brainrot Monsters - An exciting unblocked game. Play now!",
+    "rating": 4.5,
+    "play_count": 150000,
+    "released_at": "2025-10-20",
+    "is_active": true
+  },
+  {
     "slug": "goodgame-empire",
     "title": "Goodgame Empire",
     "cover": "https://example.com/images/thumbnails/goodgame-empire.png",
@@ -15,8 +48,8 @@
     "title": "Perfect Orbit",
     "cover": "https://example.com/images/thumbnails/perfect-orbit.png",
     "play_url": "https://games.yoplay.io/perfect-orbit/",
-    "description": "Perfect Orbit - An exciting arcade sports game. Play now!",
-    "rating": 5.0,
+    "description": "Perfect Orbit - An exciting unblocked game. Play now!",
+    "rating": 5,
     "play_count": 125000,
     "released_at": "2025-01-25",
     "is_active": true
@@ -24,18 +57,18 @@
   {
     "slug": "italian-neuro-animals",
     "title": "Italian Neuro Animals",
-    "cover": "https://example.com/images/thumbnails/italian-neuro-animals.png",
-    "play_url": "https://app-425300.games.s3.yandex.net/425300/wz50sfyyyszgj510yap7bsy1guf7s7gy_brotli/index.html?sdk=%2Fsdk%2F_%2Fv2.dfed038c116f559b5fee.js#origin=https%3A%2F%2Fplayhop.com&app-id=425300&device-type=desktop",
+    "cover": "https://example.com/images/thumbnails/italian-neuro-animals.webp",
+    "play_url": "https://st.8games.net/7/8g/igra-italyanskie-nejro-zhivotnye-plejgraund/",
     "description": "Italian Neuro Animals - An exciting unblocked game. Play now!",
-    "rating": 4.4,
-    "play_count": 16500,
+    "rating": 4.5,
+    "play_count": 2100000,
     "released_at": "2025-01-23",
     "is_active": true
   },
   {
     "slug": "crazy-sprunki-3d",
     "title": "Crazy Sprunki 3D",
-    "cover": "https://example.com/images/thumbnails/crazy-sprunki-3d.png",
+    "cover": "https://example.com/images/thumbnails/crazy-sprunki-3d.webp",
     "play_url": "https://www.gameflare.com/embed/crazy-sprunki-3d/",
     "description": "Crazy Sprunki 3D - An exciting unblocked game. Play now!",
     "rating": 4,
@@ -46,7 +79,7 @@
   {
     "slug": "kart-bros",
     "title": "Kart Bros",
-    "cover": "https://example.com/images/thumbnails/kart-bros.png",
+    "cover": "https://example.com/images/thumbnails/kart-bros.webp",
     "play_url": "https://www.gameflare.com/embed/kart-bros/",
     "description": "Kart Bros - An exciting unblocked game. Play now!",
     "rating": 4.8,
@@ -57,7 +90,7 @@
   {
     "slug": "smash-karts",
     "title": "Smash Karts",
-    "cover": "https://example.com/images/thumbnails/smash-karts.png",
+    "cover": "https://example.com/images/thumbnails/smash-karts.webp",
     "play_url": "https://www.gameflare.com/embed/smash-karts/",
     "description": "Smash Karts - An exciting unblocked game. Play now!",
     "rating": 4.2,
@@ -135,10 +168,10 @@
     "slug": "obby-my-singing-brainrot",
     "title": "Obby: My Singing Brainrot",
     "cover": "https://example.com/images/thumbnails/obby-my-singing-brainrot.jpg",
-    "play_url": "https://www.roblox.com/games/start?placeId=123456789",
+    "play_url": "https://st.8games.net/7/8g/igra-obbi-moj-poyushchij-brejnrot-1-3d/",
     "description": "Obby: My Singing Brainrot - An exciting unblocked game. Play now!",
     "rating": 5,
-    "play_count": 25678,
+    "play_count": 850000,
     "released_at": "2024-12-10",
     "is_active": true
   },
@@ -165,21 +198,10 @@
     "is_active": true
   },
   {
-    "slug": "fix-da-brainrot",
-    "title": "Fix Da Brainrot",
-    "cover": "https://example.com/images/thumbnails/fix-da-brainrot.jpg",
-    "play_url": "https://www.gameflare.com/embed/fix-da-brainrot/",
-    "description": "Fix Da Brainrot - An exciting unblocked game. Play now!",
-    "rating": 5,
-    "play_count": 32145,
-    "released_at": "2024-11-25",
-    "is_active": true
-  },
-  {
     "slug": "memory-brainrot",
     "title": "Memory Brainrot",
     "cover": "https://example.com/images/thumbnails/memory-brainrot.jpg",
-    "play_url": "https://www.gameflare.com/embed/memory-brainrot/",
+    "play_url": "https://html5.gamedistribution.com/0eec782d61e6449ab2e3ecc02272bcad/?utm_source=italian-brainrot.io&utm_medium=brainrot-memory&utm_campaign=block-and-redirect",
     "description": "Memory Brainrot - An exciting unblocked game. Play now!",
     "rating": 5,
     "play_count": 28934,
@@ -201,7 +223,7 @@
     "slug": "plants-vs-brainrots",
     "title": "Plants vs Brainrots",
     "cover": "https://example.com/images/thumbnails/plants-vs-brainrots.jpg",
-    "play_url": "https://www.gameflare.com/embed/plants-vs-brainrots/",
+    "play_url": "https://st.8games.net/7/8g/igra-brejnroty-protiv-rastenij/",
     "description": "Plants vs Brainrots - An exciting unblocked game. Play now!",
     "rating": 4.1,
     "play_count": 21567,
@@ -217,6 +239,17 @@
     "rating": 4.6,
     "play_count": 2156,
     "released_at": "2025-01-11",
+    "is_active": true
+  },
+  {
+    "slug": "crazy-cattle-3d-unblocked",
+    "title": "Crazy Cattle 3D Unblocked",
+    "cover": "https://example.com/images/thumbnails/crazy-cattle-3d-unblocked.png",
+    "play_url": "https://crazycattle3d.io/game/crazycattle3d/v8/",
+    "description": "Crazy Cattle 3D Unblocked - An exciting unblocked game. Play now!",
+    "rating": 4.6,
+    "play_count": 850000,
+    "released_at": "2024-11-20",
     "is_active": true
   },
   {
@@ -272,6 +305,50 @@
     "rating": 5,
     "play_count": 125000,
     "released_at": "2025-01-22",
+    "is_active": true
+  },
+  {
+    "slug": "fix-da-brainrot",
+    "title": "Fix Da Brainrot",
+    "cover": "https://example.com/images/thumbnails/fix-da-brainrot.jpg",
+    "play_url": "https://storage.y8.com/y8-studio/html5/jdchanda/fix_da_brainrot/?key=y8&value=default",
+    "description": "Fix Da Brainrot - An exciting unblocked game. Play now!",
+    "rating": 4.6,
+    "play_count": 1200000,
+    "released_at": "2025-01-22",
+    "is_active": true
+  },
+  {
+    "slug": "blocky-rush",
+    "title": "Blocky Rush",
+    "cover": "https://example.com/images/thumbnails/blocky-rush.png",
+    "play_url": "https://yoplay.io/blocky-rush.embed",
+    "description": "Blocky Rush - An exciting unblocked game. Play now!",
+    "rating": 4.2,
+    "play_count": 750000,
+    "released_at": "2024-12-15",
+    "is_active": true
+  },
+  {
+    "slug": "the-freak-circus",
+    "title": "The Freak Circus",
+    "cover": "https://example.com/images/thumbnails/the-freak-circus.jpg",
+    "play_url": "https://html-classic.itch.zone/html/14081436/index.html",
+    "description": "The Freak Circus - An exciting unblocked game. Play now!",
+    "rating": 4.9,
+    "play_count": 2514000,
+    "released_at": "2025-10-23",
+    "is_active": true
+  },
+  {
+    "slug": "steal-the-brainrot-fish",
+    "title": "Steal the Brainrot Fish",
+    "cover": "https://example.com/images/thumbnails/steal-the-brainrot-fish.png",
+    "play_url": "https://st.8games.net/7/8g/igra-ukradi-brejnrot-rybu/",
+    "description": "Steal the Brainrot Fish - An exciting unblocked game. Play now!",
+    "rating": 4.8,
+    "play_count": 125000,
+    "released_at": "2025-10-24",
     "is_active": true
   }
 ]
