@@ -15,6 +15,7 @@ DELETE FROM games WHERE slug = 'steal-a-brainrot-unblocked';
 
 -- 插入或更新所有游戏
 INSERT INTO games (slug, title, cover, play_url, description, rating, play_count, released_at, is_active) VALUES
+  ('steal-brainrot-monsters', 'Steal Brainrot Monsters', '/images/thumbnails/steal-brainrot-monsters.jpeg', 'https://st.8games.net/7/8g/igra-ukradi-brejnrot-monstrov/', 'Steal Brainrot Monsters - Build your monster empire and maximize your profits! Play now!', 4.5, 150000, '2025-01-25', true),
   ('goodgame-empire', 'Goodgame Empire', '/images/thumbnails/goodgame-empire.png', 'https://www.gameflare.com/embed/goodgame-empire/', 'Goodgame Empire - An exciting unblocked game. Play now!', 4.5, 2500000, '2025-01-25', true),
   ('perfect-orbit', 'Perfect Orbit', '/images/thumbnails/perfect-orbit.png', 'https://games.yoplay.io/perfect-orbit/', 'Perfect Orbit - An exciting unblocked game. Play now!', 5.0, 125000, '2025-01-25', true),
   ('italian-neuro-animals', 'Italian Neuro Animals', '/images/thumbnails/italian-neuro-animals.webp', 'https://st.8games.net/7/8g/igra-italyanskie-nejro-zhivotnye-plejgraund/', 'Italian Neuro Animals - An exciting unblocked game. Play now!', 4.5, 2100000, '2025-01-23', true),
@@ -43,7 +44,8 @@ INSERT INTO games (slug, title, cover, play_url, description, rating, play_count
   ('fix-da-brainrot', 'Fix Da Brainrot', '/images/thumbnails/fix-da-brainrot.jpg', 'https://storage.y8.com/y8-studio/html5/jdchanda/fix_da_brainrot/?key=y8&value=default', 'Fix Da Brainrot - An exciting unblocked game. Play now!', 4.6, 1200000, '2025-01-22', true),
   ('blocky-rush', 'Blocky Rush', '/images/thumbnails/blocky-rush.png', 'https://yoplay.io/blocky-rush.embed', 'Blocky Rush - An exciting unblocked game. Play now!', 4.2, 750000, '2024-12-15', true),
   ('the-freak-circus', 'The Freak Circus', '/images/thumbnails/the-freak-circus.jpg', 'https://html-classic.itch.zone/html/14081436/index.html', 'The Freak Circus - An exciting unblocked game. Play now!', 4.9, 2514000, '2025-10-23', true),
-  ('no-im-not-a-human', 'No, I\'m not a Human', '/images/thumbnails/no-im-not-a-human.png', 'https://d.ulyagames.com/games/no-im-not-a-human/', 'No, I\'m not a Human - Psychological horror survival game. Play now!', 4.7, 850000, '2025-10-23', true)
+  ('no-im-not-a-human', 'No, I\'m not a Human', '/images/thumbnails/no-im-not-a-human.png', 'https://d.ulyagames.com/games/no-im-not-a-human/', 'No, I\'m not a Human - Psychological horror survival game. Play now!', 4.7, 850000, '2025-10-23', true),
+  ('steal-the-brainrot-fish', 'Steal the Brainrot Fish', '/images/thumbnails/steal-the-brainrot-fish.png', 'https://st.8games.net/7/8g/igra-ukradi-brejnrot-rybu/', 'Steal the Brainrot Fish - Build your underwater empire of viral fish. Play now!', 4.8, 125000, '2025-10-24', true)
 ON CONFLICT (slug) DO UPDATE SET
   title = EXCLUDED.title,
   cover = EXCLUDED.cover,
@@ -54,6 +56,10 @@ ON CONFLICT (slug) DO UPDATE SET
   released_at = EXCLUDED.released_at,
   is_active = EXCLUDED.is_active,
   updated_at = NOW();
+
+-- 添加 Steal Brainrot Monsters 的评论
+INSERT INTO game_comments (game_slug, user_name, user_email, comment_text, rating, status, agreed_terms) VALUES
+  ('steal-brainrot-monsters', 'MonsterCollector', 'collector@example.com', 'This monster collection game is incredibly addictive! The rarity system keeps me coming back for more. Love hunting for those Mythic monsters with Gold mutations!', 5, 'approved', true);
 
 -- 验证同步结果
 SELECT COUNT(*) as total_games FROM games WHERE is_active = true;

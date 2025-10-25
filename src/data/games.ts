@@ -26,6 +26,17 @@ export function isRealGame(game: Game): game is GameData {
 // All games data with release dates, tags, and ratings
 export const allGames: Game[] = [
   {
+    name: 'Top Speed Racing 3D',
+    image: '/images/thumbnails/top-speed-racing-3d.webp',
+    slug: 'top-speed-racing-3d',
+    isReal: true,
+    url: 'https://gamesonline86.github.io/top-speed-racing-3d/',
+    releaseDate: '2025-10-25',
+    tags: ['Racing', '3D', 'Car', 'Speed', 'Driving', 'Sports'],
+    rating: 4.9,
+    playCount: 81
+  },
+  {
     name: 'Crazy Animal City',
     image: '/images/thumbnails/crazy-animal-city.webp',
     slug: 'crazy-animal-city',
