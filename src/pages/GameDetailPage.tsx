@@ -10,6 +10,8 @@ interface GameDetailPageProps {
 
 // 游戏页面组件映射表 - 每个游戏对应一个专门的页面组件
 const gamePageComponents: Record<string, React.ComponentType<any>> = {
+  'crazy-animal-city': lazy(() => import('./CrazyAnimalCityPage')),
+  'spacebar-clicker-3': lazy(() => import('./SpacebarClicker3Page')),
   'wacky-flip': lazy(() => import('./WackyFlipPage')),
   'take-care-of-shadow-milk': lazy(() => import('./TakeCareOfShadowMilkPage')),
   'perfect-orbit': lazy(() => import('./PerfectOrbitPage')),

@@ -4,10 +4,43 @@
 
   <!-- New Games (Released in 2025-10) -->
   <url>
+    <loc>https://www.stealabrainrotunblocked.com/crazy-animal-city</loc>
+    <lastmod>2025-10-25</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://www.stealabrainrotunblocked.com/images/thumbnails/crazy-animal-city.webp</image:loc>
+      <image:title>Crazy Animal City</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://www.stealabrainrotunblocked.com/spacebar-clicker-3</loc>
+    <lastmod>2025-10-25</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://www.stealabrainrotunblocked.com/images/thumbnails/spacebar-clicker-3.webp</image:loc>
+      <image:title>Spacebar Clicker 3</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://www.stealabrainrotunblocked.com/block-blast-3d</loc>
+    <lastmod>2025-10-25</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://www.stealabrainrotunblocked.com/images/thumbnails/block-blast-3d.webp</image:loc>
+      <image:title>Block Blast 3D</image:title>
+    </image:image>
+  </url>
+
+  <url>
     <loc>https://www.stealabrainrotunblocked.com/wacky-flip</loc>
     <lastmod>2025-10-24</lastmod>
     <changefreq>daily</changefreq>
-    <priority>1.0</priority>
+    <priority>0.99</priority>
     <image:image>
       <image:loc>https://www.stealabrainrotunblocked.com/images/thumbnails/wacky-flip.webp</image:loc>
       <image:title>Wacky Flip</image:title>

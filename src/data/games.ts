@@ -26,6 +26,39 @@ export function isRealGame(game: Game): game is GameData {
 // All games data with release dates, tags, and ratings
 export const allGames: Game[] = [
   {
+    name: 'Crazy Animal City',
+    image: '/images/thumbnails/crazy-animal-city.webp',
+    slug: 'crazy-animal-city',
+    isReal: true,
+    url: 'https://1games.io/game/crazy-animal-city/',
+    releaseDate: '2025-10-25',
+    tags: ['3D', 'Simulation', 'Action', 'Casual', 'Animal', 'City'],
+    rating: 4.6,
+    playCount: 320
+  },
+  {
+    name: 'Spacebar Clicker 3',
+    image: '/images/thumbnails/spacebar-clicker-3.webp',
+    slug: 'spacebar-clicker-3',
+    isReal: true,
+    url: 'https://1games.io/game/spacebar-clicker-3/',
+    releaseDate: '2025-10-25',
+    tags: ['Clicker', 'Casual', 'Skill', 'Speed', 'Arcade', 'Incremental'],
+    rating: 4.7,
+    playCount: 129
+  },
+  {
+    name: 'Block Blast 3D',
+    image: '/images/thumbnails/block-blast-3d.webp',
+    slug: 'block-blast-3d',
+    isReal: true,
+    url: 'https://1games.io/game/block-blast-3d/',
+    releaseDate: '2025-10-25',
+    tags: ['Puzzle', '3D', 'Block', 'Strategy', 'Casual', 'Brain'],
+    rating: 4.3,
+    playCount: 850
+  },
+  {
     name: 'Wacky Flip',
     image: '/images/thumbnails/wacky-flip.webp',
     slug: 'wacky-flip',
