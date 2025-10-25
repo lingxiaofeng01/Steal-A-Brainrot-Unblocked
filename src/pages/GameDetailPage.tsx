@@ -10,6 +10,7 @@ interface GameDetailPageProps {
 
 // 游戏页面组件映射表 - 每个游戏对应一个专门的页面组件
 const gamePageComponents: Record<string, React.ComponentType<any>> = {
+  'colorbox-mustard': lazy(() => import('./ColorboxMustardPage')),
   'top-speed-racing-3d': lazy(() => import('./TopSpeedRacing3DPage')),
   'crazy-animal-city': lazy(() => import('./CrazyAnimalCityPage')),
   'spacebar-clicker-3': lazy(() => import('./SpacebarClicker3Page')),

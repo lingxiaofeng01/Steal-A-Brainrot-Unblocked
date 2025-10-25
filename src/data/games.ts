@@ -26,6 +26,17 @@ export function isRealGame(game: Game): game is GameData {
 // All games data with release dates, tags, and ratings
 export const allGames: Game[] = [
   {
+    name: 'Colorbox Mustard',
+    image: '/images/thumbnails/colorbox-mustard.webp',
+    slug: 'colorbox-mustard',
+    isReal: true,
+    url: 'https://kdata1.com/2024/10/colorbox-mustard/',
+    releaseDate: '2025-10-25',
+    tags: ['Music', 'Creative', 'Casual', 'Rhythm', 'Art', 'Sound'],
+    rating: 4.8,
+    playCount: 0
+  },
+  {
     name: 'Top Speed Racing 3D',
     image: '/images/thumbnails/top-speed-racing-3d.webp',
     slug: 'top-speed-racing-3d',
