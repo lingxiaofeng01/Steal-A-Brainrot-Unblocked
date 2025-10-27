@@ -26,6 +26,28 @@ export function isRealGame(game: Game): game is GameData {
 // All games data with release dates, tags, and ratings
 export const allGames: Game[] = [
   {
+    name: 'Dude Theft Auto',
+    image: '/images/thumbnails/dude-theft-auto.webp',
+    slug: 'dude-theft-auto',
+    isReal: true,
+    url: 'https://1games.io/game/dude-theft-auto/',
+    releaseDate: '2025-10-27',
+    tags: ['Action', 'Shooting', 'Simulation', '3D', 'Multiplayer', 'Physics', 'Gun', 'FPS'],
+    rating: 4.6,
+    playCount: 0
+  },
+  {
+    name: 'Block Breaker',
+    image: '/images/thumbnails/block-breaker.jpeg',
+    slug: 'block-breaker',
+    isReal: true,
+    url: '//html5.gamedistribution.com/rvvASMiM/e8c759ba34bd4b9b9760b77fb04b69d9/index.html?gd_sdk_referrer_url=https%3A%2F%2F1games.io%2Fblock-breaker&gd_zone_config=eyJwYXJlbnRVUkwiOiJodHRwczovLzFnYW1lcy5pby9ibG9jay1icmVha2VyIiwicGFyZW50RG9tYWluIjoiMWdhbWVzLmlvIiwidG9wRG9tYWluIjoiMWdhbWVzLmlvIiwiaGFzSW1wcmVzc2lvbiI6ZmFsc2UsImxvYWRlckVuYWJsZWQiOnRydWUsImhvc3QiOiJodG1sNS5nYW1lZGlzdHJpYnV0aW9uLmNvbSIsInZlcnNpb24iOiIxLjUuMTgifQ%253D%253D',
+    releaseDate: '2025-10-27',
+    tags: ['Arcade', 'Action', 'Skill', 'Casual', 'Block', 'Agility'],
+    rating: 4.5,
+    playCount: 0
+  },
+  {
     name: 'Colorbox Mustard',
     image: '/images/thumbnails/colorbox-mustard.webp',
     slug: 'colorbox-mustard',
