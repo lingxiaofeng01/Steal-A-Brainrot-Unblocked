@@ -6,6 +6,7 @@ import Sidebar from '../src/components/Sidebar';
 import TopBar from '../src/components/TopBar';
 import Footer from '../src/components/Footer';
 import ScrollToTop from '../src/components/ScrollToTop';
+import GoogleAnalytics from '../src/components/GoogleAnalytics';
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.stealabrainrotunblocked.com'),
@@ -109,6 +110,7 @@ export default function RootLayout({
         <meta name="referrer" content="strict-origin-when-cross-origin" />
       </head>
       <body>
+        <GoogleAnalytics />
         <div className="min-h-screen flex bg-gradient-to-br from-pink-50 via-blue-50 to-cyan-50">
           <Sidebar />
           <div className="flex-1 flex flex-col min-w-0">

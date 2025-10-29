@@ -11,6 +11,10 @@ dist
 dist-ssr
 *.local
 
+# Next.js
+.next/
+out/
+
 .vscode/*
 !.vscode/extensions.json
 .idea
