@@ -10,6 +10,11 @@ interface GameDetailPageProps {
 
 // 游戏页面组件映射表 - 每个游戏对应一个专门的页面组件
 const gamePageComponents: Record<string, React.ComponentType<any>> = {
+  'crazy-chicken-3d': lazy(() => import('./CrazyChicken3DPage')),
+  'humans-playground': lazy(() => import('./HumansPlaygroundPage')),
+  'tung-sahur-clicker': lazy(() => import('./TungSahurClickerPage')),
+  'cheese-chompers-3d': lazy(() => import('./CheeseChompers3DPage')),
+  'fnaf-shooter': lazy(() => import('./FnafShooterPage')),
   'dude-theft-auto': lazy(() => import('./DudeTheftAutoPage')),
   'block-breaker': lazy(() => import('./BlockBreakerPage')),
   'colorbox-mustard': lazy(() => import('./ColorboxMustardPage')),
@@ -23,7 +28,6 @@ const gamePageComponents: Record<string, React.ComponentType<any>> = {
   'crazy-sheep-3d': lazy(() => import('./CrazySheep3DPage')),
   'crazy-sprunki-3d': lazy(() => import('./CrazySprunki3DPage')),
   'crazy-cattle-3d': lazy(() => import('./CrazyCattle3DPage')),
-  'cheese-chompers-3d': lazy(() => import('./CheeseChompers3DPage')),
   'little-big-snake': lazy(() => import('./LittleBigSnakePage')),
   'rocket-fortress': lazy(() => import('./RocketFortressPage')),
   'italian-neuro-animals': lazy(() => import('./ItalianNeuroAnimalsPage')),

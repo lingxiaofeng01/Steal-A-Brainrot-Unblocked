@@ -26,6 +26,61 @@ export function isRealGame(game: Game): game is GameData {
 // All games data with release dates, tags, and ratings
 export const allGames: Game[] = [
   {
+    name: 'Crazy Chicken 3D',
+    image: '/images/thumbnails/crazy-chicken-3d.webp',
+    slug: 'crazy-chicken-3d',
+    isReal: true,
+    url: 'https://1games.io/game/crazy-chicken-3d/',
+    releaseDate: '2025-10-29',
+    tags: ['Action', 'Survival', 'Physics', 'Battle Royale', 'Animal', 'Crazy Cattle 3D'],
+    rating: 4.3,
+    playCount: 0
+  },
+  {
+    name: 'Humans Playground',
+    image: '/images/thumbnails/humans-playground.jpg',
+    slug: 'humans-playground',
+    isReal: true,
+    url: 'https://html5.gamedistribution.com/4eacf9fb9012479194568af9a7e0417c/?gd_sdk_referrer_url=https://1games.io/humans-playground',
+    releaseDate: '2025-10-29',
+    tags: ['Action', 'Adventure', 'Simulation', 'Physics', 'Sandbox', 'Ragdoll', 'Creation'],
+    rating: 4.1,
+    playCount: 0
+  },
+  {
+    name: 'Tung Sahur Clicker',
+    image: '/images/thumbnails/tung-sahur-clicker.webp',
+    slug: 'tung-sahur-clicker',
+    isReal: true,
+    url: 'https://1games.io/game/tung-sahur-clicker/',
+    releaseDate: '2025-10-29',
+    tags: ['Clicker', 'Casual', 'Funny', 'Idle', 'One Button', 'Incremental', 'Italian Brainrot'],
+    rating: 4.4,
+    playCount: 0
+  },
+  {
+    name: 'Cheese Chompers 3D',
+    image: '/images/thumbnails/cheese-chompers-3d.webp',
+    slug: 'cheese-chompers-3d',
+    isReal: true,
+    url: 'https://epicfreegames78.github.io/cheese-chompers-3d/',
+    releaseDate: '2025-10-29',
+    tags: ['Action', 'Survival', 'Fast-paced', 'Arena', 'Animal', '3D', 'Multiplayer', 'Physics'],
+    rating: 4.4,
+    playCount: 0
+  },
+  {
+    name: 'FNaF Shooter',
+    image: '/images/thumbnails/fnaf-shooter.webp',
+    slug: 'fnaf-shooter',
+    isReal: true,
+    url: 'https://html5.gamedistribution.com/eb8346d4739e40eda6e4196dfc9166b7/?gd_sdk_referrer_url=https://1games.io/fnaf-shooter',
+    releaseDate: '2025-10-29',
+    tags: ['Action', 'Horror', 'Shooting', 'FNAF', 'Gun', 'FPS', 'Halloween'],
+    rating: 4.6,
+    playCount: 0
+  },
+  {
     name: 'Dude Theft Auto',
     image: '/images/thumbnails/dude-theft-auto.webp',
     slug: 'dude-theft-auto',
