@@ -10,6 +10,12 @@ interface GameDetailPageProps {
 
 // 游戏页面组件映射表 - 每个游戏对应一个专门的页面组件
 const gamePageComponents: Record<string, React.ComponentType<any>> = {
+  'undead-corridor': lazy(() => import('./UndeadCorridorPage')),
+  'blendrix': lazy(() => import('./BlendrixPage')),
+  'steal-brainrots': lazy(() => import('./StealBrainrotsPage')),
+  'yokai-dungeon': lazy(() => import('./YokaiDungeonPage')),
+  'a-pretty-odd-bunny-roast-it': lazy(() => import('./APrettyOddBunnyRoastItPage')),
+  'zombotron-re-boot': lazy(() => import('./ZombotronReBootPage')),
   'crazy-chicken-3d': lazy(() => import('./CrazyChicken3DPage')),
   'humans-playground': lazy(() => import('./HumansPlaygroundPage')),
   'tung-sahur-clicker': lazy(() => import('./TungSahurClickerPage')),

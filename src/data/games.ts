@@ -26,6 +26,83 @@ export function isRealGame(game: Game): game is GameData {
 // All games data with release dates, tags, and ratings
 export const allGames: Game[] = [
   {
+    name: 'Rocket Fortress',
+    image: '/images/thumbnails/rocket-fortress.png',
+    slug: 'rocket-fortress',
+    isReal: true,
+    url: 'https://gamea.azgame.io/rocket-fortress/',
+    releaseDate: '2025-10-30',
+    tags: ['Clicker', 'RPG', 'Action', 'Strategy', 'Casual', 'Shooting', 'Kids'],
+    rating: 4.2,
+    playCount: 2320
+  },
+  {
+    name: 'Undead Corridor',
+    image: '/images/thumbnails/undead-corridor.png',
+    slug: 'undead-corridor',
+    isReal: true,
+    url: 'https://gamea.azgame.io/undead-corridor/',
+    releaseDate: '2025-10-30',
+    tags: ['Shooting', 'Horror', 'Zombie', 'Survival', 'Action', '2D', 'Arcade'],
+    rating: 4.4,
+    playCount: 485
+  },
+  {
+    name: 'Blendrix',
+    image: '/images/thumbnails/blendrix.png',
+    slug: 'blendrix',
+    isReal: true,
+    url: 'https://gamea.azgame.io/blendrix/',
+    releaseDate: '2025-10-30',
+    tags: ['Puzzle', 'Casual', 'Logic', 'Brain Teaser', 'Strategy', 'Minimalist', 'Kids'],
+    rating: 4.2,
+    playCount: 113
+  },
+  {
+    name: 'Steal Brainrots',
+    image: '/images/thumbnails/steal-brainrots.png',
+    slug: 'steal-brainrots',
+    isReal: true,
+    url: 'https://azgames.io/steal-brainrots/steal-brainrots.embed',
+    releaseDate: '2025-10-30',
+    tags: ['Action', 'Puzzle', 'Strategy', 'Collecting', 'Stealth', 'Brainrot', 'Casual', 'Arcade'],
+    rating: 4.7,
+    playCount: 0
+  },
+  {
+    name: 'Yokai Dungeon',
+    image: '/images/thumbnails/yokai-dungeon.png',
+    slug: 'yokai-dungeon',
+    isReal: true,
+    url: 'https://playgroundfree.github.io/yokai-dungeon/',
+    releaseDate: '2025-10-30',
+    tags: ['Puzzle', 'Strategy', 'Escape', 'Monster', 'Collecting', 'Halloween', 'Maze', 'Roguelike', 'Action'],
+    rating: 4.5,
+    playCount: 0
+  },
+  {
+    name: 'A Pretty Odd Bunny: Roast It!',
+    image: '/images/thumbnails/a-pretty-odd-bunny-roast-it.png',
+    slug: 'a-pretty-odd-bunny-roast-it',
+    isReal: true,
+    url: 'https://snakeiogames.github.io/a_pretty_odd_bunny_roast_it/',
+    releaseDate: '2025-10-30',
+    tags: ['Arcade', 'Puzzle', 'Platform', 'Animal', 'Bunny', 'Funny', 'Multiplayer', 'Casual'],
+    rating: 4.7,
+    playCount: 0
+  },
+  {
+    name: 'Zombotron Re-Boot',
+    image: '/images/thumbnails/zombotron-re-boot.webp',
+    slug: 'zombotron-re-boot',
+    isReal: true,
+    url: 'https://gamequestfree.github.io/zombotron-re-boot/',
+    releaseDate: '2025-10-30',
+    tags: ['Action', 'Platform', '2D', 'Indie', 'Physics', 'Zombie', 'Shooting', 'Adventure'],
+    rating: 4.4,
+    playCount: 0
+  },
+  {
     name: 'Crazy Chicken 3D',
     image: '/images/thumbnails/crazy-chicken-3d.webp',
     slug: 'crazy-chicken-3d',
