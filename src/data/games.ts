@@ -26,6 +26,50 @@ export function isRealGame(game: Game): game is GameData {
 // All games data with release dates, tags, and ratings
 export const allGames: Game[] = [
   {
+    name: 'Planet Buster',
+    image: '/images/thumbnails/planet-buster.jpg',
+    slug: 'planet-buster',
+    isReal: true,
+    url: 'https://planet-buster.1games.io/',
+    releaseDate: '2025-10-31',
+    tags: ['Casual', 'Simulation', '1Games', 'Idle', 'Weapon', 'One Button', 'Destroy', 'Asteroid', 'Action', 'Clicker'],
+    rating: 4.4,
+    playCount: 393
+  },
+  {
+    name: 'Slope Xtreme',
+    image: '/images/thumbnails/slope-xtreme.jpg',
+    slug: 'slope-xtreme',
+    isReal: true,
+    url: 'https://slope-xtreme.1games.io/',
+    releaseDate: '2025-10-31',
+    tags: ['Arcade', 'Skill', 'Running', 'Ball', 'Slope', 'Avoid', 'Fast-paced', '3D', 'Casual', 'Action'],
+    rating: 4.8,
+    playCount: 0
+  },
+  {
+    name: 'Stickman Empires',
+    image: '/images/thumbnails/stickman-empires.png',
+    slug: 'stickman-empires',
+    isReal: true,
+    url: 'https://games.yoplay.io/stickman-empires/',
+    releaseDate: '2025-10-31',
+    tags: ['Strategy', 'Tower Defense', 'Stickman', 'War', 'Action', 'Casual', 'Multiplayer', 'Adventure'],
+    rating: 5.0,
+    playCount: 0
+  },
+  {
+    name: 'Soflo Wheelie Life',
+    image: '/images/thumbnails/soflo-wheelie-life.png',
+    slug: 'soflo-wheelie-life',
+    isReal: true,
+    url: 'https://scratch.mit.edu/projects/1231016758/embed',
+    releaseDate: '2025-10-31',
+    tags: ['Racing', 'Sport', 'Driving', 'Moto', 'Scratch', 'Arcade', 'Casual', 'Skill'],
+    rating: 5.0,
+    playCount: 0
+  },
+  {
     name: 'Rocket Fortress',
     image: '/images/thumbnails/rocket-fortress.png',
     slug: 'rocket-fortress',
