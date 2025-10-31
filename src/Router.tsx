@@ -17,6 +17,7 @@ import ActionTagPage from './pages/ActionTagPage';
 import MultiplayerTagPage from './pages/MultiplayerTagPage';
 import BattleTagPage from './pages/BattleTagPage';
 import RacingTagPage from './pages/RacingTagPage';
+import SportTagPage from './pages/SportTagPage';
 import IOTagPage from './pages/IOTagPage';
 import ShooterTagPage from './pages/ShooterTagPage';
 import BuildingTagPage from './pages/BuildingTagPage';
@@ -102,6 +103,10 @@ const routes: Route[] = [
   {
     path: /^\/tag\/racing$/,
     component: () => <RacingTagPage />,
+  },
+  {
+    path: /^\/tag\/sport$/,
+    component: () => <SportTagPage />,
   },
   {
     path: /^\/tag\/io$/,

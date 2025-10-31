@@ -10,6 +10,7 @@ interface GameDetailPageProps {
 
 // 游戏页面组件映射表 - 每个游戏对应一个专门的页面组件
 const gamePageComponents: Record<string, React.ComponentType<any>> = {
+  'soflo-wheelie-life': lazy(() => import('./SofloWheelieLifePage')),
   'undead-corridor': lazy(() => import('./UndeadCorridorPage')),
   'blendrix': lazy(() => import('./BlendrixPage')),
   'steal-brainrots': lazy(() => import('./StealBrainrotsPage')),
@@ -58,6 +59,7 @@ const gamePageComponents: Record<string, React.ComponentType<any>> = {
   'steal-the-brainrot-fish': lazy(() => import('./StealTheBrainrotFishPage')),
   'steal-brainrot-monsters': lazy(() => import('./StealBrainrotMonstersPage')),
   'steal-the-cool-brainrot-sprunki': lazy(() => import('./StealTheCoolBrainrotSprunkiPage')),
+  'slope-xtreme': lazy(() => import('./SlopeXtremePage')),
 };
 
 export default function GameDetailPage({ slug }: GameDetailPageProps) {

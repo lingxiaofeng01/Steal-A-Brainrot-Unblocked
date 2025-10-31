@@ -27,10 +27,15 @@ const TAG_CONFIG: Record<string, { title: string; description: string; emoji: st
   multiplayer: { title: 'Multiplayer', description: 'Multiplayer online games', emoji: '👥', gradient: 'from-blue-500 to-purple-500' },
   battle: { title: 'Battle', description: 'Battle and combat games', emoji: '⚔️', gradient: 'from-red-600 to-orange-600' },
   racing: { title: 'Racing', description: 'Racing and driving games', emoji: '🏎️', gradient: 'from-yellow-600 to-red-600' },
+  sport: { title: 'Sport', description: 'Sport and athletic games', emoji: '⚽', gradient: 'from-green-600 to-teal-600' },
   io: { title: 'IO', description: 'IO multiplayer games', emoji: '🌐', gradient: 'from-green-600 to-blue-600' },
   shooter: { title: 'Shooter', description: 'Shooting games', emoji: '🎯', gradient: 'from-gray-700 to-red-700' },
   building: { title: 'Building', description: 'Building and construction games', emoji: '🏗️', gradient: 'from-amber-600 to-orange-600' },
   '3d': { title: '3D', description: '3D games and experiences', emoji: '🎮', gradient: 'from-cyan-600 to-purple-600' },
+  horror: { title: 'Horror', description: 'Scary and terrifying horror games', emoji: '👻', gradient: 'from-purple-900 to-red-900' },
+  zombie: { title: 'Zombie', description: 'Zombie survival and shooter games', emoji: '🧟', gradient: 'from-green-900 to-gray-900' },
+  survival: { title: 'Survival', description: 'Survival and adventure games', emoji: '🏕️', gradient: 'from-green-700 to-brown-700' },
+  '2d': { title: '2D', description: 'Classic 2D games and platformers', emoji: '🕹️', gradient: 'from-blue-600 to-indigo-600' },
 };
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {

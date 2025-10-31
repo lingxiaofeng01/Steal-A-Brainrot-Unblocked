@@ -208,8 +208,8 @@ async function checkSupabaseComments() {
     console.log('\n' + '='.repeat(80));
     console.log('📝 总结');
     console.log('='.repeat(80));
-    
-    const summary = [];
+
+    const summary: string[] = [];
     
     if (allComments && allComments.length > 0) {
       summary.push(`✅ 评论系统正常运行，共 ${allComments.length} 条评论`);

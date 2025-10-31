@@ -169,6 +169,12 @@ export const TAG_SEO: Record<string, SEOConfig> = {
     keywords: ['racing games', 'driving games', 'car games', 'racing online'],
     canonical: `${SITE_URL}/tag/racing`,
   },
+  sport: {
+    title: `Sport Games - Free Sports & Athletic Games Online`,
+    description: 'Play exciting sport games online! From racing to extreme sports, compete and win in free sports games!',
+    keywords: ['sport games', 'sports games', 'athletic games', 'sports online', 'competitive sports'],
+    canonical: `${SITE_URL}/tag/sport`,
+  },
   io: {
     title: `IO Games - Free Multiplayer IO Games Online`,
     description: 'Play competitive IO games with players worldwide. Battle in real-time multiplayer IO games!',
@@ -192,6 +198,30 @@ export const TAG_SEO: Record<string, SEOConfig> = {
     description: 'Immerse yourself in stunning 3D games with high-quality graphics. Play free 3D games online!',
     keywords: ['3d games', '3d online games', 'free 3d games', '3d browser games'],
     canonical: `${SITE_URL}/tag/3d`,
+  },
+  horror: {
+    title: `Horror Games - Scary Free Horror Games Online`,
+    description: 'Experience terrifying horror games that will keep you on the edge of your seat. Play free horror games online!',
+    keywords: ['horror games', 'scary games', 'creepy games', 'horror online', 'survival horror'],
+    canonical: `${SITE_URL}/tag/horror`,
+  },
+  zombie: {
+    title: `Zombie Games - Free Zombie Survival Games Online`,
+    description: 'Fight off hordes of zombies in thrilling zombie survival games. Play free zombie games online!',
+    keywords: ['zombie games', 'zombie survival', 'zombie shooter', 'undead games', 'zombie apocalypse'],
+    canonical: `${SITE_URL}/tag/zombie`,
+  },
+  survival: {
+    title: `Survival Games - Free Survival & Adventure Games`,
+    description: 'Test your survival skills in challenging survival games. Gather resources, fight enemies, and stay alive!',
+    keywords: ['survival games', 'survival online', 'survival adventure', 'survival horror', 'survival shooter'],
+    canonical: `${SITE_URL}/tag/survival`,
+  },
+  '2d': {
+    title: `2D Games - Classic 2D Games & Platformers Free`,
+    description: 'Enjoy classic 2D games with retro-style graphics and engaging gameplay. Play free 2D games online!',
+    keywords: ['2d games', '2d platformers', 'retro games', '2d online games', 'classic 2d'],
+    canonical: `${SITE_URL}/tag/2d`,
   },
 };
 
