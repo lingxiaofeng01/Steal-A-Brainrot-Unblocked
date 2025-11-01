@@ -59,12 +59,12 @@ export const allGames: Game[] = [
     playCount: 0
   },
   {
-    name: 'Soflo Wheelie Life',
+    name: 'SoFlo Wheelie Life',
     image: '/images/thumbnails/soflo-wheelie-life.png',
     slug: 'soflo-wheelie-life',
     isReal: true,
     url: 'https://scratch.mit.edu/projects/1231016758/embed',
-    releaseDate: '2025-10-31',
+    releaseDate: '2025-11-01',
     tags: ['Racing', 'Sport', 'Driving', 'Moto', 'Scratch', 'Arcade', 'Casual', 'Skill'],
     rating: 5.0,
     playCount: 0
