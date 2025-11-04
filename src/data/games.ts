@@ -26,6 +26,17 @@ export function isRealGame(game: Game): game is GameData {
 // All games data with release dates, tags, and ratings
 export const allGames: Game[] = [
   {
+    name: 'Italian Brainrot Survive Parkour',
+    image: '/images/thumbnails/italian-brainrot-survive-parkour.webp',
+    slug: 'italian-brainrot-survive-parkour',
+    isReal: true,
+    url: 'https://html5.gamedistribution.com/rvvASMiM/5c5b89d12e404bf6a4979ae0c0c9a09c/index.html?gd_zone_config=eyJwYXJlbnRVUkwiOiJodHRwczovL3RhZ2dhbWUuaW8vIiwicGFyZW50RG9tYWluIjoidGFnZ2FtZS5pbyIsInRvcERvbWFpbiI6InRhZ2dhbWUuaW8iLCJoYXNJbXByZXNzaW9uIjp0cnVlLCJsb2FkZXJFbmFibGVkIjp0cnVlLCJob3N0IjoiaHRtbDUuZ2FtZWRpc3RyaWJ1dGlvbi5jb20iLCJ2ZXJzaW9uIjoiMS41LjE4In0%253D',
+    releaseDate: '2025-11-04',
+    tags: ['2 Player', 'Parkour', 'Survival', 'Meme', 'Brainrot', 'Action', 'Arcade', 'Skill', 'Multiplayer'],
+    rating: 5.0,
+    playCount: 0
+  },
+  {
     name: 'Geometry Dash Spam',
     image: '/images/thumbnails/geometry-dash-spam.webp',
     slug: 'geometry-dash-spam',

@@ -21,11 +21,6 @@
       "static/chunks/main-app.js",
       "static/chunks/app/all/page.js"
     ],
-    "/tag/[tag]/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/tag/[tag]/page.js"
-    ],
     "/hot/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
