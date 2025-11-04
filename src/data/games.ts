@@ -26,6 +26,17 @@ export function isRealGame(game: Game): game is GameData {
 // All games data with release dates, tags, and ratings
 export const allGames: Game[] = [
   {
+    name: 'Sugar Ghouls',
+    image: '/images/thumbnails/sugar-ghouls.png',
+    slug: 'sugar-ghouls',
+    isReal: true,
+    url: 'https://wordhurdle.co/sugar-ghouls.embed',
+    releaseDate: '2025-11-04',
+    tags: ['Action', 'Adventure', 'Platform', 'Halloween', 'Multiplayer', 'Arcade', 'Casual', '3D'],
+    rating: 5.0,
+    playCount: 0
+  },
+  {
     name: 'Italian Brainrot Survive Parkour',
     image: '/images/thumbnails/italian-brainrot-survive-parkour.webp',
     slug: 'italian-brainrot-survive-parkour',

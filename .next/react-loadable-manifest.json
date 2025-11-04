@@ -325,6 +325,12 @@
       "static/chunks/_app-pages-browser_src_pages_StickmanEmpiresPage_tsx.js"
     ]
   },
+  "pages\\GameDetailPage.tsx -> ./SugarGhoulsPage": {
+    "id": "pages\\GameDetailPage.tsx -> ./SugarGhoulsPage",
+    "files": [
+      "static/chunks/_app-pages-browser_src_pages_SugarGhoulsPage_tsx.js"
+    ]
+  },
   "pages\\GameDetailPage.tsx -> ./TakeCareOfShadowMilkPage": {
     "id": "pages\\GameDetailPage.tsx -> ./TakeCareOfShadowMilkPage",
     "files": [

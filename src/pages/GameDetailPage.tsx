@@ -10,6 +10,7 @@ interface GameDetailPageProps {
 
 // 游戏页面组件映射表 - 每个游戏对应一个专门的页面组件
 const gamePageComponents: Record<string, React.ComponentType<any>> = {
+  'sugar-ghouls': lazy(() => import('./SugarGhoulsPage')),
   'italian-brainrot-survive-parkour': lazy(() => import('./ItalianBrainrotSurviveParkourPage')),
   'geometry-dash-spam': lazy(() => import('./GeometryDashSpamPage')),
   'sausage-flip': lazy(() => import('./SausageFlipPage')),
