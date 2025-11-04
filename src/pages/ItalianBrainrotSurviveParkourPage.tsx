@@ -19,7 +19,7 @@ export default function ItalianBrainrotSurviveParkourPage() {
   const aboutContent = (
     <div className="space-y-6">
       <div>
-        <h2 className="text-3xl font-bold mb-4 text-white">About Italian Brainrot Survive Parkour</h2>
+        <h2 className="text-3xl font-bold mb-4 text-gray-800">About Italian Brainrot Survive Parkour</h2>
         <p className="text-lg leading-relaxed mb-4">
           <strong>Italian Brainrot Survive Parkour</strong> offers a chaotic parkour experience where you have to overcome a series of bizarre obstacles inspired by the popular "Italian Brainrot" meme. The game is available on Steal A Brainrot Unblocked and is a unique combination of survival elements, fast pace, and absurd humor, making players both excited and laughing in each round.
         </p>
@@ -36,7 +36,7 @@ export default function ItalianBrainrotSurviveParkourPage() {
 
 
       <div>
-        <h2 className="text-3xl font-bold mb-4 text-white">The Origin of Italian Brainrot Survive Parkour</h2>
+        <h2 className="text-3xl font-bold mb-4 text-gray-800">The Origin of Italian Brainrot Survive Parkour</h2>
         <p className="text-lg leading-relaxed mb-4">
           Brainrot is a prominent meme trend, often revolving around repetitive clips and confusing dialogue but creating a feeling of both funny and haunting. From this phenomenon, the developers turned it into material for the game. In <strong>Italian Brainrot Survive Parkour</strong>, the weirdness of the meme not only makes the scene more vivid but also shapes the gameplay: each character appears as an icon of internet culture, both amusing and making the game especially unforgettable.
         </p>
@@ -50,7 +50,7 @@ export default function ItalianBrainrotSurviveParkourPage() {
 
 
       <div>
-        <h2 className="text-3xl font-bold mb-4 text-white">How to Play Italian Brainrot Survive Parkour</h2>
+        <h2 className="text-3xl font-bold mb-4 text-gray-800">How to Play Italian Brainrot Survive Parkour</h2>
         <p className="text-lg leading-relaxed mb-4">
           Players are taken straight to short but challenging maps in <strong>Italian Brainrot Survive Parkour</strong>. The objective is simple: survive and reach the end of each course while avoiding deadly obstacles and collecting valuable coins along the way.
         </p>
@@ -106,7 +106,7 @@ export default function ItalianBrainrotSurviveParkourPage() {
 
 
       <div>
-        <h2 className="text-3xl font-bold mb-4 text-white">Key Features of Italian Brainrot Survive Parkour</h2>
+        <h2 className="text-3xl font-bold mb-4 text-gray-800">Key Features of Italian Brainrot Survive Parkour</h2>
         <ul className="list-disc list-inside space-y-2 text-lg">
           <li><strong>Meme-Inspired Design:</strong> Every element of <strong>Italian Brainrot Survive Parkour</strong> draws from popular internet culture, creating a visually distinctive and culturally relevant gaming experience.</li>
           <li><strong>Challenging Parkour Mechanics:</strong> Master complex movement systems including double-jumping, dashing, and precise timing to overcome increasingly difficult obstacles.</li>
@@ -120,7 +120,7 @@ export default function ItalianBrainrotSurviveParkourPage() {
       </div>
 
       <div>
-        <h2 className="text-3xl font-bold mb-4 text-white">Tips for Mastering Italian Brainrot Survive Parkour</h2>
+        <h2 className="text-3xl font-bold mb-4 text-gray-800">Tips for Mastering Italian Brainrot Survive Parkour</h2>
         <ul className="list-disc list-inside space-y-2 text-lg">
           <li><strong>Master the Timing:</strong> Success in <strong>Italian Brainrot Survive Parkour</strong> often comes down to perfect timing. Practice the rhythm of each obstacle to improve your success rate.</li>
           <li><strong>Use Abilities Strategically:</strong> Don't waste your special abilities. Save the dash for long gaps, use freeze for red light sections, and deploy bombs only when necessary.</li>
@@ -134,7 +134,7 @@ export default function ItalianBrainrotSurviveParkourPage() {
       </div>
 
       <div>
-        <h2 className="text-3xl font-bold mb-4 text-white">Why Play Italian Brainrot Survive Parkour?</h2>
+        <h2 className="text-3xl font-bold mb-4 text-gray-800">Why Play Italian Brainrot Survive Parkour?</h2>
         <p className="text-lg leading-relaxed mb-4">
           <strong>Italian Brainrot Survive Parkour</strong> is more than just a regular obstacle course game; it is a playground that will test your reflexes, patience, and competitive spirit. The game successfully bridges the gap between internet culture and interactive entertainment, creating an experience that feels both familiar and fresh.
         </p>
@@ -154,7 +154,7 @@ export default function ItalianBrainrotSurviveParkourPage() {
 
 
       <div>
-        <h2 className="text-3xl font-bold mb-4 text-white">Conclusion</h2>
+        <h2 className="text-3xl font-bold mb-4 text-gray-800">Conclusion</h2>
         <p className="text-lg leading-relaxed mb-4">
           <strong>Italian Brainrot Survive Parkour</strong> represents a successful fusion of internet meme culture and challenging parkour gameplay. By taking the viral "brainrot" phenomenon and transforming it into an interactive experience, the developers have created a game that resonates with contemporary gaming audiences while delivering solid mechanical gameplay.
         </p>

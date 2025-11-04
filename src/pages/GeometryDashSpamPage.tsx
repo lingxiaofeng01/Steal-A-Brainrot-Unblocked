@@ -19,7 +19,7 @@ export default function GeometryDashSpamPage() {
   const aboutContent = (
     <div className="space-y-6">
       <div>
-        <h2 className="text-3xl font-bold mb-4 text-white">About Geometry Dash Spam</h2>
+        <h2 className="text-3xl font-bold mb-4 text-gray-800">About Geometry Dash Spam</h2>
         <p className="text-lg leading-relaxed mb-4">
           <strong>Geometry Dash Spam</strong> is a specialized training tool for <strong>Geometry Dash</strong> players, designed to sharpen click speed (CPS—Clicks Per Second) and reflexes, especially in Wave mode. Unlike traditional <strong>Geometry Dash</strong> gameplay, this version demands players to click continuously at extremely high speeds (up to 50–100 CPS) to weave through narrow, intricate obstacles.
         </p>
@@ -32,7 +32,7 @@ export default function GeometryDashSpamPage() {
       </div>
 
       <div>
-        <h2 className="text-3xl font-bold mb-4 text-white">Gameplay Mechanics</h2>
+        <h2 className="text-3xl font-bold mb-4 text-gray-800">Gameplay Mechanics</h2>
         
         <h3 className="text-2xl font-semibold mb-3 text-blue-300">Basic Controls</h3>
         <ul className="list-disc list-inside space-y-2 text-lg mb-4">
@@ -71,7 +71,7 @@ export default function GeometryDashSpamPage() {
   const howToPlayContent = (
     <div className="space-y-6">
       <div>
-        <h2 className="text-3xl font-bold mb-4 text-white">How to Play Geometry Dash Spam</h2>
+        <h2 className="text-3xl font-bold mb-4 text-gray-800">How to Play Geometry Dash Spam</h2>
         
         <h3 className="text-2xl font-semibold mb-3 text-blue-300">Techniques to Become a Top Wave Spammer</h3>
         
@@ -125,7 +125,7 @@ export default function GeometryDashSpamPage() {
   const featuresContent = (
     <div className="space-y-6">
       <div>
-        <h2 className="text-3xl font-bold mb-4 text-white">Game Features</h2>
+        <h2 className="text-3xl font-bold mb-4 text-gray-800">Game Features</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div className="bg-gradient-to-br from-blue-900/50 to-purple-900/50 p-6 rounded-lg border border-blue-500/30">
             <h3 className="text-xl font-bold mb-3 text-blue-300">🎯 Extreme CPS Training</h3>
@@ -186,7 +186,7 @@ export default function GeometryDashSpamPage() {
       </div>
 
       <div>
-        <h2 className="text-3xl font-bold mb-4 text-white">Final Challenge</h2>
+        <h2 className="text-3xl font-bold mb-4 text-gray-800">Final Challenge</h2>
         <p className="text-lg leading-relaxed mb-4">
           <strong>Geometry Dash Spam</strong> features 15 meticulously crafted levels, scaling from easy to "brain-melting" difficulty. It's a brutal but rewarding gauntlet requiring patience, technique, and a touch of mad determination to conquer. Each level in <strong>Geometry Dash Spam</strong> introduces new patterns and obstacles that will test everything you've learned.
         </p>
@@ -199,7 +199,7 @@ export default function GeometryDashSpamPage() {
       </div>
 
       <div>
-        <h2 className="text-3xl font-bold mb-4 text-white">Tips for Success in Geometry Dash Spam</h2>
+        <h2 className="text-3xl font-bold mb-4 text-gray-800">Tips for Success in Geometry Dash Spam</h2>
         <ul className="list-disc list-inside space-y-3 text-lg">
           <li>Start with lower difficulty levels to build foundational skills before attempting harder challenges in <strong>Geometry Dash Spam</strong></li>
           <li>Practice different clicking techniques (jitter, butterfly, drag) to find what works best for you</li>

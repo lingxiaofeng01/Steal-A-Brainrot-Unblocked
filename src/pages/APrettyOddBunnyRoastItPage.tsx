@@ -19,7 +19,7 @@ export default function APrettyOddBunnyRoastItPage() {
   const aboutContent = (
     <div className="space-y-6">
       <div>
-        <h2 className="text-3xl font-bold mb-4 text-white">About A Pretty Odd Bunny: Roast It!</h2>
+        <h2 className="text-3xl font-bold mb-4 text-gray-800">About A Pretty Odd Bunny: Roast It!</h2>
         <p className="text-lg leading-relaxed text-gray-300">
           <strong>A Pretty Odd Bunny: Roast It!</strong> is back, taking brain-busting puzzles and fun confrontations that can't be missed! 
           With unique gameplay and dramatic challenges, this platform game promises to immerse you with no way out. Collect hot dogs, 
@@ -29,7 +29,7 @@ export default function APrettyOddBunnyRoastItPage() {
       </div>
 
       <div>
-        <h2 className="text-3xl font-bold mb-4 text-white">Explore Captivating Bunny Worlds</h2>
+        <h2 className="text-3xl font-bold mb-4 text-gray-800">Explore Captivating Bunny Worlds</h2>
         <p className="text-lg leading-relaxed text-gray-300 mb-4">
           A Pretty Odd Bunny: Roast It! offers two main game modes: <strong>single-player</strong> and <strong>two-player</strong>. 
           If you loved the original A Pretty Odd Bunny, this version's single-player mode will provide a familiar but challenging experience. 
@@ -46,7 +46,7 @@ export default function APrettyOddBunnyRoastItPage() {
       </div>
 
       <div>
-        <h2 className="text-3xl font-bold mb-4 text-white">Key Features</h2>
+        <h2 className="text-3xl font-bold mb-4 text-gray-800">Key Features</h2>
         <ul className="list-disc list-inside space-y-3 text-lg text-gray-300">
           <li><strong>Dual Game Modes:</strong> Enjoy both single-player puzzle challenges and competitive two-player mini-games</li>
           <li><strong>Stealth Gameplay:</strong> Sneak past supervisors and use cunning strategies to reach your targets</li>
@@ -60,7 +60,7 @@ export default function APrettyOddBunnyRoastItPage() {
       </div>
 
       <div>
-        <h2 className="text-3xl font-bold mb-4 text-white">Why Play A Pretty Odd Bunny: Roast It?</h2>
+        <h2 className="text-3xl font-bold mb-4 text-gray-800">Why Play A Pretty Odd Bunny: Roast It?</h2>
         <p className="text-lg leading-relaxed text-gray-300 mb-4">
           This game combines the best elements of puzzle-solving, stealth mechanics, and competitive multiplayer action. 
           Whether you're playing solo or with a friend, every session offers fresh challenges and hilarious moments. 
@@ -75,7 +75,7 @@ export default function APrettyOddBunnyRoastItPage() {
       </div>
 
       <div>
-        <h2 className="text-3xl font-bold mb-4 text-white">Game Highlights</h2>
+        <h2 className="text-3xl font-bold mb-4 text-gray-800">Game Highlights</h2>
         <div className="grid md:grid-cols-2 gap-4 text-gray-300">
           <div className="bg-gray-800 p-4 rounded-lg">
             <h3 className="text-xl font-bold mb-2 text-cyan-400">🎮 Single-Player Mode</h3>
@@ -97,7 +97,7 @@ export default function APrettyOddBunnyRoastItPage() {
       </div>
 
       <div>
-        <h2 className="text-3xl font-bold mb-4 text-white">Tips for Success</h2>
+        <h2 className="text-3xl font-bold mb-4 text-gray-800">Tips for Success</h2>
         <ul className="list-disc list-inside space-y-3 text-lg text-gray-300">
           <li><strong>Observe Patterns:</strong> Watch supervisor movements carefully before making your move</li>
           <li><strong>Time Your Actions:</strong> Patience is key - wait for the perfect moment to advance</li>
@@ -110,7 +110,7 @@ export default function APrettyOddBunnyRoastItPage() {
       </div>
 
       <div>
-        <h2 className="text-3xl font-bold mb-4 text-white">Perfect For</h2>
+        <h2 className="text-3xl font-bold mb-4 text-gray-800">Perfect For</h2>
         <p className="text-lg leading-relaxed text-gray-300">
           A Pretty Odd Bunny: Roast It! is ideal for puzzle enthusiasts, platform game fans, and anyone who enjoys 
           competitive multiplayer experiences. The game's accessible controls make it perfect for casual players, 
@@ -120,7 +120,7 @@ export default function APrettyOddBunnyRoastItPage() {
       </div>
 
       <div>
-        <h2 className="text-3xl font-bold mb-4 text-white">Start Your Bunny Adventure Today!</h2>
+        <h2 className="text-3xl font-bold mb-4 text-gray-800">Start Your Bunny Adventure Today!</h2>
         <p className="text-lg leading-relaxed text-gray-300">
           Ready to embark on this hilarious puzzle adventure? Put on your mask, sharpen your wits, and prepare for 
           brain-teasing challenges and competitive fun. Whether you're sneaking past supervisors in single-player mode 
@@ -133,7 +133,7 @@ export default function APrettyOddBunnyRoastItPage() {
 
   const howToPlayContent = (
     <div className="space-y-4">
-      <h2 className="text-3xl font-bold mb-4 text-white">How to Play</h2>
+      <h2 className="text-3xl font-bold mb-4 text-gray-800">How to Play</h2>
       
       <div className="bg-gray-800 p-6 rounded-lg space-y-4">
         <div>
@@ -208,7 +208,7 @@ export default function APrettyOddBunnyRoastItPage() {
 
   const featuresContent = (
     <div className="space-y-4">
-      <h2 className="text-3xl font-bold mb-4 text-white">Game Features</h2>
+      <h2 className="text-3xl font-bold mb-4 text-gray-800">Game Features</h2>
       
       <div className="grid md:grid-cols-2 gap-6">
         <div className="bg-gradient-to-br from-purple-900 to-purple-700 p-6 rounded-xl">

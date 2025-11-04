@@ -40,6 +40,12 @@ curl -o "public/images/thumbnails/{game-slug}.png" "{thumbnail-url}"
   - 游戏名称关键词密度达到 2%
   - 合理使用 H2、H3 标签
   - 描述自然流畅，符合 Google SEO 标准
+- **⚠️ 样式规范（重要）**：
+  - **H2 标题必须使用 `text-gray-800`**（深灰色），不能使用 `text-white`
+  - 原因：GameDetailTemplate 使用浅色背景 `from-pink-100 via-blue-100 to-cyan-100`
+  - 白色文字在浅色背景上无法看清，必须使用深色文字
+  - 正确示例：`<h2 className="text-3xl font-bold mb-4 text-gray-800">About {Game Name}</h2>`
+  - 错误示例：`<h2 className="text-3xl font-bold mb-4 text-white">About {Game Name}</h2>` ❌
 
 ### 4. 注册页面到 `src/pages/GameDetailPage.tsx`
 在 `gamePageComponents` 对象**开头**添加：

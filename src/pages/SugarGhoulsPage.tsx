@@ -19,7 +19,7 @@ export default function SugarGhoulsPage() {
   const aboutContent = (
     <div className="space-y-6">
       <div>
-        <h2 className="text-3xl font-bold mb-4 text-white">About Sugar Ghouls</h2>
+        <h2 className="text-3xl font-bold mb-4 text-gray-800">About Sugar Ghouls</h2>
         <p className="text-lg leading-relaxed mb-4">
           <strong>Sugar Ghouls</strong> is a multiplayer action game that serves not only as entertainment but also as an adventurous experience where players actively participate in the action. In <strong>Sugar Ghouls</strong>, players dive into a beautifully crafted 3D world full of Halloween-themed obstacles and candy-fueled chaos, creating an immersive playground for thrill-seekers.
         </p>
@@ -35,7 +35,7 @@ export default function SugarGhoulsPage() {
       </div>
 
       <div>
-        <h2 className="text-3xl font-bold mb-4 text-white">The Halloween Adventure You've Been Waiting For</h2>
+        <h2 className="text-3xl font-bold mb-4 text-gray-800">The Halloween Adventure You've Been Waiting For</h2>
         <p className="text-lg leading-relaxed mb-4">
           <strong>Sugar Ghouls</strong> captures every bit of the quality of a regular Halloween night with its vibrant visuals, catchy tunes, and the chaos of multiplayer action. This game is literally the embodiment of a fun and spooky Halloween night, bringing the festive spirit to life through interactive gameplay.
         </p>
@@ -51,7 +51,7 @@ export default function SugarGhoulsPage() {
       </div>
 
       <div>
-        <h2 className="text-3xl font-bold mb-4 text-white">How to Play Sugar Ghouls</h2>
+        <h2 className="text-3xl font-bold mb-4 text-gray-800">How to Play Sugar Ghouls</h2>
         <p className="text-lg leading-relaxed mb-4">
           <strong>Sugar Ghouls</strong> is very easy to play, and at the same time, it is very entertaining. The game incorporates traditional platformer rules with 3D modern action levels, creating smooth and fast-paced gameplay that appeals to both newcomers and experienced gamers.
         </p>
@@ -85,7 +85,7 @@ export default function SugarGhoulsPage() {
       </div>
 
       <div>
-        <h2 className="text-3xl font-bold mb-4 text-white">Key Features of Sugar Ghouls</h2>
+        <h2 className="text-3xl font-bold mb-4 text-gray-800">Key Features of Sugar Ghouls</h2>
         <ul className="list-disc list-inside space-y-2 text-lg">
           <li><strong>Immersive Halloween Atmosphere:</strong> <strong>Sugar Ghouls</strong> delivers an authentic Halloween experience with detailed environments, spooky sound effects, and festive visual design that captures the spirit of the holiday.</li>
           <li><strong>Engaging Multiplayer Action:</strong> Compete or cooperate with other players in real-time, adding social dynamics and replayability to <strong>Sugar Ghouls</strong>.</li>
@@ -99,7 +99,7 @@ export default function SugarGhoulsPage() {
       </div>
 
       <div>
-        <h2 className="text-3xl font-bold mb-4 text-white">Strategies for Success in Sugar Ghouls</h2>
+        <h2 className="text-3xl font-bold mb-4 text-gray-800">Strategies for Success in Sugar Ghouls</h2>
         <ul className="list-disc list-inside space-y-2 text-lg">
           <li><strong>Master the Jump Timing:</strong> Precision jumping is essential in <strong>Sugar Ghouls</strong>. Practice the timing of your jumps to clear gaps and avoid enemies effectively.</li>
           <li><strong>Learn Enemy Patterns:</strong> Each enemy type in <strong>Sugar Ghouls</strong> has predictable movement patterns. Study these patterns to avoid damage and plan your attacks.</li>
@@ -113,7 +113,7 @@ export default function SugarGhoulsPage() {
       </div>
 
       <div>
-        <h2 className="text-3xl font-bold mb-4 text-white">Why Play Sugar Ghouls?</h2>
+        <h2 className="text-3xl font-bold mb-4 text-gray-800">Why Play Sugar Ghouls?</h2>
         <p className="text-lg leading-relaxed mb-4">
           <strong>Sugar Ghouls</strong> offers a unique gaming experience that combines the best elements of platformers, action games, and Halloween-themed adventures. The game's accessible controls make it easy for newcomers to jump in, while the depth of its mechanics ensures that experienced players will find plenty of challenges to master.
         </p>
@@ -132,7 +132,7 @@ export default function SugarGhoulsPage() {
       </div>
 
       <div>
-        <h2 className="text-3xl font-bold mb-4 text-white">Conclusion</h2>
+        <h2 className="text-3xl font-bold mb-4 text-gray-800">Conclusion</h2>
         <p className="text-lg leading-relaxed mb-4">
           <strong>Sugar Ghouls</strong> successfully combines Halloween theming with engaging platformer gameplay to create an experience that's both entertaining and challenging. The game's vibrant 3D world, diverse enemy types, and rewarding collection mechanics work together to deliver a polished gaming experience that appeals to a wide audience.
         </p>

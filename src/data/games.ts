@@ -26,6 +26,17 @@ export function isRealGame(game: Game): game is GameData {
 // All games data with release dates, tags, and ratings
 export const allGames: Game[] = [
   {
+    name: 'Poolrooms',
+    image: '/images/thumbnails/poolrooms.png',
+    slug: 'poolrooms',
+    isReal: true,
+    url: 'https://thatsnotmyneighbor.org/poolrooms.embed',
+    releaseDate: '2025-11-04',
+    tags: ['Horror', 'Casual', 'Music', 'Spooky', 'Rhythm', 'Arcade', 'Exploration'],
+    rating: 5.0,
+    playCount: 0
+  },
+  {
     name: 'Sugar Ghouls',
     image: '/images/thumbnails/sugar-ghouls.png',
     slug: 'sugar-ghouls',
