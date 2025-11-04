@@ -21,9 +21,9 @@ VALUES
 ON CONFLICT (slug) DO NOTHING;
 
 -- Link game to tags
-INSERT INTO game_tags (game_slug, tag_slug)
-SELECT 'dude-theft-auto', slug
-FROM tags
-WHERE slug IN ('action', 'shooting', 'simulation', '3d', 'multiplayer', 'physics', 'gun', 'fps')
-ON CONFLICT (game_slug, tag_slug) DO NOTHING;
+INSERT INTO game_tags (game_id, tag_id)
+SELECT g.id, t.id
+FROM games g, tags t
+WHERE g.slug = 'dude-theft-auto' AND t.slug IN ('action', 'shooting', 'simulation', '3d', 'multiplayer', 'physics', 'gun', 'fps')
+ON CONFLICT (game_id, tag_id) DO NOTHING;
 

@@ -5,7 +5,7 @@
 -- =====================================================
 
 -- 1. 插入游戏统计数据
-INSERT INTO game_stats (slug, play_count, view_count, created_at, updated_at)
+INSERT INTO game_stats (slug, play_count, view_count, created_at)
 VALUES (
   'steal-brainrots',
   0,
@@ -32,24 +32,22 @@ VALUES
 ON CONFLICT (slug) DO NOTHING;
 
 -- 3. 关联游戏和标签
-INSERT INTO game_tags (game_slug, tag_slug, created_at)
-SELECT 'steal-brainrots', slug, NOW()
-FROM tags
-WHERE slug IN ('action', 'puzzle', 'strategy', 'collecting', 'stealth', 'brainrot', 'casual', 'arcade')
-ON CONFLICT (game_slug, tag_slug) DO NOTHING;
+INSERT INTO game_tags (game_id, tag_id)
+SELECT g.id, t.id
+FROM games g, tags t
+WHERE g.slug = 'steal-brainrots' AND t.slug IN ('action', 'puzzle', 'strategy', 'collecting', 'stealth', 'brainrot', 'casual', 'arcade')
+ON CONFLICT (game_id, tag_id) DO NOTHING;
 
 -- 4. 添加主题评论
 INSERT INTO game_comments (
   game_slug,
   user_name,
   user_email,
-  content,
+  comment_text,
   rating,
   status,
   agreed_terms,
-  created_at,
-  updated_at
-)
+  created_at)
 VALUES (
   'steal-brainrots',
   'BrainrotCollector',

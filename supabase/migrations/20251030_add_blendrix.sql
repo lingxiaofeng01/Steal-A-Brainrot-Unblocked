@@ -2,7 +2,7 @@
 -- Migration created: 2025-10-30
 
 -- Insert game statistics
-INSERT INTO game_stats (slug, play_count, view_count, created_at, updated_at)
+INSERT INTO game_stats (slug, play_count, view_count, created_at)
 VALUES (
   'blendrix',
   113,

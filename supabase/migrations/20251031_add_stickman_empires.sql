@@ -55,24 +55,22 @@ VALUES
 ON CONFLICT (slug) DO NOTHING;
 
 -- 3. 关联游戏和标签
-INSERT INTO game_tags (game_slug, tag_slug, created_at)
-SELECT 'stickman-empires', slug, NOW()
-FROM tags
-WHERE slug IN ('strategy', 'tower-defense', 'stickman', 'war', 'action', 'casual', 'multiplayer', 'adventure')
-ON CONFLICT (game_slug, tag_slug) DO NOTHING;
+INSERT INTO game_tags (game_id, tag_id)
+SELECT g.id, t.id
+FROM games g, tags t
+WHERE g.slug = 'stickman-empires' AND t.slug IN ('strategy', 'tower-defense', 'stickman', 'war', 'action', 'casual', 'multiplayer', 'adventure')
+ON CONFLICT (game_id, tag_id) DO NOTHING;
 
 -- 4. 添加主题评论
 INSERT INTO game_comments (
   game_slug,
   user_name,
   user_email,
-  content,
+  comment_text,
   rating,
   status,
   agreed_terms,
-  created_at,
-  updated_at
-)
+  created_at)
 VALUES (
   'stickman-empires',
   'StrategyMaster',
@@ -81,8 +79,5 @@ VALUES (
   5,
   'approved',
   true,
-  NOW(),
-  NOW()
-)
-ON CONFLICT DO NOTHING;
+  NOW()) ON CONFLICT DO NOTHING;
 

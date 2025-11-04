@@ -4,7 +4,7 @@
 -- ============================================
 
 -- Insert game into game_stats table
-INSERT INTO game_stats (slug, play_count, view_count, last_played_at, created_at, updated_at)
+INSERT INTO game_stats (slug, play_count, view_count, last_played_at, created_at)
 VALUES (
   'top-speed-racing-3d',
   81,

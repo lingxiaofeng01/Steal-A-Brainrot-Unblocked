@@ -3,7 +3,7 @@
 -- Description: Adds Crazy Chicken 3D game stats, tags, and initial comment
 
 -- Insert game statistics
-INSERT INTO game_stats (slug, play_count, view_count, created_at, updated_at)
+INSERT INTO game_stats (slug, play_count, view_count, created_at)
 VALUES ('crazy-chicken-3d', 0, 0, NOW(), NOW())
 ON CONFLICT (slug) DO UPDATE SET updated_at = NOW();
 
@@ -19,11 +19,11 @@ VALUES
 ON CONFLICT (slug) DO NOTHING;
 
 -- Link game with tags
-INSERT INTO game_tags (game_slug, tag_slug, created_at)
-SELECT 'crazy-chicken-3d', slug, NOW()
-FROM tags
-WHERE slug IN ('action', 'survival', 'physics', 'battle-royale', 'animal', 'crazy-cattle-3d')
-ON CONFLICT (game_slug, tag_slug) DO NOTHING;
+INSERT INTO game_tags (game_id, tag_id)
+SELECT g.id, t.id
+FROM games g, tags t
+WHERE g.slug = 'crazy-chicken-3d' AND t.slug IN ('action', 'survival', 'physics', 'battle-royale', 'animal', 'crazy-cattle-3d')
+ON CONFLICT (game_id, tag_id) DO NOTHING;
 
 -- Add initial comment
 INSERT INTO game_comments (
@@ -43,8 +43,5 @@ VALUES (
   'Crazy Chicken 3D is absolutely hilarious and addictive! The physics-based combat is so satisfying - watching chickens tumble and crash into each other never gets old. I love how each location has its own unique challenges and hazards. The fact that there are no power-ups makes it a true test of skill, which I really appreciate. The controls are simple but mastering the timing and momentum takes practice. I''ve spent hours battling across Ireland, Egypt, and the other locations. The secret levels are a great bonus for dedicated players. The game strikes a perfect balance between casual fun and competitive gameplay. Whether I''m playing for 5 minutes or an hour, it''s always entertaining. Highly recommend for anyone who loves battle royale games with a quirky twist! ⭐⭐⭐⭐⭐', 
   5, 
   'approved', 
-  true, 
-  NOW()
-)
-ON CONFLICT DO NOTHING;
+  true) ON CONFLICT DO NOTHING;
 

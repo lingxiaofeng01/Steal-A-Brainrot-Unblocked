@@ -55,14 +55,14 @@ VALUES
 ON CONFLICT (slug) DO NOTHING;
 
 -- 3. 关联游戏和标签
-INSERT INTO game_tags (game_slug, tag_slug, created_at)
-SELECT 'soflo-wheelie-life', slug, NOW()
-FROM tags
-WHERE slug IN ('racing', 'sport', 'driving', 'moto', 'scratch', 'arcade', 'casual', 'skill')
-ON CONFLICT (game_slug, tag_slug) DO NOTHING;
+INSERT INTO game_tags (game_id, tag_id)
+SELECT g.id, t.id
+FROM games g, tags t
+WHERE g.slug = 'soflo-wheelie-life' AND t.slug IN ('racing', 'sport', 'driving', 'moto', 'scratch', 'arcade', 'casual', 'skill')
+ON CONFLICT (game_id, tag_id) DO NOTHING;
 
 -- 4. 插入游戏统计数据
-INSERT INTO game_stats (slug, play_count, view_count, created_at, updated_at)
+INSERT INTO game_stats (slug, play_count, view_count, created_at)
 VALUES (
   'soflo-wheelie-life',
   0,

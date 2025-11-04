@@ -2,7 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
 
-  <!-- New Games (Released in 2025-10) -->
+  <!-- New Games (Released in 2025-11) -->
+  <url>
+    <loc>https://www.stealabrainrotunblocked.com/stickman-clash</loc>
+    <lastmod>2025-11-04</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://www.stealabrainrotunblocked.com/images/thumbnails/stickman-clash.png</image:loc>
+      <image:title>Stickman Clash - Chaotic Multiplayer Fighting Game with Physics</image:title>
+    </image:image>
+  </url>
+
   <url>
     <loc>https://www.stealabrainrotunblocked.com/planet-buster</loc>
     <lastmod>2025-10-31</lastmod>

@@ -26,6 +26,17 @@ export function isRealGame(game: Game): game is GameData {
 // All games data with release dates, tags, and ratings
 export const allGames: Game[] = [
   {
+    name: 'Stickman Clash',
+    image: '/images/thumbnails/stickman-clash.png',
+    slug: 'stickman-clash',
+    isReal: true,
+    url: 'https://g2.igroutka.ru/lib/crazy/games/stickman-clash/',
+    releaseDate: '2025-11-04',
+    tags: ['Battle', 'Action', 'Arcade', 'Fighting', 'Stickman', '2D', '2 Player', '3 Player', 'Multiplayer', 'Physics', 'Casual'],
+    rating: 5.0,
+    playCount: 0
+  },
+  {
     name: 'Planet Buster',
     image: '/images/thumbnails/planet-buster.jpg',
     slug: 'planet-buster',

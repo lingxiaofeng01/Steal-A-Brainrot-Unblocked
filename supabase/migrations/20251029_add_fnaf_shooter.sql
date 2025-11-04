@@ -2,7 +2,7 @@
 -- Migration created: 2025-10-29
 
 -- Insert game statistics
-INSERT INTO game_stats (slug, play_count, view_count, created_at, updated_at)
+INSERT INTO game_stats (slug, play_count, view_count, created_at)
 VALUES (
   'fnaf-shooter',
   0,
@@ -27,11 +27,11 @@ VALUES
 ON CONFLICT (slug) DO NOTHING;
 
 -- Link game with tags
-INSERT INTO game_tags (game_slug, tag_slug, created_at)
-SELECT 'fnaf-shooter', slug, NOW()
-FROM tags
-WHERE slug IN ('action', 'horror', 'shooting', 'fnaf', 'gun', 'fps', 'halloween')
-ON CONFLICT (game_slug, tag_slug) DO NOTHING;
+INSERT INTO game_tags (game_id, tag_id)
+SELECT g.id, t.id
+FROM games g, tags t
+WHERE g.slug = 'fnaf-shooter' AND t.slug IN ('action', 'horror', 'shooting', 'fnaf', 'gun', 'fps', 'halloween')
+ON CONFLICT (game_id, tag_id) DO NOTHING;
 
 -- Add comment for FNaF Shooter
 INSERT INTO game_comments (
@@ -51,8 +51,5 @@ VALUES (
   'FNaF Shooter is absolutely incredible! Finally, we get to fight back against those creepy animatronics instead of just hiding. The shooting mechanics are smooth and responsive, and the variety of weapons makes each encounter exciting. The atmosphere is perfectly dark and tense, just like the original FNAF games, but now with the added thrill of action-packed combat. I love how you can switch weapons on the fly to adapt to different situations. The energy management system adds a nice strategic element - you can''t just run and gun, you need to be smart about your movements. This is exactly what FNAF fans have been waiting for! Highly recommend for anyone who loves horror shooters or the FNAF franchise. 10/10 would hunt animatronics again!',
   5,
   'approved',
-  true,
-  NOW()
-)
-ON CONFLICT DO NOTHING;
+  true) ON CONFLICT DO NOTHING;
 
