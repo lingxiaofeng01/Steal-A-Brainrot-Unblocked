@@ -26,6 +26,28 @@ export function isRealGame(game: Game): game is GameData {
 // All games data with release dates, tags, and ratings
 export const allGames: Game[] = [
   {
+    name: '67 Clicker',
+    image: '/images/thumbnails/67-clicker.webp',
+    slug: '67-clicker',
+    isReal: true,
+    url: 'https://hotgames.io/67-clicker.embed',
+    releaseDate: '2025-11-04',
+    tags: ['Clicker', 'Idle', 'Casual', 'Meme', 'Arcade', 'Incremental', 'Math'],
+    rating: 5.0,
+    playCount: 0
+  },
+  {
+    name: 'Bike Xtreme',
+    image: '/images/thumbnails/bike-xtreme.webp',
+    slug: 'bike-xtreme',
+    isReal: true,
+    url: 'https://game.azgame.io/bike-xtreme/',
+    releaseDate: '2025-11-04',
+    tags: ['Sports', 'Driving', 'Racing', 'Action', 'Casual', 'Physics', '2D', 'Arcade', 'Skill'],
+    rating: 5.0,
+    playCount: 0
+  },
+  {
     name: 'Stickman Clash',
     image: '/images/thumbnails/stickman-clash.png',
     slug: 'stickman-clash',

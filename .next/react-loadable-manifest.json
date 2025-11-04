@@ -49,6 +49,12 @@
       "static/chunks/_app-pages-browser_src_pages_APrettyOddBunnyRoastItPage_tsx.js"
     ]
   },
+  "pages\\GameDetailPage.tsx -> ./BikeXtremePage": {
+    "id": "pages\\GameDetailPage.tsx -> ./BikeXtremePage",
+    "files": [
+      "static/chunks/_app-pages-browser_src_pages_BikeXtremePage_tsx.js"
+    ]
+  },
   "pages\\GameDetailPage.tsx -> ./BlendrixPage": {
     "id": "pages\\GameDetailPage.tsx -> ./BlendrixPage",
     "files": [
@@ -233,6 +239,12 @@
     "id": "pages\\GameDetailPage.tsx -> ./RocketFortressPage",
     "files": [
       "static/chunks/_app-pages-browser_src_pages_RocketFortressPage_tsx.js"
+    ]
+  },
+  "pages\\GameDetailPage.tsx -> ./SixtySevenClickerPage": {
+    "id": "pages\\GameDetailPage.tsx -> ./SixtySevenClickerPage",
+    "files": [
+      "static/chunks/_app-pages-browser_src_pages_SixtySevenClickerPage_tsx.js"
     ]
   },
   "pages\\GameDetailPage.tsx -> ./SlopeXtremePage": {
