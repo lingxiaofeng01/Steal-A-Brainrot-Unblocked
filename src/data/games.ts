@@ -26,6 +26,17 @@ export function isRealGame(game: Game): game is GameData {
 // All games data with release dates, tags, and ratings
 export const allGames: Game[] = [
   {
+    name: 'Sausage Flip',
+    image: '/images/thumbnails/sausage-flip.png',
+    slug: 'sausage-flip',
+    isReal: true,
+    url: 'https://lnahtml.github.io/a6/sausage-flip',
+    releaseDate: '2025-11-04',
+    tags: ['Action', 'Arcade', 'Physics', 'Casual', 'Skill', 'Funny', 'Timing'],
+    rating: 5.0,
+    playCount: 0
+  },
+  {
     name: '67 Clicker',
     image: '/images/thumbnails/67-clicker.webp',
     slug: '67-clicker',
