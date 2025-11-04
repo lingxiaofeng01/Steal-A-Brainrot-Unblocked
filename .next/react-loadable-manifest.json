@@ -151,6 +151,12 @@
       "static/chunks/_app-pages-browser_src_pages_FnafShooterPage_tsx.js"
     ]
   },
+  "pages\\GameDetailPage.tsx -> ./GeometryDashSpamPage": {
+    "id": "pages\\GameDetailPage.tsx -> ./GeometryDashSpamPage",
+    "files": [
+      "static/chunks/_app-pages-browser_src_pages_GeometryDashSpamPage_tsx.js"
+    ]
+  },
   "pages\\GameDetailPage.tsx -> ./GoodgameEmpirePage": {
     "id": "pages\\GameDetailPage.tsx -> ./GoodgameEmpirePage",
     "files": [

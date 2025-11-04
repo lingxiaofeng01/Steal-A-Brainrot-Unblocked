@@ -26,6 +26,17 @@ export function isRealGame(game: Game): game is GameData {
 // All games data with release dates, tags, and ratings
 export const allGames: Game[] = [
   {
+    name: 'Geometry Dash Spam',
+    image: '/images/thumbnails/geometry-dash-spam.webp',
+    slug: 'geometry-dash-spam',
+    isReal: true,
+    url: 'https://files.twoplayergames.org/files/games/g1/geometry-vibes-v11/index.html',
+    releaseDate: '2025-11-04',
+    tags: ['Action', 'Arcade', 'Skill', 'Rhythm', 'Platformer', 'Casual', 'Timing'],
+    rating: 5.0,
+    playCount: 0
+  },
+  {
     name: 'Sausage Flip',
     image: '/images/thumbnails/sausage-flip.png',
     slug: 'sausage-flip',
