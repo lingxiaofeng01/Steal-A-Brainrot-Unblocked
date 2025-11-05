@@ -114,7 +114,7 @@ export default function RootLayout({
          crossOrigin="anonymous"></script>
 
         {/* MonetAg Ads */}
-        <script src="https://fpyf8.com/88/tag.min.js" data-zone="182942" async data-cfasync="false"></script>
+        <script dangerouslySetInnerHTML={{__html: `(function(s){s.dataset.zone='10143501',s.src='https://forfrogadiertor.com/tag.min.js'})([document.documentElement, document.body].filter(Boolean).pop().appendChild(document.createElement('script')))`}} />
       </head>
       <body>
         <GoogleAnalytics />
