@@ -498,6 +498,27 @@ export default function HomePage() {
             </a>
           </div>
         </section>
+
+        {/* Friendly Links Section */}
+        <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 border-t-4 border-cyan-400">
+          <div className="bg-gradient-to-r from-blue-50 to-purple-50 rounded-xl p-6 shadow-lg">
+            <h2 className="text-2xl font-bold text-gray-800 mb-4 flex items-center gap-2">
+              <span className="text-3xl">🔗</span>
+              Friendly Links
+            </h2>
+            <div className="flex flex-wrap gap-4">
+              <a
+                href="https://www.soflowheelie.com/"
+                target="_blank"
+                rel="nofollow noopener noreferrer"
+                className="inline-flex items-center gap-2 px-6 py-3 bg-white text-gray-800 font-semibold rounded-lg border-2 border-blue-300 hover:border-blue-500 hover:shadow-md hover:scale-105 transition-all duration-300"
+              >
+                <span className="text-xl">🎮</span>
+                SoFlo Wheelie
+              </a>
+            </div>
+          </div>
+        </section>
       </div>
     </>
   );
