@@ -108,6 +108,13 @@ export default function RootLayout({
         {/* Additional SEO */}
         <meta name="color-scheme" content="light dark" />
         <meta name="referrer" content="strict-origin-when-cross-origin" />
+
+        {/* Google AdSense */}
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3701727349784910"
+         crossOrigin="anonymous"></script>
+
+        {/* MonetAg Ads */}
+        <script src="https://fpyf8.com/88/tag.min.js" data-zone="182942" async data-cfasync="false"></script>
       </head>
       <body>
         <GoogleAnalytics />
