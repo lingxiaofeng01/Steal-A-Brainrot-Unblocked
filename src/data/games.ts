@@ -26,6 +26,39 @@ export function isRealGame(game: Game): game is GameData {
 // All games data with release dates, tags, and ratings
 export const allGames: Game[] = [
   {
+    name: 'Platform Cook',
+    image: '/images/thumbnails/platform-cook.png',
+    slug: 'platform-cook',
+    isReal: true,
+    url: 'https://st.8games.net/11/igra-platforma-s-povarom',
+    releaseDate: '2025-11-05',
+    tags: ['Puzzle', 'Action', 'Platformer', 'Skill', 'Arcade', 'Cooking', 'Casual'],
+    rating: 5.0,
+    playCount: 0
+  },
+  {
+    name: 'Wheelie Life 2',
+    image: '/images/thumbnails/wheelie-life-2.jpg',
+    slug: 'wheelie-life-2',
+    isReal: true,
+    url: 'https://papas-games.io/wheelie-life-2.embed',
+    releaseDate: '2025-11-05',
+    tags: ['Sports', 'Racing', 'Bike', 'Stunt', 'Skill', 'Driving', 'Simulation', 'Arcade'],
+    rating: 5.0,
+    playCount: 0
+  },
+  {
+    name: 'Tung Sahur Bots Chase Room',
+    image: '/images/thumbnails/tung-sahur-bots-chase-room.jpg',
+    slug: 'tung-sahur-bots-chase-room',
+    isReal: true,
+    url: 'https://html5.gamedistribution.com/rvvASMiM/75a29a8124a64ef8a407c2d368479fa0/index.html?gd_zone_config=eyJwYXJlbnRVUkwiOiJodHRwczovL2RyaXZlbWFkMy5pby8iLCJwYXJlbnREb21haW4iOiJkcml2ZW1hZDMuaW8iLCJ0b3BEb21haW4iOiJkcml2ZW1hZDMuaW8iLCJoYXNJbXByZXNzaW9uIjpmYWxzZSwibG9hZGVyRW5hYmxlZCI6dHJ1ZSwiaG9zdCI6Imh0bWw1LmdhbWVkaXN0cmlidXRpb24uY29tIiwidmVyc2lvbiI6IjEuNS4xOCJ9',
+    releaseDate: '2025-11-05',
+    tags: ['Action', 'Horror', 'Survival', 'Skill', 'Meme', 'Brainrot', 'Maze', 'Chase', 'Arcade'],
+    rating: 5.0,
+    playCount: 0
+  },
+  {
     name: 'Poolrooms',
     image: '/images/thumbnails/poolrooms.png',
     slug: 'poolrooms',

@@ -24,14 +24,28 @@ export default function AdSense({
   responsive = true,
 }: AdSenseProps) {
   const adRef = useRef<HTMLModElement>(null);
+  const isAdPushed = useRef(false);
 
   useEffect(() => {
+    // 防止重复推送广告
+    if (isAdPushed.current) {
+      return;
+    }
+
     try {
-      if (typeof window !== 'undefined') {
-        (window.adsbygoogle = window.adsbygoogle || []).push({});
+      if (typeof window !== 'undefined' && adRef.current) {
+        // 检查 ins 元素是否已经有广告
+        const ins = adRef.current;
+        if (ins && !ins.getAttribute('data-adsbygoogle-status')) {
+          (window.adsbygoogle = window.adsbygoogle || []).push({});
+          isAdPushed.current = true;
+        }
       }
     } catch (err) {
-      console.error('AdSense error:', err);
+      // 忽略 AdSense 错误，避免控制台污染
+      if (process.env.NODE_ENV === 'development') {
+        console.warn('AdSense initialization skipped:', err);
+      }
     }
   }, []);
 
