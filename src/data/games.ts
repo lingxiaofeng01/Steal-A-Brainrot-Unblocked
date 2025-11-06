@@ -26,6 +26,28 @@ export function isRealGame(game: Game): game is GameData {
 // All games data with release dates, tags, and ratings
 export const allGames: Game[] = [
   {
+    name: 'Cowboy Safari',
+    image: '/images/thumbnails/cowboy-safari.png',
+    slug: 'cowboy-safari',
+    isReal: true,
+    url: 'https://gamea.azgame.io/cowboy-safari/',
+    releaseDate: '2025-11-06',
+    tags: ['Running', 'Adventure', 'Casual', 'Arcade', 'Animal', 'Strategy', 'Simulation'],
+    rating: 5.0,
+    playCount: 0
+  },
+  {
+    name: 'Impossible Car Stunt',
+    image: '/images/thumbnails/impossible-car-stunt.jpeg',
+    slug: 'impossible-car-stunt',
+    isReal: true,
+    url: 'https://html5.gamedistribution.com/rvvASMiM/fe68fa1a7ec14b579db34bcb6d4e2eac/index.html?gd_sdk_referrer_url=https%3A%2F%2Fgamedistribution.com%2Fgames%2Fimpossible-car-stunt-2022&gd_zone_config=eyJwYXJlbnRVUkwiOiJodHRwczovL2dhbWVkaXN0cmlidXRpb24uY29tL2dhbWVzL2ltcG9zc2libGUtY2FyLXN0dW50LTIwMjIiLCJwYXJlbnREb21haW4iOiJnYW1lZGlzdHJpYnV0aW9uLmNvbSIsInRvcERvbWFpbiI6ImltcG9zc2libGVjYXJzdHVudC5jb20iLCJoYXNJbXByZXNzaW9uIjpmYWxzZSwibG9hZGVyRW5hYmxlZCI6dHJ1ZSwiaG9zdCI6Imh0bWw1LmdhbWVkaXN0cmlidXRpb24uY29tIiwidmVyc2lvbiI6IjEuNS4xOCJ9',
+    releaseDate: '2025-11-06',
+    tags: ['Racing', 'Driving', 'Stunt', 'Car', '3D', 'Skill', 'Sports', 'Arcade'],
+    rating: 5.0,
+    playCount: 0
+  },
+  {
     name: 'Platform Cook',
     image: '/images/thumbnails/platform-cook.png',
     slug: 'platform-cook',
