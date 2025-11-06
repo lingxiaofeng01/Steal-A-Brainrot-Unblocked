@@ -85,6 +85,12 @@
       "static/chunks/_app-pages-browser_src_pages_ColorboxMustardPage_tsx.js"
     ]
   },
+  "pages\\GameDetailPage.tsx -> ./CowboySafariPage": {
+    "id": "pages\\GameDetailPage.tsx -> ./CowboySafariPage",
+    "files": [
+      "static/chunks/_app-pages-browser_src_pages_CowboySafariPage_tsx.js"
+    ]
+  },
   "pages\\GameDetailPage.tsx -> ./CrazyAnimalCityPage": {
     "id": "pages\\GameDetailPage.tsx -> ./CrazyAnimalCityPage",
     "files": [
@@ -155,6 +161,12 @@
     "id": "pages\\GameDetailPage.tsx -> ./HumansPlaygroundPage",
     "files": [
       "static/chunks/_app-pages-browser_src_pages_HumansPlaygroundPage_tsx.js"
+    ]
+  },
+  "pages\\GameDetailPage.tsx -> ./ImpossibleCarStuntPage": {
+    "id": "pages\\GameDetailPage.tsx -> ./ImpossibleCarStuntPage",
+    "files": [
+      "static/chunks/_app-pages-browser_src_pages_ImpossibleCarStuntPage_tsx.js"
     ]
   },
   "pages\\GameDetailPage.tsx -> ./ItalianBrainrotBabyClickerPage": {
