@@ -10,6 +10,10 @@ interface GameDetailPageProps {
 
 // 游戏页面组件映射表 - 每个游戏对应一个专门的页面组件
 const gamePageComponents: Record<string, React.ComponentType<any>> = {
+  'traffic-rally': lazy(() => import('./TrafficRallyPage')),
+  'mad-pursuit': lazy(() => import('./MadPursuitPage')),
+  'zombie-strike': lazy(() => import('./ZombieStrikePage')),
+  'granny-horror': lazy(() => import('./GrannyHorrorPage')),
   'cowboy-safari': lazy(() => import('./CowboySafariPage')),
   'impossible-car-stunt': lazy(() => import('./ImpossibleCarStuntPage')),
   'platform-cook': lazy(() => import('./PlatformCookPage')),

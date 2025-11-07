@@ -26,6 +26,50 @@ export function isRealGame(game: Game): game is GameData {
 // All games data with release dates, tags, and ratings
 export const allGames: Game[] = [
   {
+    name: 'Traffic Rally',
+    image: '/images/thumbnails/traffic-rally.png',
+    slug: 'traffic-rally',
+    isReal: true,
+    url: 'https://game.azgame.io/traffic-rally/',
+    releaseDate: '2025-11-07',
+    tags: ['Racing', 'Car', 'Driving', '3D', 'Action', 'Traffic', 'Highway', 'Speed'],
+    rating: 5.0,
+    playCount: 0
+  },
+  {
+    name: 'Mad Pursuit',
+    image: '/images/thumbnails/mad-pursuit.jpg',
+    slug: 'mad-pursuit',
+    isReal: true,
+    url: 'https://games.yoplay.io/mad-pursuit/?v=1',
+    releaseDate: '2025-11-07',
+    tags: ['Racing', 'Car', 'Driving', '3D', 'Action', 'Skill', 'Endless Runner', 'Police Chase'],
+    rating: 5.0,
+    playCount: 0
+  },
+  {
+    name: 'Zombie Strike',
+    image: '/images/thumbnails/zombie-strike.jpg',
+    slug: 'zombie-strike',
+    isReal: true,
+    url: 'https://games.yoplay.io/zombie-strike/?v=1',
+    releaseDate: '2025-11-07',
+    tags: ['Zombie', 'Shooting', '3D', 'Survival', 'Action', 'Gun', 'First Person', 'Arcade'],
+    rating: 5.0,
+    playCount: 0
+  },
+  {
+    name: 'Granny Horror',
+    image: '/images/thumbnails/granny-horror.webp',
+    slug: 'granny-horror',
+    isReal: true,
+    url: 'https://games.yoplay.io/granny-horror/?v=1',
+    releaseDate: '2025-11-07',
+    tags: ['Horror', 'Survival', '3D', 'Escape', 'Adventure', 'Action', 'Single Player'],
+    rating: 5.0,
+    playCount: 0
+  },
+  {
     name: 'Cowboy Safari',
     image: '/images/thumbnails/cowboy-safari.png',
     slug: 'cowboy-safari',
