@@ -26,6 +26,39 @@ export function isRealGame(game: Game): game is GameData {
 // All games data with release dates, tags, and ratings
 export const allGames: Game[] = [
   {
+    name: 'Dancing Beat',
+    image: '/images/thumbnails/dancing-beat.png',
+    slug: 'dancing-beat',
+    isReal: true,
+    url: 'https://azgames.io/dancing-beat.embed',
+    releaseDate: '2025-11-08',
+    tags: ['Music', 'Rhythm', 'Casual', 'Skill', 'Arcade', 'Kids', 'Timing', 'Ball'],
+    rating: 5.0,
+    playCount: 0
+  },
+  {
+    name: 'Crazy Animal City',
+    image: '/images/thumbnails/crazy-animal-city.jpg',
+    slug: 'crazy-animal-city',
+    isReal: true,
+    url: 'https://games.yoplay.io/crazy-animal-city/?v=1',
+    releaseDate: '2025-11-08',
+    tags: ['Action', '3D', 'Animal', 'Adventure', 'Casual', 'Simulation', 'City', 'Hunting'],
+    rating: 5.0,
+    playCount: 0
+  },
+  {
+    name: 'Time Shooter 2',
+    image: '/images/thumbnails/time-shooter-2.webp',
+    slug: 'time-shooter-2',
+    isReal: true,
+    url: 'https://html5.gamedistribution.com/rvvASMiM/62a72f2da7cb4b609579a47653546e6a/index.html?gd_zone_config=eyJwYXJlbnRVUkwiOiJodHRwczovL2hvdGdhbWVzLmlvLyIsInBhcmVudERvbWFpbiI6ImhvdGdhbWVzLmlvIiwidG9wRG9tYWluIjoiaG90Z2FtZXMuaW8iLCJoYXNJbXByZXNzaW9uIjp0cnVlLCJsb2FkZXJFbmFibGVkIjp0cnVlLCJob3N0IjoiaHRtbDUuZ2FtZWRpc3RyaWJ1dGlvbi5jb20iLCJ2ZXJzaW9uIjoiMS41LjE4In0%253D',
+    releaseDate: '2025-11-08',
+    tags: ['Shooting', 'Action', 'FPS', '3D', 'Strategy', 'Skill', 'Time Control', 'Slow Motion'],
+    rating: 5.0,
+    playCount: 0
+  },
+  {
     name: 'Traffic Rally',
     image: '/images/thumbnails/traffic-rally.png',
     slug: 'traffic-rally',

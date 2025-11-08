@@ -1,287 +1,174 @@
-'use client';
-
 import GameDetailTemplate from '../components/GameDetailTemplate';
 
 export default function CrazyAnimalCityPage() {
   const game = {
     slug: 'crazy-animal-city',
     title: 'Crazy Animal City',
-    subtitle: 'Unleash Chaos in the Ultimate 3D Animal Rampage Simulator',
-    description: 'Unleash chaos in Crazy Animal City, a wild 3D sim packed with insane destruction and beastly rage. Smash, roar, and dominate the virtual jungle!',
-    playUrl: 'https://1games.io/game/crazy-animal-city/',
-    thumbnail: '/images/thumbnails/crazy-animal-city.webp',
-    rating: 4.6,
-    playCount: 320,
-    tags: ['3D', 'Simulation', 'Action', 'Casual', 'Animal', 'City'],
+    subtitle: 'Unleash Wild Chaos in the Ultimate Animal Rampage Game',
+    description: 'Experience the thrill of Crazy Animal City - a wild 3D browser game where you control fierce animals hunting through a broken city. Play as wolf, lion, T-rex and more. Hunt, survive, and dominate!',
+    playUrl: 'https://games.yoplay.io/crazy-animal-city/?v=1',
+    thumbnail: '/images/thumbnails/crazy-animal-city.jpg',
+    rating: 5.0,
+    playCount: 0,
+    tags: ['Action', '3D', 'Animal', 'Adventure', 'Casual', 'Simulation', 'City', 'Hunting'],
     backgroundColor: 'from-orange-400 via-red-400 to-pink-400',
   };
 
   const aboutContent = (
-    <div className="space-y-6 text-gray-700 leading-relaxed">
-      <div>
-        <h3 className="text-2xl font-bold text-gray-800 mb-4">🦁 Welcome to Crazy Animal City</h3>
-        <p className="mb-4">
-          <strong>Crazy Animal City</strong> is not your average simulation game—it's a full-blown rampage experience where you take control of 
-          powerful animals and unleash absolute chaos across a vibrant 3D cityscape. Whether you're a ferocious lion, a mighty gorilla, or a 
-          rampaging elephant, your mission is simple: destroy everything in sight, dominate the urban jungle, and become the ultimate beast of 
-          the city!
-        </p>
-        <p className="mb-4">
-          This game combines the thrill of destruction with the freedom of open-world exploration. Smash through buildings, flip cars, terrify 
-          citizens, and leave a trail of mayhem wherever you go. With stunning 3D graphics, realistic physics, and addictive gameplay, Crazy 
-          Animal City delivers an adrenaline-pumping experience that will keep you coming back for more carnage and chaos.
-        </p>
-        <p className="mb-4">
-          From the moment you step into the city, you'll feel the raw power of nature unleashed in an urban environment. The game features 
-          multiple playable animals, each with unique abilities and destruction styles. Whether you prefer the brute strength of a rhino or 
-          the agility of a tiger, there's an animal that matches your playstyle. The city is your playground, and destruction is your game!
-        </p>
-      </div>
+    <>
+      <h1 className="text-4xl font-bold mb-6 text-gray-800">Crazy Animal City - The Ultimate Wild Animal Rampage Experience</h1>
 
-      <div>
-        <h3 className="text-2xl font-bold text-gray-800 mb-4">🎮 Gameplay That Roars with Excitement</h3>
-        <p className="mb-4">
-          <strong>Crazy Animal City</strong> offers an open-world sandbox experience where you're free to explore, destroy, and dominate at your 
-          own pace. The game doesn't hold your hand—it throws you into the chaos and lets you create your own path of destruction. Every building 
-          can be demolished, every vehicle can be crushed, and every obstacle can be overcome with sheer animal power.
-        </p>
-        <p className="mb-4">
-          The controls are intuitive and responsive, making it easy to navigate the city and unleash devastating attacks. Use your animal's 
-          special abilities to maximize destruction—charge through walls, leap onto rooftops, or use your roar to scatter crowds. The physics 
-          engine ensures that every impact feels satisfying, with realistic destruction effects that make you feel the weight of your actions.
-        </p>
-        <p className="mb-4">
-          As you progress through the game, you'll unlock new animals and abilities, each offering fresh ways to cause mayhem. Complete 
-          challenges to earn rewards, discover hidden areas of the city, and compete for high scores on global leaderboards. The game 
-          constantly rewards exploration and creativity, encouraging you to find new and exciting ways to wreak havoc.
-        </p>
-      </div>
+      <p className="text-lg leading-relaxed mb-4">
+        <strong>Crazy Animal City</strong> isn't just another browser game—it's a playground for pure chaos and wild freedom. Imagine controlling a fierce predator let loose in a broken urban landscape, where every street corner, every civilian, and every police siren becomes part of your hunting ground. This 3D action game invites players to embrace their wild side and experience the thrill of being the ultimate predator in a city that fights back.
+      </p>
 
-      <div>
-        <h3 className="text-2xl font-bold text-gray-800 mb-4">🏙️ A Living, Breathing City to Destroy</h3>
-        <p className="mb-4">
-          The city in <strong>Crazy Animal City</strong> is more than just a backdrop—it's a dynamic environment filled with interactive 
-          elements and surprises. From bustling downtown districts to quiet residential neighborhoods, every area offers unique destruction 
-          opportunities. Watch as citizens flee in terror, police cars chase you down, and the military eventually gets involved to stop 
-          your rampage.
-        </p>
-        <p className="mb-4">
-          The game features day and night cycles, weather effects, and environmental hazards that add variety to your destructive adventures. 
-          Smash through a construction site during a thunderstorm, or terrorize a park on a sunny afternoon. The city reacts to your presence, 
-          with emergency services responding to your chaos and the environment changing based on your actions.
-        </p>
-        <p className="mb-4">
-          Hidden throughout the city are collectibles, power-ups, and secret areas that reward thorough exploration. Find special items to 
-          boost your animal's abilities, discover shortcuts through the urban landscape, and unlock bonus content that enhances your gameplay 
-          experience. The city is packed with content, ensuring that every playthrough offers something new to discover.
-        </p>
-      </div>
+      <p className="text-lg leading-relaxed mb-4">
+        In <strong>Crazy Animal City</strong>, you start as a lone wolf with one simple instinct: hunt, chase, and survive. The game offers no complex storylines or tutorials—just raw, unfiltered action from the moment you begin. Every civilian you encounter becomes potential prey, every chase adds points to your score, and every roar echoes across the shattered cityscape. The more destruction you cause in <strong>Crazy Animal City</strong>, the louder the sirens get, and once the police arrive, the real challenge begins.
+      </p>
 
-      <div>
-        <h3 className="text-2xl font-bold text-gray-800 mb-4">🦍 Multiple Animals, Endless Destruction</h3>
-        <p className="mb-4">
-          One of the standout features of <strong>Crazy Animal City</strong> is its diverse roster of playable animals. Each creature brings 
-          its own unique playstyle and abilities to the table:
-        </p>
-        <ul className="list-disc list-inside space-y-2 ml-4 mb-4">
-          <li><strong>Lion:</strong> The king of beasts with powerful melee attacks and a terrifying roar that sends enemies running</li>
-          <li><strong>Gorilla:</strong> Incredible strength for throwing vehicles and climbing buildings with ease</li>
-          <li><strong>Elephant:</strong> Massive size and unstoppable charging attacks that demolish everything in your path</li>
-          <li><strong>Tiger:</strong> Lightning-fast speed and agility for quick strikes and parkour-style movement</li>
-          <li><strong>Rhino:</strong> Armored tank with devastating charge attacks and high durability</li>
-          <li><strong>Bear:</strong> Balanced stats with powerful swipes and the ability to stand on hind legs for extra reach</li>
-        </ul>
-        <p className="mb-4">
-          Each animal can be upgraded and customized as you progress, allowing you to enhance their abilities and unlock new moves. Experiment 
-          with different animals to find your favorite, or master them all to become the ultimate city destroyer. The variety ensures that the 
-          gameplay never gets stale, with each animal offering a completely different experience.
-        </p>
-      </div>
+      <p className="text-lg leading-relaxed mb-4">
+        What makes <strong>Crazy Animal City</strong> truly addictive is its perfect balance between freedom and danger. You're not invincible—one bullet from the police can end your rampage instantly. This creates an intense cat-and-mouse dynamic where every second alive feels earned, every successful hunt feels rewarding, and every narrow escape gets your heart racing. The game can be played directly in your browser at stealabrainrotunblocked.com, making it accessible anytime you crave that rush of wild chaos.
+      </p>
 
-      <div>
-        <h3 className="text-2xl font-bold text-gray-800 mb-4">💥 Destruction Physics That Feel Real</h3>
-        <p className="mb-4">
-          The destruction in <strong>Crazy Animal City</strong> isn't just for show—it's powered by an advanced physics engine that makes 
-          every impact feel authentic and satisfying. Buildings crumble realistically, vehicles flip and explode, and debris scatters in 
-          all directions. The game's attention to detail in its destruction mechanics sets it apart from other rampage simulators.
-        </p>
-        <p className="mb-4">
-          Watch as skyscrapers collapse floor by floor, bridges buckle under your weight, and entire city blocks transform into rubble. 
-          The environmental destruction is persistent, meaning the damage you cause remains visible throughout your playthrough. Return to 
-          areas you've already destroyed to see the lasting impact of your rampage, creating a visual record of your path of chaos.
-        </p>
-        <p className="mb-4">
-          The physics system also affects gameplay strategy. Use falling debris to your advantage, create barriers with destroyed vehicles, 
-          or collapse buildings onto pursuing enemies. The dynamic destruction opens up creative possibilities for how you approach each 
-          situation, rewarding players who think tactically about their mayhem.
-        </p>
-      </div>
+      <h2 className="text-3xl font-bold mt-8 mb-4 text-gray-800">Two Distinct Worlds to Conquer in Crazy Animal City</h2>
 
-      <div>
-        <h3 className="text-2xl font-bold text-gray-800 mb-4">🎯 Challenges and Objectives</h3>
-        <p className="mb-4">
-          While <strong>Crazy Animal City</strong> excels as a sandbox destruction game, it also offers structured challenges and objectives 
-          for players who want more direction. Complete missions to unlock new animals, earn currency for upgrades, and climb the global 
-          leaderboards. Challenges range from timed destruction goals to specific target elimination, keeping the gameplay varied and engaging.
-        </p>
-        <p className="mb-4">
-          Daily and weekly challenges provide fresh content and rewards, encouraging you to return regularly and test your skills in new ways. 
-          Compete with friends and players worldwide to see who can cause the most destruction in the shortest time, or who can complete 
-          challenges with the highest score. The competitive elements add longevity to the game without detracting from the core sandbox experience.
-        </p>
-      </div>
+      <p className="text-lg leading-relaxed mb-4">
+        <strong>Crazy Animal City</strong> offers two contrasting environments that completely change your hunting experience. The Broken City map presents a shattered urban jungle filled with debris, abandoned cars, and terrified civilians. Every corner holds potential prey, but also danger from law enforcement. The atmosphere is tense, chaotic, and perfectly captures the post-apocalyptic feel that makes <strong>Crazy Animal City</strong> so engaging.
+      </p>
 
-      <div>
-        <h3 className="text-2xl font-bold text-gray-800 mb-4">🌟 Why Crazy Animal City Stands Out</h3>
-        <div className="grid md:grid-cols-2 gap-4">
-          <div className="bg-orange-50 p-4 rounded-lg">
-            <h4 className="font-bold text-orange-900 mb-2">🎨 Stunning 3D Graphics</h4>
-            <p className="text-gray-700 text-sm">
-              Beautiful, detailed environments with realistic lighting and particle effects that bring the city to life
-            </p>
-          </div>
-          <div className="bg-red-50 p-4 rounded-lg">
-            <h4 className="font-bold text-red-900 mb-2">💪 Satisfying Destruction</h4>
-            <p className="text-gray-700 text-sm">
-              Advanced physics engine delivers incredibly satisfying and realistic destruction mechanics
-            </p>
-          </div>
-          <div className="bg-pink-50 p-4 rounded-lg">
-            <h4 className="font-bold text-pink-900 mb-2">🦁 Diverse Animal Roster</h4>
-            <p className="text-gray-700 text-sm">
-              Multiple playable animals, each with unique abilities and playstyles to master
-            </p>
-          </div>
-          <div className="bg-purple-50 p-4 rounded-lg">
-            <h4 className="font-bold text-purple-900 mb-2">🏙️ Open World Freedom</h4>
-            <p className="text-gray-700 text-sm">
-              Explore a massive city with no restrictions—go anywhere and destroy everything
-            </p>
-          </div>
-          <div className="bg-blue-50 p-4 rounded-lg">
-            <h4 className="font-bold text-blue-900 mb-2">🎮 Intuitive Controls</h4>
-            <p className="text-gray-700 text-sm">
-              Easy to learn but hard to master, with responsive controls that feel great
-            </p>
-          </div>
-          <div className="bg-green-50 p-4 rounded-lg">
-            <h4 className="font-bold text-green-900 mb-2">🏆 Competitive Features</h4>
-            <p className="text-gray-700 text-sm">
-              Global leaderboards, challenges, and achievements to keep you coming back
-            </p>
-          </div>
-        </div>
-      </div>
+      <p className="text-lg leading-relaxed mb-4">
+        The Mountains map in <strong>Crazy Animal City</strong> offers a completely different experience—a quiet wilderness where your destruction feels almost poetic against the natural backdrop. Here, the hunt becomes more strategic as you navigate rocky terrain and open spaces. Both maps in <strong>Crazy Animal City</strong> are designed to give players variety while maintaining that core thrill of being a wild predator on the loose.
+      </p>
 
-      <div>
-        <h3 className="text-2xl font-bold text-gray-800 mb-4">🎪 Perfect for Stress Relief</h3>
-        <p className="mb-4">
-          Beyond its entertainment value, <strong>Crazy Animal City</strong> serves as an excellent stress relief tool. There's something 
-          incredibly cathartic about unleashing your inner beast and causing virtual mayhem without consequences. The game provides a safe 
-          outlet for frustration and tension, allowing you to blow off steam in the most spectacular way possible.
-        </p>
-        <p className="mb-4">
-          The casual nature of the gameplay means you can jump in for a quick five-minute rampage or settle in for an extended destruction 
-          session. There's no pressure to perform perfectly or follow strict rules—just pure, unadulterated chaos at your fingertips. It's 
-          the perfect game to unwind after a long day or to simply have some mindless fun.
-        </p>
-      </div>
+      <h2 className="text-3xl font-bold mt-8 mb-4 text-gray-800">Eight Unique Animals - Each with Distinct Hunting Styles</h2>
 
-      <div>
-        <h3 className="text-2xl font-bold text-gray-800 mb-4">🚀 Regular Updates and New Content</h3>
-        <p className="mb-4">
-          The developers of <strong>Crazy Animal City</strong> are committed to keeping the game fresh with regular updates. New animals, 
-          city areas, challenges, and features are added frequently, ensuring that there's always something new to discover. The active 
-          development and community engagement mean that player feedback is heard and implemented, making the game better with each update.
-        </p>
-        <p className="mb-4">
-          Seasonal events and limited-time content provide exclusive rewards and unique gameplay experiences. Whether it's a holiday-themed 
-          rampage or a special challenge event, there's always a reason to return to Crazy Animal City and see what's new. The game's 
-          longevity is ensured through this commitment to ongoing content and improvements.
-        </p>
-      </div>
+      <p className="text-lg leading-relaxed mb-4">
+        One of the most exciting features of <strong>Crazy Animal City</strong> is the diverse roster of eight playable animals, each offering a unique gameplay experience. You begin with the Wolf—swift, agile, and perfect for learning the rhythm of the hunt in <strong>Crazy Animal City</strong>. The wolf's speed allows you to dart between buildings, chase down fleeing civilians, and escape police pursuit with quick reflexes.
+      </p>
 
-      <div className="bg-gradient-to-r from-orange-100 to-red-100 p-6 rounded-lg border-l-4 border-orange-500">
-        <h3 className="text-xl font-bold text-orange-900 mb-4">🎯 Pro Tips for Maximum Destruction</h3>
-        <ul className="space-y-2 list-disc list-inside">
-          <li><strong>Chain Destruction:</strong> Create combos by destroying multiple objects in quick succession for bonus points</li>
-          <li><strong>Use the Environment:</strong> Knock down structures onto enemies or use vehicles as projectiles</li>
-          <li><strong>Master Each Animal:</strong> Learn the unique abilities of each creature to maximize your effectiveness</li>
-          <li><strong>Explore Thoroughly:</strong> Hidden collectibles and power-ups are scattered throughout the city</li>
-          <li><strong>Complete Challenges:</strong> Focus on objectives to unlock new content and upgrades faster</li>
-          <li><strong>Experiment with Tactics:</strong> Try different approaches to find the most satisfying destruction methods</li>
-        </ul>
-      </div>
-    </div>
+      <p className="text-lg leading-relaxed mb-4">
+        As you collect coins throughout <strong>Crazy Animal City</strong>, you can unlock more powerful predators. The Lion (500 coins) brings raw power and intimidating roars that clear streets fast. The Deer (750 coins) surprises with its speed, perfect for coin collection runs. The Bear (1000 coins) is slow but unstoppable, with devastating attacks that send everything flying. The Crocodile (2000 coins) excels in ambush tactics with terrifying jaws.
+      </p>
+
+      <p className="text-lg leading-relaxed mb-4">
+        The Rabbit (3000 coins) in <strong>Crazy Animal City</strong> is deceptively powerful—small and lightning-fast, perfect for players who love dodging bullets and weaving through chaos untouched. The Chimpanzee (6000 coins) adds a playful yet dangerous element with unpredictable movements. But the ultimate prize in <strong>Crazy Animal City</strong> is the T-Rex (8000 coins)—a blood-red, roaring destroyer that crushes everything underfoot with pure domination.
+      </p>
+
+      <h2 className="text-3xl font-bold mt-8 mb-4 text-gray-800">Scoring System and Progression in Crazy Animal City</h2>
+
+      <p className="text-lg leading-relaxed mb-4">
+        The scoring system in <strong>Crazy Animal City</strong> is straightforward but strategic. Each human you catch gives specific points: 200 for men, 250 for women, and 100 for workers. While you can also smash objects for points, experienced <strong>Crazy Animal City</strong> players know that focusing on human targets yields better scores and conserves your health bar.
+      </p>
+
+      <p className="text-lg leading-relaxed mb-4">
+        Gold coins scattered throughout <strong>Crazy Animal City</strong> are your key to unlocking new animals. These coins appear along your path as you sprint through the city or mountain environments. Collecting them becomes a strategic decision—do you chase that coin cluster and risk police attention, or focus on hunting for points? This risk-reward balance keeps <strong>Crazy Animal City</strong> gameplay fresh and exciting.
+      </p>
+
+      <h2 className="text-3xl font-bold mt-8 mb-4 text-gray-800">Realistic Physics and Satisfying Destruction</h2>
+
+      <p className="text-lg leading-relaxed mb-4">
+        Every collision in <strong>Crazy Animal City</strong> feels deeply satisfying thanks to realistic physics. When your animal crashes into civilians, they don't just disappear—they're sent flying through the air in ragdoll fashion. Cars flip and burst into flames when overturned. Objects twist and break with convincing impact. These details make every moment in <strong>Crazy Animal City</strong> feel visceral and exciting.
+      </p>
+
+      <p className="text-lg leading-relaxed mb-4">
+        The destruction in <strong>Crazy Animal City</strong> isn't just visual spectacle—it's core to the gameplay experience. The chaos you create attracts police attention, raising the stakes. The more damage you cause, the more intense the pursuit becomes. This creates a natural difficulty curve where <strong>Crazy Animal City</strong> rewards skilled players who can balance aggression with survival instincts.
+      </p>
+    </>
   );
 
   const howToPlayContent = (
-    <div className="space-y-4">
-      <div className="bg-gradient-to-br from-blue-50 to-cyan-50 p-6 rounded-lg border-l-4 border-blue-500">
-        <h3 className="text-xl font-bold text-blue-900 mb-4">🎮 Controls</h3>
-        <div className="grid md:grid-cols-2 gap-4">
-          <div>
-            <h4 className="font-semibold text-blue-800 mb-2">Desktop Controls:</h4>
-            <ul className="space-y-1 text-sm">
-              <li><strong>Arrow Keys / WASD:</strong> Move your animal around the city</li>
-              <li><strong>Spacebar:</strong> Jump over obstacles and onto buildings</li>
-              <li><strong>Left Mouse Button:</strong> Attack and destroy objects</li>
-              <li><strong>Right Mouse Button:</strong> Use special ability (varies by animal)</li>
-              <li><strong>Shift:</strong> Sprint for faster movement</li>
-              <li><strong>E:</strong> Interact with special objects</li>
-            </ul>
-          </div>
-          <div>
-            <h4 className="font-semibold text-blue-800 mb-2">Mobile Controls:</h4>
-            <ul className="space-y-1 text-sm">
-              <li><strong>Virtual Joystick:</strong> Move your animal</li>
-              <li><strong>Jump Button:</strong> Leap and climb</li>
-              <li><strong>Attack Button:</strong> Destroy everything</li>
-              <li><strong>Special Button:</strong> Activate unique abilities</li>
-              <li><strong>Sprint Toggle:</strong> Move faster</li>
-            </ul>
-          </div>
-        </div>
-      </div>
+    <>
+      <p className="text-lg leading-relaxed mb-4">
+        <strong>Crazy Animal City</strong> features intuitive controls that let you jump straight into the action. Use WASD or arrow keys to move your animal through the city streets. The Spacebar makes your creature jump over obstacles or onto vehicles. Mouse clicks or assigned keys trigger attacks—use them to catch civilians and smash objects.
+      </p>
 
-      <div className="bg-gradient-to-br from-purple-50 to-pink-50 p-6 rounded-lg border-l-4 border-purple-500">
-        <h3 className="text-xl font-bold text-purple-900 mb-4">📋 Getting Started</h3>
-        <ol className="space-y-3 list-decimal list-inside">
-          <li><strong>Choose Your Animal:</strong> Select from the available animals (unlock more as you progress)</li>
-          <li><strong>Enter the City:</strong> Spawn into the urban environment ready for destruction</li>
-          <li><strong>Start Destroying:</strong> Attack buildings, vehicles, and anything else you see</li>
-          <li><strong>Complete Objectives:</strong> Follow on-screen prompts to complete challenges (optional)</li>
-          <li><strong>Avoid Capture:</strong> Watch out for police and military forces trying to stop you</li>
-          <li><strong>Collect Power-ups:</strong> Grab special items to enhance your abilities</li>
-          <li><strong>Unlock Content:</strong> Earn points to unlock new animals and upgrades</li>
-        </ol>
-      </div>
-    </div>
+      <p className="text-lg leading-relaxed mb-4">
+        Your strategy in <strong>Crazy Animal City</strong> should focus on unpredictable movement. Police bullets are instant death, so never run in straight lines. Prioritize collecting gold coins as they unlock stronger animals that survive longer and score higher. Don't waste stamina breaking small objects—they drain your health bar for minimal points in <strong>Crazy Animal City</strong>.
+      </p>
+
+      <p className="text-lg leading-relaxed mb-4">
+        Master the art of surprise attacks in <strong>Crazy Animal City</strong>. Humans only start running once they notice you approaching. Use this hesitation window to close the distance quickly. Learn the map layouts—knowing alleyways and escape routes transforms chaotic gameplay into strategic hunting. The health bar slowly drains as your animal takes hits or burns energy, so efficient hunting is key to long survival in <strong>Crazy Animal City</strong>.
+      </p>
+    </>
   );
 
   const featuresContent = (
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-      {[
-        { icon: '🦁', title: 'Multiple Animals', desc: 'Play as lions, gorillas, elephants, and more!' },
-        { icon: '🏙️', title: 'Open World City', desc: 'Massive urban environment to explore and destroy' },
-        { icon: '💥', title: 'Realistic Physics', desc: 'Advanced destruction mechanics that feel authentic' },
-        { icon: '🎮', title: 'Easy Controls', desc: 'Intuitive gameplay suitable for all skill levels' },
-        { icon: '🏆', title: 'Challenges & Rewards', desc: 'Complete objectives to unlock new content' },
-        { icon: '🌟', title: 'Stunning Graphics', desc: 'Beautiful 3D visuals with detailed environments' },
-        { icon: '🎯', title: 'Global Leaderboards', desc: 'Compete with players worldwide' },
-        { icon: '🆓', title: 'Free to Play', desc: 'No cost, no downloads—play instantly in your browser' },
-      ].map((feature, i) => (
-        <div key={i} className="bg-white rounded-xl p-4 shadow-md border-2 border-orange-200 hover:border-orange-400 transition-colors">
-          <div className="flex items-center gap-3">
-            <span className="text-3xl">{feature.icon}</span>
-            <div>
-              <h4 className="font-bold text-gray-800">{feature.title}</h4>
-              <p className="text-sm text-gray-600">{feature.desc}</p>
-            </div>
+    <>
+      <ul className="space-y-3 text-lg">
+        <li className="flex items-start gap-3">
+          <span className="text-2xl">🦁</span>
+          <div>
+            <strong className="text-gray-800">Eight Playable Animals:</strong> From swift wolves to devastating T-Rex, each creature in <strong>Crazy Animal City</strong> offers unique hunting styles and abilities.
           </div>
-        </div>
-      ))}
-    </div>
+        </li>
+        <li className="flex items-start gap-3">
+          <span className="text-2xl">🏙️</span>
+          <div>
+            <strong className="text-gray-800">Two Distinct Maps:</strong> Hunt through the Broken City's urban chaos or the Mountains' wilderness—each environment in <strong>Crazy Animal City</strong> changes your strategy.
+          </div>
+        </li>
+        <li className="flex items-start gap-3">
+          <span className="text-2xl">💥</span>
+          <div>
+            <strong className="text-gray-800">Realistic Physics:</strong> Every collision, crash, and attack in <strong>Crazy Animal City</strong> feels satisfying with ragdoll effects and destructible environments.
+          </div>
+        </li>
+        <li className="flex items-start gap-3">
+          <span className="text-2xl">🎯</span>
+          <div>
+            <strong className="text-gray-800">Strategic Scoring:</strong> Different targets yield different points in <strong>Crazy Animal City</strong>—master the scoring system to maximize your rampage.
+          </div>
+        </li>
+        <li className="flex items-start gap-3">
+          <span className="text-2xl">🚨</span>
+          <div>
+            <strong className="text-gray-800">Dynamic Police Response:</strong> The more chaos you create in <strong>Crazy Animal City</strong>, the more intense the police pursuit becomes—one bullet ends it all.
+          </div>
+        </li>
+        <li className="flex items-start gap-3">
+          <span className="text-2xl">🪙</span>
+          <div>
+            <strong className="text-gray-800">Progression System:</strong> Collect gold coins throughout <strong>Crazy Animal City</strong> to unlock increasingly powerful animals and dominate the leaderboards.
+          </div>
+        </li>
+        <li className="flex items-start gap-3">
+          <span className="text-2xl">🌐</span>
+          <div>
+            <strong className="text-gray-800">Browser-Based Gameplay:</strong> Play <strong>Crazy Animal City</strong> instantly in your browser—no downloads, no installations, just pure chaotic fun.
+          </div>
+        </li>
+        <li className="flex items-start gap-3">
+          <span className="text-2xl">⚡</span>
+          <div>
+            <strong className="text-gray-800">Fast-Paced Action:</strong> <strong>Crazy Animal City</strong> delivers non-stop excitement with quick sessions perfect for stress relief and competitive scoring.
+          </div>
+        </li>
+      </ul>
+
+      <h3 className="text-2xl font-bold mt-8 mb-4 text-gray-800">Why Crazy Animal City Stands Out</h3>
+
+      <p className="text-lg leading-relaxed mb-4">
+        Unlike typical animal simulation games, <strong>Crazy Animal City</strong> embraces chaos over realism. It's not about building habitats or caring for creatures—it's about unleashing your wild side in a consequence-free environment. The game perfectly captures that "relax-with-chaos" genre where simple controls meet intense action, creating an addictive loop that keeps players coming back.
+      </p>
+
+      <p className="text-lg leading-relaxed mb-4">
+        <strong>Crazy Animal City</strong> also excels at creating memorable moments. Whether it's narrowly escaping a police shootout as a rabbit, causing massive destruction as a T-Rex, or discovering the perfect ambush spot as a crocodile, every session generates unique stories. The combination of different animals, two maps, and dynamic police AI ensures that no two rampages in <strong>Crazy Animal City</strong> feel exactly the same.
+      </p>
+
+      <h3 className="text-2xl font-bold mt-8 mb-4 text-gray-800">Tips for Mastering Crazy Animal City</h3>
+
+      <p className="text-lg leading-relaxed mb-4">
+        To truly excel at <strong>Crazy Animal City</strong>, focus on movement patterns. Zigzag running makes you harder to hit when police arrive. Learn each animal's strengths—use the wolf for speed runs, the bear for maximum destruction, and the T-Rex for ultimate domination. Save your stamina for critical moments rather than smashing every object you see.
+      </p>
+
+      <p className="text-lg leading-relaxed mb-4">
+        Coin collection in <strong>Crazy Animal City</strong> should be strategic. Early game, prioritize unlocking the lion or bear for better survival. Once you have mid-tier animals, focus on high-score runs rather than just coin grinding. The T-Rex is the ultimate goal, but even the rabbit and chimpanzee offer unique playstyles worth mastering in <strong>Crazy Animal City</strong>.
+      </p>
+
+      <p className="text-lg leading-relaxed mb-4">
+        Finally, remember that <strong>Crazy Animal City</strong> rewards patience mixed with aggression. Don't rush into police-heavy areas early in your run. Build your score in safer zones first, then push your luck when you have a comfortable lead. The best <strong>Crazy Animal City</strong> players know when to hunt aggressively and when to retreat and reposition.
+      </p>
+    </>
   );
 
   return (

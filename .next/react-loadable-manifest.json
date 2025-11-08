@@ -25,6 +25,18 @@
       "static/chunks/_app-pages-browser_node_modules_next_dist_client_dev_noop-turbopack-hmr_js.js"
     ]
   },
+  "..\\node_modules\\next\\dist\\client\\index.js -> ../pages/_app": {
+    "id": "..\\node_modules\\next\\dist\\client\\index.js -> ../pages/_app",
+    "files": [
+      "static/chunks/_pages-dir-browser_node_modules_next_dist_pages__app_js.js"
+    ]
+  },
+  "..\\node_modules\\next\\dist\\client\\index.js -> ../pages/_error": {
+    "id": "..\\node_modules\\next\\dist\\client\\index.js -> ../pages/_error",
+    "files": [
+      "static/chunks/_pages-dir-browser_node_modules_next_dist_pages__error_js.js"
+    ]
+  },
   "pages\\GameDetailPage.tsx -> ./1v1LolPage": {
     "id": "pages\\GameDetailPage.tsx -> ./1v1LolPage",
     "files": [
@@ -127,6 +139,12 @@
       "static/chunks/_app-pages-browser_src_pages_CrazySprunki3DPage_tsx.js"
     ]
   },
+  "pages\\GameDetailPage.tsx -> ./DancingBeatPage": {
+    "id": "pages\\GameDetailPage.tsx -> ./DancingBeatPage",
+    "files": [
+      "static/chunks/_app-pages-browser_src_pages_DancingBeatPage_tsx.js"
+    ]
+  },
   "pages\\GameDetailPage.tsx -> ./DudeTheftAutoPage": {
     "id": "pages\\GameDetailPage.tsx -> ./DudeTheftAutoPage",
     "files": [
@@ -155,6 +173,12 @@
     "id": "pages\\GameDetailPage.tsx -> ./GoodgameEmpirePage",
     "files": [
       "static/chunks/_app-pages-browser_src_pages_GoodgameEmpirePage_tsx.js"
+    ]
+  },
+  "pages\\GameDetailPage.tsx -> ./GrannyHorrorPage": {
+    "id": "pages\\GameDetailPage.tsx -> ./GrannyHorrorPage",
+    "files": [
+      "static/chunks/_app-pages-browser_src_pages_GrannyHorrorPage_tsx.js"
     ]
   },
   "pages\\GameDetailPage.tsx -> ./HumansPlaygroundPage": {
@@ -209,6 +233,12 @@
     "id": "pages\\GameDetailPage.tsx -> ./LittleBigSnakePage",
     "files": [
       "static/chunks/_app-pages-browser_src_pages_LittleBigSnakePage_tsx.js"
+    ]
+  },
+  "pages\\GameDetailPage.tsx -> ./MadPursuitPage": {
+    "id": "pages\\GameDetailPage.tsx -> ./MadPursuitPage",
+    "files": [
+      "static/chunks/_app-pages-browser_src_pages_MadPursuitPage_tsx.js"
     ]
   },
   "pages\\GameDetailPage.tsx -> ./MemoryBrainrotPage": {
@@ -367,10 +397,22 @@
       "static/chunks/_app-pages-browser_src_pages_TheFreakCircusPage_tsx.js"
     ]
   },
+  "pages\\GameDetailPage.tsx -> ./TimeShooter2Page": {
+    "id": "pages\\GameDetailPage.tsx -> ./TimeShooter2Page",
+    "files": [
+      "static/chunks/_app-pages-browser_src_pages_TimeShooter2Page_tsx.js"
+    ]
+  },
   "pages\\GameDetailPage.tsx -> ./TopSpeedRacing3DPage": {
     "id": "pages\\GameDetailPage.tsx -> ./TopSpeedRacing3DPage",
     "files": [
       "static/chunks/_app-pages-browser_src_pages_TopSpeedRacing3DPage_tsx.js"
+    ]
+  },
+  "pages\\GameDetailPage.tsx -> ./TrafficRallyPage": {
+    "id": "pages\\GameDetailPage.tsx -> ./TrafficRallyPage",
+    "files": [
+      "static/chunks/_app-pages-browser_src_pages_TrafficRallyPage_tsx.js"
     ]
   },
   "pages\\GameDetailPage.tsx -> ./TungSahurBotsChaseRoomPage": {
@@ -407,6 +449,12 @@
     "id": "pages\\GameDetailPage.tsx -> ./YokaiDungeonPage",
     "files": [
       "static/chunks/_app-pages-browser_src_pages_YokaiDungeonPage_tsx.js"
+    ]
+  },
+  "pages\\GameDetailPage.tsx -> ./ZombieStrikePage": {
+    "id": "pages\\GameDetailPage.tsx -> ./ZombieStrikePage",
+    "files": [
+      "static/chunks/_app-pages-browser_src_pages_ZombieStrikePage_tsx.js"
     ]
   },
   "pages\\GameDetailPage.tsx -> ./ZombotronReBootPage": {
