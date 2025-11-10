@@ -26,6 +26,28 @@ export function isRealGame(game: Game): game is GameData {
 // All games data with release dates, tags, and ratings
 export const allGames: Game[] = [
   {
+    name: 'Tralalero Tralala Clicker',
+    image: '/images/thumbnails/tralalero-tralala-clicker.jpg',
+    slug: 'tralalero-tralala-clicker',
+    isReal: true,
+    url: 'https://games.yoplay.io/tralalero-tralala-clicker/?v=1',
+    releaseDate: '2025-11-10',
+    tags: ['Clicker', 'Casual', 'Idle', 'Brainrot', 'Animal', 'One Button', 'Horror', 'Coin Collect', 'Unblocked', 'Browser'],
+    rating: 5.0,
+    playCount: 0
+  },
+  {
+    name: 'Two Lambo Rivals Drift',
+    image: '/images/thumbnails/two-lambo-rivals-drift.jpeg',
+    slug: 'two-lambo-rivals-drift',
+    isReal: true,
+    url: '//html5.gamedistribution.com/rvvASMiM/8cfbb6f4272b438fa38cb882cc071091/index.html?gd_zone_config=eyJwYXJlbnRVUkwiOiJodHRwczovL2RyaXZlbWFkMy5pby8iLCJwYXJlbnREb21haW4iOiJkcml2ZW1hZDMuaW8iLCJ0b3BEb21haW4iOiJkcml2ZW1hZDMuaW8iLCJoYXNJbXByZXNzaW9uIjp0cnVlLCJsb2FkZXJFbmFibGVkIjp0cnVlLCJob3N0IjoiaHRtbDUuZ2FtZWRpc3RyaWJ1dGlvbi5jb20iLCJ2ZXJzaW9uIjoiMS41LjE4In0%253D',
+    releaseDate: '2025-11-10',
+    tags: ['Racing', 'Driving', 'Drift', 'Car', 'Multiplayer', '2 Player', '3D', 'Action', 'Skill', 'Lamborghini'],
+    rating: 5.0,
+    playCount: 0
+  },
+  {
     name: 'Obby Prison Escape Speed',
     image: '/images/thumbnails/obby-prison-escape-speed.jpg',
     slug: 'obby-prison-escape-speed',

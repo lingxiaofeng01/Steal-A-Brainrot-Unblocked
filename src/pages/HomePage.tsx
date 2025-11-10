@@ -456,7 +456,7 @@ export default function HomePage() {
           </div>
 
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3">
-            {getAllGames(24).map((game, i) => (
+            {getAllGames(30).map((game, i) => (
               <a
                 key={i}
                 href={isRealGame(game) ? `/${game.slug}` : '#'}

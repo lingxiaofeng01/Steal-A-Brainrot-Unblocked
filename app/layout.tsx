@@ -112,9 +112,6 @@ export default function RootLayout({
         {/* Google AdSense */}
         <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3701727349784910"
          crossOrigin="anonymous"></script>
-
-        {/* MonetAg Ads */}
-        <script dangerouslySetInnerHTML={{__html: `(function(s){s.dataset.zone='10143501',s.src='https://forfrogadiertor.com/tag.min.js'})([document.documentElement, document.body].filter(Boolean).pop().appendChild(document.createElement('script')))`}} />
       </head>
       <body>
         <GoogleAnalytics />
