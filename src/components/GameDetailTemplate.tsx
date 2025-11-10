@@ -8,7 +8,6 @@ import StarRating from './StarRating';
 import Comments from './Comments';
 import GameFAQ from './GameFAQ';
 import NewBadge from './NewBadge';
-import { AdSenseBanner, AdSenseInArticle } from './AdSense';
 import { hasTagPage, getTagSlug } from '../utils/tagUtils';
 import { isRealGame } from '../data/games';
 import { getRelatedGames, getLatestGames } from '../utils/gameUtils';
@@ -237,11 +236,6 @@ export default function GameDetailTemplate({
           </div>
         </section>
 
-        {/* 广告位 1 - 游戏下方横幅广告 */}
-        <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
-          <AdSenseBanner className="bg-gray-100 rounded-lg p-4" />
-        </section>
-
         {/* 4. 游戏介绍 */}
         <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 border-t-4 border-cyan-400">
           <div className="bg-gradient-to-br from-pink-100 via-blue-100 to-cyan-100 rounded-2xl p-8 border-4 border-cyan-400 shadow-xl">
@@ -265,11 +259,6 @@ export default function GameDetailTemplate({
               )}
             </div>
           </div>
-        </section>
-
-        {/* 广告位 2 - 内容中间广告 */}
-        <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
-          <AdSenseInArticle className="bg-gray-50 rounded-lg p-4" />
         </section>
 
         {/* 5. 游戏评论 */}

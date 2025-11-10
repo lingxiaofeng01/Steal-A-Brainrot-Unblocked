@@ -7,7 +7,6 @@ import GamePreview from '../components/GamePreview';
 import StarRating from '../components/StarRating';
 import NewBadge from '../components/NewBadge';
 import Comments from '../components/Comments';
-import { AdSenseBanner, AdSenseInArticle } from '../components/AdSense';
 import { isRealGame } from '../data/games';
 import { getAllGames, getRelatedGames } from '../utils/gameUtils';
 import { HOME_PAGE_FAQS } from '../config/gameFAQs';
@@ -235,11 +234,6 @@ export default function HomePage() {
           </div>
         </section>
 
-        {/* 广告位 1 - 游戏列表下方 */}
-        <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
-          <AdSenseBanner className="bg-gray-100 rounded-lg p-4" />
-        </section>
-
         {/* Game Details Section */}
         <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 border-t-4 border-cyan-400">
           <div className="bg-gradient-to-br from-pink-50 to-blue-50 rounded-2xl p-8 shadow-lg">
@@ -439,11 +433,6 @@ export default function HomePage() {
         {/* Comments Section */}
         <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 border-t-4 border-cyan-400">
           <Comments gameSlug="steal-a-brainrot-unblocked" />
-        </section>
-
-        {/* 广告位 2 - 评论下方 */}
-        <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
-          <AdSenseInArticle className="bg-gray-50 rounded-lg p-4" />
         </section>
 
         {/* More Games Section */}
