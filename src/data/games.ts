@@ -26,6 +26,28 @@ export function isRealGame(game: Game): game is GameData {
 // All games data with release dates, tags, and ratings
 export const allGames: Game[] = [
   {
+    name: 'Obby Prison Escape Speed',
+    image: '/images/thumbnails/obby-prison-escape-speed.jpg',
+    slug: 'obby-prison-escape-speed',
+    isReal: true,
+    url: 'https://html5.gamemonetize.co/5v60c88pl81kvr27x3xp89qhpelm6va2/',
+    releaseDate: '2025-11-10',
+    tags: ['Obby', 'Parkour', 'Action', 'Adventure', 'Escape', 'Prison', '3D', 'Platformer', 'Running', 'Skill'],
+    rating: 5.0,
+    playCount: 0
+  },
+  {
+    name: 'Counter Craft Sniper',
+    image: '/images/thumbnails/counter-craft-sniper.webp',
+    slug: 'counter-craft-sniper',
+    isReal: true,
+    url: 'https://games.builds.gamepix.com/2TCNCE/34TTAyMIepyTZezGFj2ZtT6cQ0U/index.html?sid=e4515&lang=zh&namespace=counter-craft-sniper',
+    releaseDate: '2025-11-10',
+    tags: ['Shooting', 'Action', 'FPS', '3D', 'Sniper', 'Minecraft', 'Zombie', 'Combat'],
+    rating: 5.0,
+    playCount: 0
+  },
+  {
     name: 'Dancing Beat',
     image: '/images/thumbnails/dancing-beat.png',
     slug: 'dancing-beat',
