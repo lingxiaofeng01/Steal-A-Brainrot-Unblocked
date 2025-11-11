@@ -8,7 +8,7 @@ import StarRating from '../components/StarRating';
 import NewBadge from '../components/NewBadge';
 import Comments from '../components/Comments';
 import { isRealGame } from '../data/games';
-import { getAllGames, getRelatedGames } from '../utils/gameUtils';
+import { getAllGames, getBrainrotGames } from '../utils/gameUtils';
 import { HOME_PAGE_FAQS } from '../config/gameFAQs';
 import { generateFAQSchema } from '../config/seo';
 
@@ -191,7 +191,7 @@ export default function HomePage() {
           </div>
         </section>
 
-        {/* Related Games Section */}
+        {/* Related Games Section - Brainrot Games Only */}
         <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 border-t-4 border-cyan-400">
           <div className="bg-gradient-to-r from-orange-200 to-amber-200 rounded-xl p-4 mb-6 border-2 border-orange-300">
             <h2 className="text-2xl font-bold text-gray-800 flex items-center gap-2">
@@ -201,7 +201,7 @@ export default function HomePage() {
           </div>
 
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3">
-            {getRelatedGames(gameData.slug, gameData.tags, 12).map((game, i) => (
+            {getBrainrotGames(gameData.slug, 12).map((game, i) => (
               <a
                 key={i}
                 href={isRealGame(game) ? `/${game.slug}` : '#'}

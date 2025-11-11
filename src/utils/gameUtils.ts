@@ -197,3 +197,33 @@ export function getRandomGames(excludeSlug?: string, limit: number = 6): Game[] 
   return shuffled.slice(0, limit);
 }
 
+/**
+ * 获取 Brainrot 相关游戏（专门用于首页 Play Similar Games 部分）
+ * 只返回带有 'Brainrot' 或 'Italian Brainrot' 标签的游戏
+ * @param excludeSlug 要排除的游戏slug（通常是当前游戏）
+ * @param limit 返回的游戏数量，默认12个
+ * @returns Brainrot 游戏列表（按发布日期降序排列）
+ */
+export function getBrainrotGames(excludeSlug?: string, limit: number = 12): Game[] {
+  const brainrotGames = allGames
+    .filter(g => {
+      if (!isRealGame(g)) return false;
+      if (excludeSlug && g.slug === excludeSlug) return false;
+
+      const gameTags = g.tags || [];
+      // 检查是否包含 Brainrot 相关标签（不区分大小写）
+      return gameTags.some(tag =>
+        tag.toLowerCase().includes('brainrot')
+      );
+    })
+    .sort((a, b) => {
+      if (!isRealGame(a) || !isRealGame(b)) return 0;
+      // 按发布日期降序排列（最新的在前）
+      const dateA = a.releaseDate ? new Date(a.releaseDate).getTime() : 0;
+      const dateB = b.releaseDate ? new Date(b.releaseDate).getTime() : 0;
+      return dateB - dateA;
+    });
+
+  return brainrotGames.slice(0, limit);
+}
+

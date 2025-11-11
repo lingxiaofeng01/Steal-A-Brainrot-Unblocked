@@ -26,6 +26,39 @@ export function isRealGame(game: Game): game is GameData {
 // All games data with release dates, tags, and ratings
 export const allGames: Game[] = [
   {
+    name: 'Giant Rush',
+    image: '/images/thumbnails/giant-rush.png',
+    slug: 'giant-rush',
+    isReal: true,
+    url: 'https://sloperun.org/giant-rush.embed',
+    releaseDate: '2025-11-11',
+    tags: ['Running', 'Action', '3D', 'Stickman', 'Fighting', 'Casual', 'Skill', 'Single Player', 'Boss Battle', 'Collect', 'Unblocked', 'Browser'],
+    rating: 5.0,
+    playCount: 0
+  },
+  {
+    name: 'White Horizon',
+    image: '/images/thumbnails/white-horizon.jpg',
+    slug: 'white-horizon',
+    isReal: true,
+    url: 'https://yoplay.io/white-horizon.embed',
+    releaseDate: '2025-11-11',
+    tags: ['Skiing', 'Sports', 'Skill', '3D', 'Physics', 'Casual', 'Single Player', 'Challenge', 'Endless Runner', 'Action', 'Unblocked', 'Browser'],
+    rating: 5.0,
+    playCount: 0
+  },
+  {
+    name: 'Highway Heat',
+    image: '/images/thumbnails/highway-heat.jpg',
+    slug: 'highway-heat',
+    isReal: true,
+    url: 'https://games.yoplay.io/highway-heat/?v=1',
+    releaseDate: '2025-11-11',
+    tags: ['Racing', 'Driving', 'Car', 'Endless Runner', '3D', 'Speed', 'Skill', 'Survival', 'Casual', 'Action', 'Unblocked', 'Browser'],
+    rating: 5.0,
+    playCount: 0
+  },
+  {
     name: 'Tralalero Tralala Clicker',
     image: '/images/thumbnails/tralalero-tralala-clicker.jpg',
     slug: 'tralalero-tralala-clicker',
