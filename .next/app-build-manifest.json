@@ -21,10 +21,10 @@
       "static/chunks/main-app.js",
       "static/chunks/app/all/page.js"
     ],
-    "/tag/[tag]/page": [
+    "/hot/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/tag/[tag]/page.js"
+      "static/chunks/app/hot/page.js"
     ]
   }
 }

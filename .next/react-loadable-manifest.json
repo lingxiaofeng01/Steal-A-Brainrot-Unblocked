@@ -25,18 +25,6 @@
       "static/chunks/_app-pages-browser_node_modules_next_dist_client_dev_noop-turbopack-hmr_js.js"
     ]
   },
-  "..\\node_modules\\next\\dist\\client\\index.js -> ../pages/_app": {
-    "id": "..\\node_modules\\next\\dist\\client\\index.js -> ../pages/_app",
-    "files": [
-      "static/chunks/_pages-dir-browser_node_modules_next_dist_pages__app_js.js"
-    ]
-  },
-  "..\\node_modules\\next\\dist\\client\\index.js -> ../pages/_error": {
-    "id": "..\\node_modules\\next\\dist\\client\\index.js -> ../pages/_error",
-    "files": [
-      "static/chunks/_pages-dir-browser_node_modules_next_dist_pages__error_js.js"
-    ]
-  },
   "pages\\GameDetailPage.tsx -> ./1v1LolPage": {
     "id": "pages\\GameDetailPage.tsx -> ./1v1LolPage",
     "files": [
@@ -73,6 +61,12 @@
       "static/chunks/_app-pages-browser_src_pages_BlockyRushPage_tsx.js"
     ]
   },
+  "pages\\GameDetailPage.tsx -> ./BottleJumpPage": {
+    "id": "pages\\GameDetailPage.tsx -> ./BottleJumpPage",
+    "files": [
+      "static/chunks/_app-pages-browser_src_pages_BottleJumpPage_tsx.js"
+    ]
+  },
   "pages\\GameDetailPage.tsx -> ./BrainrotClickerPage": {
     "id": "pages\\GameDetailPage.tsx -> ./BrainrotClickerPage",
     "files": [
@@ -95,6 +89,12 @@
     "id": "pages\\GameDetailPage.tsx -> ./ColorboxMustardPage",
     "files": [
       "static/chunks/_app-pages-browser_src_pages_ColorboxMustardPage_tsx.js"
+    ]
+  },
+  "pages\\GameDetailPage.tsx -> ./CounterCraftSniperPage": {
+    "id": "pages\\GameDetailPage.tsx -> ./CounterCraftSniperPage",
+    "files": [
+      "static/chunks/_app-pages-browser_src_pages_CounterCraftSniperPage_tsx.js"
     ]
   },
   "pages\\GameDetailPage.tsx -> ./CowboySafariPage": {
@@ -145,6 +145,12 @@
       "static/chunks/_app-pages-browser_src_pages_DancingBeatPage_tsx.js"
     ]
   },
+  "pages\\GameDetailPage.tsx -> ./DriftFuryPage": {
+    "id": "pages\\GameDetailPage.tsx -> ./DriftFuryPage",
+    "files": [
+      "static/chunks/_app-pages-browser_src_pages_DriftFuryPage_tsx.js"
+    ]
+  },
   "pages\\GameDetailPage.tsx -> ./DudeTheftAutoPage": {
     "id": "pages\\GameDetailPage.tsx -> ./DudeTheftAutoPage",
     "files": [
@@ -169,6 +175,12 @@
       "static/chunks/_app-pages-browser_src_pages_GeometryDashSpamPage_tsx.js"
     ]
   },
+  "pages\\GameDetailPage.tsx -> ./GiantRushPage": {
+    "id": "pages\\GameDetailPage.tsx -> ./GiantRushPage",
+    "files": [
+      "static/chunks/_app-pages-browser_src_pages_GiantRushPage_tsx.js"
+    ]
+  },
   "pages\\GameDetailPage.tsx -> ./GoodgameEmpirePage": {
     "id": "pages\\GameDetailPage.tsx -> ./GoodgameEmpirePage",
     "files": [
@@ -179,6 +191,18 @@
     "id": "pages\\GameDetailPage.tsx -> ./GrannyHorrorPage",
     "files": [
       "static/chunks/_app-pages-browser_src_pages_GrannyHorrorPage_tsx.js"
+    ]
+  },
+  "pages\\GameDetailPage.tsx -> ./HighwayHeatPage": {
+    "id": "pages\\GameDetailPage.tsx -> ./HighwayHeatPage",
+    "files": [
+      "static/chunks/_app-pages-browser_src_pages_HighwayHeatPage_tsx.js"
+    ]
+  },
+  "pages\\GameDetailPage.tsx -> ./HockeyRandomPage": {
+    "id": "pages\\GameDetailPage.tsx -> ./HockeyRandomPage",
+    "files": [
+      "static/chunks/_app-pages-browser_src_pages_HockeyRandomPage_tsx.js"
     ]
   },
   "pages\\GameDetailPage.tsx -> ./HumansPlaygroundPage": {
@@ -259,6 +283,12 @@
       "static/chunks/_app-pages-browser_src_pages_ObbyMySingingBrainrotPage_tsx.js"
     ]
   },
+  "pages\\GameDetailPage.tsx -> ./ObbyPrisonEscapeSpeedPage": {
+    "id": "pages\\GameDetailPage.tsx -> ./ObbyPrisonEscapeSpeedPage",
+    "files": [
+      "static/chunks/_app-pages-browser_src_pages_ObbyPrisonEscapeSpeedPage_tsx.js"
+    ]
+  },
   "pages\\GameDetailPage.tsx -> ./PerfectOrbitPage": {
     "id": "pages\\GameDetailPage.tsx -> ./PerfectOrbitPage",
     "files": [
@@ -289,6 +319,12 @@
       "static/chunks/_app-pages-browser_src_pages_PoolroomsPage_tsx.js"
     ]
   },
+  "pages\\GameDetailPage.tsx -> ./RagdollHitStickmanPage": {
+    "id": "pages\\GameDetailPage.tsx -> ./RagdollHitStickmanPage",
+    "files": [
+      "static/chunks/_app-pages-browser_src_pages_RagdollHitStickmanPage_tsx.js"
+    ]
+  },
   "pages\\GameDetailPage.tsx -> ./RocketFortressPage": {
     "id": "pages\\GameDetailPage.tsx -> ./RocketFortressPage",
     "files": [
@@ -305,6 +341,12 @@
     "id": "pages\\GameDetailPage.tsx -> ./SixtySevenClickerPage",
     "files": [
       "static/chunks/_app-pages-browser_src_pages_SixtySevenClickerPage_tsx.js"
+    ]
+  },
+  "pages\\GameDetailPage.tsx -> ./SkiFrenzyPage": {
+    "id": "pages\\GameDetailPage.tsx -> ./SkiFrenzyPage",
+    "files": [
+      "static/chunks/_app-pages-browser_src_pages_SkiFrenzyPage_tsx.js"
     ]
   },
   "pages\\GameDetailPage.tsx -> ./SlopeXtremePage": {
@@ -367,6 +409,12 @@
       "static/chunks/_app-pages-browser_src_pages_StealTheItalianBrainrotPage_tsx.js"
     ]
   },
+  "pages\\GameDetailPage.tsx -> ./StickmanArmyTeamBattlePage": {
+    "id": "pages\\GameDetailPage.tsx -> ./StickmanArmyTeamBattlePage",
+    "files": [
+      "static/chunks/_app-pages-browser_src_pages_StickmanArmyTeamBattlePage_tsx.js"
+    ]
+  },
   "pages\\GameDetailPage.tsx -> ./StickmanClashPage": {
     "id": "pages\\GameDetailPage.tsx -> ./StickmanClashPage",
     "files": [
@@ -415,6 +463,12 @@
       "static/chunks/_app-pages-browser_src_pages_TrafficRallyPage_tsx.js"
     ]
   },
+  "pages\\GameDetailPage.tsx -> ./TralaleroTralalaClickerPage": {
+    "id": "pages\\GameDetailPage.tsx -> ./TralaleroTralalaClickerPage",
+    "files": [
+      "static/chunks/_app-pages-browser_src_pages_TralaleroTralalaClickerPage_tsx.js"
+    ]
+  },
   "pages\\GameDetailPage.tsx -> ./TungSahurBotsChaseRoomPage": {
     "id": "pages\\GameDetailPage.tsx -> ./TungSahurBotsChaseRoomPage",
     "files": [
@@ -425,6 +479,12 @@
     "id": "pages\\GameDetailPage.tsx -> ./TungSahurClickerPage",
     "files": [
       "static/chunks/_app-pages-browser_src_pages_TungSahurClickerPage_tsx.js"
+    ]
+  },
+  "pages\\GameDetailPage.tsx -> ./TwoLamboRivalsDriftPage": {
+    "id": "pages\\GameDetailPage.tsx -> ./TwoLamboRivalsDriftPage",
+    "files": [
+      "static/chunks/_app-pages-browser_src_pages_TwoLamboRivalsDriftPage_tsx.js"
     ]
   },
   "pages\\GameDetailPage.tsx -> ./UndeadCorridorPage": {
@@ -443,6 +503,12 @@
     "id": "pages\\GameDetailPage.tsx -> ./WheelieLife2Page",
     "files": [
       "static/chunks/_app-pages-browser_src_pages_WheelieLife2Page_tsx.js"
+    ]
+  },
+  "pages\\GameDetailPage.tsx -> ./WhiteHorizonPage": {
+    "id": "pages\\GameDetailPage.tsx -> ./WhiteHorizonPage",
+    "files": [
+      "static/chunks/_app-pages-browser_src_pages_WhiteHorizonPage_tsx.js"
     ]
   },
   "pages\\GameDetailPage.tsx -> ./YokaiDungeonPage": {
