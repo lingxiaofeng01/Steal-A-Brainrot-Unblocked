@@ -2,364 +2,440 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
 
-  <!-- New Games (Released in 2025-11) -->
+  <url>
+    <loc>https://www.stealabrainrotunblocked.com/drift-fury</loc>
+    <lastmod>2025-11-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://www.stealabrainrotunblocked.com/images/thumbnails/drift-fury.jpg</image:loc>
+      <image:title>Drift Fury</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://www.stealabrainrotunblocked.com/ragdoll-hit-stickman</loc>
+    <lastmod>2025-11-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://www.stealabrainrotunblocked.com/images/thumbnails/ragdoll-hit-stickman.png</image:loc>
+      <image:title>Ragdoll Hit Stickman</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://www.stealabrainrotunblocked.com/stickman-army-team-battle</loc>
+    <lastmod>2025-11-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://www.stealabrainrotunblocked.com/images/thumbnails/stickman-army-team-battle.png</image:loc>
+      <image:title>Stickman Army: Team Battle</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://www.stealabrainrotunblocked.com/ski-frenzy</loc>
+    <lastmod>2025-11-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://www.stealabrainrotunblocked.com/images/thumbnails/ski-frenzy.jpg</image:loc>
+      <image:title>Ski Frenzy</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://www.stealabrainrotunblocked.com/hockey-random</loc>
+    <lastmod>2025-11-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://www.stealabrainrotunblocked.com/images/thumbnails/hockey-random.jpg</image:loc>
+      <image:title>Hockey Random</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://www.stealabrainrotunblocked.com/bottle-jump</loc>
+    <lastmod>2025-11-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://www.stealabrainrotunblocked.com/images/thumbnails/bottle-jump.png</image:loc>
+      <image:title>Bottle Jump</image:title>
+    </image:image>
+  </url>
+
   <url>
     <loc>https://www.stealabrainrotunblocked.com/giant-rush</loc>
     <lastmod>2025-11-11</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>1.0</priority>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
     <image:image>
       <image:loc>https://www.stealabrainrotunblocked.com/images/thumbnails/giant-rush.png</image:loc>
-      <image:title>Giant Rush - The Bold Stickman Race That Turns Every Run into a Fight</image:title>
+      <image:title>Giant Rush</image:title>
     </image:image>
   </url>
 
   <url>
     <loc>https://www.stealabrainrotunblocked.com/white-horizon</loc>
     <lastmod>2025-11-11</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>1.0</priority>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
     <image:image>
       <image:loc>https://www.stealabrainrotunblocked.com/images/thumbnails/white-horizon.jpg</image:loc>
-      <image:title>White Horizon - Master the Art of Skiing</image:title>
+      <image:title>White Horizon</image:title>
     </image:image>
   </url>
 
   <url>
     <loc>https://www.stealabrainrotunblocked.com/highway-heat</loc>
     <lastmod>2025-11-11</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>1.0</priority>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
     <image:image>
       <image:loc>https://www.stealabrainrotunblocked.com/images/thumbnails/highway-heat.jpg</image:loc>
-      <image:title>Highway Heat - Ultimate Endless Racing Challenge</image:title>
+      <image:title>Highway Heat</image:title>
     </image:image>
   </url>
 
   <url>
     <loc>https://www.stealabrainrotunblocked.com/tralalero-tralala-clicker</loc>
     <lastmod>2025-11-10</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>1.0</priority>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
     <image:image>
       <image:loc>https://www.stealabrainrotunblocked.com/images/thumbnails/tralalero-tralala-clicker.jpg</image:loc>
-      <image:title>Tralalero Tralala Clicker - Walking Shark Clicker Game</image:title>
+      <image:title>Tralalero Tralala Clicker</image:title>
     </image:image>
   </url>
 
   <url>
     <loc>https://www.stealabrainrotunblocked.com/two-lambo-rivals-drift</loc>
     <lastmod>2025-11-10</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>1.0</priority>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
     <image:image>
       <image:loc>https://www.stealabrainrotunblocked.com/images/thumbnails/two-lambo-rivals-drift.jpeg</image:loc>
-      <image:title>Two Lambo Rivals Drift - High-Octane Drifting Game</image:title>
+      <image:title>Two Lambo Rivals Drift</image:title>
     </image:image>
   </url>
 
   <url>
     <loc>https://www.stealabrainrotunblocked.com/obby-prison-escape-speed</loc>
     <lastmod>2025-11-10</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>1.0</priority>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
     <image:image>
       <image:loc>https://www.stealabrainrotunblocked.com/images/thumbnails/obby-prison-escape-speed.jpg</image:loc>
-      <image:title>Obby Prison Escape Speed - Fast-Paced Prison Break Parkour Adventure</image:title>
+      <image:title>Obby Prison Escape Speed</image:title>
     </image:image>
   </url>
 
   <url>
     <loc>https://www.stealabrainrotunblocked.com/counter-craft-sniper</loc>
     <lastmod>2025-11-10</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>1.0</priority>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
     <image:image>
       <image:loc>https://www.stealabrainrotunblocked.com/images/thumbnails/counter-craft-sniper.webp</image:loc>
-      <image:title>Counter Craft Sniper - Defend City from Minecraft Zombie Invasion FPS Game</image:title>
+      <image:title>Counter Craft Sniper</image:title>
     </image:image>
   </url>
 
   <url>
     <loc>https://www.stealabrainrotunblocked.com/dancing-beat</loc>
     <lastmod>2025-11-08</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>1.0</priority>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
     <image:image>
       <image:loc>https://www.stealabrainrotunblocked.com/images/thumbnails/dancing-beat.png</image:loc>
-      <image:title>Dancing Beat - Master Rhythm and Timing in Addictive Music Ball Game</image:title>
+      <image:title>Dancing Beat</image:title>
     </image:image>
   </url>
 
   <url>
     <loc>https://www.stealabrainrotunblocked.com/crazy-animal-city</loc>
     <lastmod>2025-11-08</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>1.0</priority>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
     <image:image>
       <image:loc>https://www.stealabrainrotunblocked.com/images/thumbnails/crazy-animal-city.jpg</image:loc>
-      <image:title>Crazy Animal City - Unleash Wild Chaos in Ultimate Animal Rampage Game</image:title>
+      <image:title>Crazy Animal City</image:title>
     </image:image>
   </url>
 
   <url>
     <loc>https://www.stealabrainrotunblocked.com/time-shooter-2</loc>
     <lastmod>2025-11-08</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>1.0</priority>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
     <image:image>
       <image:loc>https://www.stealabrainrotunblocked.com/images/thumbnails/time-shooter-2.webp</image:loc>
-      <image:title>Time Shooter 2 - Master Time Control in Epic Slow-Motion FPS Battle</image:title>
+      <image:title>Time Shooter 2</image:title>
     </image:image>
   </url>
 
   <url>
     <loc>https://www.stealabrainrotunblocked.com/traffic-rally</loc>
     <lastmod>2025-11-07</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>1.0</priority>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
     <image:image>
       <image:loc>https://www.stealabrainrotunblocked.com/images/thumbnails/traffic-rally.png</image:loc>
-      <image:title>Traffic Rally - Dramatic 3D Highway Racing - Conquer Crowded Roads at Top Speed</image:title>
+      <image:title>Traffic Rally</image:title>
     </image:image>
   </url>
 
   <url>
     <loc>https://www.stealabrainrotunblocked.com/mad-pursuit</loc>
     <lastmod>2025-11-07</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>1.0</priority>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
     <image:image>
       <image:loc>https://www.stealabrainrotunblocked.com/images/thumbnails/mad-pursuit.jpg</image:loc>
-      <image:title>Mad Pursuit - High-Speed Police Chase Game - Drive, Drift, and Escape</image:title>
+      <image:title>Mad Pursuit</image:title>
     </image:image>
   </url>
 
   <url>
     <loc>https://www.stealabrainrotunblocked.com/zombie-strike</loc>
     <lastmod>2025-11-07</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>1.0</priority>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
     <image:image>
       <image:loc>https://www.stealabrainrotunblocked.com/images/thumbnails/zombie-strike.jpg</image:loc>
-      <image:title>Zombie Strike - Survive the Undead Chaos in This Free 3D Pixel Shooter</image:title>
+      <image:title>Zombie Strike</image:title>
     </image:image>
   </url>
 
   <url>
     <loc>https://www.stealabrainrotunblocked.com/granny-horror</loc>
     <lastmod>2025-11-07</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>1.0</priority>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
     <image:image>
       <image:loc>https://www.stealabrainrotunblocked.com/images/thumbnails/granny-horror.webp</image:loc>
-      <image:title>Granny Horror - Escape Granny's Eerie House in Silence</image:title>
+      <image:title>Granny Horror</image:title>
     </image:image>
   </url>
 
   <url>
     <loc>https://www.stealabrainrotunblocked.com/cowboy-safari</loc>
     <lastmod>2025-11-06</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>1.0</priority>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
     <image:image>
       <image:loc>https://www.stealabrainrotunblocked.com/images/thumbnails/cowboy-safari.png</image:loc>
-      <image:title>Cowboy Safari - Lasso Wild Animals and Build Your Ultimate Safari Zoo Empire</image:title>
+      <image:title>Cowboy Safari</image:title>
     </image:image>
   </url>
 
   <url>
     <loc>https://www.stealabrainrotunblocked.com/impossible-car-stunt</loc>
     <lastmod>2025-11-06</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>1.0</priority>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
     <image:image>
       <image:loc>https://www.stealabrainrotunblocked.com/images/thumbnails/impossible-car-stunt.jpeg</image:loc>
-      <image:title>Impossible Car Stunt - Conquer Sky-High Tracks in the Ultimate Racing Challenge</image:title>
+      <image:title>Impossible Car Stunt</image:title>
     </image:image>
   </url>
 
   <url>
     <loc>https://www.stealabrainrotunblocked.com/platform-cook</loc>
     <lastmod>2025-11-05</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>1.0</priority>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
     <image:image>
       <image:loc>https://www.stealabrainrotunblocked.com/images/thumbnails/platform-cook.png</image:loc>
-      <image:title>Platform Cook - The Ultimate Culinary Platformer Challenge</image:title>
+      <image:title>Platform Cook</image:title>
     </image:image>
   </url>
 
   <url>
     <loc>https://www.stealabrainrotunblocked.com/wheelie-life-2</loc>
     <lastmod>2025-11-05</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>1.0</priority>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
     <image:image>
       <image:loc>https://www.stealabrainrotunblocked.com/images/thumbnails/wheelie-life-2.jpg</image:loc>
-      <image:title>Wheelie Life 2 - Master the Art of Wheelies</image:title>
+      <image:title>Wheelie Life 2</image:title>
     </image:image>
   </url>
 
   <url>
     <loc>https://www.stealabrainrotunblocked.com/tung-sahur-bots-chase-room</loc>
     <lastmod>2025-11-05</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>1.0</priority>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
     <image:image>
       <image:loc>https://www.stealabrainrotunblocked.com/images/thumbnails/tung-sahur-bots-chase-room.jpg</image:loc>
-      <image:title>Tung Sahur Bots Chase Room - Survive the Meme Horror Maze</image:title>
+      <image:title>Tung Sahur Bots Chase Room</image:title>
     </image:image>
   </url>
 
   <url>
     <loc>https://www.stealabrainrotunblocked.com/poolrooms</loc>
     <lastmod>2025-11-04</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>1.0</priority>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
     <image:image>
       <image:loc>https://www.stealabrainrotunblocked.com/images/thumbnails/poolrooms.png</image:loc>
-      <image:title>Poolrooms - Experience Creative Rhythm Games Online</image:title>
+      <image:title>Poolrooms</image:title>
     </image:image>
   </url>
 
   <url>
     <loc>https://www.stealabrainrotunblocked.com/sugar-ghouls</loc>
     <lastmod>2025-11-04</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>1.0</priority>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
     <image:image>
       <image:loc>https://www.stealabrainrotunblocked.com/images/thumbnails/sugar-ghouls.png</image:loc>
-      <image:title>Sugar Ghouls - The Ultimate Halloween Candy Adventure</image:title>
+      <image:title>Sugar Ghouls</image:title>
     </image:image>
   </url>
 
   <url>
     <loc>https://www.stealabrainrotunblocked.com/italian-brainrot-survive-parkour</loc>
     <lastmod>2025-11-04</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>1.0</priority>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
     <image:image>
       <image:loc>https://www.stealabrainrotunblocked.com/images/thumbnails/italian-brainrot-survive-parkour.webp</image:loc>
-      <image:title>Italian Brainrot Survive Parkour - Master the Ultimate Meme Parkour Challenge</image:title>
+      <image:title>Italian Brainrot Survive Parkour</image:title>
     </image:image>
   </url>
 
   <url>
     <loc>https://www.stealabrainrotunblocked.com/geometry-dash-spam</loc>
     <lastmod>2025-11-04</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>1.0</priority>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
     <image:image>
       <image:loc>https://www.stealabrainrotunblocked.com/images/thumbnails/geometry-dash-spam.webp</image:loc>
-      <image:title>Geometry Dash Spam - Master the Ultimate Wave Spam Challenge</image:title>
+      <image:title>Geometry Dash Spam</image:title>
     </image:image>
   </url>
 
   <url>
     <loc>https://www.stealabrainrotunblocked.com/sausage-flip</loc>
     <lastmod>2025-11-04</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>1.0</priority>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
     <image:image>
       <image:loc>https://www.stealabrainrotunblocked.com/images/thumbnails/sausage-flip.png</image:loc>
-      <image:title>Sausage Flip - The Ultimate Physics-Based Arcade Game</image:title>
+      <image:title>Sausage Flip</image:title>
     </image:image>
   </url>
 
   <url>
     <loc>https://www.stealabrainrotunblocked.com/67-clicker</loc>
     <lastmod>2025-11-04</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>1.0</priority>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
     <image:image>
       <image:loc>https://www.stealabrainrotunblocked.com/images/thumbnails/67-clicker.webp</image:loc>
-      <image:title>67 Clicker - Click Your Way to Infinite 67s - Ultimate Idle Clicker Game</image:title>
+      <image:title>67 Clicker</image:title>
     </image:image>
   </url>
 
   <url>
     <loc>https://www.stealabrainrotunblocked.com/bike-xtreme</loc>
     <lastmod>2025-11-04</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>1.0</priority>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
     <image:image>
       <image:loc>https://www.stealabrainrotunblocked.com/images/thumbnails/bike-xtreme.webp</image:loc>
-      <image:title>Bike Xtreme - Ultimate Mountain Bike Challenge Game</image:title>
+      <image:title>Bike Xtreme</image:title>
     </image:image>
   </url>
 
   <url>
     <loc>https://www.stealabrainrotunblocked.com/stickman-clash</loc>
     <lastmod>2025-11-04</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>1.0</priority>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
     <image:image>
       <image:loc>https://www.stealabrainrotunblocked.com/images/thumbnails/stickman-clash.png</image:loc>
-      <image:title>Stickman Clash - Chaotic Multiplayer Fighting Game with Physics</image:title>
-    </image:image>
-  </url>
-
-  <url>
-    <loc>https://www.stealabrainrotunblocked.com/planet-buster</loc>
-    <lastmod>2025-10-31</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>1.0</priority>
-    <image:image>
-      <image:loc>https://www.stealabrainrotunblocked.com/images/thumbnails/planet-buster.jpg</image:loc>
-      <image:title>Planet Buster - One-Button Cosmic Destruction Game</image:title>
-    </image:image>
-  </url>
-
-  <url>
-    <loc>https://www.stealabrainrotunblocked.com/slope-xtreme</loc>
-    <lastmod>2025-10-31</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>1.0</priority>
-    <image:image>
-      <image:loc>https://www.stealabrainrotunblocked.com/images/thumbnails/slope-xtreme.jpg</image:loc>
-      <image:title>Slope Xtreme - Race Through Neon Tunnels in Sci-Fi Slope Challenge</image:title>
-    </image:image>
-  </url>
-
-  <url>
-    <loc>https://www.stealabrainrotunblocked.com/stickman-empires</loc>
-    <lastmod>2025-10-31</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>1.0</priority>
-    <image:image>
-      <image:loc>https://www.stealabrainrotunblocked.com/images/thumbnails/stickman-empires.png</image:loc>
-      <image:title>Stickman Empires - Tower Defense Strategy Game</image:title>
+      <image:title>Stickman Clash</image:title>
     </image:image>
   </url>
 
   <url>
     <loc>https://www.stealabrainrotunblocked.com/soflo-wheelie-life</loc>
     <lastmod>2025-11-01</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>1.0</priority>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
     <image:image>
       <image:loc>https://www.stealabrainrotunblocked.com/images/thumbnails/soflo-wheelie-life.png</image:loc>
-      <image:title>SoFlo Wheelie Life - Master Motorcycle Wheelies in South Florida Wheelie Life Scratch Game</image:title>
+      <image:title>SoFlo Wheelie Life</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://www.stealabrainrotunblocked.com/planet-buster</loc>
+    <lastmod>2025-10-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.stealabrainrotunblocked.com/images/thumbnails/planet-buster.jpg</image:loc>
+      <image:title>Planet Buster</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://www.stealabrainrotunblocked.com/slope-xtreme</loc>
+    <lastmod>2025-10-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.stealabrainrotunblocked.com/images/thumbnails/slope-xtreme.jpg</image:loc>
+      <image:title>Slope Xtreme</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://www.stealabrainrotunblocked.com/stickman-empires</loc>
+    <lastmod>2025-10-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.stealabrainrotunblocked.com/images/thumbnails/stickman-empires.png</image:loc>
+      <image:title>Stickman Empires</image:title>
     </image:image>
   </url>
 
   <url>
     <loc>https://www.stealabrainrotunblocked.com/rocket-fortress</loc>
     <lastmod>2025-10-30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>1.0</priority>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
     <image:image>
       <image:loc>https://www.stealabrainrotunblocked.com/images/thumbnails/rocket-fortress.png</image:loc>
-      <image:title>Rocket Fortress - Launch Holy Missiles Against Demons</image:title>
+      <image:title>Rocket Fortress</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://www.stealabrainrotunblocked.com/undead-corridor</loc>
+    <lastmod>2025-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.stealabrainrotunblocked.com/images/thumbnails/undead-corridor.png</image:loc>
+      <image:title>Undead Corridor</image:title>
     </image:image>
   </url>
 
   <url>
     <loc>https://www.stealabrainrotunblocked.com/blendrix</loc>
     <lastmod>2025-10-30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>1.0</priority>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
     <image:image>
       <image:loc>https://www.stealabrainrotunblocked.com/images/thumbnails/blendrix.png</image:loc>
       <image:title>Blendrix</image:title>
@@ -369,8 +445,8 @@
   <url>
     <loc>https://www.stealabrainrotunblocked.com/steal-brainrots</loc>
     <lastmod>2025-10-30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>1.0</priority>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
     <image:image>
       <image:loc>https://www.stealabrainrotunblocked.com/images/thumbnails/steal-brainrots.png</image:loc>
       <image:title>Steal Brainrots</image:title>
@@ -378,10 +454,21 @@
   </url>
 
   <url>
+    <loc>https://www.stealabrainrotunblocked.com/yokai-dungeon</loc>
+    <lastmod>2025-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.stealabrainrotunblocked.com/images/thumbnails/yokai-dungeon.png</image:loc>
+      <image:title>Yokai Dungeon</image:title>
+    </image:image>
+  </url>
+
+  <url>
     <loc>https://www.stealabrainrotunblocked.com/a-pretty-odd-bunny-roast-it</loc>
     <lastmod>2025-10-30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>1.0</priority>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
     <image:image>
       <image:loc>https://www.stealabrainrotunblocked.com/images/thumbnails/a-pretty-odd-bunny-roast-it.png</image:loc>
       <image:title>A Pretty Odd Bunny: Roast It!</image:title>
@@ -391,8 +478,8 @@
   <url>
     <loc>https://www.stealabrainrotunblocked.com/zombotron-re-boot</loc>
     <lastmod>2025-10-30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>1.0</priority>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
     <image:image>
       <image:loc>https://www.stealabrainrotunblocked.com/images/thumbnails/zombotron-re-boot.webp</image:loc>
       <image:title>Zombotron Re-Boot</image:title>
@@ -402,8 +489,8 @@
   <url>
     <loc>https://www.stealabrainrotunblocked.com/crazy-chicken-3d</loc>
     <lastmod>2025-10-29</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>1.0</priority>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
     <image:image>
       <image:loc>https://www.stealabrainrotunblocked.com/images/thumbnails/crazy-chicken-3d.webp</image:loc>
       <image:title>Crazy Chicken 3D</image:title>
@@ -413,8 +500,8 @@
   <url>
     <loc>https://www.stealabrainrotunblocked.com/humans-playground</loc>
     <lastmod>2025-10-29</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>1.0</priority>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
     <image:image>
       <image:loc>https://www.stealabrainrotunblocked.com/images/thumbnails/humans-playground.jpg</image:loc>
       <image:title>Humans Playground</image:title>
@@ -424,8 +511,8 @@
   <url>
     <loc>https://www.stealabrainrotunblocked.com/tung-sahur-clicker</loc>
     <lastmod>2025-10-29</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>1.0</priority>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
     <image:image>
       <image:loc>https://www.stealabrainrotunblocked.com/images/thumbnails/tung-sahur-clicker.webp</image:loc>
       <image:title>Tung Sahur Clicker</image:title>
@@ -435,8 +522,8 @@
   <url>
     <loc>https://www.stealabrainrotunblocked.com/cheese-chompers-3d</loc>
     <lastmod>2025-10-29</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>1.0</priority>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
     <image:image>
       <image:loc>https://www.stealabrainrotunblocked.com/images/thumbnails/cheese-chompers-3d.webp</image:loc>
       <image:title>Cheese Chompers 3D</image:title>
@@ -446,8 +533,8 @@
   <url>
     <loc>https://www.stealabrainrotunblocked.com/fnaf-shooter</loc>
     <lastmod>2025-10-29</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>1.0</priority>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
     <image:image>
       <image:loc>https://www.stealabrainrotunblocked.com/images/thumbnails/fnaf-shooter.webp</image:loc>
       <image:title>FNaF Shooter</image:title>
@@ -457,8 +544,8 @@
   <url>
     <loc>https://www.stealabrainrotunblocked.com/dude-theft-auto</loc>
     <lastmod>2025-10-27</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>1.0</priority>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
     <image:image>
       <image:loc>https://www.stealabrainrotunblocked.com/images/thumbnails/dude-theft-auto.webp</image:loc>
       <image:title>Dude Theft Auto</image:title>
@@ -468,8 +555,8 @@
   <url>
     <loc>https://www.stealabrainrotunblocked.com/block-breaker</loc>
     <lastmod>2025-10-27</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>1.0</priority>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
     <image:image>
       <image:loc>https://www.stealabrainrotunblocked.com/images/thumbnails/block-breaker.jpeg</image:loc>
       <image:title>Block Breaker</image:title>
@@ -479,8 +566,8 @@
   <url>
     <loc>https://www.stealabrainrotunblocked.com/colorbox-mustard</loc>
     <lastmod>2025-10-25</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>1.0</priority>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
     <image:image>
       <image:loc>https://www.stealabrainrotunblocked.com/images/thumbnails/colorbox-mustard.webp</image:loc>
       <image:title>Colorbox Mustard</image:title>
@@ -490,8 +577,8 @@
   <url>
     <loc>https://www.stealabrainrotunblocked.com/top-speed-racing-3d</loc>
     <lastmod>2025-10-25</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>1.0</priority>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
     <image:image>
       <image:loc>https://www.stealabrainrotunblocked.com/images/thumbnails/top-speed-racing-3d.webp</image:loc>
       <image:title>Top Speed Racing 3D</image:title>
@@ -501,8 +588,8 @@
   <url>
     <loc>https://www.stealabrainrotunblocked.com/crazy-animal-city</loc>
     <lastmod>2025-10-25</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>1.0</priority>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
     <image:image>
       <image:loc>https://www.stealabrainrotunblocked.com/images/thumbnails/crazy-animal-city.webp</image:loc>
       <image:title>Crazy Animal City</image:title>
@@ -512,8 +599,8 @@
   <url>
     <loc>https://www.stealabrainrotunblocked.com/spacebar-clicker-3</loc>
     <lastmod>2025-10-25</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>1.0</priority>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
     <image:image>
       <image:loc>https://www.stealabrainrotunblocked.com/images/thumbnails/spacebar-clicker-3.webp</image:loc>
       <image:title>Spacebar Clicker 3</image:title>
@@ -523,8 +610,8 @@
   <url>
     <loc>https://www.stealabrainrotunblocked.com/block-blast-3d</loc>
     <lastmod>2025-10-25</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>1.0</priority>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
     <image:image>
       <image:loc>https://www.stealabrainrotunblocked.com/images/thumbnails/block-blast-3d.webp</image:loc>
       <image:title>Block Blast 3D</image:title>
@@ -534,8 +621,8 @@
   <url>
     <loc>https://www.stealabrainrotunblocked.com/wacky-flip</loc>
     <lastmod>2025-10-24</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.99</priority>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
     <image:image>
       <image:loc>https://www.stealabrainrotunblocked.com/images/thumbnails/wacky-flip.webp</image:loc>
       <image:title>Wacky Flip</image:title>
@@ -545,8 +632,8 @@
   <url>
     <loc>https://www.stealabrainrotunblocked.com/take-care-of-shadow-milk</loc>
     <lastmod>2025-10-24</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.98</priority>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
     <image:image>
       <image:loc>https://www.stealabrainrotunblocked.com/images/thumbnails/take-care-of-shadow-milk.png</image:loc>
       <image:title>Take Care Of Shadow Milk</image:title>
@@ -556,8 +643,8 @@
   <url>
     <loc>https://www.stealabrainrotunblocked.com/steal-the-cool-brainrot-sprunki</loc>
     <lastmod>2025-10-24</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.95</priority>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
     <image:image>
       <image:loc>https://www.stealabrainrotunblocked.com/images/thumbnails/steal-the-cool-brainrot-sprunki.jpeg</image:loc>
       <image:title>Steal the cool Brainrot Sprunki</image:title>
@@ -567,8 +654,8 @@
   <url>
     <loc>https://www.stealabrainrotunblocked.com/obby-steal-the-fugglers</loc>
     <lastmod>2025-10-24</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
     <image:image>
       <image:loc>https://www.stealabrainrotunblocked.com/images/thumbnails/obby-steal-the-fugglers.jpeg</image:loc>
       <image:title>Obby: Steal the Fugglers</image:title>
@@ -576,291 +663,13 @@
   </url>
 
   <url>
-    <loc>https://www.stealabrainrotunblocked.com/steal-brainrot-monsters</loc>
-    <lastmod>2025-10-20</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>https://www.stealabrainrotunblocked.com/images/thumbnails/steal-brainrot-monsters.jpeg</image:loc>
-      <image:title>Steal Brainrot Monsters</image:title>
-    </image:image>
-  </url>
-
-  <!-- High Priority Games (Play Count > 1M) -->
-  <url>
-    <loc>https://www.stealabrainrotunblocked.com/1v1-lol</loc>
-    <lastmod>2025-01-12</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.95</priority>
-    <image:image>
-      <image:loc>https://www.stealabrainrotunblocked.com/images/thumbnails/1v1-lol.jpg</image:loc>
-      <image:title>1v1 LOL</image:title>
-    </image:image>
-  </url>
-
-  <url>
-    <loc>https://www.stealabrainrotunblocked.com/kart-bros</loc>
-    <lastmod>2025-01-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.95</priority>
-    <image:image>
-      <image:loc>https://www.stealabrainrotunblocked.com/images/thumbnails/kart-bros.png</image:loc>
-      <image:title>Kart Bros</image:title>
-    </image:image>
-  </url>
-
-  <url>
-    <loc>https://www.stealabrainrotunblocked.com/little-big-snake</loc>
-    <lastmod>2025-01-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.95</priority>
-    <image:image>
-      <image:loc>https://www.stealabrainrotunblocked.com/images/thumbnails/little-big-snake.png</image:loc>
-      <image:title>Little Big Snake</image:title>
-    </image:image>
-  </url>
-
-  <url>
-    <loc>https://www.stealabrainrotunblocked.com/smash-karts</loc>
-    <lastmod>2025-01-13</lastmod>
+    <loc>https://www.stealabrainrotunblocked.com/steal-the-brainrot-fish</loc>
+    <lastmod>2025-10-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <image:image>
-      <image:loc>https://www.stealabrainrotunblocked.com/images/thumbnails/smash-karts.png</image:loc>
-      <image:title>Smash Karts</image:title>
-    </image:image>
-  </url>
-
-  <url>
-    <loc>https://www.stealabrainrotunblocked.com/goodgame-empire</loc>
-    <lastmod>2025-01-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-    <image:image>
-      <image:loc>https://www.stealabrainrotunblocked.com/images/thumbnails/goodgame-empire.png</image:loc>
-      <image:title>Goodgame Empire</image:title>
-    </image:image>
-  </url>
-
-  <url>
-    <loc>https://www.stealabrainrotunblocked.com/crazy-sprunki-3d</loc>
-    <lastmod>2025-01-22</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-    <image:image>
-      <image:loc>https://www.stealabrainrotunblocked.com/images/thumbnails/crazy-sprunki-3d.png</image:loc>
-      <image:title>Crazy Sprunki 3D</image:title>
-    </image:image>
-  </url>
-
-  <url>
-    <loc>https://www.stealabrainrotunblocked.com/perfect-orbit</loc>
-    <lastmod>2025-01-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-    <image:image>
-      <image:loc>https://www.stealabrainrotunblocked.com/images/thumbnails/perfect-orbit.png</image:loc>
-      <image:title>Perfect Orbit</image:title>
-    </image:image>
-  </url>
-
-  <!-- Medium Priority Games (Play Count 10K - 1M) -->
-  <url>
-    <loc>https://www.stealabrainrotunblocked.com/rocket-fortress</loc>
-    <lastmod>2025-01-22</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>https://www.stealabrainrotunblocked.com/images/thumbnails/rocket-fortress.png</image:loc>
-      <image:title>Rocket Fortress</image:title>
-    </image:image>
-  </url>
-
-  <url>
-    <loc>https://www.stealabrainrotunblocked.com/bro-royale</loc>
-    <lastmod>2025-01-20</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>https://www.stealabrainrotunblocked.com/images/thumbnails/bro-royale.png</image:loc>
-      <image:title>Bro Royale</image:title>
-    </image:image>
-  </url>
-
-  <url>
-    <loc>https://www.stealabrainrotunblocked.com/crazy-sheep-3d</loc>
-    <lastmod>2025-01-22</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>https://www.stealabrainrotunblocked.com/images/thumbnails/crazy-sheep-3d.png</image:loc>
-      <image:title>Crazy Sheep 3D</image:title>
-    </image:image>
-  </url>
-
-  <url>
-    <loc>https://www.stealabrainrotunblocked.com/obby-my-singing-brainrot</loc>
-    <lastmod>2024-12-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>https://www.stealabrainrotunblocked.com/images/thumbnails/obby-my-singing-brainrot.jpg</image:loc>
-      <image:title>Obby: My Singing Brainrot</image:title>
-    </image:image>
-  </url>
-
-  <url>
-    <loc>https://www.stealabrainrotunblocked.com/memory-brainrot</loc>
-    <lastmod>2024-11-20</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>https://www.stealabrainrotunblocked.com/images/thumbnails/memory-brainrot.jpg</image:loc>
-      <image:title>Memory Brainrot</image:title>
-    </image:image>
-  </url>
-
-  <url>
-    <loc>https://www.stealabrainrotunblocked.com/fix-da-brainrot</loc>
-    <lastmod>2024-11-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>https://www.stealabrainrotunblocked.com/images/thumbnails/fix-da-brainrot.jpg</image:loc>
-      <image:title>Fix Da Brainrot</image:title>
-    </image:image>
-  </url>
-
-  <url>
-    <loc>https://www.stealabrainrotunblocked.com/plants-vs-brainrots</loc>
-    <lastmod>2024-11-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>https://www.stealabrainrotunblocked.com/images/thumbnails/plants-vs-brainrots.jpg</image:loc>
-      <image:title>Plants vs Brainrots</image:title>
-    </image:image>
-  </url>
-
-  <url>
-    <loc>https://www.stealabrainrotunblocked.com/steal-brainrot-online</loc>
-    <lastmod>2024-12-01</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>https://www.stealabrainrotunblocked.com/images/thumbnails/steal-brainrot-online.png</image:loc>
-      <image:title>Steal Brainrot Online</image:title>
-    </image:image>
-  </url>
-
-  <url>
-    <loc>https://www.stealabrainrotunblocked.com/brainrot-hook-swing</loc>
-    <lastmod>2024-12-20</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>https://www.stealabrainrotunblocked.com/images/thumbnails/brainrot-hook-swing.jpg</image:loc>
-      <image:title>Brainrot Hook Swing</image:title>
-    </image:image>
-  </url>
-
-  <url>
-    <loc>https://www.stealabrainrotunblocked.com/steal-the-italian-brainrot</loc>
-    <lastmod>2024-12-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>https://www.stealabrainrotunblocked.com/images/thumbnails/steal-the-italian-brainrot.png</image:loc>
-      <image:title>Steal The Italian Brainrot</image:title>
-    </image:image>
-  </url>
-
-  <!-- Lower Priority Games (Play Count < 10K) -->
-  <url>
-    <loc>https://www.stealabrainrotunblocked.com/brainrot-clicker</loc>
-    <lastmod>2025-01-05</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-    <image:image>
-      <image:loc>https://www.stealabrainrotunblocked.com/images/thumbnails/brainrot-clicker.webp</image:loc>
-      <image:title>Brainrot Clicker</image:title>
-    </image:image>
-  </url>
-
-  <url>
-    <loc>https://www.stealabrainrotunblocked.com/italian-brainrot-baby-clicker</loc>
-    <lastmod>2025-01-08</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-    <image:image>
-      <image:loc>https://www.stealabrainrotunblocked.com/images/thumbnails/italian-brainrot-baby-clicker.jpg</image:loc>
-      <image:title>Italian Brainrot Baby Clicker</image:title>
-    </image:image>
-  </url>
-
-  <url>
-    <loc>https://www.stealabrainrotunblocked.com/italian-brainrot-clicker-2</loc>
-    <lastmod>2025-01-09</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-    <image:image>
-      <image:loc>https://www.stealabrainrotunblocked.com/images/thumbnails/italian-brainrot-clicker-2.png</image:loc>
-      <image:title>Italian Brainrot Clicker 2</image:title>
-    </image:image>
-  </url>
-
-  <url>
-    <loc>https://www.stealabrainrotunblocked.com/italian-neuro-animals</loc>
-    <lastmod>2025-01-23</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-    <image:image>
-      <image:loc>https://www.stealabrainrotunblocked.com/images/thumbnails/italian-neuro-animals.png</image:loc>
-      <image:title>Italian Neuro Animals</image:title>
-    </image:image>
-  </url>
-
-  <url>
-    <loc>https://www.stealabrainrotunblocked.com/steal-brainrot-new-animals</loc>
-    <lastmod>2025-01-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-    <image:image>
-      <image:loc>https://www.stealabrainrotunblocked.com/images/thumbnails/steal-brainrot-new-animals.png</image:loc>
-      <image:title>Steal Brainrot: New Animals</image:title>
-    </image:image>
-  </url>
-
-  <url>
-    <loc>https://www.stealabrainrotunblocked.com/las-sis-steal-brainrot</loc>
-    <lastmod>2025-01-20</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-    <image:image>
-      <image:loc>https://www.stealabrainrotunblocked.com/images/thumbnails/las-sis-steal-brainrot.jpg</image:loc>
-      <image:title>Las Sis (Steal a Brainrot)</image:title>
-    </image:image>
-  </url>
-
-  <url>
-    <loc>https://www.stealabrainrotunblocked.com/crazy-cattle-3d</loc>
-    <lastmod>2025-01-11</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-    <image:image>
-      <image:loc>https://www.stealabrainrotunblocked.com/images/thumbnails/crazy-cattle-3d.jpg</image:loc>
-      <image:title>Crazy Cattle 3D</image:title>
-    </image:image>
-  </url>
-
-  <url>
-    <loc>https://www.stealabrainrotunblocked.com/cheese-chompers-3d</loc>
-    <lastmod>2025-01-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-    <image:image>
-      <image:loc>https://www.stealabrainrotunblocked.com/images/thumbnails/cheese-chompers-3d.png</image:loc>
-      <image:title>Cheese Chompers 3D</image:title>
+      <image:loc>https://www.stealabrainrotunblocked.com/images/thumbnails/steal-the-brainrot-fish.png</image:loc>
+      <image:title>Steal the Brainrot Fish</image:title>
     </image:image>
   </url>
 
@@ -868,7 +677,7 @@
     <loc>https://www.stealabrainrotunblocked.com/the-freak-circus</loc>
     <lastmod>2025-10-23</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.95</priority>
     <image:image>
       <image:loc>https://www.stealabrainrotunblocked.com/images/thumbnails/the-freak-circus.jpg</image:loc>
       <image:title>The Freak Circus</image:title>
@@ -886,5 +695,312 @@
     </image:image>
   </url>
 
-</urlset>
+  <url>
+    <loc>https://www.stealabrainrotunblocked.com/steal-brainrot-monsters</loc>
+    <lastmod>2025-10-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://www.stealabrainrotunblocked.com/images/thumbnails/steal-brainrot-monsters.jpeg</image:loc>
+      <image:title>Steal Brainrot Monsters</image:title>
+    </image:image>
+  </url>
 
+  <url>
+    <loc>https://www.stealabrainrotunblocked.com/goodgame-empire</loc>
+    <lastmod>2025-01-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+    <image:image>
+      <image:loc>https://www.stealabrainrotunblocked.com/images/thumbnails/goodgame-empire.png</image:loc>
+      <image:title>Goodgame Empire</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://www.stealabrainrotunblocked.com/perfect-orbit</loc>
+    <lastmod>2025-01-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://www.stealabrainrotunblocked.com/images/thumbnails/perfect-orbit.png</image:loc>
+      <image:title>Perfect Orbit</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://www.stealabrainrotunblocked.com/italian-neuro-animals</loc>
+    <lastmod>2025-01-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+    <image:image>
+      <image:loc>https://www.stealabrainrotunblocked.com/images/thumbnails/italian-neuro-animals.webp</image:loc>
+      <image:title>Italian Neuro Animals</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://www.stealabrainrotunblocked.com/crazy-sprunki-3d</loc>
+    <lastmod>2025-01-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://www.stealabrainrotunblocked.com/images/thumbnails/crazy-sprunki-3d.webp</image:loc>
+      <image:title>Crazy Sprunki 3D</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://www.stealabrainrotunblocked.com/crazy-sheep-3d</loc>
+    <lastmod>2025-01-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.stealabrainrotunblocked.com/images/thumbnails/crazy-sheep-3d.png</image:loc>
+      <image:title>Crazy Sheep 3D</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://www.stealabrainrotunblocked.com/rocket-fortress</loc>
+    <lastmod>2025-01-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://www.stealabrainrotunblocked.com/images/thumbnails/rocket-fortress.png</image:loc>
+      <image:title>Rocket Fortress</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://www.stealabrainrotunblocked.com/fix-da-brainrot</loc>
+    <lastmod>2025-01-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+    <image:image>
+      <image:loc>https://www.stealabrainrotunblocked.com/images/thumbnails/fix-da-brainrot.jpg</image:loc>
+      <image:title>Fix Da Brainrot</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://www.stealabrainrotunblocked.com/kart-bros</loc>
+    <lastmod>2025-01-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+    <image:image>
+      <image:loc>https://www.stealabrainrotunblocked.com/images/thumbnails/kart-bros.webp</image:loc>
+      <image:title>Kart Bros</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://www.stealabrainrotunblocked.com/little-big-snake</loc>
+    <lastmod>2025-01-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+    <image:image>
+      <image:loc>https://www.stealabrainrotunblocked.com/images/thumbnails/little-big-snake.png</image:loc>
+      <image:title>Little Big Snake</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://www.stealabrainrotunblocked.com/cheese-chompers-3d</loc>
+    <lastmod>2025-01-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.stealabrainrotunblocked.com/images/thumbnails/cheese-chompers-3d.png</image:loc>
+      <image:title>Cheese Chompers 3D</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://www.stealabrainrotunblocked.com/bro-royale</loc>
+    <lastmod>2025-01-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://www.stealabrainrotunblocked.com/images/thumbnails/bro-royale.png</image:loc>
+      <image:title>Bro Royale</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://www.stealabrainrotunblocked.com/las-sis-steal-brainrot</loc>
+    <lastmod>2025-01-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.stealabrainrotunblocked.com/images/thumbnails/las-sis-steal-brainrot.jpg</image:loc>
+      <image:title>Las Sis (Steal a Brainrot)</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://www.stealabrainrotunblocked.com/smash-karts</loc>
+    <lastmod>2025-01-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+    <image:image>
+      <image:loc>https://www.stealabrainrotunblocked.com/images/thumbnails/smash-karts.webp</image:loc>
+      <image:title>Smash Karts</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://www.stealabrainrotunblocked.com/1v1-lol</loc>
+    <lastmod>2025-01-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+    <image:image>
+      <image:loc>https://www.stealabrainrotunblocked.com/images/thumbnails/1v1-lol.jpg</image:loc>
+      <image:title>1v1 LOL</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://www.stealabrainrotunblocked.com/crazy-cattle-3d</loc>
+    <lastmod>2025-01-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.stealabrainrotunblocked.com/images/thumbnails/crazy-cattle-3d.jpg</image:loc>
+      <image:title>Crazy Cattle 3D</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://www.stealabrainrotunblocked.com/steal-brainrot-new-animals</loc>
+    <lastmod>2025-01-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.stealabrainrotunblocked.com/images/thumbnails/steal-brainrot-new-animals.png</image:loc>
+      <image:title>Steal Brainrot: New Animals</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://www.stealabrainrotunblocked.com/italian-brainrot-clicker-2</loc>
+    <lastmod>2025-01-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.stealabrainrotunblocked.com/images/thumbnails/italian-brainrot-clicker-2.png</image:loc>
+      <image:title>Italian Brainrot Clicker 2</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://www.stealabrainrotunblocked.com/italian-brainrot-baby-clicker</loc>
+    <lastmod>2025-01-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.stealabrainrotunblocked.com/images/thumbnails/italian-brainrot-baby-clicker.jpg</image:loc>
+      <image:title>Italian Brainrot Baby Clicker</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://www.stealabrainrotunblocked.com/brainrot-clicker</loc>
+    <lastmod>2025-01-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.stealabrainrotunblocked.com/images/thumbnails/brainrot-clicker.webp</image:loc>
+      <image:title>Brainrot Clicker</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://www.stealabrainrotunblocked.com/brainrot-hook-swing</loc>
+    <lastmod>2024-12-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.stealabrainrotunblocked.com/images/thumbnails/brainrot-hook-swing.jpg</image:loc>
+      <image:title>Brainrot Hook Swing</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://www.stealabrainrotunblocked.com/steal-the-italian-brainrot</loc>
+    <lastmod>2024-12-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.stealabrainrotunblocked.com/images/thumbnails/steal-the-italian-brainrot.png</image:loc>
+      <image:title>Steal The Italian Brainrot</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://www.stealabrainrotunblocked.com/blocky-rush</loc>
+    <lastmod>2024-12-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://www.stealabrainrotunblocked.com/images/thumbnails/blocky-rush.png</image:loc>
+      <image:title>Blocky Rush</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://www.stealabrainrotunblocked.com/obby-my-singing-brainrot</loc>
+    <lastmod>2024-12-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://www.stealabrainrotunblocked.com/images/thumbnails/obby-my-singing-brainrot.jpg</image:loc>
+      <image:title>Obby: My Singing Brainrot</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://www.stealabrainrotunblocked.com/steal-brainrot-online</loc>
+    <lastmod>2024-12-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.stealabrainrotunblocked.com/images/thumbnails/steal-brainrot-online.png</image:loc>
+      <image:title>Steal Brainrot Online</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://www.stealabrainrotunblocked.com/memory-brainrot</loc>
+    <lastmod>2024-11-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.stealabrainrotunblocked.com/images/thumbnails/memory-brainrot.jpg</image:loc>
+      <image:title>Memory Brainrot</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://www.stealabrainrotunblocked.com/crazy-cattle-3d-unblocked</loc>
+    <lastmod>2024-11-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://www.stealabrainrotunblocked.com/images/thumbnails/crazy-cattle-3d-unblocked.png</image:loc>
+      <image:title>Crazy Cattle 3D Unblocked</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://www.stealabrainrotunblocked.com/plants-vs-brainrots</loc>
+    <lastmod>2024-11-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.stealabrainrotunblocked.com/images/thumbnails/plants-vs-brainrots.jpg</image:loc>
+      <image:title>Plants vs Brainrots</image:title>
+    </image:image>
+  </url>
+
+</urlset>
