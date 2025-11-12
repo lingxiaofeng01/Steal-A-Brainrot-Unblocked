@@ -26,6 +26,72 @@ export function isRealGame(game: Game): game is GameData {
 // All games data with release dates, tags, and ratings
 export const allGames: Game[] = [
   {
+    name: 'Drift Fury',
+    image: '/images/thumbnails/drift-fury.jpg',
+    slug: 'drift-fury',
+    isReal: true,
+    url: 'https://html5.gamemonetize.co/79uga2q05rkfv5vl6mt8ptr2bu5aduv3/',
+    releaseDate: '2025-11-12',
+    tags: ['Racing', 'Driving', '3D', 'Drift', 'Car', 'Sports', 'Skill', 'Action', 'Casual', 'Unblocked', 'Browser', 'Arcade', 'Speed', 'Simulation', 'Adventure'],
+    rating: 5.0,
+    playCount: 0
+  },
+  {
+    name: 'Ragdoll Hit Stickman',
+    image: '/images/thumbnails/ragdoll-hit-stickman.png',
+    slug: 'ragdoll-hit-stickman',
+    isReal: true,
+    url: 'https://game.azgame.io/ragdoll-hit-stickman/',
+    releaseDate: '2025-11-12',
+    tags: ['Stickman', 'Action', 'Fighting', 'Physics', 'Ragdoll', 'Adventure', 'Casual', 'Shooting', 'Battle', 'Skill', 'Unblocked', 'Browser', '2D', 'Arcade', 'PvP'],
+    rating: 5.0,
+    playCount: 0
+  },
+  {
+    name: 'Stickman Army: Team Battle',
+    image: '/images/thumbnails/stickman-army-team-battle.png',
+    slug: 'stickman-army-team-battle',
+    isReal: true,
+    url: 'https://narrow-one.github.io/n6/stickman-army-team-battle/',
+    releaseDate: '2025-11-12',
+    tags: ['Stickman', 'Action', 'Strategy', 'Battle', 'War', 'Multiplayer', 'Fighting', 'Skill', 'Casual', 'Unblocked', 'Browser', '2D', 'Arcade', 'Defense', 'RPG'],
+    rating: 5.0,
+    playCount: 0
+  },
+  {
+    name: 'Ski Frenzy',
+    image: '/images/thumbnails/ski-frenzy.jpg',
+    slug: 'ski-frenzy',
+    isReal: true,
+    url: 'https://yoplay.io/ski-frenzy.embed',
+    releaseDate: '2025-11-12',
+    tags: ['Sports', 'Skiing', 'Action', 'Arcade', '3D', 'Endless Runner', 'Casual', 'Adventure', 'Animals', 'Skill', 'Challenge', 'Unblocked', 'Browser', 'Single Player', 'Pixel'],
+    rating: 5.0,
+    playCount: 0
+  },
+  {
+    name: 'Hockey Random',
+    image: '/images/thumbnails/hockey-random.jpg',
+    slug: 'hockey-random',
+    isReal: true,
+    url: 'https://yoplay.io/hockey-random.embed',
+    releaseDate: '2025-11-12',
+    tags: ['Sports', 'Hockey', 'Multiplayer', '2 Player', 'Casual', 'Action', 'Physics', 'Pixel', '2D', 'Funny', 'Unblocked', 'Browser'],
+    rating: 5.0,
+    playCount: 0
+  },
+  {
+    name: 'Bottle Jump',
+    image: '/images/thumbnails/bottle-jump.png',
+    slug: 'bottle-jump',
+    isReal: true,
+    url: 'https://games.yoplay.io/bottle-jump/?v=1',
+    releaseDate: '2025-11-12',
+    tags: ['Casual', 'Arcade', 'Skill', 'Physics', 'Single Player', 'Challenge', 'Timing', 'Flip', 'Jump', 'Unblocked', 'Browser', '3D'],
+    rating: 5.0,
+    playCount: 0
+  },
+  {
     name: 'Giant Rush',
     image: '/images/thumbnails/giant-rush.png',
     slug: 'giant-rush',

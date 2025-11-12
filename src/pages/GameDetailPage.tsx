@@ -10,6 +10,12 @@ interface GameDetailPageProps {
 
 // 游戏页面组件映射表 - 每个游戏对应一个专门的页面组件
 const gamePageComponents: Record<string, React.ComponentType<any>> = {
+  'drift-fury': lazy(() => import('./DriftFuryPage')),
+  'ragdoll-hit-stickman': lazy(() => import('./RagdollHitStickmanPage')),
+  'stickman-army-team-battle': lazy(() => import('./StickmanArmyTeamBattlePage')),
+  'ski-frenzy': lazy(() => import('./SkiFrenzyPage')),
+  'hockey-random': lazy(() => import('./HockeyRandomPage')),
+  'bottle-jump': lazy(() => import('./BottleJumpPage')),
   'giant-rush': lazy(() => import('./GiantRushPage')),
   'white-horizon': lazy(() => import('./WhiteHorizonPage')),
   'highway-heat': lazy(() => import('./HighwayHeatPage')),
