@@ -26,6 +26,17 @@ export function isRealGame(game: Game): game is GameData {
 // All games data with release dates, tags, and ratings
 export const allGames: Game[] = [
   {
+    name: 'Steal Brainrot Duel',
+    image: '/images/thumbnails/steal-brainrot-duel.jpg',
+    slug: 'steal-brainrot-duel',
+    isReal: true,
+    url: 'https://html5.gamedistribution.com/rvvASMiM/31628f3b940847189cb0cea3d943abe0/index.html?gd_sdk_referrer_url=https%3A%2F%2Fpapas-games.io%2Fsteal-brainrot-duel&gd_zone_config=eyJwYXJlbnRVUkwiOiJodHRwczovL3BhcGFzLWdhbWVzLmlvL3N0ZWFsLWJyYWlucm90LWR1ZWwiLCJwYXJlbnREb21haW4iOiJwYXBhcy1nYW1lcy5pbyIsInRvcERvbWFpbiI6InBhcGFzLWdhbWVzLmlvIiwiaGFzSW1wcmVzc2lvbiI6dHJ1ZSwibG9hZGVyRW5hYmxlZCI6dHJ1ZSwiaG9zdCI6Imh0bWw1LmdhbWVkaXN0cmlidXRpb24uY29tIiwidmVyc2lvbiI6IjEuNS4xOCJ9',
+    releaseDate: '2025-11-20',
+    tags: ['Multiplayer', '2 Player', 'Action', 'Casual', 'Meme', 'Brainrot', 'Strategy', 'Competitive', 'Looting', 'Defense', 'Simulator', 'Unblocked', 'Browser', 'Arcade', 'PvP'],
+    rating: 5.0,
+    playCount: 0
+  },
+  {
     name: 'Drift Fury',
     image: '/images/thumbnails/drift-fury.jpg',
     slug: 'drift-fury',
