@@ -10,6 +10,8 @@ interface GameDetailPageProps {
 
 // 游戏页面组件映射表 - 每个游戏对应一个专门的页面组件
 const gamePageComponents: Record<string, React.ComponentType<any>> = {
+  'billiards-master': lazy(() => import('./BilliardsMasterPage')),
+  'mad-trails': lazy(() => import('./MadTrailsPage')),
   'steal-brainrot-duel': lazy(() => import('./StealBrainrotDuelPage')),
   'drift-fury': lazy(() => import('./DriftFuryPage')),
   'ragdoll-hit-stickman': lazy(() => import('./RagdollHitStickmanPage')),

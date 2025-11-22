@@ -26,6 +26,28 @@ export function isRealGame(game: Game): game is GameData {
 // All games data with release dates, tags, and ratings
 export const allGames: Game[] = [
   {
+    name: 'Billiards Master',
+    image: '/images/thumbnails/billiards-master.png',
+    slug: 'billiards-master',
+    isReal: true,
+    url: 'https://game.azgame.io/billiards-master/',
+    releaseDate: '2025-11-22',
+    tags: ['Sport', 'Skill', '3D', 'Casual', 'Simulation', 'Pool', 'Billiards', 'Physics', 'Arcade', 'Unblocked', 'Browser', 'Single Player', 'Multiplayer', 'Strategy'],
+    rating: 5.0,
+    playCount: 0
+  },
+  {
+    name: 'Mad Trails',
+    image: '/images/thumbnails/mad-trails.png',
+    slug: 'mad-trails',
+    isReal: true,
+    url: 'https://yoplay.io/mad-trails.embed',
+    releaseDate: '2025-11-21',
+    tags: ['Racing', 'Driving', 'Physics', 'Car', 'Action', 'Skill', '3D', 'Casual', 'Arcade', 'Unblocked', 'Browser', 'Adventure', 'Simulation', 'Climbing', 'Upgrade'],
+    rating: 5.0,
+    playCount: 0
+  },
+  {
     name: 'Steal Brainrot Duel',
     image: '/images/thumbnails/steal-brainrot-duel.jpg',
     slug: 'steal-brainrot-duel',

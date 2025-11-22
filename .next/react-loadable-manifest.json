@@ -43,6 +43,12 @@
       "static/chunks/_app-pages-browser_src_pages_BikeXtremePage_tsx.js"
     ]
   },
+  "pages\\GameDetailPage.tsx -> ./BilliardsMasterPage": {
+    "id": "pages\\GameDetailPage.tsx -> ./BilliardsMasterPage",
+    "files": [
+      "static/chunks/_app-pages-browser_src_pages_BilliardsMasterPage_tsx.js"
+    ]
+  },
   "pages\\GameDetailPage.tsx -> ./BlendrixPage": {
     "id": "pages\\GameDetailPage.tsx -> ./BlendrixPage",
     "files": [
@@ -265,6 +271,12 @@
       "static/chunks/_app-pages-browser_src_pages_MadPursuitPage_tsx.js"
     ]
   },
+  "pages\\GameDetailPage.tsx -> ./MadTrailsPage": {
+    "id": "pages\\GameDetailPage.tsx -> ./MadTrailsPage",
+    "files": [
+      "static/chunks/_app-pages-browser_src_pages_MadTrailsPage_tsx.js"
+    ]
+  },
   "pages\\GameDetailPage.tsx -> ./MemoryBrainrotPage": {
     "id": "pages\\GameDetailPage.tsx -> ./MemoryBrainrotPage",
     "files": [
@@ -371,6 +383,12 @@
     "id": "pages\\GameDetailPage.tsx -> ./SpacebarClicker3Page",
     "files": [
       "static/chunks/_app-pages-browser_src_pages_SpacebarClicker3Page_tsx.js"
+    ]
+  },
+  "pages\\GameDetailPage.tsx -> ./StealBrainrotDuelPage": {
+    "id": "pages\\GameDetailPage.tsx -> ./StealBrainrotDuelPage",
+    "files": [
+      "static/chunks/_app-pages-browser_src_pages_StealBrainrotDuelPage_tsx.js"
     ]
   },
   "pages\\GameDetailPage.tsx -> ./StealBrainrotMonstersPage": {

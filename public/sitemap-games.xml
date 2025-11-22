@@ -3,6 +3,28 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
 
   <url>
+    <loc>https://www.stealabrainrotunblocked.com/billiards-master</loc>
+    <lastmod>2025-11-22</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://www.stealabrainrotunblocked.com/images/thumbnails/billiards-master.png</image:loc>
+      <image:title>Billiards Master</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://www.stealabrainrotunblocked.com/mad-trails</loc>
+    <lastmod>2025-11-21</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://www.stealabrainrotunblocked.com/images/thumbnails/mad-trails.png</image:loc>
+      <image:title>Mad Trails</image:title>
+    </image:image>
+  </url>
+
+  <url>
     <loc>https://www.stealabrainrotunblocked.com/steal-brainrot-duel</loc>
     <lastmod>2025-11-20</lastmod>
     <changefreq>daily</changefreq>
